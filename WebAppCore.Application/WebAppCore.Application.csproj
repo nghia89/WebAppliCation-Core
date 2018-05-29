@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Interfaces\" />
+    <Folder Include="Implementation\" />
+    <Folder Include="AutoMapper\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WebAppCore.Data.EF\WebAppCore.Data.EF.csproj" />
+    <ProjectReference Include="..\WebAppCore.Data\WebAppCore.Data.csproj" />
+    <ProjectReference Include="..\WebAppCore.Utilities\WebAppCore.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>

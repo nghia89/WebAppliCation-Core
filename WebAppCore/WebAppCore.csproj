@@ -18,4 +18,12 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WebAppCore.Application\WebAppCore.Application.csproj" />
+    <ProjectReference Include="..\WebAppCore.Data.EF\WebAppCore.Data.EF.csproj" />
+    <ProjectReference Include="..\WebAppCore.Data\WebAppCore.Data.csproj" />
+    <ProjectReference Include="..\WebAppCore.Infrastructure\WebAppCore.Infrastructure.csproj" />
+    <ProjectReference Include="..\WebAppCore.Utilities\WebAppCore.Utilities.csproj" />
+  </ItemGroup>
+
 </Project>
