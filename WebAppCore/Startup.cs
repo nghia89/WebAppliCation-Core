@@ -13,6 +13,11 @@ using WebAppCore.Models;
 using WebAppCore.Services;
 using WebAppCore.Data.EF;
 using WebAppCore.Data.Entities;
+using AutoMapper;
+using WebAppCore.Data.IRepositories;
+using WebAppCore.Data.EF.Repositories;
+using WebAppCore.Application.Interfaces;
+using WebAppCore.Application.Implementation;
 
 namespace WebAppCore
 {
@@ -40,9 +45,16 @@ namespace WebAppCore
             services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();
             services.AddScoped<RoleManager<AppRole>, RoleManager<AppRole>>();
 
+            services.AddSingleton(Mapper.Configuration);
+            services.AddScoped<IMapper>(sp => new Mapper(sp.GetRequiredService<AutoMapper.IConfigurationProvider>(), sp.GetService));
+
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<DbInitializer>();
             services.AddMvc();
+
+            //Respository
+            services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
+            services.AddTransient<IProductCategoryService, ProductCategoryService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
