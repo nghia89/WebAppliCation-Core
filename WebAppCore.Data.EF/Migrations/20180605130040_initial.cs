@@ -139,28 +139,6 @@ namespace WebAppCore.Data.EF.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Bills",
-                columns: table => new
-                {
-                    Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    BillStatus = table.Column<int>(nullable: false),
-                    CustomerAddress = table.Column<string>(maxLength: 256, nullable: false),
-                    CustomerId = table.Column<Guid>(nullable: true),
-                    CustomerMessage = table.Column<string>(maxLength: 256, nullable: false),
-                    CustomerMobile = table.Column<string>(maxLength: 50, nullable: false),
-                    CustomerName = table.Column<string>(maxLength: 256, nullable: false),
-                    DateCreated = table.Column<DateTime>(nullable: false),
-                    DateModified = table.Column<DateTime>(nullable: false),
-                    PaymentMethod = table.Column<int>(nullable: false),
-                    Status = table.Column<int>(nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Bills", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Blogs",
                 columns: table => new
                 {
@@ -429,6 +407,34 @@ namespace WebAppCore.Data.EF.Migrations
                         principalTable: "AppUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Bills",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    BillStatus = table.Column<int>(nullable: false),
+                    CustomerAddress = table.Column<string>(maxLength: 256, nullable: false),
+                    CustomerId = table.Column<Guid>(nullable: true),
+                    CustomerMessage = table.Column<string>(maxLength: 256, nullable: false),
+                    CustomerMobile = table.Column<string>(maxLength: 50, nullable: false),
+                    CustomerName = table.Column<string>(maxLength: 256, nullable: false),
+                    DateCreated = table.Column<DateTime>(nullable: false),
+                    DateModified = table.Column<DateTime>(nullable: false),
+                    PaymentMethod = table.Column<int>(nullable: false),
+                    Status = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Bills", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Bills_AppUsers_CustomerId",
+                        column: x => x.CustomerId,
+                        principalTable: "AppUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -757,6 +763,11 @@ namespace WebAppCore.Data.EF.Migrations
                 name: "IX_BillDetails_SizeId",
                 table: "BillDetails",
                 column: "SizeId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Bills_CustomerId",
+                table: "Bills",
+                column: "CustomerId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_BlogTags_BlogId",

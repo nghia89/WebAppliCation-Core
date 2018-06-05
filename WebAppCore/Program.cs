@@ -35,6 +35,7 @@ namespace WebAppCore
             }
             host.Run();
 
+
         }
 
         public static IWebHost BuildWebHost(string[] args) =>

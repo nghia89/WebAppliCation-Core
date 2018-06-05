@@ -12,7 +12,7 @@ using WebAppCore.Data.Enums;
 namespace WebAppCore.Data.EF.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20180604163153_initial")]
+    [Migration("20180605130040_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -317,6 +317,8 @@ namespace WebAppCore.Data.EF.Migrations
                     b.Property<int>("Status");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CustomerId");
 
                     b.ToTable("Bills");
                 });
@@ -918,6 +920,13 @@ namespace WebAppCore.Data.EF.Migrations
                         .WithMany("AnnouncementUsers")
                         .HasForeignKey("AnnouncementId")
                         .OnDelete(DeleteBehavior.Cascade);
+                });
+
+            modelBuilder.Entity("WebAppCore.Data.Entities.Bill", b =>
+                {
+                    b.HasOne("WebAppCore.Data.Entities.AppUser", "User")
+                        .WithMany()
+                        .HasForeignKey("CustomerId");
                 });
 
             modelBuilder.Entity("WebAppCore.Data.Entities.BillDetail", b =>
