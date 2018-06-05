@@ -1,14 +1,15 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using WebAppCore.Data.Entities;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using WebAppCore.Data.EF.Extensions;
-using WebAppCore.Data.EF.Configurations;
-using Microsoft.AspNetCore.Identity;
-using System.Linq;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
+using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.Extensions.Configuration;
+using System;
+using System.IO;
+using System.Linq;
+using WebAppCore.Data.EF.Configurations;
+using WebAppCore.Data.EF.Extensions;
+using WebAppCore.Data.Entities;
 using WebAppCore.Data.Interfaces;
 
 namespace WebAppCore.Data.EF
@@ -17,8 +18,8 @@ namespace WebAppCore.Data.EF
     {
         public AppDbContext(DbContextOptions options) : base(options)
         {
-          
         }
+
         public DbSet<Language> Languages { set; get; }
         public DbSet<SystemConfig> SystemConfigs { get; set; }
         public DbSet<Function> Functions { get; set; }
@@ -83,11 +84,15 @@ namespace WebAppCore.Data.EF
             builder.AddConfiguration(new ProductTagConfiguration());
             builder.AddConfiguration(new SystemConfigConfiguration());
             builder.AddConfiguration(new TagConfiguration());
-            base.OnModelCreating(builder);
+            builder.AddConfiguration(new AnnouncementConfiguration());
+            builder.AddConfiguration(new AdvertistmentPageConfiguration());
+
+
+            //base.OnModelCreating(builder);
         }
+
         public override int SaveChanges()
         {
-
             var modified = ChangeTracker.Entries().Where(e => e.State == EntityState.Modified || e.State == EntityState.Added);
 
             foreach (EntityEntry item in modified)
@@ -103,6 +108,20 @@ namespace WebAppCore.Data.EF
                 }
             }
             return base.SaveChanges();
+        }
+    }
+
+    public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<AppDbContext>
+    {
+        public AppDbContext CreateDbContext(string[] args)
+        {
+            IConfiguration configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json").Build();
+            var builder = new DbContextOptionsBuilder<AppDbContext>();
+            var connectionString = configuration.GetConnectionString("DefaultConnection");
+            builder.UseSqlServer(connectionString);
+            return new AppDbContext(builder.Options);
         }
     }
 }

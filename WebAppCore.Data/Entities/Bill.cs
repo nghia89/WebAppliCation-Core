@@ -68,8 +68,8 @@ namespace WebAppCore.Data.Entities
 
         public Guid? CustomerId { set; get; }
 
-        //[ForeignKey("CustomerId")]
-        //public virtual AppUser User { set; get; }
+        [ForeignKey("CustomerId")]
+        public virtual AppUser User { set; get; }
 
         public virtual ICollection<BillDetail> BillDetails { set; get; }
     }

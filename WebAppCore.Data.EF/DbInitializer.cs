@@ -111,6 +111,7 @@ namespace WebAppCore.Data.EF
                     new Color() {Name="Xanh", Code="#1000ff" },
                 };
                 _context.Colors.AddRange(listColor);
+                _context.SaveChanges();
             }
             if (_context.AdvertistmentPages.Count() == 0)
             {
