@@ -28,4 +28,8 @@
     <ProjectReference Include="..\WebAppCore.Utilities\WebAppCore.Utilities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Admin\View\" />
+  </ItemGroup>
+
 </Project>
