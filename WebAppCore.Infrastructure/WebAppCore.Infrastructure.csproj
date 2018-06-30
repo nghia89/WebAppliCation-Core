@@ -8,4 +8,8 @@
     <Folder Include="Enums\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Git-Windows-Minimal" Version="2.18.0" />
+  </ItemGroup>
+
 </Project>

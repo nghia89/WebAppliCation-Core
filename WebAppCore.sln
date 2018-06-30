@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppCore", "WebAppCore\WebAppCore.csproj", "{25CE459D-7A87-4DE1-82FC-8AF5D0FD0F48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppCore", "WebAppCore\WebAppCore.csproj", "{25CE459D-7A87-4DE1-82FC-8AF5D0FD0F48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppCore.Data", "WebAppCore.Data\WebAppCore.Data.csproj", "{E5C47894-4F7B-4A8D-BB47-9190E2053F3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppCore.Data", "WebAppCore.Data\WebAppCore.Data.csproj", "{E5C47894-4F7B-4A8D-BB47-9190E2053F3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppCore.Application", "WebAppCore.Application\WebAppCore.Application.csproj", "{65C0858E-82BF-4192-A3AB-302577EDBC31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppCore.Application", "WebAppCore.Application\WebAppCore.Application.csproj", "{65C0858E-82BF-4192-A3AB-302577EDBC31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppCore.Data.EF", "WebAppCore.Data.EF\WebAppCore.Data.EF.csproj", "{CD2E02D2-4798-43C6-A103-C7A3F1D61076}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppCore.Data.EF", "WebAppCore.Data.EF\WebAppCore.Data.EF.csproj", "{CD2E02D2-4798-43C6-A103-C7A3F1D61076}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppCore.Infrastructure", "WebAppCore.Infrastructure\WebAppCore.Infrastructure.csproj", "{CC2FBA15-F74B-4E9A-9AF8-9EFD7EE478F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppCore.Infrastructure", "WebAppCore.Infrastructure\WebAppCore.Infrastructure.csproj", "{CC2FBA15-F74B-4E9A-9AF8-9EFD7EE478F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAppCore.Utilities", "WebAppCore.Utilities\WebAppCore.Utilities.csproj", "{B8AD51B8-24F7-4C57-9573-7A73D3109AF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAppCore.Utilities", "WebAppCore.Utilities\WebAppCore.Utilities.csproj", "{B8AD51B8-24F7-4C57-9573-7A73D3109AF3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-Presentation", "1-Presentation", "{CFFF71B3-5CC0-4C1B-A478-1C245C41AE91}"
 EndProject

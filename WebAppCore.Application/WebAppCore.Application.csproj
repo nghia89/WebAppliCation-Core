@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="6.2.0" />
+    <PackageReference Include="Git-Windows-Minimal" Version="2.18.0" />
   </ItemGroup>
 
   <ItemGroup>
