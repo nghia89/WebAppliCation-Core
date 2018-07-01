@@ -5,6 +5,13 @@
     <UserSecretsId>aspnet-WebAppCore-3CDBEF63-4902-4A15-ADAF-64C47196F74E</UserSecretsId>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Areas\Admin\View\**" />
+    <Content Remove="Areas\Admin\View\**" />
+    <EmbeddedResource Remove="Areas\Admin\View\**" />
+    <None Remove="Areas\Admin\View\**" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="6.2.0" />
@@ -22,15 +29,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\admin-side\js\custom.js" />
+    <None Include="wwwroot\admin-side\js\custom.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\WebAppCore.Application\WebAppCore.Application.csproj" />
     <ProjectReference Include="..\WebAppCore.Data.EF\WebAppCore.Data.EF.csproj" />
     <ProjectReference Include="..\WebAppCore.Data\WebAppCore.Data.csproj" />
     <ProjectReference Include="..\WebAppCore.Infrastructure\WebAppCore.Infrastructure.csproj" />
     <ProjectReference Include="..\WebAppCore.Utilities\WebAppCore.Utilities.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Areas\Admin\View\" />
   </ItemGroup>
 
 </Project>
