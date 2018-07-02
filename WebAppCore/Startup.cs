@@ -18,6 +18,7 @@ using WebAppCore.Data.IRepositories;
 using WebAppCore.Data.EF.Repositories;
 using WebAppCore.Application.Interfaces;
 using WebAppCore.Application.Implementation;
+using Microsoft.AspNetCore.Http;
 
 namespace WebAppCore
 {
@@ -68,10 +69,12 @@ namespace WebAppCore
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<DbInitializer>();
             services.AddMvc();
-
+           
             //Respository
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
+
+          
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -80,12 +83,13 @@ namespace WebAppCore
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseBrowserLink();
+                //app.UseBrowserLink();
                 app.UseDatabaseErrorPage();
             }
             else
             {
                 app.UseExceptionHandler("/Home/Error");
+            
             }
 
             app.UseStaticFiles();
