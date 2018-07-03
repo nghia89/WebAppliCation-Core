@@ -19,6 +19,8 @@ using WebAppCore.Data.EF.Repositories;
 using WebAppCore.Application.Interfaces;
 using WebAppCore.Application.Implementation;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json.Serialization;
 
 namespace WebAppCore
 {
@@ -74,12 +76,15 @@ namespace WebAppCore
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
 
-          
+            //dữ đúng thuộc tính không tự động đổi ký tự đầu dòng từ thường sang hoa
+            services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env,ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddFile("Logs/structures-{Date}.txt");
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -104,7 +109,7 @@ namespace WebAppCore
 
                 routes.MapRoute(
                     name: "areasRouter",
-                    template: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                    template: "{area:exists}/{controller=Login}/{action=Index}/{id?}");
 
             });
            
