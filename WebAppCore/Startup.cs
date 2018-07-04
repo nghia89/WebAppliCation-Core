@@ -21,6 +21,7 @@ using WebAppCore.Application.Implementation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
+using WebAppCore.Helpers;
 
 namespace WebAppCore
 {
@@ -70,6 +71,8 @@ namespace WebAppCore
 
             services.AddTransient<IEmailSender, EmailSender>();
             services.AddTransient<DbInitializer>();
+
+            services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
             services.AddMvc();
            
             //Respository

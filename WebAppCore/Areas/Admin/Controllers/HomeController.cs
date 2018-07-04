@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using WebAppCore.Extensions;
 
 namespace WebAppCore.Areas.Admin.Controllers
 {
@@ -13,6 +14,7 @@ namespace WebAppCore.Areas.Admin.Controllers
     {
         public IActionResult Index()
         {
+            var email = User.GetSpecificClaim("Email");
             return View();
         }
     }
