@@ -1,0 +1,1080 @@
+2018-07-06T16:44:05.2512101+07:00 0HLF34K1IRFNQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8009/   (ca22a1cb)
+2018-07-06T16:44:05.2512101+07:00 0HLF34K1IRFNR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8009/   (ca22a1cb)
+2018-07-06T16:44:05.8230199+07:00 0HLF34K1IRFNR:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-06T16:44:05.8230199+07:00 0HLF34K1IRFNQ:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-06T16:44:05.8386036+07:00 0HLF34K1IRFNQ:00000001 [INF] Authorization failed. (b15dd539)
+2018-07-06T16:44:05.8386242+07:00 0HLF34K1IRFNR:00000001 [INF] Authorization failed. (b15dd539)
+2018-07-06T16:44:05.8456179+07:00 0HLF34K1IRFNR:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-07-06T16:44:05.8456179+07:00 0HLF34K1IRFNQ:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-07-06T16:44:05.8536677+07:00 0HLF34K1IRFNR:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-07-06T16:44:05.8536677+07:00 0HLF34K1IRFNQ:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-07-06T16:44:05.8958549+07:00 0HLF34K1IRFNR:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-07-06T16:44:05.8958549+07:00 0HLF34K1IRFNQ:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-07-06T16:44:05.9026303+07:00 0HLF34K1IRFNR:00000001 [INF] Executed action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" in 72.6207ms (afa2e885)
+2018-07-06T16:44:05.9026303+07:00 0HLF34K1IRFNQ:00000001 [INF] Executed action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" in 72.4993ms (afa2e885)
+2018-07-06T16:44:05.9526777+07:00 0HLF34K1IRFNR:00000001 [INF] Request finished in 723.8843ms 302  (791a596a)
+2018-07-06T16:44:05.9529617+07:00 0HLF34K1IRFNQ:00000001 [INF] Request finished in 723.8847ms 302  (791a596a)
+2018-07-06T16:44:06.1279282+07:00 0HLF34K1IRFNR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8009/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2018-07-06T16:44:06.1290179+07:00 0HLF34K1IRFNQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8009/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2018-07-06T16:44:06.1927332+07:00 0HLF34K1IRFNQ:00000002 [INF] Route matched with "{action = \"Login\", controller = \"Account\", area = \"\"}". Executing action "WebAppCore.Controllers.AccountController.Login (WebAppCore)" (a44c0341)
+2018-07-06T16:44:06.1930992+07:00 0HLF34K1IRFNR:00000002 [INF] Route matched with "{action = \"Login\", controller = \"Account\", area = \"\"}". Executing action "WebAppCore.Controllers.AccountController.Login (WebAppCore)" (a44c0341)
+2018-07-06T16:44:06.2648973+07:00 0HLF34K1IRFNQ:00000002 [INF] Executing action method "WebAppCore.Controllers.AccountController.Login (WebAppCore)" with arguments (["/"]) - Validation state: Valid (4e3479ed)
+2018-07-06T16:44:06.2648973+07:00 0HLF34K1IRFNR:00000002 [INF] Executing action method "WebAppCore.Controllers.AccountController.Login (WebAppCore)" with arguments (["/"]) - Validation state: Valid (4e3479ed)
+2018-07-06T16:44:06.2814795+07:00 0HLF34K1IRFNR:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-07-06T16:44:06.2814795+07:00 0HLF34K1IRFNQ:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-07-06T16:44:06.2876895+07:00 0HLF34K1IRFNQ:00000002 [INF] Executed action method "WebAppCore.Controllers.AccountController.Login (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 16.9329ms. (50a9e262)
+2018-07-06T16:44:06.2876912+07:00 0HLF34K1IRFNR:00000002 [INF] Executed action method "WebAppCore.Controllers.AccountController.Login (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 16.9321ms. (50a9e262)
+2018-07-06T16:44:06.3077751+07:00 0HLF34K1IRFNQ:00000002 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2018-07-06T16:44:06.3077802+07:00 0HLF34K1IRFNR:00000002 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2018-07-06T16:44:06.8494682+07:00 0HLF34K1IRFNQ:00000002 [INF] Executed ViewResult - view "Login" executed in 555.5682ms. (f66409e9)
+2018-07-06T16:44:06.8494925+07:00 0HLF34K1IRFNR:00000002 [INF] Executed ViewResult - view "Login" executed in 555.5729ms. (f66409e9)
+2018-07-06T16:44:06.8498902+07:00 0HLF34K1IRFNQ:00000002 [INF] Executed action "WebAppCore.Controllers.AccountController.Login (WebAppCore)" in 656.9218ms (afa2e885)
+2018-07-06T16:44:06.8498902+07:00 0HLF34K1IRFNR:00000002 [INF] Executed action "WebAppCore.Controllers.AccountController.Login (WebAppCore)" in 656.7229ms (afa2e885)
+2018-07-06T16:44:06.9024219+07:00 0HLF34K1IRFNQ:00000002 [INF] Request finished in 774.6224ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-06T16:44:06.9024219+07:00 0HLF34K1IRFNR:00000002 [INF] Request finished in 774.6224ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-06T16:44:06.9296498+07:00 0HLF34K1IRFNR:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:8009/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-07-06T16:44:06.9348830+07:00 0HLF34K1IRFNQ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:8009/css/site.css   (ca22a1cb)
+2018-07-06T16:44:06.9673399+07:00 0HLF34K1IRFNS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8009/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-07-06T16:44:06.9705981+07:00 0HLF34K1IRFNT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8009/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2018-07-06T16:44:07.0031713+07:00 0HLF34K1IRFNU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8009/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-07-06T16:44:07.0106778+07:00 0HLF34K1IRFNT:00000001 [INF] Sending file. Request path: '"/js/site.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\js\site.js"' (27b0a520)
+2018-07-06T16:44:07.0106778+07:00 0HLF34K1IRFNQ:00000003 [INF] Sending file. Request path: '"/css/site.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\css\site.css"' (27b0a520)
+2018-07-06T16:44:07.0194191+07:00 0HLF34K1IRFNQ:00000003 [INF] Request finished in 84.5352ms 200 text/css (791a596a)
+2018-07-06T16:44:07.0194191+07:00 0HLF34K1IRFNT:00000001 [INF] Request finished in 48.8209ms 200 application/javascript (791a596a)
+2018-07-06T16:44:07.0196907+07:00 0HLF34K1IRFNV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:8009/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-07-06T16:44:07.0209874+07:00 0HLF34K1IRFNQ:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:8009/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-07-06T16:44:07.0719735+07:00 0HLF34K1IRFNQ:00000004 [INF] Sending file. Request path: '"/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js"' (27b0a520)
+2018-07-06T16:44:07.0721206+07:00 0HLF34K1IRFNQ:00000004 [INF] Request finished in 51.1782ms 200 application/javascript (791a596a)
+2018-07-06T16:44:07.0723267+07:00 0HLF34K1IRFNR:00000003 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-07-06T16:44:07.0723841+07:00 0HLF34K1IRFNR:00000003 [INF] Request finished in 142.9831ms 200 text/css (791a596a)
+2018-07-06T16:44:07.1946319+07:00 0HLF34K1IRFNS:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-07-06T16:44:07.1948111+07:00 0HLF34K1IRFNS:00000001 [INF] Request finished in 227.5076ms 200 application/javascript (791a596a)
+2018-07-06T16:44:07.2581129+07:00 0HLF34K1IRFNV:00000001 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2018-07-06T16:44:07.2582190+07:00 0HLF34K1IRFNV:00000001 [INF] Request finished in 238.5723ms 200 application/javascript (791a596a)
+2018-07-06T16:44:07.2694637+07:00 0HLF34K1IRFNU:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-07-06T16:44:07.2696322+07:00 0HLF34K1IRFNU:00000001 [INF] Request finished in 266.4934ms 200 application/javascript (791a596a)
+2018-07-06T16:44:10.9466452+07:00 0HLF34K1IRFNT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8009/favicon.ico   (ca22a1cb)
+2018-07-06T16:44:10.9587094+07:00 0HLF34K1IRFNT:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\favicon.ico"' (27b0a520)
+2018-07-06T16:44:10.9588137+07:00 0HLF34K1IRFNT:00000002 [INF] Request finished in 12.2078ms 200 image/x-icon (791a596a)
+2018-07-06T16:44:16.9989760+07:00 0HLF34K1IRFNR:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:8009/   (ca22a1cb)
+2018-07-06T16:44:17.0000600+07:00 0HLF34K1IRFNR:00000004 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-06T16:44:17.0005189+07:00 0HLF34K1IRFNR:00000004 [INF] Authorization failed. (b15dd539)
+2018-07-06T16:44:17.0006819+07:00 0HLF34K1IRFNR:00000004 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-07-06T16:44:17.0010526+07:00 0HLF34K1IRFNR:00000004 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-07-06T16:44:17.0014795+07:00 0HLF34K1IRFNR:00000004 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-07-06T16:44:17.0015654+07:00 0HLF34K1IRFNR:00000004 [INF] Executed action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" in 1.4232ms (afa2e885)
+2018-07-06T16:44:17.0017698+07:00 0HLF34K1IRFNR:00000004 [INF] Request finished in 5.6334ms 302  (791a596a)
+2018-07-06T16:44:17.0283417+07:00 0HLF34K1IRFNQ:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:8009/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2018-07-06T16:44:17.0288694+07:00 0HLF34K1IRFNQ:00000005 [INF] Route matched with "{action = \"Login\", controller = \"Account\", area = \"\"}". Executing action "WebAppCore.Controllers.AccountController.Login (WebAppCore)" (a44c0341)
+2018-07-06T16:44:17.0309662+07:00 0HLF34K1IRFNQ:00000005 [INF] Executing action method "WebAppCore.Controllers.AccountController.Login (WebAppCore)" with arguments (["/"]) - Validation state: Valid (4e3479ed)
+2018-07-06T16:44:17.0314029+07:00 0HLF34K1IRFNQ:00000005 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-07-06T16:44:17.0315239+07:00 0HLF34K1IRFNQ:00000005 [INF] Executed action method "WebAppCore.Controllers.AccountController.Login (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.4413ms. (50a9e262)
+2018-07-06T16:44:17.0319404+07:00 0HLF34K1IRFNQ:00000005 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2018-07-06T16:44:17.1251151+07:00 0HLF34K1IRFNQ:00000005 [INF] Executed ViewResult - view "Login" executed in 93.2443ms. (f66409e9)
+2018-07-06T16:44:17.1252605+07:00 0HLF34K1IRFNQ:00000005 [INF] Executed action "WebAppCore.Controllers.AccountController.Login (WebAppCore)" in 96.3359ms (afa2e885)
+2018-07-06T16:44:17.1254589+07:00 0HLF34K1IRFNQ:00000005 [INF] Request finished in 97.142ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-06T16:44:30.4288563+07:00 0HLF34K1IRFNS:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:8009/Account/Login?returnurl=%2F application/x-www-form-urlencoded 233 (ca22a1cb)
+2018-07-06T16:44:30.5143888+07:00 0HLF34K1IRFNS:00000002 [INF] Route matched with "{action = \"Login\", controller = \"Account\", area = \"\"}". Executing action "WebAppCore.Controllers.AccountController.Login (WebAppCore)" (a44c0341)
+2018-07-06T16:44:30.7501630+07:00 0HLF34K1IRFNS:00000002 [INF] Executing action method "WebAppCore.Controllers.AccountController.Login (WebAppCore)" with arguments (["WebAppCore.Models.AccountViewModels.LoginViewModel", "/"]) - Validation state: Valid (4e3479ed)
+2018-07-06T16:44:30.7973123+07:00 0HLF34K1IRFNS:00000002 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-06T16:44:31.6125854+07:00 0HLF34K1IRFNS:00000002 [INF] Executed DbCommand ("424"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-06T16:44:32.7255661+07:00 0HLF34K1IRFNS:00000002 [INF] Executed DbCommand ("94"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-06T16:44:32.9570064+07:00 0HLF34K1IRFNS:00000002 [INF] Executed DbCommand ("114"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-06T16:44:33.0223271+07:00 0HLF34K1IRFNS:00000002 [INF] Executed DbCommand ("4"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-06T16:44:33.0898024+07:00 0HLF34K1IRFNS:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-06T16:44:33.0991757+07:00 0HLF34K1IRFNS:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-06T16:44:33.1259306+07:00 0HLF34K1IRFNS:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-06T16:44:33.1340608+07:00 0HLF34K1IRFNS:00000002 [INF] User logged in. (fdce0db4)
+2018-07-06T16:44:33.1542987+07:00 0HLF34K1IRFNS:00000002 [INF] Executed action method "WebAppCore.Controllers.AccountController.Login (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.RedirectResult" in 2403.9846ms. (50a9e262)
+2018-07-06T16:44:33.1720941+07:00 0HLF34K1IRFNS:00000002 [INF] Executing RedirectResult, redirecting to "/". (d98d540e)
+2018-07-06T16:44:33.1807550+07:00 0HLF34K1IRFNS:00000002 [INF] Executed action "WebAppCore.Controllers.AccountController.Login (WebAppCore)" in 2666.1916ms (afa2e885)
+2018-07-06T16:44:33.1869282+07:00 0HLF34K1IRFNS:00000002 [INF] Request finished in 2758.0953ms 302  (791a596a)
+2018-07-06T16:44:33.1946995+07:00 0HLF34K1IRFNV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8009/   (ca22a1cb)
+2018-07-06T16:44:33.2013555+07:00 0HLF34K1IRFNV:00000002 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-06T16:44:33.2021843+07:00 0HLF34K1IRFNV:00000002 [INF] Authorization was successful. (0d575a54)
+2018-07-06T16:44:33.2097606+07:00 0HLF34K1IRFNV:00000002 [INF] Executing action method "WebAppCore.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T16:44:33.2102627+07:00 0HLF34K1IRFNV:00000002 [INF] Executed action method "WebAppCore.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.3763ms. (50a9e262)
+2018-07-06T16:44:33.2149956+07:00 0HLF34K1IRFNV:00000002 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T16:44:33.2531128+07:00 0HLF34K1IRFNV:00000002 [INF] Executed ViewResult - view "Index" executed in 42.6773ms. (f66409e9)
+2018-07-06T16:44:33.2532197+07:00 0HLF34K1IRFNV:00000002 [INF] Executed action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" in 51.6003ms (afa2e885)
+2018-07-06T16:44:33.2533078+07:00 0HLF34K1IRFNV:00000002 [INF] Request finished in 59.0136ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-06T16:44:33.3079316+07:00 0HLF34K1IRFNU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:8009/images/banner1.svg   (ca22a1cb)
+2018-07-06T16:44:33.3091239+07:00 0HLF34K1IRFNT:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:8009/images/banner2.svg   (ca22a1cb)
+2018-07-06T16:44:33.3258358+07:00 0HLF34K1IRFNT:00000003 [INF] Sending file. Request path: '"/images/banner2.svg"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\images\banner2.svg"' (27b0a520)
+2018-07-06T16:44:33.3259696+07:00 0HLF34K1IRFNT:00000003 [INF] Request finished in 16.8735ms 200 image/svg+xml (791a596a)
+2018-07-06T16:44:33.3442429+07:00 0HLF34K1IRFNU:00000002 [INF] Sending file. Request path: '"/images/banner1.svg"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\images\banner1.svg"' (27b0a520)
+2018-07-06T16:44:33.3443430+07:00 0HLF34K1IRFNU:00000002 [INF] Request finished in 36.5139ms 200 image/svg+xml (791a596a)
+2018-07-06T16:44:33.4117920+07:00 0HLF34K1IRFNR:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:8009/images/banner4.svg   (ca22a1cb)
+2018-07-06T16:44:33.4122676+07:00 0HLF34K1IRFNQ:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:8009/images/banner3.svg   (ca22a1cb)
+2018-07-06T16:44:33.4259338+07:00 0HLF34K1IRFNR:00000005 [INF] Sending file. Request path: '"/images/banner4.svg"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\images\banner4.svg"' (27b0a520)
+2018-07-06T16:44:33.4260270+07:00 0HLF34K1IRFNR:00000005 [INF] Request finished in 15.5016ms 200 image/svg+xml (791a596a)
+2018-07-06T16:44:33.4374971+07:00 0HLF34K1IRFNS:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:8009/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-07-06T16:44:33.4417689+07:00 0HLF34K1IRFNQ:00000006 [INF] Sending file. Request path: '"/images/banner3.svg"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\images\banner3.svg"' (27b0a520)
+2018-07-06T16:44:33.4421111+07:00 0HLF34K1IRFNQ:00000006 [INF] Request finished in 29.7565ms 200 image/svg+xml (791a596a)
+2018-07-06T16:44:33.4501000+07:00 0HLF34K1IRFNS:00000003 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-07-06T16:44:33.4502322+07:00 0HLF34K1IRFNS:00000003 [INF] Request finished in 12.8304ms 200 font/woff2 (791a596a)
+2018-07-06T22:18:05.8483190+07:00 0HLF3AEM4OV6P:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/   (ca22a1cb)
+2018-07-06T22:18:05.8483190+07:00 0HLF3AEM4OV6Q:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin   (ca22a1cb)
+2018-07-06T22:18:05.8483190+07:00 0HLF3AEM4OV6O:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:5000/  0 (ca22a1cb)
+2018-07-06T22:18:06.0406231+07:00 0HLF3AEM4OV6O:00000001 [INF] Request finished in 197.1241ms 200  (791a596a)
+2018-07-06T22:18:09.0120857+07:00 0HLF3AEM4OV6P:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-06T22:18:09.0120857+07:00 0HLF3AEM4OV6Q:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" (a44c0341)
+2018-07-06T22:18:09.1812096+07:00 0HLF3AEM4OV6P:00000001 [INF] Authorization failed. (b15dd539)
+2018-07-06T22:18:09.4983334+07:00 0HLF3AEM4OV6Q:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T22:18:09.5012355+07:00 0HLF3AEM4OV6P:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-07-06T22:18:09.5421850+07:00 0HLF3AEM4OV6Q:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 28.2431ms. (50a9e262)
+2018-07-06T22:18:09.5617553+07:00 0HLF3AEM4OV6P:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-07-06T22:18:09.6458629+07:00 0HLF3AEM4OV6P:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-07-06T22:18:09.6675094+07:00 0HLF3AEM4OV6Q:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T22:18:09.6918148+07:00 0HLF3AEM4OV6P:00000001 [INF] Executed action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" in 633.4988ms (afa2e885)
+2018-07-06T22:18:09.7105169+07:00 0HLF3AEM4OV6P:00000001 [INF] Request finished in 3875.6814ms 302  (791a596a)
+2018-07-06T22:18:10.0498283+07:00 0HLF3AEM4OV6Q:00000001 [INF] Executed ViewResult - view "Index" executed in 460.9229ms. (f66409e9)
+2018-07-06T22:18:10.0567537+07:00 0HLF3AEM4OV6Q:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" in 1038.9165ms (afa2e885)
+2018-07-06T22:18:10.1299441+07:00 0HLF3AEM4OV6Q:00000001 [INF] Request finished in 4299.8782ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-06T22:18:10.3762211+07:00 0HLF3AEM4OV6O:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-07-06T22:18:10.7376516+07:00 0HLF3AEM4OV6P:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-07-06T22:18:10.7640062+07:00 0HLF3AEM4OV6R:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/animate.css/animate.css   (ca22a1cb)
+2018-07-06T22:18:10.7925486+07:00 0HLF3AEM4OV6S:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-07-06T22:18:10.7936858+07:00 0HLF3AEM4OV6T:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/nprogress/nprogress.css   (ca22a1cb)
+2018-07-06T22:18:10.9453126+07:00 0HLF3AEM4OV6S:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.css"' (27b0a520)
+2018-07-06T22:18:10.9537271+07:00 0HLF3AEM4OV6T:00000001 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\nprogress\nprogress.css"' (27b0a520)
+2018-07-06T22:18:10.9679308+07:00 0HLF3AEM4OV6P:00000002 [INF] Sending file. Request path: '"/lib/font-awesome/css/font-awesome.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-07-06T22:18:10.9880558+07:00 0HLF3AEM4OV6T:00000001 [INF] Request finished in 177.3134ms 200 text/css (791a596a)
+2018-07-06T22:18:11.0133015+07:00 0HLF3AEM4OV6P:00000002 [INF] Request finished in 294.0771ms 200 text/css (791a596a)
+2018-07-06T22:18:11.0210369+07:00 0HLF3AEM4OV6S:00000001 [INF] Request finished in 171.8848ms 200 text/css (791a596a)
+2018-07-06T22:18:11.0265494+07:00 0HLF3AEM4OV6Q:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin-side/css/custom.css   (ca22a1cb)
+2018-07-06T22:18:11.0809512+07:00 0HLF3AEM4OV6S:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-07-06T22:18:11.0838862+07:00 0HLF3AEM4OV6T:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2018-07-06T22:18:11.1003098+07:00 0HLF3AEM4OV6P:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2018-07-06T22:18:11.1304376+07:00 0HLF3AEM4OV6R:00000001 [INF] Sending file. Request path: '"/lib/animate.css/animate.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\animate.css\animate.css"' (27b0a520)
+2018-07-06T22:18:11.1627119+07:00 0HLF3AEM4OV6R:00000001 [INF] Request finished in 403.9392ms 200 text/css (791a596a)
+2018-07-06T22:18:11.1930200+07:00 0HLF3AEM4OV6Q:00000002 [INF] Sending file. Request path: '"/admin-side/css/custom.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\admin-side\css\custom.css"' (27b0a520)
+2018-07-06T22:18:11.1968715+07:00 0HLF3AEM4OV6Q:00000002 [INF] Request finished in 180.0376ms 200 text/css (791a596a)
+2018-07-06T22:18:11.2033664+07:00 0HLF3AEM4OV6O:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-07-06T22:18:11.2068646+07:00 0HLF3AEM4OV6O:00000002 [INF] Request finished in 830.5305ms 200 text/css (791a596a)
+2018-07-06T22:18:11.2358051+07:00 0HLF3AEM4OV6P:00000003 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.js"' (27b0a520)
+2018-07-06T22:18:11.2398097+07:00 0HLF3AEM4OV6P:00000003 [INF] Request finished in 148.0858ms 200 application/javascript (791a596a)
+2018-07-06T22:18:11.2709365+07:00 0HLF3AEM4OV6Q:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-07-06T22:18:11.2728593+07:00 0HLF3AEM4OV6R:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/app/shared/structures.js   (ca22a1cb)
+2018-07-06T22:18:11.3195026+07:00 0HLF3AEM4OV6O:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/app/Controller/login/index.js   (ca22a1cb)
+2018-07-06T22:18:11.3507620+07:00 0HLF3AEM4OV6O:00000003 [INF] Sending file. Request path: '"/app/Controller/login/index.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\app\Controller\login\index.js"' (27b0a520)
+2018-07-06T22:18:11.3545142+07:00 0HLF3AEM4OV6O:00000003 [INF] Request finished in 33.602ms 200 application/javascript (791a596a)
+2018-07-06T22:18:11.3602837+07:00 0HLF3AEM4OV6S:00000002 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-07-06T22:18:11.3650033+07:00 0HLF3AEM4OV6S:00000002 [INF] Request finished in 300.2233ms 200 application/javascript (791a596a)
+2018-07-06T22:18:11.4480378+07:00 0HLF3AEM4OV6Q:00000003 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2018-07-06T22:18:11.4630289+07:00 0HLF3AEM4OV6Q:00000003 [INF] Request finished in 181.7422ms 200 application/javascript (791a596a)
+2018-07-06T22:18:11.5249292+07:00 0HLF3AEM4OV6T:00000002 [INF] Sending file. Request path: '"/lib/notifyjs/dist/notify.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\notifyjs\dist\notify.js"' (27b0a520)
+2018-07-06T22:18:11.5294012+07:00 0HLF3AEM4OV6T:00000002 [INF] Request finished in 447.9376ms 200 application/javascript (791a596a)
+2018-07-06T22:18:11.6231061+07:00 0HLF3AEM4OV6R:00000002 [INF] Sending file. Request path: '"/app/shared/structures.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\app\shared\structures.js"' (27b0a520)
+2018-07-06T22:18:11.6443221+07:00 0HLF3AEM4OV6R:00000002 [INF] Request finished in 356.8387ms 200 application/javascript (791a596a)
+2018-07-06T22:18:11.6456469+07:00 0HLF3AEM4OV6P:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-07-06T22:18:11.7118871+07:00 0HLF3AEM4OV6P:00000004 [INF] Sending file. Request path: '"/lib/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-07-06T22:18:11.7253253+07:00 0HLF3AEM4OV6P:00000004 [INF] Request finished in 80.6144ms 200 font/woff2 (791a596a)
+2018-07-06T22:18:47.4833634+07:00 0HLF3AEM4OV6O:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-06T22:18:48.6206369+07:00 0HLF3AEM4OV6O:00000004 [INF] Route matched with "{area = \"Admin\", action = \"Authen\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" (a44c0341)
+2018-07-06T22:18:49.8484495+07:00 0HLF3AEM4OV6O:00000004 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" with arguments (["WebAppCore.Models.AccountViewModels.LoginViewModel"]) - Validation state: Valid (4e3479ed)
+2018-07-06T22:18:50.1744967+07:00 0HLF3AEM4OV6O:00000004 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-06T22:18:51.5744049+07:00 0HLF3AEM4OV6O:00000004 [INF] Executed DbCommand ("988"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-06T22:18:52.1887705+07:00 0HLF3AEM4OV6S:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-06T22:18:52.1951797+07:00 0HLF3AEM4OV6S:00000003 [INF] Route matched with "{area = \"Admin\", action = \"Authen\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" (a44c0341)
+2018-07-06T22:18:52.2490795+07:00 0HLF3AEM4OV6S:00000003 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" with arguments (["WebAppCore.Models.AccountViewModels.LoginViewModel"]) - Validation state: Valid (4e3479ed)
+2018-07-06T22:18:52.2553956+07:00 0HLF3AEM4OV6S:00000003 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-06T22:18:52.3207265+07:00 0HLF3AEM4OV6S:00000003 [INF] Executed DbCommand ("54"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-06T22:18:52.9230725+07:00 0HLF3AEM4OV6O:00000004 [INF] Executed DbCommand ("591"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-06T22:18:52.9376362+07:00 0HLF3AEM4OV6S:00000003 [INF] Executed DbCommand ("198"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-06T22:18:53.4774104+07:00 0HLF3AEM4OV6O:00000004 [INF] Executed DbCommand ("387"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-06T22:18:53.4824058+07:00 0HLF3AEM4OV6S:00000003 [INF] Executed DbCommand ("442"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-06T22:18:53.7839404+07:00 0HLF3AEM4OV6S:00000003 [INF] Executed DbCommand ("253"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-06T22:18:53.7850228+07:00 0HLF3AEM4OV6O:00000004 [INF] Executed DbCommand ("240"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-06T22:18:53.9821742+07:00 0HLF3AEM4OV6S:00000003 [INF] Executed DbCommand ("146"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-06T22:18:53.9836407+07:00 0HLF3AEM4OV6O:00000004 [INF] Executed DbCommand ("149"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-06T22:18:54.2123517+07:00 0HLF3AEM4OV6S:00000003 [INF] Executed DbCommand ("213"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-06T22:18:54.2138986+07:00 0HLF3AEM4OV6O:00000004 [INF] Executed DbCommand ("213"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-06T22:18:54.2838226+07:00 0HLF3AEM4OV6O:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-06T22:18:54.2848502+07:00 0HLF3AEM4OV6S:00000003 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-06T22:18:54.3000931+07:00 0HLF3AEM4OV6O:00000004 [INF] User logged in. (fdce0db4)
+2018-07-06T22:18:54.3008924+07:00 0HLF3AEM4OV6S:00000003 [INF] User logged in. (fdce0db4)
+2018-07-06T22:18:54.3240674+07:00 0HLF3AEM4OV6O:00000004 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 4459.6091ms. (50a9e262)
+2018-07-06T22:18:54.3249996+07:00 0HLF3AEM4OV6S:00000003 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 2060.7777ms. (50a9e262)
+2018-07-06T22:18:54.3663359+07:00 0HLF3AEM4OV6O:00000004 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2018-07-06T22:18:54.3686452+07:00 0HLF3AEM4OV6S:00000003 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2018-07-06T22:18:54.5946637+07:00 0HLF3AEM4OV6O:00000004 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" in 5970.0257ms (afa2e885)
+2018-07-06T22:18:54.5971420+07:00 0HLF3AEM4OV6S:00000003 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" in 2395.55ms (afa2e885)
+2018-07-06T22:18:54.6108714+07:00 0HLF3AEM4OV6S:00000003 [INF] Request finished in 2424.2986ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-06T22:18:54.6109151+07:00 0HLF3AEM4OV6O:00000004 [INF] Request finished in 7125.696ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-06T22:18:54.6592707+07:00 0HLF3AEM4OV6Q:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/Home/Index   (ca22a1cb)
+2018-07-06T22:18:54.6923198+07:00 0HLF3AEM4OV6Q:00000004 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Home\"}". Executing action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-06T22:18:54.6994142+07:00 0HLF3AEM4OV6Q:00000004 [INF] Authorization was successful. (0d575a54)
+2018-07-06T22:18:54.7368168+07:00 0HLF3AEM4OV6Q:00000004 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T22:18:54.7442460+07:00 0HLF3AEM4OV6Q:00000004 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 2.5013ms. (50a9e262)
+2018-07-06T22:18:54.8170147+07:00 0HLF3AEM4OV6Q:00000004 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T22:18:55.9722822+07:00 0HLF3AEM4OV6Q:00000004 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" in 1277.7805ms (afa2e885)
+2018-07-06T22:18:56.7285126+07:00 0HLF3AEM4OV6Q:00000004 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Could not find an 'Invoke' or 'InvokeAsync' method for the view component 'WebAppCore.Areas.Admin.Components.SlideBarViewComponent'.
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorProvider.FindMethod(Type componentType)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorProvider.CreateDescriptor(TypeInfo typeInfo)
+   at System.Linq.Enumerable.SelectListIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorCollectionProvider.GetViewComponents()
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorCollectionProvider.get_ViewComponents()
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentSelector.SelectComponent(String componentName)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeAsync(String name, Object arguments)
+   at Microsoft.AspNetCore.Mvc.Rendering.ViewComponentHelperExtensions.InvokeAsync(IViewComponentHelper helper, String name)
+   at AspNetCore.Areas_Admin_Views_Shared__Layout.<ExecuteAsync>b__35_1() in H:\WebAppCore\WebAppCore\Areas\Admin\Views\Shared\_Layout.cshtml:line 53
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Areas_Admin_Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-07-06T22:18:57.2326529+07:00 0HLF3AEM4OV6Q:00000004 [INF] Request finished in 2561.1517ms 500 text/html; charset=utf-8 (791a596a)
+2018-07-06T22:20:25.5473755+07:00 0HLF3AEM4OV6U:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/Home/Index   (ca22a1cb)
+2018-07-06T22:20:25.5523144+07:00 0HLF3AEM4OV6U:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Home\"}". Executing action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-06T22:20:25.5565179+07:00 0HLF3AEM4OV6U:00000001 [INF] Authorization was successful. (0d575a54)
+2018-07-06T22:20:25.5968896+07:00 0HLF3AEM4OV6U:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T22:20:25.6008219+07:00 0HLF3AEM4OV6U:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0855ms. (50a9e262)
+2018-07-06T22:20:25.6040657+07:00 0HLF3AEM4OV6U:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T22:20:38.7678995+07:00 0HLF3AEM4OV6U:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" in 13212.9195ms (afa2e885)
+2018-07-06T22:20:38.8664669+07:00 0HLF3AEM4OV6U:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Could not find an 'Invoke' or 'InvokeAsync' method for the view component 'WebAppCore.Areas.Admin.Components.SlideBarViewComponent'.
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorProvider.FindMethod(Type componentType)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorProvider.CreateDescriptor(TypeInfo typeInfo)
+   at System.Linq.Enumerable.SelectListIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorCollectionProvider.GetViewComponents()
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorCollectionProvider.get_ViewComponents()
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentSelector.SelectComponent(String componentName)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeAsync(String name, Object arguments)
+   at Microsoft.AspNetCore.Mvc.Rendering.ViewComponentHelperExtensions.InvokeAsync(IViewComponentHelper helper, String name)
+   at AspNetCore.Areas_Admin_Views_Shared__Layout.<ExecuteAsync>b__35_1() in H:\WebAppCore\WebAppCore\Areas\Admin\Views\Shared\_Layout.cshtml:line 53
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Areas_Admin_Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-07-06T22:20:38.9742096+07:00 0HLF3AEM4OV6U:00000001 [INF] Request finished in 13430.5308ms 500 text/html; charset=utf-8 (791a596a)
+2018-07-06T22:20:39.2428247+07:00 0HLF3AEM4OV6U:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico   (ca22a1cb)
+2018-07-06T22:20:39.2562590+07:00 0HLF3AEM4OV6U:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\favicon.ico"' (27b0a520)
+2018-07-06T22:20:39.2691198+07:00 0HLF3AEM4OV6U:00000002 [INF] Request finished in 16.2072ms 200 image/x-icon (791a596a)
+2018-07-06T22:28:45.4459201+07:00 0HLF3AKKNBDLP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/   (ca22a1cb)
+2018-07-06T22:28:45.4459201+07:00 0HLF3AKKNBDLO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin   (ca22a1cb)
+2018-07-06T22:28:45.4461014+07:00 0HLF3AKKNBDLQ:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:5000/  0 (ca22a1cb)
+2018-07-06T22:28:46.4175979+07:00 0HLF3AKKNBDLQ:00000001 [INF] Request finished in 944.8352ms 200  (791a596a)
+2018-07-06T22:28:50.1895860+07:00 0HLF3AKKNBDLO:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" (a44c0341)
+2018-07-06T22:28:50.1934909+07:00 0HLF3AKKNBDLP:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-06T22:28:50.2286783+07:00 0HLF3AKKNBDLP:00000001 [INF] Authorization was successful. (0d575a54)
+2018-07-06T22:28:50.8225567+07:00 0HLF3AKKNBDLP:00000001 [INF] Executing action method "WebAppCore.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T22:28:50.8225678+07:00 0HLF3AKKNBDLO:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T22:28:50.8746608+07:00 0HLF3AKKNBDLO:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 28.1823ms. (50a9e262)
+2018-07-06T22:28:50.8746672+07:00 0HLF3AKKNBDLP:00000001 [INF] Executed action method "WebAppCore.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 28.7238ms. (50a9e262)
+2018-07-06T22:28:51.4912002+07:00 0HLF3AKKNBDLP:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T22:28:51.5093767+07:00 0HLF3AKKNBDLO:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T22:28:53.4914849+07:00 0HLF3AKKNBDLO:00000001 [INF] Executed ViewResult - view "Index" executed in 2441.7605ms. (f66409e9)
+2018-07-06T22:28:53.6129241+07:00 0HLF3AKKNBDLO:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" in 3340.6114ms (afa2e885)
+2018-07-06T22:28:53.6188070+07:00 0HLF3AKKNBDLP:00000001 [INF] Executed ViewResult - view "Index" executed in 2649.5593ms. (f66409e9)
+2018-07-06T22:28:53.6502283+07:00 0HLF3AKKNBDLP:00000001 [INF] Executed action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" in 3425.4366ms (afa2e885)
+2018-07-06T22:28:54.3020030+07:00 0HLF3AKKNBDLP:00000001 [INF] Request finished in 8842.6464ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-06T22:28:54.3022707+07:00 0HLF3AKKNBDLO:00000001 [INF] Request finished in 8842.6507ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-06T22:29:34.6447506+07:00 0HLF3AKKNBDLQ:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-06T22:29:35.3597260+07:00 0HLF3AKKNBDLQ:00000002 [INF] Route matched with "{area = \"Admin\", action = \"Authen\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" (a44c0341)
+2018-07-06T22:29:36.9692291+07:00 0HLF3AKKNBDLQ:00000002 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" with arguments (["WebAppCore.Models.AccountViewModels.LoginViewModel"]) - Validation state: Valid (4e3479ed)
+2018-07-06T22:29:37.1402194+07:00 0HLF3AKKNBDLQ:00000002 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-06T22:29:38.4182851+07:00 0HLF3AKKNBDLQ:00000002 [INF] Executed DbCommand ("877"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-06T22:29:39.7502768+07:00 0HLF3AKKNBDLQ:00000002 [INF] Executed DbCommand ("456"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-06T22:29:39.9314536+07:00 0HLF3AKKNBDLQ:00000002 [INF] Executed DbCommand ("82"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-06T22:29:40.0641957+07:00 0HLF3AKKNBDLQ:00000002 [INF] Executed DbCommand ("89"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-06T22:29:40.2000828+07:00 0HLF3AKKNBDLQ:00000002 [INF] Executed DbCommand ("85"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-06T22:29:40.3315676+07:00 0HLF3AKKNBDLQ:00000002 [INF] Executed DbCommand ("117"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-06T22:29:40.4154232+07:00 0HLF3AKKNBDLQ:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-06T22:29:40.4324217+07:00 0HLF3AKKNBDLQ:00000002 [INF] User logged in. (fdce0db4)
+2018-07-06T22:29:40.5138760+07:00 0HLF3AKKNBDLQ:00000002 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 3462.2122ms. (50a9e262)
+2018-07-06T22:29:40.5950773+07:00 0HLF3AKKNBDLQ:00000002 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2018-07-06T22:29:40.8946497+07:00 0HLF3AKKNBDLQ:00000002 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" in 5532.8508ms (afa2e885)
+2018-07-06T22:29:40.9446981+07:00 0HLF3AKKNBDLQ:00000002 [INF] Request finished in 6273.4282ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-06T22:29:40.9757535+07:00 0HLF3AKKNBDLO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/Home/Index   (ca22a1cb)
+2018-07-06T22:29:40.9889376+07:00 0HLF3AKKNBDLO:00000002 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Home\"}". Executing action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-06T22:29:40.9975292+07:00 0HLF3AKKNBDLO:00000002 [INF] Authorization was successful. (0d575a54)
+2018-07-06T22:29:41.0314499+07:00 0HLF3AKKNBDLO:00000002 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T22:29:41.0353081+07:00 0HLF3AKKNBDLO:00000002 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 1.9248ms. (50a9e262)
+2018-07-06T22:29:41.0852441+07:00 0HLF3AKKNBDLO:00000002 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T22:29:42.0167223+07:00 0HLF3AKKNBDLO:00000002 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" in 1025.4963ms (afa2e885)
+2018-07-06T22:29:43.2442971+07:00 0HLF3AKKNBDLO:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Could not find an 'Invoke' or 'InvokeAsync' method for the view component 'WebAppCore.Areas.Admin.Components.SlideBarViewComponent'.
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorProvider.FindMethod(Type componentType)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorProvider.CreateDescriptor(TypeInfo typeInfo)
+   at System.Linq.Enumerable.SelectListIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorCollectionProvider.GetViewComponents()
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorCollectionProvider.get_ViewComponents()
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentSelector.SelectComponent(String componentName)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeAsync(String name, Object arguments)
+   at Microsoft.AspNetCore.Mvc.Rendering.ViewComponentHelperExtensions.InvokeAsync(IViewComponentHelper helper, String name)
+   at AspNetCore.Areas_Admin_Views_Shared__Layout.<ExecuteAsync>b__35_1() in H:\WebAppCore\WebAppCore\Areas\Admin\Views\Shared\_Layout.cshtml:line 53
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Areas_Admin_Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-07-06T22:29:43.6410094+07:00 0HLF3AKKNBDLO:00000002 [INF] Request finished in 2686.4184ms 500 text/html; charset=utf-8 (791a596a)
+2018-07-06T22:37:46.6486849+07:00 0HLF3APM3MQ6F:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin   (ca22a1cb)
+2018-07-06T22:37:46.6486849+07:00 0HLF3APM3MQ6G:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/   (ca22a1cb)
+2018-07-06T22:37:46.9161907+07:00 0HLF3APM3MQ6F:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" (a44c0341)
+2018-07-06T22:37:46.9161873+07:00 0HLF3APM3MQ6G:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-06T22:37:46.9371684+07:00 0HLF3APM3MQ6F:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T22:37:46.9375070+07:00 0HLF3APM3MQ6G:00000001 [INF] Authorization was successful. (0d575a54)
+2018-07-06T22:37:46.9387524+07:00 0HLF3APM3MQ6G:00000001 [INF] Executing action method "WebAppCore.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T22:37:46.9449029+07:00 0HLF3APM3MQ6F:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.9023ms. (50a9e262)
+2018-07-06T22:37:46.9449016+07:00 0HLF3APM3MQ6G:00000001 [INF] Executed action method "WebAppCore.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.3895ms. (50a9e262)
+2018-07-06T22:37:46.9690577+07:00 0HLF3APM3MQ6G:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T22:37:46.9690577+07:00 0HLF3APM3MQ6F:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T22:37:47.0812561+07:00 0HLF3APM3MQ6F:00000001 [INF] Executed ViewResult - view "Index" executed in 122.4903ms. (f66409e9)
+2018-07-06T22:37:47.0817385+07:00 0HLF3APM3MQ6F:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" in 164.9568ms (afa2e885)
+2018-07-06T22:37:47.0995635+07:00 0HLF3APM3MQ6F:00000001 [INF] Request finished in 458.3616ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-06T22:37:47.1546378+07:00 0HLF3APM3MQ6G:00000001 [INF] Executed ViewResult - view "Index" executed in 201.2984ms. (f66409e9)
+2018-07-06T22:37:47.1548212+07:00 0HLF3APM3MQ6G:00000001 [INF] Executed action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" in 238.1921ms (afa2e885)
+2018-07-06T22:37:47.1551659+07:00 0HLF3APM3MQ6G:00000001 [INF] Request finished in 514.6755ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-06T22:38:42.1192844+07:00 0HLF3APM3MQ6F:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-06T22:38:42.1509569+07:00 0HLF3APM3MQ6F:00000002 [INF] Route matched with "{area = \"Admin\", action = \"Authen\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" (a44c0341)
+2018-07-06T22:38:42.2877758+07:00 0HLF3APM3MQ6F:00000002 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" with arguments (["WebAppCore.Models.AccountViewModels.LoginViewModel"]) - Validation state: Valid (4e3479ed)
+2018-07-06T22:38:42.3067333+07:00 0HLF3APM3MQ6F:00000002 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-06T22:38:42.5813568+07:00 0HLF3APM3MQ6F:00000002 [INF] Executed DbCommand ("78"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-06T22:38:42.9139092+07:00 0HLF3APM3MQ6F:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-06T22:38:43.0013396+07:00 0HLF3APM3MQ6F:00000002 [INF] Executed DbCommand ("32"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-06T22:38:43.0206588+07:00 0HLF3APM3MQ6F:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-06T22:38:43.0472722+07:00 0HLF3APM3MQ6F:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-06T22:38:43.0570415+07:00 0HLF3APM3MQ6F:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-06T22:38:43.0703818+07:00 0HLF3APM3MQ6F:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-06T22:38:43.0754131+07:00 0HLF3APM3MQ6F:00000002 [INF] User logged in. (fdce0db4)
+2018-07-06T22:38:43.0804624+07:00 0HLF3APM3MQ6F:00000002 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 792.4398ms. (50a9e262)
+2018-07-06T22:38:43.0962556+07:00 0HLF3APM3MQ6F:00000002 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2018-07-06T22:38:43.2285692+07:00 0HLF3APM3MQ6F:00000002 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" in 1077.31ms (afa2e885)
+2018-07-06T22:38:43.2443449+07:00 0HLF3APM3MQ6F:00000002 [INF] Request finished in 1125.0943ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-06T22:38:43.2700671+07:00 0HLF3APM3MQ6G:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/Home/Index   (ca22a1cb)
+2018-07-06T22:38:43.2732056+07:00 0HLF3APM3MQ6G:00000002 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Home\"}". Executing action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-06T22:38:43.2744121+07:00 0HLF3APM3MQ6G:00000002 [INF] Authorization was successful. (0d575a54)
+2018-07-06T22:38:43.2759897+07:00 0HLF3APM3MQ6G:00000002 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T22:38:43.2785662+07:00 0HLF3APM3MQ6G:00000002 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 2.4094ms. (50a9e262)
+2018-07-06T22:38:43.2833462+07:00 0HLF3APM3MQ6G:00000002 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T22:38:43.3318520+07:00 0HLF3APM3MQ6G:00000002 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" in 58.4004ms (afa2e885)
+2018-07-06T22:38:44.4999277+07:00 0HLF3APM3MQ6G:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Could not find an 'Invoke' or 'InvokeAsync' method for the view component 'WebAppCore.Areas.Admin.Components.SideBarViewComponent'.
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorProvider.FindMethod(Type componentType)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorProvider.CreateDescriptor(TypeInfo typeInfo)
+   at System.Linq.Enumerable.SelectListIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorCollectionProvider.GetViewComponents()
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorCollectionProvider.get_ViewComponents()
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentSelector.SelectComponent(String componentName)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeAsync(String name, Object arguments)
+   at Microsoft.AspNetCore.Mvc.Rendering.ViewComponentHelperExtensions.InvokeAsync(IViewComponentHelper helper, String name)
+   at AspNetCore.Areas_Admin_Views_Shared__Layout.<ExecuteAsync>b__35_1() in H:\WebAppCore\WebAppCore\Areas\Admin\Views\Shared\_Layout.cshtml:line 53
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Areas_Admin_Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-07-06T22:38:44.6201327+07:00 0HLF3APM3MQ6G:00000002 [INF] Request finished in 1349.5446ms 500 text/html; charset=utf-8 (791a596a)
+2018-07-06T22:40:17.3212329+07:00 0HLF3APM3MQ6H:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/Home/Index   (ca22a1cb)
+2018-07-06T22:40:17.3257942+07:00 0HLF3APM3MQ6H:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Home\"}". Executing action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-06T22:40:17.3262112+07:00 0HLF3APM3MQ6H:00000001 [INF] Authorization was successful. (0d575a54)
+2018-07-06T22:40:17.3263947+07:00 0HLF3APM3MQ6H:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T22:40:17.3265632+07:00 0HLF3APM3MQ6H:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0521ms. (50a9e262)
+2018-07-06T22:40:17.3271905+07:00 0HLF3APM3MQ6H:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T22:40:28.3539826+07:00 0HLF3APM3MQ6H:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" in 11027.8347ms (afa2e885)
+2018-07-06T22:40:28.4004054+07:00 0HLF3APM3MQ6H:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+Microsoft.AspNetCore.Mvc.Razor.Compilation.CompilationFailedException: One or more compilation failures occurred:
+H:\WebAppCore\WebAppCore\Areas\Admin\Views\Shared\_Layout.cshtml(53,38): error CS1061: 'IViewComponentHelper' does not contain a definition for 'InvoKeAsync' and no extension method 'InvoKeAsync' accepting a first argument of type 'IViewComponentHelper' could be found (are you missing a using directive or an assembly reference?)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(RazorCodeDocument codeDocument, String generatedCode)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.CompileAndEmit(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler.OnCacheMiss(String normalizedPath)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Razor.Internal.DefaultRazorPageFactoryProvider.CreateFactory(String relativePath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.CreateCacheResult(HashSet`1 expirationTokens, String relativePath, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.OnCacheMiss(ViewLocationExpanderContext expanderContext, ViewLocationCacheKey cacheKey)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.LocatePageFromViewLocations(ActionContext actionContext, String pageName, Boolean isMainPage)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorViewEngine.FindPage(ActionContext context, String pageName)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.GetLayoutPage(ViewContext context, String executingFilePath, String layoutPath)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-07-06T22:40:28.4348652+07:00 0HLF3APM3MQ6H:00000001 [INF] Request finished in 11113.8119ms 500 text/html; charset=utf-8 (791a596a)
+2018-07-06T22:40:28.6741236+07:00 0HLF3APM3MQ6H:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico   (ca22a1cb)
+2018-07-06T22:40:28.7177691+07:00 0HLF3APM3MQ6H:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\favicon.ico"' (27b0a520)
+2018-07-06T22:40:28.7179269+07:00 0HLF3APM3MQ6H:00000002 [INF] Request finished in 43.9709ms 200 image/x-icon (791a596a)
+2018-07-06T22:42:16.0984141+07:00 0HLF3APM3MQ6I:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/Home/Index   (ca22a1cb)
+2018-07-06T22:42:16.1019533+07:00 0HLF3APM3MQ6I:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Home\"}". Executing action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-06T22:42:16.1023390+07:00 0HLF3APM3MQ6I:00000001 [INF] Authorization was successful. (0d575a54)
+2018-07-06T22:42:16.1026491+07:00 0HLF3APM3MQ6I:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T22:42:16.1029074+07:00 0HLF3APM3MQ6I:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0581ms. (50a9e262)
+2018-07-06T22:42:16.1032859+07:00 0HLF3APM3MQ6I:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T22:42:16.1168395+07:00 0HLF3APM3MQ6I:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" in 14.6864ms (afa2e885)
+2018-07-06T22:42:16.1384984+07:00 0HLF3APM3MQ6I:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.InvalidOperationException: Could not find an 'Invoke' or 'InvokeAsync' method for the view component 'WebAppCore.Areas.Admin.Components.SideBarViewComponent'.
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorProvider.FindMethod(Type componentType)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorProvider.CreateDescriptor(TypeInfo typeInfo)
+   at System.Linq.Enumerable.SelectListIterator`2.ToArray()
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorCollectionProvider.GetViewComponents()
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentDescriptorCollectionProvider.get_ViewComponents()
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentSelector.SelectComponent(String componentName)
+   at Microsoft.AspNetCore.Mvc.ViewComponents.DefaultViewComponentHelper.InvokeAsync(String name, Object arguments)
+   at Microsoft.AspNetCore.Mvc.Rendering.ViewComponentHelperExtensions.InvokeAsync(IViewComponentHelper helper, String name)
+   at AspNetCore.Areas_Admin_Views_Shared__Layout.<ExecuteAsync>b__35_1() in H:\WebAppCore\WebAppCore\Areas\Admin\Views\Shared\_Layout.cshtml:line 53
+   at Microsoft.AspNetCore.Razor.Runtime.TagHelpers.TagHelperExecutionContext.SetOutputContentAsync()
+   at AspNetCore.Areas_Admin_Views_Shared__Layout.ExecuteAsync()
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderLayoutAsync(ViewContext context, ViewBufferTextWriter bodyWriter)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-07-06T22:42:16.2976350+07:00 0HLF3APM3MQ6I:00000001 [INF] Request finished in 199.0913ms 500 text/html; charset=utf-8 (791a596a)
+2018-07-06T22:42:16.5179729+07:00 0HLF3APM3MQ6I:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico   (ca22a1cb)
+2018-07-06T22:42:16.5192556+07:00 0HLF3APM3MQ6I:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\favicon.ico"' (27b0a520)
+2018-07-06T22:42:16.5193697+07:00 0HLF3APM3MQ6I:00000002 [INF] Request finished in 1.4608ms 200 image/x-icon (791a596a)
+2018-07-06T22:45:19.4936907+07:00 0HLF3ATSU67TU:00000001 [INF] Request starting HTTP/1.1 DEBUG http://localhost:5000/  0 (ca22a1cb)
+2018-07-06T22:45:19.4936912+07:00 0HLF3ATSU67U0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin   (ca22a1cb)
+2018-07-06T22:45:19.4936907+07:00 0HLF3ATSU67TV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/   (ca22a1cb)
+2018-07-06T22:45:19.7180427+07:00 0HLF3ATSU67TU:00000001 [INF] Request finished in 261.152ms 200  (791a596a)
+2018-07-06T22:45:21.7880682+07:00 0HLF3ATSU67U0:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" (a44c0341)
+2018-07-06T22:45:21.7880720+07:00 0HLF3ATSU67TV:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-06T22:45:21.8546996+07:00 0HLF3ATSU67TV:00000001 [INF] Authorization was successful. (0d575a54)
+2018-07-06T22:45:22.4084072+07:00 0HLF3ATSU67U0:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T22:45:22.4084072+07:00 0HLF3ATSU67TV:00000001 [INF] Executing action method "WebAppCore.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T22:45:22.4265038+07:00 0HLF3ATSU67U0:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 2.2267ms. (50a9e262)
+2018-07-06T22:45:22.4265038+07:00 0HLF3ATSU67TV:00000001 [INF] Executed action method "WebAppCore.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 2.2182ms. (50a9e262)
+2018-07-06T22:45:22.5251071+07:00 0HLF3ATSU67U0:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T22:45:22.5251071+07:00 0HLF3ATSU67TV:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T22:45:22.9962895+07:00 0HLF3ATSU67U0:00000001 [INF] Executed ViewResult - view "Index" executed in 428.2629ms. (f66409e9)
+2018-07-06T22:45:23.1112642+07:00 0HLF3ATSU67U0:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" in 1209.6398ms (afa2e885)
+2018-07-06T22:45:23.1440674+07:00 0HLF3ATSU67U0:00000001 [INF] Request finished in 3691.2222ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-06T22:45:23.6541478+07:00 0HLF3ATSU67TV:00000001 [INF] Executed ViewResult - view "Index" executed in 1209.3763ms. (f66409e9)
+2018-07-06T22:45:23.6566928+07:00 0HLF3ATSU67TV:00000001 [INF] Executed action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" in 1865.7461ms (afa2e885)
+2018-07-06T22:45:23.6608658+07:00 0HLF3ATSU67TV:00000001 [INF] Request finished in 4209.1736ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-06T22:46:40.6274653+07:00 0HLF3ATSU67U1:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-06T22:46:40.7185623+07:00 0HLF3ATSU67U1:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Authen\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" (a44c0341)
+2018-07-06T22:46:40.8729519+07:00 0HLF3ATSU67U1:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" with arguments (["WebAppCore.Models.AccountViewModels.LoginViewModel"]) - Validation state: Valid (4e3479ed)
+2018-07-06T22:46:41.0967731+07:00 0HLF3ATSU67U1:00000001 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-06T22:46:41.7715085+07:00 0HLF3ATSU67U1:00000001 [INF] Executed DbCommand ("409"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-06T22:46:42.4897704+07:00 0HLF3ATSU67U1:00000001 [INF] Executed DbCommand ("223"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-06T22:46:42.6044476+07:00 0HLF3ATSU67U1:00000001 [INF] Executed DbCommand ("42"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-06T22:46:42.6860761+07:00 0HLF3ATSU67U1:00000001 [INF] Executed DbCommand ("57"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-06T22:46:42.7696012+07:00 0HLF3ATSU67U1:00000001 [INF] Executed DbCommand ("50"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-06T22:46:42.8369079+07:00 0HLF3ATSU67U1:00000001 [INF] Executed DbCommand ("56"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-06T22:46:42.8789938+07:00 0HLF3ATSU67U1:00000001 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-06T22:46:42.8877787+07:00 0HLF3ATSU67U1:00000001 [INF] User logged in. (fdce0db4)
+2018-07-06T22:46:42.8969950+07:00 0HLF3ATSU67U1:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 2021.1603ms. (50a9e262)
+2018-07-06T22:46:42.9194365+07:00 0HLF3ATSU67U1:00000001 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2018-07-06T22:46:43.1140961+07:00 0HLF3ATSU67U1:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" in 2372.9052ms (afa2e885)
+2018-07-06T22:46:43.1365215+07:00 0HLF3ATSU67U1:00000001 [INF] Request finished in 2509.2738ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-06T22:46:43.1737166+07:00 0HLF3ATSU67U1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/Home/Index   (ca22a1cb)
+2018-07-06T22:46:43.1793326+07:00 0HLF3ATSU67U1:00000002 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Home\"}". Executing action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-06T22:46:43.1834808+07:00 0HLF3ATSU67U1:00000002 [INF] Authorization was successful. (0d575a54)
+2018-07-06T22:46:43.2108921+07:00 0HLF3ATSU67U1:00000002 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T22:46:43.2162460+07:00 0HLF3ATSU67U1:00000002 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 2.3238ms. (50a9e262)
+2018-07-06T22:46:43.2498541+07:00 0HLF3ATSU67U1:00000002 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T22:46:57.3802552+07:00 0HLF3ATSU67U1:00000002 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-06T22:46:57.6300795+07:00 0HLF3ATSU67U1:00000002 [INF] Executed DbCommand ("161"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-06T22:47:16.3145868+07:00 0HLF3ATSU67U1:00000002 [INF] Executed ViewResult - view "Index" executed in 33091.198ms. (f66409e9)
+2018-07-06T22:47:16.3890152+07:00 0HLF3ATSU67U1:00000002 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" in 33162.437ms (afa2e885)
+2018-07-06T22:47:16.4146248+07:00 0HLF3ATSU67U2:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-07-06T22:47:16.4474960+07:00 0HLF3ATSU67U1:00000002 [INF] Request finished in 33236.4939ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-06T22:47:16.4505413+07:00 0HLF3ATSU67U4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin-side/css/custom.min.css   (ca22a1cb)
+2018-07-06T22:47:16.4734708+07:00 0HLF3ATSU67U3:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-07-06T22:47:16.4961853+07:00 0HLF3ATSU67U1:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/nprogress/nprogress.js   (ca22a1cb)
+2018-07-06T22:47:16.5015882+07:00 0HLF3ATSU67U6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2018-07-06T22:47:16.5029315+07:00 0HLF3ATSU67U5:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin-side/images/img.jpg   (ca22a1cb)
+2018-07-06T22:47:16.5811836+07:00 0HLF3ATSU67U2:00000001 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2018-07-06T22:47:16.5836965+07:00 0HLF3ATSU67U4:00000001 [INF] Sending file. Request path: '"/admin-side/css/custom.min.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\admin-side\css\custom.min.css"' (27b0a520)
+2018-07-06T22:47:16.5868762+07:00 0HLF3ATSU67U2:00000001 [INF] Request finished in 177.0004ms 200 text/css (791a596a)
+2018-07-06T22:47:16.5929740+07:00 0HLF3ATSU67U4:00000001 [INF] Request finished in 169.3317ms 200 text/css (791a596a)
+2018-07-06T22:47:16.5968850+07:00 0HLF3ATSU67U2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2018-07-06T22:47:16.6014805+07:00 0HLF3ATSU67U4:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2018-07-06T22:47:16.8935622+07:00 0HLF3ATSU67U1:00000003 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\nprogress\nprogress.js"' (27b0a520)
+2018-07-06T22:47:16.8948054+07:00 0HLF3ATSU67U5:00000001 [INF] Sending file. Request path: '"/admin-side/images/img.jpg"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\admin-side\images\img.jpg"' (27b0a520)
+2018-07-06T22:47:16.8993801+07:00 0HLF3ATSU67U5:00000001 [INF] Request finished in 396.4198ms 200 image/jpeg (791a596a)
+2018-07-06T22:47:16.8993801+07:00 0HLF3ATSU67U1:00000003 [INF] Request finished in 445.3922ms 200 application/javascript (791a596a)
+2018-07-06T22:47:16.9695666+07:00 0HLF3ATSU67U1:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-07-06T22:47:16.9695550+07:00 0HLF3ATSU67U5:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/moment/min/moment.min.js   (ca22a1cb)
+2018-07-06T22:47:17.2035853+07:00 0HLF3ATSU67U5:00000002 [INF] Sending file. Request path: '"/lib/moment/min/moment.min.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\moment\min\moment.min.js"' (27b0a520)
+2018-07-06T22:47:17.2346796+07:00 0HLF3ATSU67U5:00000002 [INF] Request finished in 239.623ms 200 application/javascript (791a596a)
+2018-07-06T22:47:17.2391062+07:00 0HLF3ATSU67U3:00000001 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-07-06T22:47:17.2744754+07:00 0HLF3ATSU67U1:00000004 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2018-07-06T22:47:17.2984231+07:00 0HLF3ATSU67U3:00000001 [INF] Request finished in 826.4798ms 200 application/javascript (791a596a)
+2018-07-06T22:47:17.3022716+07:00 0HLF3ATSU67U1:00000004 [INF] Request finished in 311.9607ms 200 application/javascript (791a596a)
+2018-07-06T22:47:17.3130425+07:00 0HLF3ATSU67U3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin-side/js/custom.min.js   (ca22a1cb)
+2018-07-06T22:47:17.3176607+07:00 0HLF3ATSU67U1:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootbox/bootbox.js   (ca22a1cb)
+2018-07-06T22:47:17.3319281+07:00 0HLF3ATSU67U4:00000002 [INF] Sending file. Request path: '"/lib/jquery-sparkline/dist/jquery.sparkline.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jquery-sparkline\dist\jquery.sparkline.js"' (27b0a520)
+2018-07-06T22:47:17.4337388+07:00 0HLF3ATSU67U5:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-07-06T22:47:17.4653518+07:00 0HLF3ATSU67U4:00000002 [INF] Request finished in 738.9621ms 200 application/javascript (791a596a)
+2018-07-06T22:47:17.4903461+07:00 0HLF3ATSU67U2:00000002 [INF] Sending file. Request path: '"/lib/Chart.js/dist/Chart.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\Chart.js\dist\Chart.js"' (27b0a520)
+2018-07-06T22:47:17.4962653+07:00 0HLF3ATSU67U1:00000005 [INF] Sending file. Request path: '"/lib/bootbox/bootbox.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootbox\bootbox.js"' (27b0a520)
+2018-07-06T22:47:17.4993495+07:00 0HLF3ATSU67U5:00000003 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-07-06T22:47:17.5066415+07:00 0HLF3ATSU67U1:00000005 [INF] Request finished in 193.9504ms 200 application/javascript (791a596a)
+2018-07-06T22:47:17.5136652+07:00 0HLF3ATSU67U2:00000002 [INF] Request finished in 903.4891ms 200 application/javascript (791a596a)
+2018-07-06T22:47:17.5154092+07:00 0HLF3ATSU67U5:00000003 [INF] Request finished in 271.1574ms 200 font/woff2 (791a596a)
+2018-07-06T22:47:17.5878807+07:00 0HLF3ATSU67U3:00000002 [INF] Sending file. Request path: '"/admin-side/js/custom.min.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\admin-side\js\custom.min.js"' (27b0a520)
+2018-07-06T22:47:17.5956692+07:00 0HLF3ATSU67U3:00000002 [INF] Request finished in 289.4152ms 200 application/javascript (791a596a)
+2018-07-06T22:47:17.6605024+07:00 0HLF3ATSU67U6:00000001 [INF] Sending file. Request path: '"/lib/fastclick/lib/fastclick.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\fastclick\lib\fastclick.js"' (27b0a520)
+2018-07-06T22:47:17.6653921+07:00 0HLF3ATSU67U6:00000001 [INF] Request finished in 1162.3562ms 200 application/javascript (791a596a)
+2018-07-06T22:57:36.4838282+07:00 0HLF3B4OMMT43:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/   (ca22a1cb)
+2018-07-06T22:57:36.4838286+07:00 0HLF3B4OMMT44:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin   (ca22a1cb)
+2018-07-06T22:57:36.7386937+07:00 0HLF3B4OMMT44:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" (a44c0341)
+2018-07-06T22:57:36.7386933+07:00 0HLF3B4OMMT43:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-06T22:57:36.7578121+07:00 0HLF3B4OMMT43:00000001 [INF] Authorization was successful. (0d575a54)
+2018-07-06T22:57:36.7611559+07:00 0HLF3B4OMMT43:00000001 [INF] Executing action method "WebAppCore.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T22:57:36.7611559+07:00 0HLF3B4OMMT44:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T22:57:36.7681716+07:00 0HLF3B4OMMT43:00000001 [INF] Executed action method "WebAppCore.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.6329ms. (50a9e262)
+2018-07-06T22:57:36.7681716+07:00 0HLF3B4OMMT44:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.6329ms. (50a9e262)
+2018-07-06T22:57:36.7943769+07:00 0HLF3B4OMMT44:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T22:57:36.7943769+07:00 0HLF3B4OMMT43:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T22:57:36.9206802+07:00 0HLF3B4OMMT44:00000001 [INF] Executed ViewResult - view "Index" executed in 138.9704ms. (f66409e9)
+2018-07-06T22:57:36.9215077+07:00 0HLF3B4OMMT44:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" in 182.3341ms (afa2e885)
+2018-07-06T22:57:36.9349048+07:00 0HLF3B4OMMT44:00000001 [INF] Request finished in 463.2694ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-06T22:57:36.9888657+07:00 0HLF3B4OMMT43:00000001 [INF] Executed ViewResult - view "Index" executed in 212.4131ms. (f66409e9)
+2018-07-06T22:57:36.9898853+07:00 0HLF3B4OMMT43:00000001 [INF] Executed action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" in 250.3811ms (afa2e885)
+2018-07-06T22:57:37.0910083+07:00 0HLF3B4OMMT43:00000001 [INF] Request finished in 518.9375ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-06T22:59:21.6381074+07:00 0HLF3B5O1I0IT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin   (ca22a1cb)
+2018-07-06T22:59:21.9558727+07:00 0HLF3B5O1I0IT:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" (a44c0341)
+2018-07-06T22:59:21.9735430+07:00 0HLF3B5O1I0IT:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T22:59:21.9806501+07:00 0HLF3B5O1I0IT:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.5597ms. (50a9e262)
+2018-07-06T22:59:22.0062849+07:00 0HLF3B5O1I0IT:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T22:59:22.1360562+07:00 0HLF3B5O1I0IT:00000001 [INF] Executed ViewResult - view "Index" executed in 135.2096ms. (f66409e9)
+2018-07-06T22:59:22.1366069+07:00 0HLF3B5O1I0IT:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" in 180.1432ms (afa2e885)
+2018-07-06T22:59:22.1613027+07:00 0HLF3B5O1I0IT:00000001 [INF] Request finished in 536.3443ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-06T22:59:22.1950446+07:00 0HLF3B5O1I0IT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-07-06T22:59:22.2239523+07:00 0HLF3B5O1I0IT:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-07-06T22:59:22.2328877+07:00 0HLF3B5O1I0IT:00000002 [INF] Request finished in 37.8332ms 200 text/css (791a596a)
+2018-07-06T22:59:22.4022878+07:00 0HLF3B5O1I0IT:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-07-06T22:59:22.4034276+07:00 0HLF3B5O1I0IU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/nprogress/nprogress.css   (ca22a1cb)
+2018-07-06T22:59:22.4048367+07:00 0HLF3B5O1I0IV:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/animate.css/animate.css   (ca22a1cb)
+2018-07-06T22:59:22.4089315+07:00 0HLF3B5O1I0IV:00000001 [INF] Sending file. Request path: '"/lib/animate.css/animate.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\animate.css\animate.css"' (27b0a520)
+2018-07-06T22:59:22.4091038+07:00 0HLF3B5O1I0IV:00000001 [INF] Request finished in 4.3637ms 200 text/css (791a596a)
+2018-07-06T22:59:22.4159433+07:00 0HLF3B5O1I0J0:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin-side/css/custom.css   (ca22a1cb)
+2018-07-06T22:59:22.4183916+07:00 0HLF3B5O1I0J0:00000001 [INF] Sending file. Request path: '"/admin-side/css/custom.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\admin-side\css\custom.css"' (27b0a520)
+2018-07-06T22:59:22.4184745+07:00 0HLF3B5O1I0J0:00000001 [INF] Request finished in 2.819ms 200 text/css (791a596a)
+2018-07-06T22:59:22.4193457+07:00 0HLF3B5O1I0IU:00000001 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\nprogress\nprogress.css"' (27b0a520)
+2018-07-06T22:59:22.4194313+07:00 0HLF3B5O1I0IU:00000001 [INF] Request finished in 16.0708ms 200 text/css (791a596a)
+2018-07-06T22:59:22.4360580+07:00 0HLF3B5O1I0IT:00000003 [INF] Sending file. Request path: '"/lib/font-awesome/css/font-awesome.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-07-06T22:59:22.4361696+07:00 0HLF3B5O1I0IT:00000003 [INF] Request finished in 35.5046ms 200 text/css (791a596a)
+2018-07-06T22:59:22.4363578+07:00 0HLF3B5O1I0J1:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-07-06T22:59:22.4433893+07:00 0HLF3B5O1I0J1:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.css"' (27b0a520)
+2018-07-06T22:59:22.4436613+07:00 0HLF3B5O1I0J1:00000001 [INF] Request finished in 7.297ms 200 text/css (791a596a)
+2018-07-06T22:59:23.2583049+07:00 0HLF3B5O1I0IU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-07-06T22:59:23.3036161+07:00 0HLF3B5O1I0IV:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2018-07-06T22:59:23.4571323+07:00 0HLF3B5O1I0IV:00000002 [INF] Sending file. Request path: '"/lib/notifyjs/dist/notify.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\notifyjs\dist\notify.js"' (27b0a520)
+2018-07-06T22:59:23.4572906+07:00 0HLF3B5O1I0IV:00000002 [INF] Request finished in 153.8023ms 200 application/javascript (791a596a)
+2018-07-06T22:59:23.4580920+07:00 0HLF3B5O1I0IU:00000002 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-07-06T22:59:23.4581947+07:00 0HLF3B5O1I0IU:00000002 [INF] Request finished in 199.9855ms 200 application/javascript (791a596a)
+2018-07-06T22:59:23.8840641+07:00 0HLF3B5O1I0IT:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2018-07-06T22:59:23.9003136+07:00 0HLF3B5O1I0IT:00000004 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.js"' (27b0a520)
+2018-07-06T22:59:23.9005501+07:00 0HLF3B5O1I0IT:00000004 [INF] Request finished in 16.6511ms 200 application/javascript (791a596a)
+2018-07-06T22:59:24.3272175+07:00 0HLF3B5O1I0J1:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/app/Controller/login/index.js   (ca22a1cb)
+2018-07-06T22:59:24.3302786+07:00 0HLF3B5O1I0J0:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/app/shared/structures.js   (ca22a1cb)
+2018-07-06T22:59:24.3314509+07:00 0HLF3B5O1I0IV:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-07-06T22:59:24.3354952+07:00 0HLF3B5O1I0J1:00000002 [INF] Sending file. Request path: '"/app/Controller/login/index.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\app\Controller\login\index.js"' (27b0a520)
+2018-07-06T22:59:24.3356299+07:00 0HLF3B5O1I0J1:00000002 [INF] Request finished in 9.6153ms 200 application/javascript (791a596a)
+2018-07-06T22:59:24.3671608+07:00 0HLF3B5O1I0IV:00000003 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2018-07-06T22:59:24.3673742+07:00 0HLF3B5O1I0IV:00000003 [INF] Request finished in 35.9537ms 200 application/javascript (791a596a)
+2018-07-06T22:59:24.5537719+07:00 0HLF3B5O1I0J0:00000002 [INF] Sending file. Request path: '"/app/shared/structures.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\app\shared\structures.js"' (27b0a520)
+2018-07-06T22:59:24.5539138+07:00 0HLF3B5O1I0J0:00000002 [INF] Request finished in 223.8238ms 200 application/javascript (791a596a)
+2018-07-06T22:59:24.6865191+07:00 0HLF3B5O1I0IU:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-07-06T22:59:24.6988026+07:00 0HLF3B5O1I0IU:00000003 [INF] Sending file. Request path: '"/lib/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-07-06T22:59:24.6989904+07:00 0HLF3B5O1I0IU:00000003 [INF] Request finished in 12.5075ms 200 font/woff2 (791a596a)
+2018-07-06T22:59:28.2575189+07:00 0HLF3B5O1I0IT:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico   (ca22a1cb)
+2018-07-06T22:59:28.2682295+07:00 0HLF3B5O1I0IT:00000005 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\favicon.ico"' (27b0a520)
+2018-07-06T22:59:28.2684022+07:00 0HLF3B5O1I0IT:00000005 [INF] Request finished in 10.8641ms 200 image/x-icon (791a596a)
+2018-07-06T23:08:44.7962085+07:00 0HLF3B5O1I0J2:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-06T23:08:45.0659897+07:00 0HLF3B5O1I0J2:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Authen\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" (a44c0341)
+2018-07-06T23:08:46.6556796+07:00 0HLF3B5O1I0J2:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" with arguments (["WebAppCore.Models.AccountViewModels.LoginViewModel"]) - Validation state: Valid (4e3479ed)
+2018-07-06T23:08:46.7817110+07:00 0HLF3B5O1I0J2:00000001 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-06T23:08:47.4185122+07:00 0HLF3B5O1I0J2:00000001 [INF] Executed DbCommand ("156"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-06T23:08:48.1499190+07:00 0HLF3B5O1I0J2:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-06T23:08:48.2643279+07:00 0HLF3B5O1I0J2:00000001 [INF] Executed DbCommand ("22"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-06T23:08:48.2914691+07:00 0HLF3B5O1I0J2:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-06T23:08:48.3159788+07:00 0HLF3B5O1I0J2:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-06T23:08:48.3229209+07:00 0HLF3B5O1I0J2:00000001 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-06T23:08:48.3440645+07:00 0HLF3B5O1I0J2:00000001 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-06T23:08:48.3479142+07:00 0HLF3B5O1I0J2:00000001 [INF] User logged in. (fdce0db4)
+2018-07-06T23:08:48.3514911+07:00 0HLF3B5O1I0J2:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1695.6198ms. (50a9e262)
+2018-07-06T23:08:48.3736556+07:00 0HLF3B5O1I0J2:00000001 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2018-07-06T23:08:48.5752179+07:00 0HLF3B5O1I0J2:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" in 3509.0502ms (afa2e885)
+2018-07-06T23:08:48.5790732+07:00 0HLF3B5O1I0J2:00000001 [INF] Request finished in 3782.9266ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-06T23:08:48.6083097+07:00 0HLF3B5O1I0J2:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/Home/Index   (ca22a1cb)
+2018-07-06T23:08:48.6153353+07:00 0HLF3B5O1I0J2:00000002 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Home\"}". Executing action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-06T23:08:48.6296937+07:00 0HLF3B5O1I0J2:00000002 [INF] Authorization was successful. (0d575a54)
+2018-07-06T23:08:48.6303130+07:00 0HLF3B5O1I0J2:00000002 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T23:08:48.6320048+07:00 0HLF3B5O1I0J2:00000002 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 1.584ms. (50a9e262)
+2018-07-06T23:08:48.6375420+07:00 0HLF3B5O1I0J2:00000002 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T23:08:48.7238481+07:00 0HLF3B5O1I0J2:00000002 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-06T23:08:48.8448238+07:00 0HLF3B5O1I0J2:00000002 [INF] Executed DbCommand ("46"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-06T23:08:48.9344784+07:00 0HLF3B5O1I0J2:00000002 [INF] Executed ViewResult - view "Index" executed in 302.1593ms. (f66409e9)
+2018-07-06T23:08:48.9563465+07:00 0HLF3B5O1I0J2:00000002 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" in 340.6345ms (afa2e885)
+2018-07-06T23:08:48.9610071+07:00 0HLF3B5O1I0J2:00000002 [INF] Request finished in 352.7657ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-06T23:08:53.1507119+07:00 0HLF3B5O1I0J2:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Account/login application/x-www-form-urlencoded 0 (ca22a1cb)
+2018-07-06T23:08:53.1555799+07:00 0HLF3B5O1I0J2:00000003 [INF] Request finished in 4.8299ms 404  (791a596a)
+2018-07-06T23:09:21.7839378+07:00 0HLF3B5O1I0J2:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/Account/Login   (ca22a1cb)
+2018-07-06T23:09:21.7860201+07:00 0HLF3B5O1I0J2:00000004 [INF] Request finished in 2.2391ms 404  (791a596a)
+2018-07-06T23:09:56.1021795+07:00 0HLF3B5O1I0J2:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/Login/Authen   (ca22a1cb)
+2018-07-06T23:09:56.1054956+07:00 0HLF3B5O1I0J2:00000005 [INF] Request finished in 3.8839ms 404  (791a596a)
+2018-07-06T23:10:03.3284154+07:00 0HLF3B5O1I0J2:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/   (ca22a1cb)
+2018-07-06T23:10:03.3304779+07:00 0HLF3B5O1I0J2:00000006 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" (a44c0341)
+2018-07-06T23:10:03.3306794+07:00 0HLF3B5O1I0J2:00000006 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T23:10:03.3308932+07:00 0HLF3B5O1I0J2:00000006 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.1197ms. (50a9e262)
+2018-07-06T23:10:03.3313127+07:00 0HLF3B5O1I0J2:00000006 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T23:10:03.3326141+07:00 0HLF3B5O1I0J2:00000006 [INF] Executed ViewResult - view "Index" executed in 1.5673ms. (f66409e9)
+2018-07-06T23:10:03.3326945+07:00 0HLF3B5O1I0J2:00000006 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" in 2.1374ms (afa2e885)
+2018-07-06T23:10:03.3327980+07:00 0HLF3B5O1I0J2:00000006 [INF] Request finished in 4.6297ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-06T23:11:21.8041009+07:00 0HLF3B5O1I0J3:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-06T23:11:21.8064097+07:00 0HLF3B5O1I0J3:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Authen\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" (a44c0341)
+2018-07-06T23:11:21.8091121+07:00 0HLF3B5O1I0J3:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" with arguments (["WebAppCore.Models.AccountViewModels.LoginViewModel"]) - Validation state: Valid (4e3479ed)
+2018-07-06T23:11:21.8098524+07:00 0HLF3B5O1I0J3:00000001 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-06T23:11:21.8138539+07:00 0HLF3B5O1I0J3:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-06T23:11:21.8388443+07:00 0HLF3B5O1I0J3:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-06T23:11:21.8425610+07:00 0HLF3B5O1I0J3:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-06T23:11:21.8447921+07:00 0HLF3B5O1I0J3:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-06T23:11:21.8475911+07:00 0HLF3B5O1I0J3:00000001 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-06T23:11:21.8520442+07:00 0HLF3B5O1I0J3:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-06T23:11:21.8531493+07:00 0HLF3B5O1I0J3:00000001 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-06T23:11:21.8534714+07:00 0HLF3B5O1I0J3:00000001 [INF] User logged in. (fdce0db4)
+2018-07-06T23:11:21.8536014+07:00 0HLF3B5O1I0J3:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 44.3849ms. (50a9e262)
+2018-07-06T23:11:21.8542035+07:00 0HLF3B5O1I0J3:00000001 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2018-07-06T23:11:21.8550832+07:00 0HLF3B5O1I0J3:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" in 48.4467ms (afa2e885)
+2018-07-06T23:11:21.8555652+07:00 0HLF3B5O1I0J3:00000001 [INF] Request finished in 51.6139ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-06T23:11:21.8780482+07:00 0HLF3B5O1I0J3:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/Home/Index   (ca22a1cb)
+2018-07-06T23:11:21.8789758+07:00 0HLF3B5O1I0J3:00000002 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Home\"}". Executing action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-06T23:11:21.8797336+07:00 0HLF3B5O1I0J3:00000002 [INF] Authorization was successful. (0d575a54)
+2018-07-06T23:11:21.8798867+07:00 0HLF3B5O1I0J3:00000002 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T23:11:21.8799829+07:00 0HLF3B5O1I0J3:00000002 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0265ms. (50a9e262)
+2018-07-06T23:11:21.8801129+07:00 0HLF3B5O1I0J3:00000002 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T23:11:21.8814438+07:00 0HLF3B5O1I0J3:00000002 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-06T23:11:21.9272977+07:00 0HLF3B5O1I0J3:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-06T23:11:36.2890998+07:00 0HLF3B5O1I0J3:00000002 [INF] Executed ViewResult - view "Index" executed in 14408.9697ms. (f66409e9)
+2018-07-06T23:11:36.2893761+07:00 0HLF3B5O1I0J3:00000002 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" in 14410.3079ms (afa2e885)
+2018-07-06T23:11:36.2897473+07:00 0HLF3B5O1I0J3:00000002 [INF] Request finished in 14411.6969ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-06T23:11:54.5055128+07:00 0HLF3B5O1I0J3:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Login/Authen application/x-www-form-urlencoded 0 (ca22a1cb)
+2018-07-06T23:11:54.5084063+07:00 0HLF3B5O1I0J3:00000003 [INF] Route matched with "{area = \"Admin\", action = \"Authen\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" (a44c0341)
+2018-07-06T23:11:55.1197998+07:00 0HLF3B5O1I0J3:00000003 [INF] Antiforgery token validation failed. "The required antiforgery request token was not provided in either form field \"__RequestVerificationToken\" or header value \"RequestVerificationToken\"." (843d91fe)
+Microsoft.AspNetCore.Antiforgery.AntiforgeryValidationException: The required antiforgery request token was not provided in either form field "__RequestVerificationToken" or header value "RequestVerificationToken".
+   at Microsoft.AspNetCore.Antiforgery.Internal.DefaultAntiforgery.ValidateRequestAsync(HttpContext httpContext)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter.OnAuthorizationAsync(AuthorizationFilterContext context)
+2018-07-06T23:11:55.1254850+07:00 0HLF3B5O1I0J3:00000003 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.ViewFeatures.Internal.ValidateAntiforgeryTokenAuthorizationFilter"'. (8b6446cb)
+2018-07-06T23:11:55.1335604+07:00 0HLF3B5O1I0J3:00000003 [INF] Executing HttpStatusCodeResult, setting HTTP status code 400 (e28ccfae)
+2018-07-06T23:11:55.1336861+07:00 0HLF3B5O1I0J3:00000003 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" in 625.1458ms (afa2e885)
+2018-07-06T23:11:55.1338469+07:00 0HLF3B5O1I0J3:00000003 [INF] Request finished in 629.0204ms 400  (791a596a)
+2018-07-06T23:13:34.9509308+07:00 0HLF3B5O1I0J4:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/Login   (ca22a1cb)
+2018-07-06T23:13:34.9531315+07:00 0HLF3B5O1I0J4:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" (a44c0341)
+2018-07-06T23:13:34.9536074+07:00 0HLF3B5O1I0J4:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T23:13:34.9537263+07:00 0HLF3B5O1I0J4:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0149ms. (50a9e262)
+2018-07-06T23:13:34.9538683+07:00 0HLF3B5O1I0J4:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T23:13:34.9550888+07:00 0HLF3B5O1I0J4:00000001 [INF] Executed ViewResult - view "Index" executed in 1.2367ms. (f66409e9)
+2018-07-06T23:13:34.9551807+07:00 0HLF3B5O1I0J4:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" in 1.9475ms (afa2e885)
+2018-07-06T23:13:34.9552752+07:00 0HLF3B5O1I0J4:00000001 [INF] Request finished in 4.8256ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-06T23:13:37.3518905+07:00 0HLF3B5O1I0J4:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-06T23:13:37.3526522+07:00 0HLF3B5O1I0J4:00000002 [INF] Route matched with "{area = \"Admin\", action = \"Authen\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" (a44c0341)
+2018-07-06T23:13:37.3531954+07:00 0HLF3B5O1I0J4:00000002 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" with arguments (["WebAppCore.Models.AccountViewModels.LoginViewModel"]) - Validation state: Valid (4e3479ed)
+2018-07-06T23:13:37.3538300+07:00 0HLF3B5O1I0J4:00000002 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-06T23:13:37.3670047+07:00 0HLF3B5O1I0J4:00000002 [INF] Executed DbCommand ("12"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-06T23:13:37.3900317+07:00 0HLF3B5O1I0J4:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-06T23:13:37.3977889+07:00 0HLF3B5O1I0J4:00000002 [INF] Executed DbCommand ("6"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-06T23:13:37.4010609+07:00 0HLF3B5O1I0J4:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-06T23:13:37.4038471+07:00 0HLF3B5O1I0J4:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-06T23:13:37.4054846+07:00 0HLF3B5O1I0J4:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-06T23:13:37.4059315+07:00 0HLF3B5O1I0J4:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-06T23:13:37.4059930+07:00 0HLF3B5O1I0J4:00000002 [INF] User logged in. (fdce0db4)
+2018-07-06T23:13:37.4061085+07:00 0HLF3B5O1I0J4:00000002 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 52.8255ms. (50a9e262)
+2018-07-06T23:13:37.4062522+07:00 0HLF3B5O1I0J4:00000002 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2018-07-06T23:13:37.4064583+07:00 0HLF3B5O1I0J4:00000002 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" in 53.7432ms (afa2e885)
+2018-07-06T23:13:37.4065947+07:00 0HLF3B5O1I0J4:00000002 [INF] Request finished in 55.2015ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-06T23:13:37.4279903+07:00 0HLF3B5O1I0J4:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/Home/Index   (ca22a1cb)
+2018-07-06T23:13:37.4290389+07:00 0HLF3B5O1I0J4:00000003 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Home\"}". Executing action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-06T23:13:37.4291650+07:00 0HLF3B5O1I0J4:00000003 [INF] Authorization was successful. (0d575a54)
+2018-07-06T23:13:37.4293215+07:00 0HLF3B5O1I0J4:00000003 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T23:13:37.4293904+07:00 0HLF3B5O1I0J4:00000003 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0162ms. (50a9e262)
+2018-07-06T23:13:37.4294810+07:00 0HLF3B5O1I0J4:00000003 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T23:13:37.4304125+07:00 0HLF3B5O1I0J4:00000003 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-06T23:13:37.4345872+07:00 0HLF3B5O1I0J4:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-06T23:13:37.8019776+07:00 0HLF3B5O1I0J4:00000003 [INF] Executed ViewResult - view "Index" executed in 372.4793ms. (f66409e9)
+2018-07-06T23:13:37.8020742+07:00 0HLF3B5O1I0J4:00000003 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" in 372.9698ms (afa2e885)
+2018-07-06T23:13:37.8022359+07:00 0HLF3B5O1I0J4:00000003 [INF] Request finished in 374.358ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-06T23:13:40.3270383+07:00 0HLF3B5O1I0J4:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Account/Logout application/x-www-form-urlencoded 0 (ca22a1cb)
+2018-07-06T23:13:40.3394369+07:00 0HLF3B5O1I0J4:00000004 [INF] Route matched with "{area = \"Admin\", action = \"Logout\", controller = \"Account\"}". Executing action "WebAppCore.Areas.Admin.Controllers.AccountController.Logout (WebAppCore)" (a44c0341)
+2018-07-06T23:13:40.3426207+07:00 0HLF3B5O1I0J4:00000004 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.AccountController.Logout (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T23:13:40.3502296+07:00 0HLF3B5O1I0J4:00000004 [INF] AuthenticationScheme: "Identity.Application" signed out. (d3f50c8d)
+2018-07-06T23:13:40.3768762+07:00 0HLF3B5O1I0J4:00000004 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-07-06T23:13:40.3774048+07:00 0HLF3B5O1I0J4:00000004 [INF] AuthenticationScheme: "Identity.TwoFactorUserId" signed out. (d3f50c8d)
+2018-07-06T23:13:40.3835450+07:00 0HLF3B5O1I0J4:00000004 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.AccountController.Logout (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.RedirectResult" in 40.7464ms. (50a9e262)
+2018-07-06T23:13:40.3842622+07:00 0HLF3B5O1I0J4:00000004 [INF] Executing RedirectResult, redirecting to "/Admin/Login/Index". (d98d540e)
+2018-07-06T23:13:40.3872370+07:00 0HLF3B5O1I0J4:00000004 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.AccountController.Logout (WebAppCore)" in 47.6727ms (afa2e885)
+2018-07-06T23:13:40.3873863+07:00 0HLF3B5O1I0J4:00000004 [INF] Request finished in 60.4352ms 302  (791a596a)
+2018-07-06T23:13:40.4111479+07:00 0HLF3B5O1I0J4:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/Login/Index   (ca22a1cb)
+2018-07-06T23:13:40.4115393+07:00 0HLF3B5O1I0J4:00000005 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" (a44c0341)
+2018-07-06T23:13:40.4118797+07:00 0HLF3B5O1I0J4:00000005 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T23:13:40.4119426+07:00 0HLF3B5O1I0J4:00000005 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0094ms. (50a9e262)
+2018-07-06T23:13:40.4120675+07:00 0HLF3B5O1I0J4:00000005 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T23:13:40.4129869+07:00 0HLF3B5O1I0J4:00000005 [INF] Executed ViewResult - view "Index" executed in 0.9523ms. (f66409e9)
+2018-07-06T23:13:40.4130540+07:00 0HLF3B5O1I0J4:00000005 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" in 1.4591ms (afa2e885)
+2018-07-06T23:13:40.4131297+07:00 0HLF3B5O1I0J4:00000005 [INF] Request finished in 2.0441ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-06T23:13:43.2311733+07:00 0HLF3B5O1I0J4:00000006 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-06T23:13:43.2315787+07:00 0HLF3B5O1I0J4:00000006 [INF] Route matched with "{area = \"Admin\", action = \"Authen\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" (a44c0341)
+2018-07-06T23:13:43.2323116+07:00 0HLF3B5O1I0J4:00000006 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" with arguments (["WebAppCore.Models.AccountViewModels.LoginViewModel"]) - Validation state: Valid (4e3479ed)
+2018-07-06T23:13:43.2327461+07:00 0HLF3B5O1I0J4:00000006 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-06T23:13:43.2358390+07:00 0HLF3B5O1I0J4:00000006 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-06T23:13:43.2574132+07:00 0HLF3B5O1I0J4:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-06T23:13:43.2612360+07:00 0HLF3B5O1I0J4:00000006 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-06T23:13:43.2638439+07:00 0HLF3B5O1I0J4:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-06T23:13:43.2665457+07:00 0HLF3B5O1I0J4:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-06T23:13:43.2705816+07:00 0HLF3B5O1I0J4:00000006 [INF] Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-06T23:13:43.2711409+07:00 0HLF3B5O1I0J4:00000006 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-06T23:13:43.2712008+07:00 0HLF3B5O1I0J4:00000006 [INF] User logged in. (fdce0db4)
+2018-07-06T23:13:43.2712628+07:00 0HLF3B5O1I0J4:00000006 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 38.8677ms. (50a9e262)
+2018-07-06T23:13:43.2713693+07:00 0HLF3B5O1I0J4:00000006 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2018-07-06T23:13:43.2715130+07:00 0HLF3B5O1I0J4:00000006 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" in 39.871ms (afa2e885)
+2018-07-06T23:13:43.2716370+07:00 0HLF3B5O1I0J4:00000006 [INF] Request finished in 40.6459ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-06T23:13:43.3002112+07:00 0HLF3B5O1I0J4:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/Home/Index   (ca22a1cb)
+2018-07-06T23:13:43.3009583+07:00 0HLF3B5O1I0J4:00000007 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Home\"}". Executing action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-06T23:13:43.3010510+07:00 0HLF3B5O1I0J4:00000007 [INF] Authorization was successful. (0d575a54)
+2018-07-06T23:13:43.3011314+07:00 0HLF3B5O1I0J4:00000007 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-06T23:13:43.3011913+07:00 0HLF3B5O1I0J4:00000007 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0128ms. (50a9e262)
+2018-07-06T23:13:43.3012679+07:00 0HLF3B5O1I0J4:00000007 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-06T23:13:43.3019846+07:00 0HLF3B5O1I0J4:00000007 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-06T23:13:43.3076446+07:00 0HLF3B5O1I0J4:00000007 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-06T23:13:43.3102674+07:00 0HLF3B5O1I0J4:00000007 [INF] Executed ViewResult - view "Index" executed in 8.9922ms. (f66409e9)
+2018-07-06T23:13:43.3103520+07:00 0HLF3B5O1I0J4:00000007 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" in 9.3378ms (afa2e885)
+2018-07-06T23:13:43.3104846+07:00 0HLF3B5O1I0J4:00000007 [INF] Request finished in 10.3736ms 200 text/html; charset=utf-8 (791a596a)

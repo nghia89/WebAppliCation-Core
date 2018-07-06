@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using WebAppCore.Application.ViewModels.Product;
+using WebAppCore.Application.ViewModels.System;
 using WebAppCore.Data.Entities;
 
 namespace WebAppCore.Application.AutoMapper
@@ -11,7 +12,7 @@ namespace WebAppCore.Application.AutoMapper
             CreateMap<ProductCategory, ProductCategoryViewModel>();
             CreateMap<Product, ProductViewModel>();
 
-            //CreateMap<Function, FunctionViewModel>();
+            CreateMap<Function, FunctionViewModel>();
             //CreateMap<AppUser, AppUserViewModel>();
             //CreateMap<AppRole, AppRoleViewModel>();
             //CreateMap<Bill, BillViewModel>();
