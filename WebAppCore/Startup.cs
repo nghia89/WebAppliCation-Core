@@ -74,16 +74,19 @@ namespace WebAppCore
 
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
             //services.AddMvc();
+            //dữ đúng thuộc tính không tự động đổi ký tự đầu dòng từ thường sang hoa
             services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
 
             //Respository
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
             services.AddTransient<IFunctionRepository, FunctionRepository>();
-
+            services.AddTransient<IProductRepository, ProductRepository>();
             //Service
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
             services.AddTransient<IFunctionService, FunctionService>();
-            //dữ đúng thuộc tính không tự động đổi ký tự đầu dòng từ thường sang hoa
+            services.AddTransient<IProductService, ProductService>();
+
+
 
         }
 

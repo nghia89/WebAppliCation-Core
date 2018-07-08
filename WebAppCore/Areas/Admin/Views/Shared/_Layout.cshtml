@@ -20,6 +20,7 @@
     <!-- bootstrap-daterangepicker -->
     <link href="~/lib/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
     <link href="~/lib/notifyjs/dist/styles/metro/notify-metro.css" rel="stylesheet" />
+    @RenderSection("Style", required: false)
     <!-- Custom Theme Style -->
 <link href="~/admin-side/css/custom.min.css" rel="stylesheet" />
 </head>
@@ -81,7 +82,7 @@
 
                         <ul class="nav navbar-nav navbar-right">
                             <li class="">
-                               @await Html.PartialAsync("_LoginPartial.cshtml")
+                                @await Html.PartialAsync("_LoginPartial.cshtml")
                             </li>
 
                             <li role="presentation" class="dropdown">
@@ -185,7 +186,7 @@
     <script src="~/lib/Chart.js/dist/Chart.js"></script>
     <!-- jQuery Sparklines -->
     <script src="~/lib/jquery-sparkline/dist/jquery.sparkline.js"></script>
-   
+    <script src="~/lib/mustache/mustache.js"></script>
     <script src="~/lib/moment/min/moment.min.js"></script>
     <script src="~/lib/bootstrap-daterangepicker/daterangepicker.js"></script>
     <script src="~/lib/notifyjs/dist/notify.js"></script>
@@ -195,7 +196,7 @@
     <script src="~/app/shared/structures.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="~/admin-side/js/custom.min.js"></script>
-
+    @RenderSection("Scripts", required: false)
 </body>
 
 </html>
