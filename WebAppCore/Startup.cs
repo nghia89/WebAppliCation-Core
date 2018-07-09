@@ -22,6 +22,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
 using WebAppCore.Helpers;
+using WebAppCore.Infrastructure.Interfaces;
+using TeduCoreApp.Data.EF;
 
 namespace WebAppCore
 {
@@ -76,6 +78,9 @@ namespace WebAppCore
             //services.AddMvc();
             //dữ đúng thuộc tính không tự động đổi ký tự đầu dòng từ thường sang hoa
             services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+            services.AddTransient(typeof(IUnitOfWork), typeof(EFUnitOfWork));
+            services.AddTransient(typeof(IRepository<,>), typeof(EFRepository<,>));
+
 
             //Respository
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
