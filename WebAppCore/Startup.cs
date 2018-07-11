@@ -23,7 +23,7 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
 using WebAppCore.Helpers;
 using WebAppCore.Infrastructure.Interfaces;
-using TeduCoreApp.Data.EF;
+
 
 namespace WebAppCore
 {

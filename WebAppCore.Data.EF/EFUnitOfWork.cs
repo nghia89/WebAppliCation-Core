@@ -4,7 +4,7 @@ using System.Text;
 using WebAppCore.Data.EF;
 using WebAppCore.Infrastructure.Interfaces;
 
-namespace TeduCoreApp.Data.EF
+namespace WebAppCore.Data.EF
 {
     public class EFUnitOfWork : IUnitOfWork
     {

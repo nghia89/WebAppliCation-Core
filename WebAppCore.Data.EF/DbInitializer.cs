@@ -223,7 +223,7 @@ namespace WebAppCore.Data.EF
                 {
                     Id = "HomeTitle",
                     Name = "Home's title",
-                    Value1 = "Tedu Shop home",
+                    Value1 = "structures Shop home",
                     Status = Status.Active
                 });
             }
@@ -243,7 +243,7 @@ namespace WebAppCore.Data.EF
                 {
                     Id = "HomeMetaDescription",
                     Name = "Home Description",
-                    Value1 = "Home tedu",
+                    Value1 = "Home structures",
                     Status = Status.Active
                 });
             }
