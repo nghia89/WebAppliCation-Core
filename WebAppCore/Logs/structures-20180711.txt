@@ -5622,3 +5622,362 @@ ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
 2018-07-11T23:10:32.7346447+07:00 0HLF791MFQBA8:00000002 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
 2018-07-11T23:10:32.7396932+07:00 0HLF791MFQBA8:00000002 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 173.7425ms (afa2e885)
 2018-07-11T23:10:32.7447267+07:00 0HLF791MFQBA8:00000002 [INF] Request finished in 216.3167ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-11T23:30:27.0828192+07:00 0HLF79EE0U836:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin   (ca22a1cb)
+2018-07-11T23:30:27.0828192+07:00 0HLF79EE0U838:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/   (ca22a1cb)
+2018-07-11T23:30:27.0828192+07:00 0HLF79EE0U837:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin   (ca22a1cb)
+2018-07-11T23:30:27.5078962+07:00 0HLF79EE0U838:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-11T23:30:27.5081652+07:00 0HLF79EE0U837:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" (a44c0341)
+2018-07-11T23:30:27.5078962+07:00 0HLF79EE0U836:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" (a44c0341)
+2018-07-11T23:30:27.5335110+07:00 0HLF79EE0U838:00000001 [INF] Authorization was successful. (0d575a54)
+2018-07-11T23:30:27.5351082+07:00 0HLF79EE0U838:00000001 [INF] Executing action method "WebAppCore.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-11T23:30:27.5351035+07:00 0HLF79EE0U837:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-11T23:30:27.5351035+07:00 0HLF79EE0U836:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-11T23:30:27.5432444+07:00 0HLF79EE0U837:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.8908ms. (50a9e262)
+2018-07-11T23:30:27.5432461+07:00 0HLF79EE0U836:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.8557ms. (50a9e262)
+2018-07-11T23:30:27.5437751+07:00 0HLF79EE0U838:00000001 [INF] Executed action method "WebAppCore.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.9361ms. (50a9e262)
+2018-07-11T23:30:27.5820116+07:00 0HLF79EE0U837:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-11T23:30:27.5820116+07:00 0HLF79EE0U838:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-11T23:30:27.5820116+07:00 0HLF79EE0U836:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-11T23:30:27.7273814+07:00 0HLF79EE0U836:00000001 [INF] Executed ViewResult - view "Index" executed in 166.3616ms. (f66409e9)
+2018-07-11T23:30:27.7279216+07:00 0HLF79EE0U836:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" in 219.3963ms (afa2e885)
+2018-07-11T23:30:27.7281264+07:00 0HLF79EE0U837:00000001 [INF] Executed ViewResult - view "Index" executed in 166.3616ms. (f66409e9)
+2018-07-11T23:30:27.7283458+07:00 0HLF79EE0U837:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" in 219.8436ms (afa2e885)
+2018-07-11T23:30:27.7425597+07:00 0HLF79EE0U836:00000001 [INF] Request finished in 668.8551ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-11T23:30:27.7425674+07:00 0HLF79EE0U837:00000001 [INF] Request finished in 668.8551ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-11T23:30:27.8025741+07:00 0HLF79EE0U838:00000001 [INF] Executed ViewResult - view "Index" executed in 247.828ms. (f66409e9)
+2018-07-11T23:30:27.8027785+07:00 0HLF79EE0U838:00000001 [INF] Executed action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" in 294.314ms (afa2e885)
+2018-07-11T23:30:27.8033371+07:00 0HLF79EE0U838:00000001 [INF] Request finished in 729.7124ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-11T23:31:48.1211700+07:00 0HLF79EE0U839:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-11T23:31:48.1538294+07:00 0HLF79EE0U839:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Authen\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" (a44c0341)
+2018-07-11T23:31:48.2232073+07:00 0HLF79EE0U839:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" with arguments (["WebAppCore.Models.AccountViewModels.LoginViewModel"]) - Validation state: Valid (4e3479ed)
+2018-07-11T23:31:48.2316745+07:00 0HLF79EE0U839:00000001 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-11T23:31:48.4136108+07:00 0HLF79EE0U839:00000001 [INF] Executed DbCommand ("97"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-11T23:31:48.7724844+07:00 0HLF79EE0U839:00000001 [INF] Executed DbCommand ("44"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-11T23:31:48.8985222+07:00 0HLF79EE0U839:00000001 [INF] Executed DbCommand ("55"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-11T23:31:48.9557701+07:00 0HLF79EE0U839:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-11T23:31:49.0730452+07:00 0HLF79EE0U839:00000001 [INF] Executed DbCommand ("25"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-11T23:31:49.1156472+07:00 0HLF79EE0U839:00000001 [INF] Executed DbCommand ("17"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-11T23:31:49.1526675+07:00 0HLF79EE0U839:00000001 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-11T23:31:49.1575496+07:00 0HLF79EE0U839:00000001 [INF] User logged in. (fdce0db4)
+2018-07-11T23:31:49.1634961+07:00 0HLF79EE0U839:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 940.1121ms. (50a9e262)
+2018-07-11T23:31:49.1841459+07:00 0HLF79EE0U839:00000001 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2018-07-11T23:31:49.3089199+07:00 0HLF79EE0U839:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" in 1154.9621ms (afa2e885)
+2018-07-11T23:31:49.3367825+07:00 0HLF79EE0U839:00000001 [INF] Request finished in 1215.6389ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-11T23:31:49.3724393+07:00 0HLF79EE0U839:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/Home/Index   (ca22a1cb)
+2018-07-11T23:31:49.3743406+07:00 0HLF79EE0U839:00000002 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Home\"}". Executing action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-11T23:31:49.3748927+07:00 0HLF79EE0U839:00000002 [INF] Authorization was successful. (0d575a54)
+2018-07-11T23:31:49.3753555+07:00 0HLF79EE0U839:00000002 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-11T23:31:49.3798690+07:00 0HLF79EE0U839:00000002 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 4.4108ms. (50a9e262)
+2018-07-11T23:31:49.4030598+07:00 0HLF79EE0U839:00000002 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-11T23:31:49.5362180+07:00 0HLF79EE0U839:00000002 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-11T23:31:49.5817841+07:00 0HLF79EE0U839:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-11T23:31:49.7226149+07:00 0HLF79EE0U839:00000002 [INF] Executed ViewResult - view "Index" executed in 342.5328ms. (f66409e9)
+2018-07-11T23:31:49.7358700+07:00 0HLF79EE0U839:00000002 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" in 361.4168ms (afa2e885)
+2018-07-11T23:31:49.7373351+07:00 0HLF79EE0U839:00000002 [INF] Request finished in 364.8713ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-11T23:31:54.1746327+07:00 0HLF79EE0U839:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/Index   (ca22a1cb)
+2018-07-11T23:31:54.1789918+07:00 0HLF79EE0U839:00000003 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.Index (WebAppCore)" (a44c0341)
+2018-07-11T23:31:54.1794421+07:00 0HLF79EE0U839:00000003 [INF] Authorization was successful. (0d575a54)
+2018-07-11T23:31:54.1838067+07:00 0HLF79EE0U839:00000003 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-11T23:31:54.1842173+07:00 0HLF79EE0U839:00000003 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.2993ms. (50a9e262)
+2018-07-11T23:31:54.1895617+07:00 0HLF79EE0U839:00000003 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-11T23:31:54.2170205+07:00 0HLF79EE0U839:00000003 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-11T23:31:54.2192653+07:00 0HLF79EE0U839:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-11T23:31:54.2288896+07:00 0HLF79EE0U839:00000003 [INF] Executed ViewResult - view "Index" executed in 44.544ms. (f66409e9)
+2018-07-11T23:31:54.2290735+07:00 0HLF79EE0U839:00000003 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.Index (WebAppCore)" in 49.7489ms (afa2e885)
+2018-07-11T23:31:54.2302298+07:00 0HLF79EE0U839:00000003 [INF] Request finished in 56.3596ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-11T23:31:54.3951880+07:00 0HLF79EE0U839:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/app/Controller/product-category/index.js?v=yDJpLEqxNqzqmwMT7LZo8nuigcyPNy9vrBHsUfqkq_8   (ca22a1cb)
+2018-07-11T23:31:54.4520527+07:00 0HLF79EE0U839:00000004 [INF] The file "/app/Controller/product-category/index.js" was not modified (f1f8d725)
+2018-07-11T23:31:54.4567483+07:00 0HLF79EE0U839:00000004 [INF] Request finished in 61.5475ms 304 application/javascript (791a596a)
+2018-07-11T23:31:54.6701622+07:00 0HLF79EE0U839:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-11T23:31:54.6748527+07:00 0HLF79EE0U839:00000005 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-11T23:31:54.6751204+07:00 0HLF79EE0U839:00000005 [INF] Authorization was successful. (0d575a54)
+2018-07-11T23:31:54.6757508+07:00 0HLF79EE0U839:00000005 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-11T23:31:54.6817435+07:00 0HLF79EE0U839:00000005 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-11T23:31:54.8192261+07:00 0HLF79EE0U839:00000005 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-11T23:31:54.8894101+07:00 0HLF79EE0U839:00000005 [INF] Executed DbCommand ("39"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-11T23:31:54.9191642+07:00 0HLF79EE0U839:00000005 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 243.3086ms. (50a9e262)
+2018-07-11T23:31:54.9195982+07:00 0HLF79EE0U839:00000005 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-11T23:31:54.9555178+07:00 0HLF79EE0U839:00000005 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 280.4991ms (afa2e885)
+2018-07-11T23:31:54.9557632+07:00 0HLF79EE0U839:00000005 [INF] Request finished in 285.6318ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-11T23:32:01.6865499+07:00 0HLF79EE0U839:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetById?id=6   (ca22a1cb)
+2018-07-11T23:32:01.6939903+07:00 0HLF79EE0U839:00000006 [INF] Route matched with "{area = \"Admin\", action = \"GetById\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" (a44c0341)
+2018-07-11T23:32:01.6943414+07:00 0HLF79EE0U839:00000006 [INF] Authorization was successful. (0d575a54)
+2018-07-11T23:32:01.6970189+07:00 0HLF79EE0U839:00000006 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" with arguments (["6"]) - Validation state: Valid (4e3479ed)
+2018-07-11T23:32:01.7058778+07:00 0HLF79EE0U839:00000006 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-11T23:32:01.8410176+07:00 0HLF79EE0U839:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2018-07-11T23:32:01.9381644+07:00 0HLF79EE0U839:00000006 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 240.7516ms. (50a9e262)
+2018-07-11T23:32:01.9383769+07:00 0HLF79EE0U839:00000006 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel"'. (8a1b66c8)
+2018-07-11T23:32:01.9386382+07:00 0HLF79EE0U839:00000006 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" in 244.497ms (afa2e885)
+2018-07-11T23:32:01.9387661+07:00 0HLF79EE0U839:00000006 [INF] Request finished in 252.3894ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-11T23:32:02.3769096+07:00 0HLF79EE0U839:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-11T23:32:02.3781836+07:00 0HLF79EE0U839:00000007 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-11T23:32:02.3783525+07:00 0HLF79EE0U839:00000007 [INF] Authorization was successful. (0d575a54)
+2018-07-11T23:32:02.3785094+07:00 0HLF79EE0U839:00000007 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-11T23:32:02.3790996+07:00 0HLF79EE0U839:00000007 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-11T23:32:02.3828074+07:00 0HLF79EE0U839:00000007 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-11T23:32:02.3888878+07:00 0HLF79EE0U839:00000007 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-11T23:32:02.3895985+07:00 0HLF79EE0U839:00000007 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 10.9834ms. (50a9e262)
+2018-07-11T23:32:02.3897281+07:00 0HLF79EE0U839:00000007 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-11T23:32:02.3901724+07:00 0HLF79EE0U839:00000007 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 11.8626ms (afa2e885)
+2018-07-11T23:32:02.3902930+07:00 0HLF79EE0U839:00000007 [INF] Request finished in 13.4381ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-11T23:32:56.2734007+07:00 0HLF79EE0U839:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetById?id=6   (ca22a1cb)
+2018-07-11T23:32:56.2749312+07:00 0HLF79EE0U839:00000008 [INF] Route matched with "{area = \"Admin\", action = \"GetById\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" (a44c0341)
+2018-07-11T23:32:56.2751540+07:00 0HLF79EE0U839:00000008 [INF] Authorization was successful. (0d575a54)
+2018-07-11T23:32:56.2758246+07:00 0HLF79EE0U839:00000008 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" with arguments (["6"]) - Validation state: Valid (4e3479ed)
+2018-07-11T23:32:56.2766782+07:00 0HLF79EE0U839:00000008 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-11T23:32:56.2836635+07:00 0HLF79EE0U839:00000008 [INF] Executed DbCommand ("6"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2018-07-11T23:32:56.2857162+07:00 0HLF79EE0U839:00000008 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 9.762ms. (50a9e262)
+2018-07-11T23:32:56.2858830+07:00 0HLF79EE0U839:00000008 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel"'. (8a1b66c8)
+2018-07-11T23:32:56.2861965+07:00 0HLF79EE0U839:00000008 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" in 11.175ms (afa2e885)
+2018-07-11T23:32:56.2863239+07:00 0HLF79EE0U839:00000008 [INF] Request finished in 13.0626ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-11T23:32:56.3669264+07:00 0HLF79EE0U839:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-11T23:32:56.3677591+07:00 0HLF79EE0U839:00000009 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-11T23:32:56.3678476+07:00 0HLF79EE0U839:00000009 [INF] Authorization was successful. (0d575a54)
+2018-07-11T23:32:56.3679362+07:00 0HLF79EE0U839:00000009 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-11T23:32:56.3683283+07:00 0HLF79EE0U839:00000009 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-11T23:32:56.3712834+07:00 0HLF79EE0U839:00000009 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-11T23:32:56.3760706+07:00 0HLF79EE0U839:00000009 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-11T23:32:56.3766047+07:00 0HLF79EE0U839:00000009 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 8.6022ms. (50a9e262)
+2018-07-11T23:32:56.3767219+07:00 0HLF79EE0U839:00000009 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-11T23:32:56.3773022+07:00 0HLF79EE0U839:00000009 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 9.4733ms (afa2e885)
+2018-07-11T23:32:56.3774283+07:00 0HLF79EE0U839:00000009 [INF] Request finished in 10.5831ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-11T23:32:59.8736113+07:00 0HLF79EE0U839:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-11T23:32:59.8746416+07:00 0HLF79EE0U839:0000000A [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-11T23:32:59.8747814+07:00 0HLF79EE0U839:0000000A [INF] Authorization was successful. (0d575a54)
+2018-07-11T23:32:59.8748896+07:00 0HLF79EE0U839:0000000A [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-11T23:32:59.8753331+07:00 0HLF79EE0U839:0000000A [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-11T23:32:59.8765587+07:00 0HLF79EE0U839:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-11T23:32:59.8773640+07:00 0HLF79EE0U839:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-11T23:32:59.8779837+07:00 0HLF79EE0U839:0000000A [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 3.0102ms. (50a9e262)
+2018-07-11T23:32:59.8781081+07:00 0HLF79EE0U839:0000000A [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-11T23:32:59.8785525+07:00 0HLF79EE0U839:0000000A [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 3.8009ms (afa2e885)
+2018-07-11T23:32:59.8786902+07:00 0HLF79EE0U839:0000000A [INF] Request finished in 5.1053ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-11T23:33:01.4928783+07:00 0HLF79EE0U839:0000000B [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/ProductCategory/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 173 (ca22a1cb)
+2018-07-11T23:33:01.5386014+07:00 0HLF79EE0U839:0000000B [INF] Route matched with "{area = \"Admin\", action = \"SaveEntity\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (WebAppCore)" (a44c0341)
+2018-07-11T23:33:01.5387057+07:00 0HLF79EE0U839:0000000B [INF] Authorization was successful. (0d575a54)
+2018-07-11T23:33:01.5596180+07:00 0HLF79EE0U839:0000000B [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (WebAppCore)" with arguments (["WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel"]) - Validation state: Valid (4e3479ed)
+2018-07-11T23:33:01.5882801+07:00 0HLF79EE0U839:0000000B [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-11T23:33:01.7592216+07:00 0HLF79EE0U839:0000000B [INF] Executed DbCommand ("22"ms) [Parameters=["@p14='?' (DbType = Int32), @p0='?' (DbType = DateTime2), @p1='?' (DbType = DateTime2), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (DbType = Int32), @p5='?' (Size = 4000), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (Size = 4000), @p12='?' (DbType = Int32), @p13='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [ProductCategories] SET [DateCreated] = @p0, [DateModified] = @p1, [Description] = @p2, [HomeFlag] = @p3, [HomeOrder] = @p4, [Image] = @p5, [Name] = @p6, [ParentId] = @p7, [SeoAlias] = @p8, [SeoDescription] = @p9, [SeoKeywords] = @p10, [SeoPageTitle] = @p11, [SortOrder] = @p12, [Status] = @p13
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;" (0723d8ff)
+2018-07-11T23:33:01.7634678+07:00 0HLF79EE0U839:0000000B [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 203.7172ms. (50a9e262)
+2018-07-11T23:33:01.7636119+07:00 0HLF79EE0U839:0000000B [INF] Executing ObjectResult, writing value of type '"WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel"'. (8a1b66c8)
+2018-07-11T23:33:01.7638078+07:00 0HLF79EE0U839:0000000B [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (WebAppCore)" in 225.1363ms (afa2e885)
+2018-07-11T23:33:01.7639391+07:00 0HLF79EE0U839:0000000B [INF] Request finished in 271.1578ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-11T23:33:01.7795813+07:00 0HLF79EE0U839:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-11T23:33:01.7806214+07:00 0HLF79EE0U839:0000000C [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-11T23:33:01.7807283+07:00 0HLF79EE0U839:0000000C [INF] Authorization was successful. (0d575a54)
+2018-07-11T23:33:01.7808523+07:00 0HLF79EE0U839:0000000C [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-11T23:33:01.7813352+07:00 0HLF79EE0U839:0000000C [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-11T23:33:01.7838985+07:00 0HLF79EE0U839:0000000C [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-11T23:33:01.7887357+07:00 0HLF79EE0U839:0000000C [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-11T23:33:01.7892835+07:00 0HLF79EE0U839:0000000C [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 8.3435ms. (50a9e262)
+2018-07-11T23:33:01.7894264+07:00 0HLF79EE0U839:0000000C [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-11T23:33:01.7899336+07:00 0HLF79EE0U839:0000000C [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 9.2253ms (afa2e885)
+2018-07-11T23:33:01.7901264+07:00 0HLF79EE0U839:0000000C [INF] Request finished in 10.6079ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-11T23:33:01.8391125+07:00 0HLF79EE0U839:0000000D [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-11T23:33:01.8402877+07:00 0HLF79EE0U839:0000000D [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-11T23:33:01.8404425+07:00 0HLF79EE0U839:0000000D [INF] Authorization was successful. (0d575a54)
+2018-07-11T23:33:01.8405742+07:00 0HLF79EE0U839:0000000D [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-11T23:33:01.8411601+07:00 0HLF79EE0U839:0000000D [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-11T23:33:01.8430786+07:00 0HLF79EE0U839:0000000D [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-11T23:33:01.8495104+07:00 0HLF79EE0U839:0000000D [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-11T23:33:01.8501323+07:00 0HLF79EE0U839:0000000D [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 9.4661ms. (50a9e262)
+2018-07-11T23:33:01.8502965+07:00 0HLF79EE0U839:0000000D [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-11T23:33:01.8509782+07:00 0HLF79EE0U839:0000000D [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 10.5707ms (afa2e885)
+2018-07-11T23:33:01.8512014+07:00 0HLF79EE0U839:0000000D [INF] Request finished in 12.2039ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-11T23:33:09.1847343+07:00 0HLF79EE0U839:0000000E [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/Index   (ca22a1cb)
+2018-07-11T23:33:09.1910046+07:00 0HLF79EE0U839:0000000E [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.Index (WebAppCore)" (a44c0341)
+2018-07-11T23:33:09.1914874+07:00 0HLF79EE0U839:0000000E [INF] Authorization was successful. (0d575a54)
+2018-07-11T23:33:09.1917119+07:00 0HLF79EE0U839:0000000E [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-11T23:33:09.1918205+07:00 0HLF79EE0U839:0000000E [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0171ms. (50a9e262)
+2018-07-11T23:33:09.1922533+07:00 0HLF79EE0U839:0000000E [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-11T23:33:09.1937398+07:00 0HLF79EE0U839:0000000E [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-11T23:33:09.1970529+07:00 0HLF79EE0U839:0000000E [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-11T23:33:09.1987990+07:00 0HLF79EE0U839:0000000E [INF] Executed ViewResult - view "Index" executed in 6.8651ms. (f66409e9)
+2018-07-11T23:33:09.1989307+07:00 0HLF79EE0U839:0000000E [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.Index (WebAppCore)" in 7.6233ms (afa2e885)
+2018-07-11T23:33:09.1990954+07:00 0HLF79EE0U839:0000000E [INF] Request finished in 15.1162ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-11T23:33:09.4213822+07:00 0HLF79EE0U839:0000000F [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-11T23:33:09.4228195+07:00 0HLF79EE0U839:0000000F [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-11T23:33:09.4253029+07:00 0HLF79EE0U839:0000000F [INF] Authorization was successful. (0d575a54)
+2018-07-11T23:33:09.4260761+07:00 0HLF79EE0U839:0000000F [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-11T23:33:09.4276063+07:00 0HLF79EE0U839:0000000F [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-11T23:33:09.4314688+07:00 0HLF79EE0U839:0000000F [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-11T23:33:09.4471775+07:00 0HLF79EE0U839:0000000F [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-11T23:33:09.4477133+07:00 0HLF79EE0U839:0000000F [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 21.3437ms. (50a9e262)
+2018-07-11T23:33:09.4478514+07:00 0HLF79EE0U839:0000000F [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-11T23:33:09.4483214+07:00 0HLF79EE0U839:0000000F [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 25.1511ms (afa2e885)
+2018-07-11T23:33:09.4484433+07:00 0HLF79EE0U839:0000000F [INF] Request finished in 27.4716ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-11T23:33:09.7558885+07:00 0HLF79EE0U839:00000010 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico   (ca22a1cb)
+2018-07-11T23:33:09.8126125+07:00 0HLF79EE0U839:00000010 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\favicon.ico"' (27b0a520)
+2018-07-11T23:33:09.8128045+07:00 0HLF79EE0U839:00000010 [INF] Request finished in 62.1843ms 200 image/x-icon (791a596a)
+2018-07-11T23:33:28.8524588+07:00 0HLF79EE0U839:00000011 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-11T23:33:28.8535022+07:00 0HLF79EE0U839:00000011 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-11T23:33:28.8536343+07:00 0HLF79EE0U839:00000011 [INF] Authorization was successful. (0d575a54)
+2018-07-11T23:33:28.8537442+07:00 0HLF79EE0U839:00000011 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-11T23:33:28.8541475+07:00 0HLF79EE0U839:00000011 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-11T23:33:28.8567195+07:00 0HLF79EE0U839:00000011 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-11T23:33:28.8602471+07:00 0HLF79EE0U839:00000011 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-11T23:33:28.8609810+07:00 0HLF79EE0U839:00000011 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 7.149ms. (50a9e262)
+2018-07-11T23:33:28.8611247+07:00 0HLF79EE0U839:00000011 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-11T23:33:28.8615921+07:00 0HLF79EE0U839:00000011 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 8.0078ms (afa2e885)
+2018-07-11T23:33:28.8617837+07:00 0HLF79EE0U839:00000011 [INF] Request finished in 9.3399ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-11T23:33:46.6281028+07:00 0HLF79EE0U839:00000012 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/ProductCategory/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 136 (ca22a1cb)
+2018-07-11T23:33:46.6289611+07:00 0HLF79EE0U839:00000012 [INF] Route matched with "{area = \"Admin\", action = \"SaveEntity\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (WebAppCore)" (a44c0341)
+2018-07-11T23:33:46.6290672+07:00 0HLF79EE0U839:00000012 [INF] Authorization was successful. (0d575a54)
+2018-07-11T23:33:48.2050632+07:00 0HLF79EE0U839:00000012 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (WebAppCore)" with arguments (["WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel"]) - Validation state: Invalid (4e3479ed)
+2018-07-11T23:33:48.2062252+07:00 0HLF79EE0U839:00000012 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.BadRequestObjectResult" in 0.984ms. (50a9e262)
+2018-07-11T23:33:48.2065579+07:00 0HLF79EE0U839:00000012 [INF] Executing ObjectResult, writing value of type '"System.Linq.Enumerable+SelectManySingleSelectorIterator`2[[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Mvc.ModelBinding.ModelError, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]"'. (8a1b66c8)
+2018-07-11T23:33:48.2554960+07:00 0HLF79EE0U839:00000012 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (WebAppCore)" in 1626.4198ms (afa2e885)
+2018-07-11T23:33:48.2556556+07:00 0HLF79EE0U839:00000012 [INF] Request finished in 1627.645ms 400 application/json; charset=utf-8 (791a596a)
+2018-07-11T23:33:53.4747355+07:00 0HLF79EE0U839:00000013 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/ProductCategory/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 136 (ca22a1cb)
+2018-07-11T23:33:53.4757259+07:00 0HLF79EE0U839:00000013 [INF] Route matched with "{area = \"Admin\", action = \"SaveEntity\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (WebAppCore)" (a44c0341)
+2018-07-11T23:33:53.4759658+07:00 0HLF79EE0U839:00000013 [INF] Authorization was successful. (0d575a54)
+2018-07-11T23:33:53.4771757+07:00 0HLF79EE0U839:00000013 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (WebAppCore)" with arguments (["WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel"]) - Validation state: Invalid (4e3479ed)
+2018-07-11T23:33:53.4772971+07:00 0HLF79EE0U839:00000013 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.BadRequestObjectResult" in 0.0166ms. (50a9e262)
+2018-07-11T23:33:53.4774096+07:00 0HLF79EE0U839:00000013 [INF] Executing ObjectResult, writing value of type '"System.Linq.Enumerable+SelectManySingleSelectorIterator`2[[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Mvc.ModelBinding.ModelError, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]"'. (8a1b66c8)
+2018-07-11T23:33:53.4777261+07:00 0HLF79EE0U839:00000013 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (WebAppCore)" in 1.8812ms (afa2e885)
+2018-07-11T23:33:53.4778163+07:00 0HLF79EE0U839:00000013 [INF] Request finished in 3.2103ms 400 application/json; charset=utf-8 (791a596a)
+2018-07-11T23:34:08.1342977+07:00 0HLF79EE0U839:00000014 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-11T23:34:08.1353274+07:00 0HLF79EE0U839:00000014 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-11T23:34:08.1354839+07:00 0HLF79EE0U839:00000014 [INF] Authorization was successful. (0d575a54)
+2018-07-11T23:34:08.1356058+07:00 0HLF79EE0U839:00000014 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-11T23:34:08.1360968+07:00 0HLF79EE0U839:00000014 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-11T23:34:08.1391708+07:00 0HLF79EE0U839:00000014 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-11T23:34:08.1429359+07:00 0HLF79EE0U839:00000014 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-11T23:34:08.1435726+07:00 0HLF79EE0U839:00000014 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 7.8666ms. (50a9e262)
+2018-07-11T23:34:08.1437236+07:00 0HLF79EE0U839:00000014 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-11T23:34:08.1442671+07:00 0HLF79EE0U839:00000014 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 8.8515ms (afa2e885)
+2018-07-11T23:34:08.1443929+07:00 0HLF79EE0U839:00000014 [INF] Request finished in 10.1379ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-11T23:34:09.6519899+07:00 0HLF79EE0U839:00000015 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/ProductCategory/SaveEntity application/x-www-form-urlencoded; charset=UTF-8 136 (ca22a1cb)
+2018-07-11T23:34:09.6530544+07:00 0HLF79EE0U839:00000015 [INF] Route matched with "{area = \"Admin\", action = \"SaveEntity\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (WebAppCore)" (a44c0341)
+2018-07-11T23:34:09.6531784+07:00 0HLF79EE0U839:00000015 [INF] Authorization was successful. (0d575a54)
+2018-07-11T23:34:09.6542201+07:00 0HLF79EE0U839:00000015 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (WebAppCore)" with arguments (["WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel"]) - Validation state: Invalid (4e3479ed)
+2018-07-11T23:34:09.6542915+07:00 0HLF79EE0U839:00000015 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.BadRequestObjectResult" in 0.0076ms. (50a9e262)
+2018-07-11T23:34:09.6544258+07:00 0HLF79EE0U839:00000015 [INF] Executing ObjectResult, writing value of type '"System.Linq.Enumerable+SelectManySingleSelectorIterator`2[[Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateEntry, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60],[Microsoft.AspNetCore.Mvc.ModelBinding.ModelError, Microsoft.AspNetCore.Mvc.Abstractions, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]"'. (8a1b66c8)
+2018-07-11T23:34:09.6545981+07:00 0HLF79EE0U839:00000015 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.SaveEntity (WebAppCore)" in 1.4591ms (afa2e885)
+2018-07-11T23:34:09.6546785+07:00 0HLF79EE0U839:00000015 [INF] Request finished in 2.7502ms 400 application/json; charset=utf-8 (791a596a)
