@@ -16,17 +16,46 @@
             loadData();
         });
         $('#txtKeyword').on('keypress', function (e) {
+            // 13 là key enter
             if (e.which === 13) {
                 loadData();
             }
         });
+        $("#btnCreate").on('click', function () {
+            resetFormMaintainance();
+            initTreeDropDownCategory();
+            $('#modal-add-edit').modal('show');
+        });
+
+        $('#btnSelectImg').on('click', function () {
+            $('#fileInputImage').click();
+        });
+        $("#fileInputImage").on('change', function () {
+            var fileUpload = $(this).get(0);
+            var files = fileUpload.files;
+            var data = new FormData();
+            for (var i = 0; i < files.length; i++) {
+                data.append(files[i].name, files[i]);
+            }
+            $.ajax({
+                type: "POST",
+                url: "/Admin/Upload/UploadImage",
+                contentType: false,
+                processData: false,
+                data: data,
+                success: function (path) {
+                    $('#txtImage').val(path);
+                    structures.notify('Upload image succesful!', 'success');
+
+                },
+                error: function () {
+                    structures.notify('There was error uploading files!', 'error');
+                }
+            });
+        });
     }
 
-    $("#btnCreate").on('click', function () {
-        resetFormMaintainance();
-        initTreeDropDownCategory();
-        $('#modal-add-edit').modal('show');
-    });
+
     function loadCategory() {
         $.ajax({
             type: 'get',
@@ -45,26 +74,7 @@
         });
     }
 
-    function registerControls() {
-        //gọi ckeditor để hiển thị bật lên
-        CKEDITOR.replace('txtContent', {});
-
-        //Fix: cannot click on element ck in modal
-        $.fn.modal.Constructor.prototype.enforceFocus = function () {
-            $(document)
-                .off('focusin.bs.modal') // guard against infinite focus loop
-                .on('focusin.bs.modal', $.proxy(function (e) {
-                    if (
-                        this.$element[0] !== e.target && !this.$element.has(e.target).length
-                        // CKEditor compatibility fix start.
-                        && !$(e.target).closest('.cke_dialog, .cke').length
-                        // CKEditor compatibility fix end.
-                    ) {
-                        this.$element.trigger('focus');
-                    }
-                }, this));
-        };
-    }
+   
     $('body').on('click', '.btn-edit', function (e) {
         e.preventDefault();
         var that = $(this).data('id');
@@ -89,7 +99,7 @@
                 $('#txtOriginalPriceM').val(data.OriginalPrice);
                 $('#txtPromotionPriceM').val(data.PromotionPrice);
 
-                // $('#txtImageM').val(data.ThumbnailImage);
+                $('#txtImage').val(data.Image);
 
                 $('#txtTagM').val(data.Tags);
                 $('#txtMetakeywordM').val(data.SeoKeywords);
@@ -125,7 +135,7 @@
             var originalPrice = $('#txtOriginalPriceM').val();
             var promotionPrice = $('#txtPromotionPriceM').val();
 
-            //var image = $('#txtImageM').val();
+            var image = $('#txtImage').val();
 
             var tags = $('#txtTagM').val();
             var seoKeyword = $('#txtMetakeywordM').val();
@@ -145,7 +155,7 @@
                     Id: id,
                     Name: name,
                     CategoryId: categoryId,
-                    Image: '',
+                    Image: image,
                     Price: price,
                     OriginalPrice: originalPrice,
                     PromotionPrice: promotionPrice,
@@ -247,6 +257,28 @@
             }
         });
     }
+
+    function registerControls() {
+        //gọi ckeditor để hiển thị bật lên
+        CKEDITOR.replace('txtContent', {});
+
+        //Fix: cannot click on element ck in modal
+        $.fn.modal.Constructor.prototype.enforceFocus = function () {
+            $(document)
+                .off('focusin.bs.modal') // guard against infinite focus loop
+                .on('focusin.bs.modal', $.proxy(function (e) {
+                    if (
+                        this.$element[0] !== e.target && !this.$element.has(e.target).length
+                        // CKEditor compatibility fix start.
+                        && !$(e.target).closest('.cke_dialog, .cke').length
+                        // CKEditor compatibility fix end.
+                    ) {
+                        this.$element.trigger('focus');
+                    }
+                }, this));
+        };
+    }
+
     function initTreeDropDownCategory(selectedId) {
         $.ajax({
             url: "/Admin/ProductCategory/GetAll",
@@ -285,7 +317,7 @@
         $('#txtOriginalPriceM').val('');
         $('#txtPromotionPriceM').val('');
 
-        //$('#txtImageM').val('');
+        $('#txtImage').val('');
 
         $('#txtTagM').val('');
         $('#txtMetakeywordM').val('');
@@ -293,7 +325,7 @@
         $('#txtSeoPageTitleM').val('');
         $('#txtSeoAliasM').val('');
 
-        //CKEDITOR.instances.txtContentM.setData('');
+        CKEDITOR.instances.txtContentM.setData('');
         $('#ckStatusM').prop('checked', true);
         $('#ckHotM').prop('checked', false);
         $('#ckShowHomeM').prop('checked', false);
