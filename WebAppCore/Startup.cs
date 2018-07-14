@@ -1,29 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using AutoMapper;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using WebAppCore.Data;
-using WebAppCore.Models;
-using WebAppCore.Services;
-using WebAppCore.Data.EF;
-using WebAppCore.Data.Entities;
-using AutoMapper;
-using WebAppCore.Data.IRepositories;
-using WebAppCore.Data.EF.Repositories;
-using WebAppCore.Application.Interfaces;
-using WebAppCore.Application.Implementation;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
+using System;
+using WebAppCore.Application.Implementation;
+using WebAppCore.Application.Interfaces;
+using WebAppCore.Data.EF;
+using WebAppCore.Data.EF.Repositories;
+using WebAppCore.Data.Entities;
+using WebAppCore.Data.IRepositories;
 using WebAppCore.Helpers;
 using WebAppCore.Infrastructure.Interfaces;
-
+using WebAppCore.Services;
 
 namespace WebAppCore
 {
@@ -81,22 +74,21 @@ namespace WebAppCore
             services.AddTransient(typeof(IUnitOfWork), typeof(EFUnitOfWork));
             services.AddTransient(typeof(IRepository<,>), typeof(EFRepository<,>));
 
-
             //Respository
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
             services.AddTransient<IFunctionRepository, FunctionRepository>();
             services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<IProductTagRepository, ProductTagRepository>();
+            services.AddTransient<ITagRepository, TagRepository>();
+
             //Service
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
             services.AddTransient<IFunctionService, FunctionService>();
             services.AddTransient<IProductService, ProductService>();
-
-
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env,ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             loggerFactory.AddFile("Logs/structures-{Date}.txt");
             if (env.IsDevelopment())
@@ -108,7 +100,6 @@ namespace WebAppCore
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-            
             }
 
             app.UseStaticFiles();
@@ -124,9 +115,7 @@ namespace WebAppCore
                 routes.MapRoute(
                     name: "areasRouter",
                     template: "{area:exists}/{controller=Login}/{action=Index}/{id?}");
-
             });
-           
         }
     }
 }

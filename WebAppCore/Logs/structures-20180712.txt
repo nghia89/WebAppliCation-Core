@@ -1,0 +1,1229 @@
+2018-07-12T19:15:39.7367378+07:00 0HLF7U4N19MI6:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/   (ca22a1cb)
+2018-07-12T19:15:47.3998020+07:00 0HLF7U4N19MI6:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-12T19:15:47.4557767+07:00 0HLF7U4N19MI6:00000001 [INF] Authorization failed. (b15dd539)
+2018-07-12T19:15:47.4980481+07:00 0HLF7U4N19MI6:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-07-12T19:15:47.6049521+07:00 0HLF7U4N19MI6:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-07-12T19:15:47.7353474+07:00 0HLF7U4N19MI6:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-07-12T19:15:47.7912306+07:00 0HLF7U4N19MI6:00000001 [INF] Executed action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" in 334.8004ms (afa2e885)
+2018-07-12T19:15:47.9106756+07:00 0HLF7U4N19MI6:00000001 [INF] Request finished in 8182.5626ms 302  (791a596a)
+2018-07-12T19:15:48.2484422+07:00 0HLF7U4N19MI6:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Account/Login?ReturnUrl=%2F   (ca22a1cb)
+2018-07-12T19:15:48.5489684+07:00 0HLF7U4N19MI6:00000002 [INF] Route matched with "{action = \"Login\", controller = \"Account\", area = \"\"}". Executing action "WebAppCore.Controllers.AccountController.Login (WebAppCore)" (a44c0341)
+2018-07-12T19:15:48.7564628+07:00 0HLF7U4N19MI6:00000002 [INF] Executing action method "WebAppCore.Controllers.AccountController.Login (WebAppCore)" with arguments (["/"]) - Validation state: Valid (4e3479ed)
+2018-07-12T19:15:48.8734937+07:00 0HLF7U4N19MI6:00000002 [INF] AuthenticationScheme: "Identity.External" signed out. (d3f50c8d)
+2018-07-12T19:15:48.9297181+07:00 0HLF7U4N19MI6:00000002 [INF] Executed action method "WebAppCore.Controllers.AccountController.Login (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 164.4006ms. (50a9e262)
+2018-07-12T19:15:50.0136853+07:00 0HLF7U4N19MI6:00000002 [INF] Executing ViewResult, running view "Login". (c83d0e25)
+2018-07-12T19:15:55.7943495+07:00 0HLF7U4N19MI6:00000002 [INF] Executed ViewResult - view "Login" executed in 6831.2642ms. (f66409e9)
+2018-07-12T19:15:55.7948439+07:00 0HLF7U4N19MI6:00000002 [INF] Executed action "WebAppCore.Controllers.AccountController.Login (WebAppCore)" in 7245.7715ms (afa2e885)
+2018-07-12T19:15:55.8521144+07:00 0HLF7U4N19MI6:00000002 [INF] Request finished in 7603.6178ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:15:55.9943241+07:00 0HLF7U4N19MI6:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/css/site.css   (ca22a1cb)
+2018-07-12T19:15:56.1002538+07:00 0HLF7U4N19MI7:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/js/site.js?v=ji3-IxbEzYWjzzLCGkF1KDjrT2jLbbrSYXw-AhMPNIA   (ca22a1cb)
+2018-07-12T19:15:56.1870509+07:00 0HLF7U4N19MI8:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js   (ca22a1cb)
+2018-07-12T19:15:56.9282593+07:00 0HLF7U4N19MI7:00000001 [INF] The file "/js/site.js" was not modified (f1f8d725)
+2018-07-12T19:15:56.9282593+07:00 0HLF7U4N19MI6:00000003 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2018-07-12T19:15:56.9328712+07:00 0HLF7U4N19MI7:00000001 [INF] Request finished in 832.6391ms 304 application/javascript (791a596a)
+2018-07-12T19:15:56.9332069+07:00 0HLF7U4N19MI6:00000003 [INF] Request finished in 938.9447ms 304 text/css (791a596a)
+2018-07-12T19:15:56.9332509+07:00 0HLF7U4N19MI8:00000001 [INF] The file "/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js" was not modified (f1f8d725)
+2018-07-12T19:15:56.9333805+07:00 0HLF7U4N19MI8:00000001 [INF] Request finished in 746.3672ms 304 application/javascript (791a596a)
+2018-07-12T19:16:03.2274667+07:00 0HLF7U4N19MI7:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin   (ca22a1cb)
+2018-07-12T19:16:03.2305522+07:00 0HLF7U4N19MI7:00000002 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" (a44c0341)
+2018-07-12T19:16:03.2359911+07:00 0HLF7U4N19MI7:00000002 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-12T19:16:03.2364205+07:00 0HLF7U4N19MI7:00000002 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.2647ms. (50a9e262)
+2018-07-12T19:16:04.0048093+07:00 0HLF7U4N19MI7:00000002 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-12T19:16:04.6917940+07:00 0HLF7U4N19MI7:00000002 [INF] Executed ViewResult - view "Index" executed in 1454.9005ms. (f66409e9)
+2018-07-12T19:16:04.6922412+07:00 0HLF7U4N19MI7:00000002 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" in 1461.5321ms (afa2e885)
+2018-07-12T19:16:04.6925876+07:00 0HLF7U4N19MI7:00000002 [INF] Request finished in 1465.1098ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:16:06.8140827+07:00 0HLF7U4N19MI6:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin   (ca22a1cb)
+2018-07-12T19:16:06.8146485+07:00 0HLF7U4N19MI6:00000004 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" (a44c0341)
+2018-07-12T19:16:06.8150916+07:00 0HLF7U4N19MI6:00000004 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-12T19:16:06.8151809+07:00 0HLF7U4N19MI6:00000004 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0196ms. (50a9e262)
+2018-07-12T19:16:06.8153486+07:00 0HLF7U4N19MI6:00000004 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-12T19:16:06.8163848+07:00 0HLF7U4N19MI6:00000004 [INF] Executed ViewResult - view "Index" executed in 1.108ms. (f66409e9)
+2018-07-12T19:16:06.8164801+07:00 0HLF7U4N19MI6:00000004 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" in 1.7653ms (afa2e885)
+2018-07-12T19:16:06.8165772+07:00 0HLF7U4N19MI6:00000004 [INF] Request finished in 2.5274ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:16:07.5917397+07:00 0HLF7U4N19MI8:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-07-12T19:16:07.5917867+07:00 0HLF7U4N19MI7:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-07-12T19:16:07.5921374+07:00 0HLF7U4N19MI6:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/nprogress/nprogress.css   (ca22a1cb)
+2018-07-12T19:16:07.5950874+07:00 0HLF7U4N19MI9:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-07-12T19:16:07.5966330+07:00 0HLF7U4N19MIA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/animate.css/animate.css   (ca22a1cb)
+2018-07-12T19:16:07.8412627+07:00 0HLF7U4N19MI7:00000003 [INF] Sending file. Request path: '"/lib/font-awesome/css/font-awesome.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-07-12T19:16:07.8415005+07:00 0HLF7U4N19MI6:00000005 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\nprogress\nprogress.css"' (27b0a520)
+2018-07-12T19:16:07.8416343+07:00 0HLF7U4N19MI7:00000003 [INF] Request finished in 250.1794ms 200 text/css (791a596a)
+2018-07-12T19:16:07.8417969+07:00 0HLF7U4N19MI6:00000005 [INF] Request finished in 249.5657ms 200 text/css (791a596a)
+2018-07-12T19:16:07.8419641+07:00 0HLF7U4N19MIB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/app/shared/structures.js   (ca22a1cb)
+2018-07-12T19:16:07.8430409+07:00 0HLF7U4N19MIB:00000001 [INF] The file "/app/shared/structures.js" was not modified (f1f8d725)
+2018-07-12T19:16:07.8431598+07:00 0HLF7U4N19MIB:00000001 [INF] Request finished in 1.2431ms 304 application/javascript (791a596a)
+2018-07-12T19:16:08.1051907+07:00 0HLF7U4N19MI9:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.css"' (27b0a520)
+2018-07-12T19:16:08.1125472+07:00 0HLF7U4N19MI9:00000001 [INF] Request finished in 517.4884ms 200 text/css (791a596a)
+2018-07-12T19:16:08.1326474+07:00 0HLF7U4N19MIB:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/app/Controller/login/index.js   (ca22a1cb)
+2018-07-12T19:16:08.1338495+07:00 0HLF7U4N19MIB:00000002 [INF] The file "/app/Controller/login/index.js" was not modified (f1f8d725)
+2018-07-12T19:16:08.1340282+07:00 0HLF7U4N19MIB:00000002 [INF] Request finished in 2.051ms 304 application/javascript (791a596a)
+2018-07-12T19:16:08.8070812+07:00 0HLF7U4N19MIA:00000001 [INF] Sending file. Request path: '"/lib/animate.css/animate.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\animate.css\animate.css"' (27b0a520)
+2018-07-12T19:16:08.8111113+07:00 0HLF7U4N19MIA:00000001 [INF] Request finished in 1214.6927ms 200 text/css (791a596a)
+2018-07-12T19:16:08.8135349+07:00 0HLF7U4N19MI8:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-07-12T19:16:08.8136273+07:00 0HLF7U4N19MI8:00000002 [INF] Request finished in 1222.1817ms 200 text/css (791a596a)
+2018-07-12T19:18:25.0794079+07:00 0HLF7U4N19MIC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin   (ca22a1cb)
+2018-07-12T19:18:25.0801635+07:00 0HLF7U4N19MIC:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" (a44c0341)
+2018-07-12T19:18:25.0806942+07:00 0HLF7U4N19MIC:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-12T19:18:25.0807755+07:00 0HLF7U4N19MIC:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0149ms. (50a9e262)
+2018-07-12T19:18:25.0810852+07:00 0HLF7U4N19MIC:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-12T19:18:25.0819268+07:00 0HLF7U4N19MIC:00000001 [INF] Executed ViewResult - view "Index" executed in 1.0665ms. (f66409e9)
+2018-07-12T19:18:25.0820098+07:00 0HLF7U4N19MIC:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" in 1.7769ms (afa2e885)
+2018-07-12T19:18:25.0820906+07:00 0HLF7U4N19MIC:00000001 [INF] Request finished in 2.8592ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:18:28.1844357+07:00 0HLF7U4N19MIC:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-12T19:18:28.2764279+07:00 0HLF7U4N19MIC:00000002 [INF] Route matched with "{area = \"Admin\", action = \"Authen\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" (a44c0341)
+2018-07-12T19:18:28.4581185+07:00 0HLF7U4N19MIC:00000002 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" with arguments (["WebAppCore.Models.AccountViewModels.LoginViewModel"]) - Validation state: Valid (4e3479ed)
+2018-07-12T19:18:28.5070870+07:00 0HLF7U4N19MIC:00000002 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:18:35.3428074+07:00 0HLF7U4N19MID:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-12T19:18:35.3432248+07:00 0HLF7U4N19MID:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Authen\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" (a44c0341)
+2018-07-12T19:18:35.3446673+07:00 0HLF7U4N19MID:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" with arguments (["WebAppCore.Models.AccountViewModels.LoginViewModel"]) - Validation state: Valid (4e3479ed)
+2018-07-12T19:18:35.3452138+07:00 0HLF7U4N19MID:00000001 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:18:44.5476722+07:00 0HLF7U4N19MID:00000001 [ERR] An error occurred using the connection to database '"WebAppCore"' on server '".\SQLEXPRESS"'. (5fc3407c)
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2018-07-12T19:18:44.5533740+07:00 0HLF7U4N19MIC:00000002 [ERR] An error occurred using the connection to database '"WebAppCore"' on server '".\SQLEXPRESS"'. (5fc3407c)
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2018-07-12T19:18:45.1849716+07:00 0HLF7U4N19MID:00000001 [ERR] An exception occurred in the database while iterating the results of a query for context type '"WebAppCore.Data.EF.AppDbContext"'."
+""System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20" (64e2593c)
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2018-07-12T19:18:45.1935529+07:00 0HLF7U4N19MIC:00000002 [ERR] An exception occurred in the database while iterating the results of a query for context type '"WebAppCore.Data.EF.AppDbContext"'."
+""System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20" (64e2593c)
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2018-07-12T19:18:45.2987065+07:00 0HLF7U4N19MID:00000001 [ERR] An exception occurred in the database while iterating the results of a query for context type '"WebAppCore.Data.EF.AppDbContext"'."
+""System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20" (64e2593c)
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.PasswordSignInAsync(String userName, String password, Boolean isPersistent, Boolean lockoutOnFailure)
+   at WebAppCore.Areas.Admin.Controllers.LoginController.Authen(LoginViewModel model) in H:\WebAppCore\WebAppCore\Areas\Admin\Controllers\LoginController.cs:line 44
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2018-07-12T19:18:45.3044490+07:00 0HLF7U4N19MIC:00000002 [ERR] An exception occurred in the database while iterating the results of a query for context type '"WebAppCore.Data.EF.AppDbContext"'."
+""System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20" (64e2593c)
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.PasswordSignInAsync(String userName, String password, Boolean isPersistent, Boolean lockoutOnFailure)
+   at WebAppCore.Areas.Admin.Controllers.LoginController.Authen(LoginViewModel model) in H:\WebAppCore\WebAppCore\Areas\Admin\Controllers\LoginController.cs:line 44
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2018-07-12T19:18:45.3960519+07:00 0HLF7U4N19MID:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" in 10052.6629ms (afa2e885)
+2018-07-12T19:18:45.3962020+07:00 0HLF7U4N19MIC:00000002 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" in 17119.6809ms (afa2e885)
+2018-07-12T19:18:46.4100400+07:00 0HLF7U4N19MID:00000001 [ERR] An exception occurred while calculating the database error page content. Skipping display of the database error page. (3f43c218)
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2018-07-12T19:18:46.4103980+07:00 0HLF7U4N19MIC:00000002 [ERR] An exception occurred while calculating the database error page content. Skipping display of the database error page. (3f43c218)
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.OpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass20_0.<<ExistsAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2018-07-12T19:18:47.0939867+07:00 0HLF7U4N19MID:00000001 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.PasswordSignInAsync(String userName, String password, Boolean isPersistent, Boolean lockoutOnFailure)
+   at WebAppCore.Areas.Admin.Controllers.LoginController.Authen(LoginViewModel model) in H:\WebAppCore\WebAppCore\Areas\Admin\Controllers\LoginController.cs:line 44
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2018-07-12T19:18:47.1112172+07:00 0HLF7U4N19MIC:00000002 [ERR] An unhandled exception has occurred while executing the request. (48a46595)
+System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenDbConnectionAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByNameAsync(String userName)
+   at Microsoft.AspNetCore.Identity.SignInManager`1.PasswordSignInAsync(String userName, String password, Boolean isPersistent, Boolean lockoutOnFailure)
+   at WebAppCore.Areas.Admin.Controllers.LoginController.Authen(LoginViewModel model) in H:\WebAppCore\WebAppCore\Areas\Admin\Controllers\LoginController.cs:line 44
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseErrorPageMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:00000000-0000-0000-0000-000000000000
+Error Number:-1,State:0,Class:20
+2018-07-12T19:18:48.8864306+07:00 0HLF7U4N19MID:00000001 [INF] Request finished in 13542.631ms 500 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:18:48.8917129+07:00 0HLF7U4N19MIC:00000002 [INF] Request finished in 20707.2955ms 500 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:19:35.5363377+07:00 0HLF7U4N19MIC:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin   (ca22a1cb)
+2018-07-12T19:19:35.5377015+07:00 0HLF7U4N19MIC:00000003 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" (a44c0341)
+2018-07-12T19:19:35.5393893+07:00 0HLF7U4N19MIC:00000003 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-12T19:19:35.5396451+07:00 0HLF7U4N19MIC:00000003 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0312ms. (50a9e262)
+2018-07-12T19:19:35.5399239+07:00 0HLF7U4N19MIC:00000003 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-12T19:19:35.5423945+07:00 0HLF7U4N19MIC:00000003 [INF] Executed ViewResult - view "Index" executed in 2.5107ms. (f66409e9)
+2018-07-12T19:19:35.5425972+07:00 0HLF7U4N19MIC:00000003 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" in 4.6977ms (afa2e885)
+2018-07-12T19:19:35.5428153+07:00 0HLF7U4N19MIC:00000003 [INF] Request finished in 7.2119ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:19:35.6179622+07:00 0HLF7U4N19MID:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-07-12T19:19:35.6187674+07:00 0HLF7U4N19MID:00000002 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.css"' (27b0a520)
+2018-07-12T19:19:35.6188564+07:00 0HLF7U4N19MID:00000002 [INF] Request finished in 0.975ms 200 text/css (791a596a)
+2018-07-12T19:19:35.6189967+07:00 0HLF7U4N19MIC:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-07-12T19:19:35.6209219+07:00 0HLF7U4N19MIE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/nprogress/nprogress.css   (ca22a1cb)
+2018-07-12T19:19:35.6217396+07:00 0HLF7U4N19MIE:00000001 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\nprogress\nprogress.css"' (27b0a520)
+2018-07-12T19:19:35.6218093+07:00 0HLF7U4N19MIE:00000001 [INF] Request finished in 0.9502ms 200 text/css (791a596a)
+2018-07-12T19:19:35.6228126+07:00 0HLF7U4N19MIC:00000004 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-07-12T19:19:35.6228887+07:00 0HLF7U4N19MIC:00000004 [INF] Request finished in 3.9091ms 200 text/css (791a596a)
+2018-07-12T19:19:35.6354160+07:00 0HLF7U4N19MIF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-07-12T19:19:35.6367040+07:00 0HLF7U4N19MIF:00000001 [INF] Sending file. Request path: '"/lib/font-awesome/css/font-awesome.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-07-12T19:19:35.6368212+07:00 0HLF7U4N19MIF:00000001 [INF] Request finished in 1.4839ms 200 text/css (791a596a)
+2018-07-12T19:19:35.6596306+07:00 0HLF7U4N19MID:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/animate.css/animate.css   (ca22a1cb)
+2018-07-12T19:19:35.6608644+07:00 0HLF7U4N19MID:00000003 [INF] Sending file. Request path: '"/lib/animate.css/animate.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\animate.css\animate.css"' (27b0a520)
+2018-07-12T19:19:35.6609546+07:00 0HLF7U4N19MID:00000003 [INF] Request finished in 1.3847ms 200 text/css (791a596a)
+2018-07-12T19:19:35.6725615+07:00 0HLF7U4N19MIE:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin-side/css/custom.css   (ca22a1cb)
+2018-07-12T19:19:35.6745223+07:00 0HLF7U4N19MIH:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-07-12T19:19:35.6792864+07:00 0HLF7U4N19MIG:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2018-07-12T19:19:35.6938061+07:00 0HLF7U4N19MIF:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2018-07-12T19:19:35.7273033+07:00 0HLF7U4N19MIE:00000002 [INF] Sending file. Request path: '"/admin-side/css/custom.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\admin-side\css\custom.css"' (27b0a520)
+2018-07-12T19:19:35.7274110+07:00 0HLF7U4N19MIE:00000002 [INF] Request finished in 54.882ms 200 text/css (791a596a)
+2018-07-12T19:19:35.7280478+07:00 0HLF7U4N19MIC:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-07-12T19:19:35.7604836+07:00 0HLF7U4N19MIF:00000002 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.js"' (27b0a520)
+2018-07-12T19:19:35.7605991+07:00 0HLF7U4N19MIF:00000002 [INF] Request finished in 66.8238ms 200 application/javascript (791a596a)
+2018-07-12T19:19:35.7609006+07:00 0HLF7U4N19MID:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/app/shared/structures.js   (ca22a1cb)
+2018-07-12T19:19:36.4167289+07:00 0HLF7U4N19MIE:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/app/Controller/login/index.js   (ca22a1cb)
+2018-07-12T19:19:36.4350835+07:00 0HLF7U4N19MIG:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/notify.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\notifyjs\dist\notify.js"' (27b0a520)
+2018-07-12T19:19:36.4352028+07:00 0HLF7U4N19MIG:00000001 [INF] Request finished in 756.1186ms 200 application/javascript (791a596a)
+2018-07-12T19:19:36.4353486+07:00 0HLF7U4N19MIC:00000005 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2018-07-12T19:19:36.4354393+07:00 0HLF7U4N19MIC:00000005 [INF] Request finished in 707.4268ms 200 application/javascript (791a596a)
+2018-07-12T19:19:36.4355577+07:00 0HLF7U4N19MIF:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-07-12T19:19:36.4433132+07:00 0HLF7U4N19MIF:00000003 [INF] Sending file. Request path: '"/lib/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-07-12T19:19:36.4435270+07:00 0HLF7U4N19MIF:00000003 [INF] Request finished in 7.8487ms 200 font/woff2 (791a596a)
+2018-07-12T19:19:36.6064647+07:00 0HLF7U4N19MIE:00000003 [INF] Sending file. Request path: '"/app/Controller/login/index.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\app\Controller\login\index.js"' (27b0a520)
+2018-07-12T19:19:36.6066759+07:00 0HLF7U4N19MIE:00000003 [INF] Request finished in 189.9811ms 200 application/javascript (791a596a)
+2018-07-12T19:19:36.6212944+07:00 0HLF7U4N19MIH:00000001 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-07-12T19:19:36.6214346+07:00 0HLF7U4N19MIH:00000001 [INF] Request finished in 946.9825ms 200 application/javascript (791a596a)
+2018-07-12T19:19:36.6914117+07:00 0HLF7U4N19MID:00000004 [INF] Sending file. Request path: '"/app/shared/structures.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\app\shared\structures.js"' (27b0a520)
+2018-07-12T19:19:36.6916430+07:00 0HLF7U4N19MID:00000004 [INF] Request finished in 930.6482ms 200 application/javascript (791a596a)
+2018-07-12T19:19:37.2596138+07:00 0HLF7U4N19MIG:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico   (ca22a1cb)
+2018-07-12T19:19:37.5338479+07:00 0HLF7U4N19MIG:00000002 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\favicon.ico"' (27b0a520)
+2018-07-12T19:19:37.5341387+07:00 0HLF7U4N19MIG:00000002 [INF] Request finished in 274.5175ms 200 image/x-icon (791a596a)
+2018-07-12T19:19:43.9633260+07:00 0HLF7U4N19MIC:00000006 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-12T19:19:43.9638003+07:00 0HLF7U4N19MIC:00000006 [INF] Route matched with "{area = \"Admin\", action = \"Authen\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" (a44c0341)
+2018-07-12T19:19:43.9651355+07:00 0HLF7U4N19MIC:00000006 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" with arguments (["WebAppCore.Models.AccountViewModels.LoginViewModel"]) - Validation state: Valid (4e3479ed)
+2018-07-12T19:19:43.9657244+07:00 0HLF7U4N19MIC:00000006 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:19:48.4219831+07:00 0HLF7U4N19MIF:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-12T19:19:48.4224095+07:00 0HLF7U4N19MIF:00000004 [INF] Route matched with "{area = \"Admin\", action = \"Authen\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" (a44c0341)
+2018-07-12T19:19:48.4231313+07:00 0HLF7U4N19MIF:00000004 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" with arguments (["WebAppCore.Models.AccountViewModels.LoginViewModel"]) - Validation state: Valid (4e3479ed)
+2018-07-12T19:19:48.4237258+07:00 0HLF7U4N19MIF:00000004 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:19:49.3322721+07:00 0HLF7U4N19MIE:00000004 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-12T19:19:49.3332835+07:00 0HLF7U4N19MIE:00000004 [INF] Route matched with "{area = \"Admin\", action = \"Authen\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" (a44c0341)
+2018-07-12T19:19:49.3340845+07:00 0HLF7U4N19MIE:00000004 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" with arguments (["WebAppCore.Models.AccountViewModels.LoginViewModel"]) - Validation state: Valid (4e3479ed)
+2018-07-12T19:19:49.3344933+07:00 0HLF7U4N19MIE:00000004 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:19:49.5281631+07:00 0HLF7U4N19MIH:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-12T19:19:49.5286912+07:00 0HLF7U4N19MIH:00000002 [INF] Route matched with "{area = \"Admin\", action = \"Authen\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" (a44c0341)
+2018-07-12T19:19:49.5296440+07:00 0HLF7U4N19MIH:00000002 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" with arguments (["WebAppCore.Models.AccountViewModels.LoginViewModel"]) - Validation state: Valid (4e3479ed)
+2018-07-12T19:19:49.5302932+07:00 0HLF7U4N19MIH:00000002 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:19:49.7164238+07:00 0HLF7U4N19MID:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-12T19:19:49.7168814+07:00 0HLF7U4N19MID:00000005 [INF] Route matched with "{area = \"Admin\", action = \"Authen\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" (a44c0341)
+2018-07-12T19:19:49.7176439+07:00 0HLF7U4N19MID:00000005 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" with arguments (["WebAppCore.Models.AccountViewModels.LoginViewModel"]) - Validation state: Valid (4e3479ed)
+2018-07-12T19:19:49.7180215+07:00 0HLF7U4N19MID:00000005 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:19:52.7148796+07:00 0HLF7U4N19MIF:00000004 [INF] Executed DbCommand ("694"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-12T19:19:52.7148992+07:00 0HLF7U4N19MID:00000005 [INF] Executed DbCommand ("694"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-12T19:19:52.7148796+07:00 0HLF7U4N19MIC:00000006 [INF] Executed DbCommand ("694"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-12T19:19:52.7155330+07:00 0HLF7U4N19MIE:00000004 [INF] Executed DbCommand ("694"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-12T19:19:52.7157284+07:00 0HLF7U4N19MIH:00000002 [INF] Executed DbCommand ("694"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-12T19:19:55.4603325+07:00 0HLF7U4N19MIH:00000002 [INF] Executed DbCommand ("259"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-12T19:19:55.4608769+07:00 0HLF7U4N19MID:00000005 [INF] Executed DbCommand ("259"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-12T19:19:55.4629476+07:00 0HLF7U4N19MIE:00000004 [INF] Executed DbCommand ("268"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-12T19:19:55.4629476+07:00 0HLF7U4N19MIC:00000006 [INF] Executed DbCommand ("266"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-12T19:19:55.4689856+07:00 0HLF7U4N19MIF:00000004 [INF] Executed DbCommand ("288"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-12T19:19:56.6767294+07:00 0HLF7U4N19MID:00000005 [INF] Executed DbCommand ("709"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-12T19:19:56.6777387+07:00 0HLF7U4N19MIE:00000004 [INF] Executed DbCommand ("711"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-12T19:19:56.6777429+07:00 0HLF7U4N19MIF:00000004 [INF] Executed DbCommand ("711"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-12T19:19:56.6838357+07:00 0HLF7U4N19MIC:00000006 [INF] Executed DbCommand ("717"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-12T19:19:56.6842887+07:00 0HLF7U4N19MIH:00000002 [INF] Executed DbCommand ("714"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-12T19:19:56.7512882+07:00 0HLF7U4N19MIF:00000004 [INF] Executed DbCommand ("13"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-12T19:19:56.7524702+07:00 0HLF7U4N19MIH:00000002 [INF] Executed DbCommand ("14"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-12T19:19:56.7559480+07:00 0HLF7U4N19MIC:00000006 [INF] Executed DbCommand ("14"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-12T19:19:56.7569380+07:00 0HLF7U4N19MIE:00000004 [INF] Executed DbCommand ("18"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-12T19:19:56.7677383+07:00 0HLF7U4N19MID:00000005 [INF] Executed DbCommand ("26"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-12T19:19:56.7982202+07:00 0HLF7U4N19MIE:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-12T19:19:56.7991520+07:00 0HLF7U4N19MIH:00000002 [INF] Executed DbCommand ("3"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-12T19:19:56.8019716+07:00 0HLF7U4N19MID:00000005 [INF] Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-12T19:19:56.8032990+07:00 0HLF7U4N19MIF:00000004 [INF] Executed DbCommand ("8"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-12T19:19:56.8038759+07:00 0HLF7U4N19MIC:00000006 [INF] Executed DbCommand ("8"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-12T19:19:56.8098216+07:00 0HLF7U4N19MIE:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-12T19:19:56.8098563+07:00 0HLF7U4N19MIF:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-12T19:19:56.8101060+07:00 0HLF7U4N19MIH:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-12T19:19:56.8229813+07:00 0HLF7U4N19MIE:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-12T19:19:56.8229813+07:00 0HLF7U4N19MIF:00000004 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-12T19:19:56.8230656+07:00 0HLF7U4N19MIH:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-12T19:19:56.8305418+07:00 0HLF7U4N19MIH:00000002 [INF] User logged in. (fdce0db4)
+2018-07-12T19:19:56.8305670+07:00 0HLF7U4N19MIF:00000004 [INF] User logged in. (fdce0db4)
+2018-07-12T19:19:56.8305688+07:00 0HLF7U4N19MIE:00000004 [INF] User logged in. (fdce0db4)
+2018-07-12T19:19:56.8312671+07:00 0HLF7U4N19MIF:00000004 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 8408.0327ms. (50a9e262)
+2018-07-12T19:19:56.8312671+07:00 0HLF7U4N19MIH:00000002 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 7301.4973ms. (50a9e262)
+2018-07-12T19:19:56.8312671+07:00 0HLF7U4N19MIE:00000004 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 7497.0825ms. (50a9e262)
+2018-07-12T19:19:56.8335191+07:00 0HLF7U4N19MIC:00000006 [INF] Executed DbCommand ("24"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-12T19:19:56.8347265+07:00 0HLF7U4N19MIC:00000006 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-12T19:19:56.8348312+07:00 0HLF7U4N19MIC:00000006 [INF] User logged in. (fdce0db4)
+2018-07-12T19:19:56.8349048+07:00 0HLF7U4N19MIC:00000006 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 12869.6862ms. (50a9e262)
+2018-07-12T19:19:56.8429147+07:00 0HLF7U4N19MID:00000005 [INF] Executed DbCommand ("34"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-12T19:19:56.8433385+07:00 0HLF7U4N19MID:00000005 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-12T19:19:56.8433928+07:00 0HLF7U4N19MID:00000005 [INF] User logged in. (fdce0db4)
+2018-07-12T19:19:56.8434488+07:00 0HLF7U4N19MID:00000005 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 7125.7433ms. (50a9e262)
+2018-07-12T19:19:56.8568198+07:00 0HLF7U4N19MIH:00000002 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2018-07-12T19:19:56.8568177+07:00 0HLF7U4N19MIC:00000006 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2018-07-12T19:19:56.8568177+07:00 0HLF7U4N19MIF:00000004 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2018-07-12T19:19:56.8571795+07:00 0HLF7U4N19MIE:00000004 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2018-07-12T19:19:56.8572526+07:00 0HLF7U4N19MID:00000005 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2018-07-12T19:19:57.8841478+07:00 0HLF7U4N19MID:00000005 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" in 8167.1594ms (afa2e885)
+2018-07-12T19:19:57.8841478+07:00 0HLF7U4N19MIF:00000004 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" in 9461.645ms (afa2e885)
+2018-07-12T19:19:57.8841478+07:00 0HLF7U4N19MIH:00000002 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" in 8355.3624ms (afa2e885)
+2018-07-12T19:19:57.8843047+07:00 0HLF7U4N19MID:00000005 [INF] Request finished in 8168.5779ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:19:57.8843047+07:00 0HLF7U4N19MIF:00000004 [INF] Request finished in 9462.372ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:19:57.8843154+07:00 0HLF7U4N19MIH:00000002 [INF] Request finished in 8356.2404ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:19:57.8849124+07:00 0HLF7U4N19MIC:00000006 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" in 13920.258ms (afa2e885)
+2018-07-12T19:19:57.8850462+07:00 0HLF7U4N19MIC:00000006 [INF] Request finished in 13921.8069ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:19:57.8856018+07:00 0HLF7U4N19MIE:00000004 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" in 8552.2263ms (afa2e885)
+2018-07-12T19:19:57.8857417+07:00 0HLF7U4N19MIE:00000004 [INF] Request finished in 8553.7175ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:19:57.9403136+07:00 0HLF7U4N19MIG:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/Home/Index   (ca22a1cb)
+2018-07-12T19:19:57.9482342+07:00 0HLF7U4N19MIG:00000003 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Home\"}". Executing action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-12T19:19:57.9494996+07:00 0HLF7U4N19MIG:00000003 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:19:57.9501736+07:00 0HLF7U4N19MIG:00000003 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-12T19:19:57.9527955+07:00 0HLF7U4N19MIG:00000003 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 2.4577ms. (50a9e262)
+2018-07-12T19:19:58.0327705+07:00 0HLF7U4N19MIG:00000003 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-12T19:19:58.4472886+07:00 0HLF7U4N19MIG:00000003 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:19:59.0407327+07:00 0HLF7U4N19MIG:00000003 [INF] Executed DbCommand ("485"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-12T19:19:59.2220043+07:00 0HLF7U4N19MIG:00000003 [INF] Executed ViewResult - view "Index" executed in 1266.9712ms. (f66409e9)
+2018-07-12T19:19:59.2307442+07:00 0HLF7U4N19MIG:00000003 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" in 1282.3859ms (afa2e885)
+2018-07-12T19:19:59.2318283+07:00 0HLF7U4N19MIG:00000003 [INF] Request finished in 1291.4595ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:20:12.8752394+07:00 0HLF7U4N19MID:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/Index   (ca22a1cb)
+2018-07-12T19:20:12.8781721+07:00 0HLF7U4N19MID:00000006 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.Index (WebAppCore)" (a44c0341)
+2018-07-12T19:20:12.8783321+07:00 0HLF7U4N19MID:00000006 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:20:12.8830008+07:00 0HLF7U4N19MID:00000006 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-12T19:20:12.8835212+07:00 0HLF7U4N19MID:00000006 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.3947ms. (50a9e262)
+2018-07-12T19:20:12.9141660+07:00 0HLF7U4N19MID:00000006 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-12T19:20:12.9369048+07:00 0HLF7U4N19MID:00000006 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:20:12.9392787+07:00 0HLF7U4N19MID:00000006 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-12T19:20:12.9776862+07:00 0HLF7U4N19MID:00000006 [INF] Executed ViewResult - view "Index" executed in 94.0183ms. (f66409e9)
+2018-07-12T19:20:12.9778838+07:00 0HLF7U4N19MID:00000006 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.Index (WebAppCore)" in 99.6193ms (afa2e885)
+2018-07-12T19:20:12.9790368+07:00 0HLF7U4N19MID:00000006 [INF] Request finished in 103.7799ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:20:13.1181734+07:00 0HLF7U4N19MIC:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:5000/app/Controller/product-category/index.js?v=_Y-8eTGaf2Kw34aVRJHokwyXm_V4HVwiLSsHvfAlSdo   (ca22a1cb)
+2018-07-12T19:20:13.1213881+07:00 0HLF7U4N19MIC:00000007 [INF] Sending file. Request path: '"/app/Controller/product-category/index.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\app\Controller\product-category\index.js"' (27b0a520)
+2018-07-12T19:20:13.1215062+07:00 0HLF7U4N19MIC:00000007 [INF] Request finished in 3.3472ms 200 application/javascript (791a596a)
+2018-07-12T19:20:13.3600918+07:00 0HLF7U4N19MIH:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-12T19:20:13.3633398+07:00 0HLF7U4N19MIH:00000003 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-12T19:20:13.3636106+07:00 0HLF7U4N19MIH:00000003 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:20:13.3638022+07:00 0HLF7U4N19MIH:00000003 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-12T19:20:13.3691025+07:00 0HLF7U4N19MIH:00000003 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:20:13.8314810+07:00 0HLF7U4N19MIH:00000003 [INF] Executed DbCommand ("224"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-12T19:20:13.8951123+07:00 0HLF7U4N19MIH:00000003 [INF] Executed DbCommand ("41"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-12T19:20:13.9488030+07:00 0HLF7U4N19MIH:00000003 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 584.807ms. (50a9e262)
+2018-07-12T19:20:13.9490707+07:00 0HLF7U4N19MIH:00000003 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-12T19:20:13.9857090+07:00 0HLF7U4N19MIH:00000003 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 622.2348ms (afa2e885)
+2018-07-12T19:20:13.9863343+07:00 0HLF7U4N19MIH:00000003 [INF] Request finished in 626.2728ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:20:16.9994495+07:00 0HLF7U4N19MIF:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetById?id=0   (ca22a1cb)
+2018-07-12T19:20:17.0273035+07:00 0HLF7U4N19MIF:00000005 [INF] Route matched with "{area = \"Admin\", action = \"GetById\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" (a44c0341)
+2018-07-12T19:20:17.0274506+07:00 0HLF7U4N19MIF:00000005 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:20:17.0281053+07:00 0HLF7U4N19MIF:00000005 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" with arguments (["0"]) - Validation state: Valid (4e3479ed)
+2018-07-12T19:20:17.0326573+07:00 0HLF7U4N19MIF:00000005 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:20:17.1142241+07:00 0HLF7U4N19MIF:00000005 [INF] Executed DbCommand ("30"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2018-07-12T19:20:17.2350506+07:00 0HLF7U4N19MIF:00000005 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 206.8422ms. (50a9e262)
+2018-07-12T19:20:17.2352461+07:00 0HLF7U4N19MIF:00000005 [INF] Executing ObjectResult, writing value of type '"null"'. (8a1b66c8)
+2018-07-12T19:20:17.2354197+07:00 0HLF7U4N19MIF:00000005 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" in 208.0157ms (afa2e885)
+2018-07-12T19:20:17.2355767+07:00 0HLF7U4N19MIF:00000005 [INF] Request finished in 236.1536ms 204  (791a596a)
+2018-07-12T19:20:25.6140530+07:00 0HLF7U4N19MIE:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/css/bootstrap.css.map   (ca22a1cb)
+2018-07-12T19:20:25.6146696+07:00 0HLF7U4N19MIE:00000005 [INF] The file "/lib/bootstrap/dist/css/bootstrap.css.map" was not modified (f1f8d725)
+2018-07-12T19:20:25.6148445+07:00 0HLF7U4N19MIE:00000005 [INF] Request finished in 0.8578ms 304 text/plain (791a596a)
+2018-07-12T19:21:45.0630711+07:00 0HLF7U4N19MII:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/Index   (ca22a1cb)
+2018-07-12T19:21:45.0649955+07:00 0HLF7U4N19MII:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.Index (WebAppCore)" (a44c0341)
+2018-07-12T19:21:45.0651204+07:00 0HLF7U4N19MII:00000001 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:21:45.0652479+07:00 0HLF7U4N19MII:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-12T19:21:45.0653608+07:00 0HLF7U4N19MII:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0141ms. (50a9e262)
+2018-07-12T19:21:45.0654972+07:00 0HLF7U4N19MII:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-12T19:21:45.0669748+07:00 0HLF7U4N19MII:00000001 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:21:45.0684578+07:00 0HLF7U4N19MII:00000001 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-12T19:21:45.0768535+07:00 0HLF7U4N19MII:00000001 [INF] Executed ViewResult - view "Index" executed in 11.3683ms. (f66409e9)
+2018-07-12T19:21:45.0769638+07:00 0HLF7U4N19MII:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.Index (WebAppCore)" in 11.899ms (afa2e885)
+2018-07-12T19:21:45.0771212+07:00 0HLF7U4N19MII:00000001 [INF] Request finished in 14.8301ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:21:45.1703989+07:00 0HLF7U4N19MII:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-07-12T19:21:45.1762543+07:00 0HLF7U4N19MIL:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-07-12T19:21:45.1764592+07:00 0HLF7U4N19MII:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-07-12T19:21:45.1765939+07:00 0HLF7U4N19MII:00000002 [INF] Request finished in 6.2321ms 200 text/css (791a596a)
+2018-07-12T19:21:45.1767157+07:00 0HLF7U4N19MIJ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/nprogress/nprogress.css   (ca22a1cb)
+2018-07-12T19:21:45.1767333+07:00 0HLF7U4N19MIM:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-07-12T19:21:45.1769527+07:00 0HLF7U4N19MIK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-07-12T19:21:45.1772435+07:00 0HLF7U4N19MIJ:00000001 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\nprogress\nprogress.css"' (27b0a520)
+2018-07-12T19:21:45.1773136+07:00 0HLF7U4N19MIJ:00000001 [INF] Request finished in 0.6055ms 200 text/css (791a596a)
+2018-07-12T19:21:45.1774351+07:00 0HLF7U4N19MIM:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.css"' (27b0a520)
+2018-07-12T19:21:45.1774907+07:00 0HLF7U4N19MIM:00000001 [INF] Request finished in 0.7843ms 200 text/css (791a596a)
+2018-07-12T19:21:45.1773619+07:00 0HLF7U4N19MIK:00000001 [INF] Sending file. Request path: '"/lib/font-awesome/css/font-awesome.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-07-12T19:21:45.1775929+07:00 0HLF7U4N19MIK:00000001 [INF] Request finished in 0.6688ms 200 text/css (791a596a)
+2018-07-12T19:21:45.1890972+07:00 0HLF7U4N19MIL:00000001 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2018-07-12T19:21:45.1892118+07:00 0HLF7U4N19MIL:00000001 [INF] Request finished in 13.025ms 200 text/css (791a596a)
+2018-07-12T19:21:45.2026136+07:00 0HLF7U4N19MIJ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jQuery-EasyUI/themes/bootstrap/easyui.css   (ca22a1cb)
+2018-07-12T19:21:45.2126938+07:00 0HLF7U4N19MIJ:00000002 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/bootstrap/easyui.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jQuery-EasyUI\themes\bootstrap\easyui.css"' (27b0a520)
+2018-07-12T19:21:45.2128294+07:00 0HLF7U4N19MIJ:00000002 [INF] Request finished in 10.3363ms 200 text/css (791a596a)
+2018-07-12T19:21:45.2427121+07:00 0HLF7U4N19MIL:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin-side/css/custom.min.css   (ca22a1cb)
+2018-07-12T19:21:45.2461350+07:00 0HLF7U4N19MIK:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-07-12T19:21:45.2463001+07:00 0HLF7U4N19MIM:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jQuery-EasyUI/themes/icon.css   (ca22a1cb)
+2018-07-12T19:21:45.2487925+07:00 0HLF7U4N19MIK:00000002 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-07-12T19:21:45.2490790+07:00 0HLF7U4N19MIK:00000002 [INF] Request finished in 3.0418ms 200 application/javascript (791a596a)
+2018-07-12T19:21:45.2792658+07:00 0HLF7U4N19MIL:00000002 [INF] Sending file. Request path: '"/admin-side/css/custom.min.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\admin-side\css\custom.min.css"' (27b0a520)
+2018-07-12T19:21:45.2793829+07:00 0HLF7U4N19MIL:00000002 [INF] Request finished in 36.7726ms 200 text/css (791a596a)
+2018-07-12T19:21:45.3117054+07:00 0HLF7U4N19MIM:00000002 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/icon.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jQuery-EasyUI\themes\icon.css"' (27b0a520)
+2018-07-12T19:21:45.3117905+07:00 0HLF7U4N19MIM:00000002 [INF] Request finished in 65.5023ms 200 text/css (791a596a)
+2018-07-12T19:21:45.3123046+07:00 0HLF7U4N19MII:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin-side/images/img.jpg   (ca22a1cb)
+2018-07-12T19:21:45.3351703+07:00 0HLF7U4N19MIJ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2018-07-12T19:21:45.3366282+07:00 0HLF7U4N19MIJ:00000003 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.js"' (27b0a520)
+2018-07-12T19:21:45.3367223+07:00 0HLF7U4N19MIJ:00000003 [INF] Request finished in 1.6084ms 200 application/javascript (791a596a)
+2018-07-12T19:21:45.3368681+07:00 0HLF7U4N19MIM:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2018-07-12T19:21:45.3405780+07:00 0HLF7U4N19MIM:00000003 [INF] Sending file. Request path: '"/lib/notifyjs/dist/notify.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\notifyjs\dist\notify.js"' (27b0a520)
+2018-07-12T19:21:45.3406763+07:00 0HLF7U4N19MIM:00000003 [INF] Request finished in 3.8116ms 200 application/javascript (791a596a)
+2018-07-12T19:21:45.3646502+07:00 0HLF7U4N19MIL:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-07-12T19:21:45.3652062+07:00 0HLF7U4N19MIL:00000003 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2018-07-12T19:21:45.3652814+07:00 0HLF7U4N19MIL:00000003 [INF] Request finished in 0.6825ms 200 application/javascript (791a596a)
+2018-07-12T19:21:45.3896983+07:00 0HLF7U4N19MIJ:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/app/shared/structures.js   (ca22a1cb)
+2018-07-12T19:21:45.3982753+07:00 0HLF7U4N19MIJ:00000004 [INF] Sending file. Request path: '"/app/shared/structures.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\app\shared\structures.js"' (27b0a520)
+2018-07-12T19:21:45.3984442+07:00 0HLF7U4N19MIJ:00000004 [INF] Request finished in 8.7202ms 200 application/javascript (791a596a)
+2018-07-12T19:21:45.3987795+07:00 0HLF7U4N19MIK:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-07-12T19:21:45.4282650+07:00 0HLF7U4N19MII:00000003 [INF] Sending file. Request path: '"/admin-side/images/img.jpg"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\admin-side\images\img.jpg"' (27b0a520)
+2018-07-12T19:21:45.4284548+07:00 0HLF7U4N19MII:00000003 [INF] Request finished in 116.0967ms 200 image/jpeg (791a596a)
+2018-07-12T19:21:45.4347323+07:00 0HLF7U4N19MIM:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2018-07-12T19:21:45.4590449+07:00 0HLF7U4N19MIJ:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/nprogress/nprogress.js   (ca22a1cb)
+2018-07-12T19:21:45.4924219+07:00 0HLF7U4N19MII:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2018-07-12T19:21:45.5125250+07:00 0HLF7U4N19MIL:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2018-07-12T19:21:45.5272269+07:00 0HLF7U4N19MIN:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2018-07-12T19:21:45.5924881+07:00 0HLF7U4N19MIM:00000004 [INF] Sending file. Request path: '"/lib/fastclick/lib/fastclick.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\fastclick\lib\fastclick.js"' (27b0a520)
+2018-07-12T19:21:45.5925663+07:00 0HLF7U4N19MIM:00000004 [INF] Request finished in 157.8858ms 200 application/javascript (791a596a)
+2018-07-12T19:21:45.7109263+07:00 0HLF7U4N19MIN:00000001 [INF] Sending file. Request path: '"/lib/jquery-sparkline/dist/jquery.sparkline.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jquery-sparkline\dist\jquery.sparkline.js"' (27b0a520)
+2018-07-12T19:21:45.7110486+07:00 0HLF7U4N19MIN:00000001 [INF] Request finished in 183.8482ms 200 application/javascript (791a596a)
+2018-07-12T19:21:45.7434900+07:00 0HLF7U4N19MIM:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-07-12T19:21:45.7448243+07:00 0HLF7U4N19MIM:00000005 [INF] Sending file. Request path: '"/lib/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-07-12T19:21:45.7449056+07:00 0HLF7U4N19MIM:00000005 [INF] Request finished in 1.5942ms 200 font/woff2 (791a596a)
+2018-07-12T19:21:45.7955867+07:00 0HLF7U4N19MIN:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-07-12T19:21:45.8410933+07:00 0HLF7U4N19MIN:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-07-12T19:21:45.8412100+07:00 0HLF7U4N19MIN:00000002 [INF] Request finished in 45.6635ms 200 font/woff2 (791a596a)
+2018-07-12T19:21:45.9067638+07:00 0HLF7U4N19MIL:00000004 [INF] Sending file. Request path: '"/lib/twbs-pagination/jquery.twbsPagination.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\twbs-pagination\jquery.twbsPagination.js"' (27b0a520)
+2018-07-12T19:21:45.9070332+07:00 0HLF7U4N19MIL:00000004 [INF] Request finished in 394.5124ms 200 application/javascript (791a596a)
+2018-07-12T19:21:45.9921499+07:00 0HLF7U4N19MII:00000004 [INF] Sending file. Request path: '"/lib/Chart.js/dist/Chart.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\Chart.js\dist\Chart.js"' (27b0a520)
+2018-07-12T19:21:45.9923082+07:00 0HLF7U4N19MII:00000004 [INF] Request finished in 499.9341ms 200 application/javascript (791a596a)
+2018-07-12T19:21:46.0180290+07:00 0HLF7U4N19MIJ:00000005 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\nprogress\nprogress.js"' (27b0a520)
+2018-07-12T19:21:46.0182612+07:00 0HLF7U4N19MIJ:00000005 [INF] Request finished in 559.2424ms 200 application/javascript (791a596a)
+2018-07-12T19:21:46.0282114+07:00 0HLF7U4N19MIK:00000003 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-07-12T19:21:46.0283448+07:00 0HLF7U4N19MIK:00000003 [INF] Request finished in 629.5571ms 200 application/javascript (791a596a)
+2018-07-12T19:21:46.0395664+07:00 0HLF7U4N19MIM:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/mustache/mustache.js   (ca22a1cb)
+2018-07-12T19:21:46.1572563+07:00 0HLF7U4N19MIM:00000006 [INF] Sending file. Request path: '"/lib/mustache/mustache.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\mustache\mustache.js"' (27b0a520)
+2018-07-12T19:21:46.1573657+07:00 0HLF7U4N19MIM:00000006 [INF] Request finished in 118.0276ms 200 application/javascript (791a596a)
+2018-07-12T19:21:46.1694021+07:00 0HLF7U4N19MIN:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootbox/bootbox.js   (ca22a1cb)
+2018-07-12T19:21:46.1725666+07:00 0HLF7U4N19MIL:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-07-12T19:21:46.1749674+07:00 0HLF7U4N19MII:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/moment/min/moment.min.js   (ca22a1cb)
+2018-07-12T19:21:46.2329667+07:00 0HLF7U4N19MIJ:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin-side/js/custom.min.js   (ca22a1cb)
+2018-07-12T19:21:46.2472751+07:00 0HLF7U4N19MIK:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jQuery-EasyUI/jquery.easyui.min.js   (ca22a1cb)
+2018-07-12T19:21:46.2572686+07:00 0HLF7U4N19MIN:00000003 [INF] Sending file. Request path: '"/lib/bootbox/bootbox.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootbox\bootbox.js"' (27b0a520)
+2018-07-12T19:21:46.2573768+07:00 0HLF7U4N19MIN:00000003 [INF] Request finished in 88.0097ms 200 application/javascript (791a596a)
+2018-07-12T19:21:46.2583146+07:00 0HLF7U4N19MIL:00000005 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2018-07-12T19:21:46.2584018+07:00 0HLF7U4N19MIL:00000005 [INF] Request finished in 85.9078ms 200 application/javascript (791a596a)
+2018-07-12T19:21:46.2632415+07:00 0HLF7U4N19MII:00000005 [INF] Sending file. Request path: '"/lib/moment/min/moment.min.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\moment\min\moment.min.js"' (27b0a520)
+2018-07-12T19:21:46.2634870+07:00 0HLF7U4N19MII:00000005 [INF] Request finished in 88.4656ms 200 application/javascript (791a596a)
+2018-07-12T19:21:46.5213570+07:00 0HLF7U4N19MIM:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:5000/app/Controller/product-category/index.js?v=yDJpLEqxNqzqmwMT7LZo8nuigcyPNy9vrBHsUfqkq_8   (ca22a1cb)
+2018-07-12T19:21:46.5227053+07:00 0HLF7U4N19MIM:00000007 [INF] Sending file. Request path: '"/app/Controller/product-category/index.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\app\Controller\product-category\index.js"' (27b0a520)
+2018-07-12T19:21:46.5228460+07:00 0HLF7U4N19MIM:00000007 [INF] Request finished in 1.5357ms 200 application/javascript (791a596a)
+2018-07-12T19:21:46.5860861+07:00 0HLF7U4N19MIJ:00000006 [INF] Sending file. Request path: '"/admin-side/js/custom.min.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\admin-side\js\custom.min.js"' (27b0a520)
+2018-07-12T19:21:46.5881636+07:00 0HLF7U4N19MIJ:00000006 [INF] Request finished in 355.1713ms 200 application/javascript (791a596a)
+2018-07-12T19:21:46.9951281+07:00 0HLF7U4N19MIK:00000004 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/jquery.easyui.min.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jQuery-EasyUI\jquery.easyui.min.js"' (27b0a520)
+2018-07-12T19:21:46.9961023+07:00 0HLF7U4N19MIK:00000004 [INF] Request finished in 748.8434ms 200 application/javascript (791a596a)
+2018-07-12T19:21:47.1225517+07:00 0HLF7U4N19MIN:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-12T19:21:47.1238389+07:00 0HLF7U4N19MIN:00000004 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-12T19:21:47.1240767+07:00 0HLF7U4N19MIN:00000004 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:21:47.1242153+07:00 0HLF7U4N19MIN:00000004 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-12T19:21:47.1253127+07:00 0HLF7U4N19MIN:00000004 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:21:47.1295024+07:00 0HLF7U4N19MIN:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-12T19:21:47.1352017+07:00 0HLF7U4N19MIN:00000004 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-12T19:21:47.1359133+07:00 0HLF7U4N19MIN:00000004 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 11.6069ms. (50a9e262)
+2018-07-12T19:21:47.1361327+07:00 0HLF7U4N19MIN:00000004 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-12T19:21:47.1378797+07:00 0HLF7U4N19MIN:00000004 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 13.879ms (afa2e885)
+2018-07-12T19:21:47.1380439+07:00 0HLF7U4N19MIN:00000004 [INF] Request finished in 15.5576ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:21:47.3137740+07:00 0HLF7U4N19MII:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jQuery-EasyUI/themes/icons/edit_remove.png   (ca22a1cb)
+2018-07-12T19:21:47.3157737+07:00 0HLF7U4N19MIL:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jQuery-EasyUI/themes/icons/pencil.png   (ca22a1cb)
+2018-07-12T19:21:47.3179038+07:00 0HLF7U4N19MII:00000006 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/icons/edit_remove.png"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jQuery-EasyUI\themes\icons\edit_remove.png"' (27b0a520)
+2018-07-12T19:21:47.3179966+07:00 0HLF7U4N19MII:00000006 [INF] Request finished in 4.3081ms 200 image/png (791a596a)
+2018-07-12T19:21:47.3183349+07:00 0HLF7U4N19MIL:00000006 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/icons/pencil.png"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jQuery-EasyUI\themes\icons\pencil.png"' (27b0a520)
+2018-07-12T19:21:47.3184114+07:00 0HLF7U4N19MIL:00000006 [INF] Request finished in 2.692ms 200 image/png (791a596a)
+2018-07-12T19:21:47.3910659+07:00 0HLF7U4N19MIM:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jQuery-EasyUI/themes/bootstrap/images/tree_icons.png   (ca22a1cb)
+2018-07-12T19:21:47.3968641+07:00 0HLF7U4N19MIM:00000008 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/bootstrap/images/tree_icons.png"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jQuery-EasyUI\themes\bootstrap\images\tree_icons.png"' (27b0a520)
+2018-07-12T19:21:47.3971215+07:00 0HLF7U4N19MIM:00000008 [INF] Request finished in 6.5469ms 200 image/png (791a596a)
+2018-07-12T19:21:52.4388904+07:00 0HLF7U4N19MIJ:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetById?id=4   (ca22a1cb)
+2018-07-12T19:21:52.4405094+07:00 0HLF7U4N19MIJ:00000007 [INF] Route matched with "{area = \"Admin\", action = \"GetById\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" (a44c0341)
+2018-07-12T19:21:52.4406279+07:00 0HLF7U4N19MIJ:00000007 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:21:52.4409183+07:00 0HLF7U4N19MIJ:00000007 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" with arguments (["4"]) - Validation state: Valid (4e3479ed)
+2018-07-12T19:21:52.4414785+07:00 0HLF7U4N19MIJ:00000007 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:21:52.4576879+07:00 0HLF7U4N19MIJ:00000007 [INF] Executed DbCommand ("15"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2018-07-12T19:21:52.5642458+07:00 0HLF7U4N19MIJ:00000007 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 123.2185ms. (50a9e262)
+2018-07-12T19:21:52.5646684+07:00 0HLF7U4N19MIJ:00000007 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel"'. (8a1b66c8)
+2018-07-12T19:21:52.5649793+07:00 0HLF7U4N19MIJ:00000007 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" in 124.356ms (afa2e885)
+2018-07-12T19:21:52.5651178+07:00 0HLF7U4N19MIJ:00000007 [INF] Request finished in 126.4883ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:21:52.6151169+07:00 0HLF7U4N19MIK:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-12T19:21:52.6165590+07:00 0HLF7U4N19MIK:00000005 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-12T19:21:52.6166660+07:00 0HLF7U4N19MIK:00000005 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:21:52.6167652+07:00 0HLF7U4N19MIK:00000005 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-12T19:21:52.6172471+07:00 0HLF7U4N19MIK:00000005 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:21:52.6239596+07:00 0HLF7U4N19MIK:00000005 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-12T19:21:52.6645062+07:00 0HLF7U4N19MIK:00000005 [INF] Executed DbCommand ("40"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-12T19:21:52.6650836+07:00 0HLF7U4N19MIK:00000005 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 48.2384ms. (50a9e262)
+2018-07-12T19:21:52.6652371+07:00 0HLF7U4N19MIK:00000005 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-12T19:21:52.6669785+07:00 0HLF7U4N19MIK:00000005 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 50.2839ms (afa2e885)
+2018-07-12T19:21:52.6672253+07:00 0HLF7U4N19MIK:00000005 [INF] Request finished in 54.3359ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:22:44.9910958+07:00 0HLF7U4N19MIN:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetById?id=1   (ca22a1cb)
+2018-07-12T19:22:44.9925532+07:00 0HLF7U4N19MIN:00000005 [INF] Route matched with "{area = \"Admin\", action = \"GetById\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" (a44c0341)
+2018-07-12T19:22:44.9927003+07:00 0HLF7U4N19MIN:00000005 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:22:44.9929363+07:00 0HLF7U4N19MIN:00000005 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" with arguments (["1"]) - Validation state: Valid (4e3479ed)
+2018-07-12T19:22:44.9954655+07:00 0HLF7U4N19MIN:00000005 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:22:44.9995154+07:00 0HLF7U4N19MIN:00000005 [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2018-07-12T19:22:45.0000978+07:00 0HLF7U4N19MIN:00000005 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 7.0562ms. (50a9e262)
+2018-07-12T19:22:45.0002163+07:00 0HLF7U4N19MIN:00000005 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel"'. (8a1b66c8)
+2018-07-12T19:22:45.0004216+07:00 0HLF7U4N19MIN:00000005 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" in 7.767ms (afa2e885)
+2018-07-12T19:22:45.0005260+07:00 0HLF7U4N19MIN:00000005 [INF] Request finished in 9.5276ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:22:45.0636510+07:00 0HLF7U4N19MII:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-12T19:22:45.0644652+07:00 0HLF7U4N19MII:00000007 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-12T19:22:45.0645824+07:00 0HLF7U4N19MII:00000007 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:22:45.0646782+07:00 0HLF7U4N19MII:00000007 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-12T19:22:45.0650378+07:00 0HLF7U4N19MII:00000007 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:22:45.0672686+07:00 0HLF7U4N19MII:00000007 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-12T19:22:45.0714523+07:00 0HLF7U4N19MII:00000007 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-12T19:22:45.0719159+07:00 0HLF7U4N19MII:00000007 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 7.1674ms. (50a9e262)
+2018-07-12T19:22:45.0720258+07:00 0HLF7U4N19MII:00000007 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-12T19:22:45.0724367+07:00 0HLF7U4N19MII:00000007 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 7.885ms (afa2e885)
+2018-07-12T19:22:45.0725560+07:00 0HLF7U4N19MII:00000007 [INF] Request finished in 8.9358ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:23:14.1799929+07:00 0HLF7U4N19MIN:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-12T19:23:14.1813840+07:00 0HLF7U4N19MIN:00000006 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-12T19:23:14.1815584+07:00 0HLF7U4N19MIN:00000006 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:23:14.1817103+07:00 0HLF7U4N19MIN:00000006 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-12T19:23:14.1822910+07:00 0HLF7U4N19MIN:00000006 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:23:14.1851495+07:00 0HLF7U4N19MIN:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-12T19:23:14.1887695+07:00 0HLF7U4N19MIN:00000006 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-12T19:23:14.1893481+07:00 0HLF7U4N19MIN:00000006 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 7.5536ms. (50a9e262)
+2018-07-12T19:23:14.1894931+07:00 0HLF7U4N19MIN:00000006 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-12T19:23:14.1900594+07:00 0HLF7U4N19MIN:00000006 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 8.559ms (afa2e885)
+2018-07-12T19:23:14.1901997+07:00 0HLF7U4N19MIN:00000006 [INF] Request finished in 10.3402ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:24:01.5940264+07:00 0HLF7U4N19MIN:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetById?id=4   (ca22a1cb)
+2018-07-12T19:24:01.5952093+07:00 0HLF7U4N19MIN:00000007 [INF] Route matched with "{area = \"Admin\", action = \"GetById\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" (a44c0341)
+2018-07-12T19:24:01.5953928+07:00 0HLF7U4N19MIN:00000007 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:24:01.5956960+07:00 0HLF7U4N19MIN:00000007 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" with arguments (["4"]) - Validation state: Valid (4e3479ed)
+2018-07-12T19:24:01.5962365+07:00 0HLF7U4N19MIN:00000007 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:24:01.6001012+07:00 0HLF7U4N19MIN:00000007 [INF] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2018-07-12T19:24:01.6004776+07:00 0HLF7U4N19MIN:00000007 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 4.7097ms. (50a9e262)
+2018-07-12T19:24:01.6006230+07:00 0HLF7U4N19MIN:00000007 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel"'. (8a1b66c8)
+2018-07-12T19:24:01.6008872+07:00 0HLF7U4N19MIN:00000007 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" in 5.5894ms (afa2e885)
+2018-07-12T19:24:01.6010091+07:00 0HLF7U4N19MIN:00000007 [INF] Request finished in 7.0999ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:24:01.6116157+07:00 0HLF7U4N19MIN:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-12T19:24:01.6124724+07:00 0HLF7U4N19MIN:00000008 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-12T19:24:01.6125609+07:00 0HLF7U4N19MIN:00000008 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:24:01.6126554+07:00 0HLF7U4N19MIN:00000008 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-12T19:24:01.6130493+07:00 0HLF7U4N19MIN:00000008 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:24:01.6158012+07:00 0HLF7U4N19MIN:00000008 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-12T19:24:01.6218534+07:00 0HLF7U4N19MIN:00000008 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-12T19:24:01.6223944+07:00 0HLF7U4N19MIN:00000008 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 9.6658ms. (50a9e262)
+2018-07-12T19:24:01.6225282+07:00 0HLF7U4N19MIN:00000008 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-12T19:24:01.6230021+07:00 0HLF7U4N19MIN:00000008 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 10.4604ms (afa2e885)
+2018-07-12T19:24:01.6231329+07:00 0HLF7U4N19MIN:00000008 [INF] Request finished in 11.556ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:27:12.4042304+07:00 0HLF7U4N19MIO:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/Index   (ca22a1cb)
+2018-07-12T19:27:12.4069452+07:00 0HLF7U4N19MIO:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.Index (WebAppCore)" (a44c0341)
+2018-07-12T19:27:12.4071162+07:00 0HLF7U4N19MIO:00000001 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:27:12.4072988+07:00 0HLF7U4N19MIO:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-12T19:27:12.4075156+07:00 0HLF7U4N19MIO:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0436ms. (50a9e262)
+2018-07-12T19:27:12.4079586+07:00 0HLF7U4N19MIO:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-12T19:27:29.1535117+07:00 0HLF7U4N19MIO:00000001 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:27:29.1607831+07:00 0HLF7U4N19MIO:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-12T19:27:29.1675413+07:00 0HLF7U4N19MIO:00000001 [INF] Executed ViewResult - view "Index" executed in 16759.7477ms. (f66409e9)
+2018-07-12T19:27:29.1678368+07:00 0HLF7U4N19MIO:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.Index (WebAppCore)" in 16760.7206ms (afa2e885)
+2018-07-12T19:27:29.1682534+07:00 0HLF7U4N19MIO:00000001 [INF] Request finished in 16764.3287ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-12T19:27:29.2339666+07:00 0HLF7U4N19MIO:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-07-12T19:27:29.2347226+07:00 0HLF7U4N19MIS:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-07-12T19:27:29.2354903+07:00 0HLF7U4N19MIP:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-07-12T19:27:29.2362156+07:00 0HLF7U4N19MIP:00000001 [INF] Sending file. Request path: '"/lib/font-awesome/css/font-awesome.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-07-12T19:27:29.2362969+07:00 0HLF7U4N19MIP:00000001 [INF] Request finished in 0.8394ms 200 text/css (791a596a)
+2018-07-12T19:27:29.2363555+07:00 0HLF7U4N19MIS:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.css"' (27b0a520)
+2018-07-12T19:27:29.2364209+07:00 0HLF7U4N19MIS:00000001 [INF] Request finished in 1.7367ms 200 text/css (791a596a)
+2018-07-12T19:27:29.2364187+07:00 0HLF7U4N19MIQ:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-07-12T19:27:29.2369144+07:00 0HLF7U4N19MIQ:00000001 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2018-07-12T19:27:29.2370157+07:00 0HLF7U4N19MIQ:00000001 [INF] Request finished in 0.5743ms 200 text/css (791a596a)
+2018-07-12T19:27:29.2376974+07:00 0HLF7U4N19MIR:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/nprogress/nprogress.css   (ca22a1cb)
+2018-07-12T19:27:29.2387430+07:00 0HLF7U4N19MIR:00000001 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\nprogress\nprogress.css"' (27b0a520)
+2018-07-12T19:27:29.2392758+07:00 0HLF7U4N19MIR:00000001 [INF] Request finished in 1.5463ms 200 text/css (791a596a)
+2018-07-12T19:27:29.2394264+07:00 0HLF7U4N19MIO:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-07-12T19:27:29.2394884+07:00 0HLF7U4N19MIO:00000002 [INF] Request finished in 5.6061ms 200 text/css (791a596a)
+2018-07-12T19:27:29.2555408+07:00 0HLF7U4N19MIS:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jQuery-EasyUI/themes/bootstrap/easyui.css   (ca22a1cb)
+2018-07-12T19:27:29.2625787+07:00 0HLF7U4N19MIS:00000002 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/bootstrap/easyui.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jQuery-EasyUI\themes\bootstrap\easyui.css"' (27b0a520)
+2018-07-12T19:27:29.2626775+07:00 0HLF7U4N19MIS:00000002 [INF] Request finished in 7.4262ms 200 text/css (791a596a)
+2018-07-12T19:27:29.2691543+07:00 0HLF7U4N19MIQ:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jQuery-EasyUI/themes/icon.css   (ca22a1cb)
+2018-07-12T19:27:29.2702974+07:00 0HLF7U4N19MIQ:00000002 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/icon.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jQuery-EasyUI\themes\icon.css"' (27b0a520)
+2018-07-12T19:27:29.2704385+07:00 0HLF7U4N19MIQ:00000002 [INF] Request finished in 1.3381ms 200 text/css (791a596a)
+2018-07-12T19:27:29.2946364+07:00 0HLF7U4N19MIR:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin-side/css/custom.min.css   (ca22a1cb)
+2018-07-12T19:27:29.2958835+07:00 0HLF7U4N19MIR:00000002 [INF] Sending file. Request path: '"/admin-side/css/custom.min.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\admin-side\css\custom.min.css"' (27b0a520)
+2018-07-12T19:27:29.2959922+07:00 0HLF7U4N19MIR:00000002 [INF] Request finished in 1.4245ms 200 text/css (791a596a)
+2018-07-12T19:27:29.3191987+07:00 0HLF7U4N19MIP:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery/dist/jquery.js   (ca22a1cb)
+2018-07-12T19:27:29.3221825+07:00 0HLF7U4N19MIQ:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin-side/images/img.jpg   (ca22a1cb)
+2018-07-12T19:27:29.3242023+07:00 0HLF7U4N19MIQ:00000003 [INF] Sending file. Request path: '"/admin-side/images/img.jpg"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\admin-side\images\img.jpg"' (27b0a520)
+2018-07-12T19:27:29.3243186+07:00 0HLF7U4N19MIQ:00000003 [INF] Request finished in 2.2332ms 200 image/jpeg (791a596a)
+2018-07-12T19:27:29.3247471+07:00 0HLF7U4N19MIP:00000002 [INF] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jquery\dist\jquery.js"' (27b0a520)
+2018-07-12T19:27:29.3251491+07:00 0HLF7U4N19MIP:00000002 [INF] Request finished in 5.9148ms 200 application/javascript (791a596a)
+2018-07-12T19:27:29.3546444+07:00 0HLF7U4N19MIS:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/notifyjs/dist/notify.js   (ca22a1cb)
+2018-07-12T19:27:29.3553192+07:00 0HLF7U4N19MIS:00000003 [INF] Sending file. Request path: '"/lib/notifyjs/dist/notify.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\notifyjs\dist\notify.js"' (27b0a520)
+2018-07-12T19:27:29.3567352+07:00 0HLF7U4N19MIS:00000003 [INF] Request finished in 0.8245ms 200 application/javascript (791a596a)
+2018-07-12T19:27:29.3670972+07:00 0HLF7U4N19MIQ:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/notifyjs/dist/styles/metro/notify-metro.js   (ca22a1cb)
+2018-07-12T19:27:29.3679170+07:00 0HLF7U4N19MIQ:00000004 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.js"' (27b0a520)
+2018-07-12T19:27:29.3683772+07:00 0HLF7U4N19MIQ:00000004 [INF] Request finished in 1.167ms 200 application/javascript (791a596a)
+2018-07-12T19:27:29.3896444+07:00 0HLF7U4N19MIR:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery-validation/dist/jquery.validate.js   (ca22a1cb)
+2018-07-12T19:27:29.3917870+07:00 0HLF7U4N19MIR:00000003 [INF] Sending file. Request path: '"/lib/jquery-validation/dist/jquery.validate.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jquery-validation\dist\jquery.validate.js"' (27b0a520)
+2018-07-12T19:27:29.3918922+07:00 0HLF7U4N19MIR:00000003 [INF] Request finished in 2.2926ms 200 application/javascript (791a596a)
+2018-07-12T19:27:29.4038810+07:00 0HLF7U4N19MIQ:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/fastclick/lib/fastclick.js   (ca22a1cb)
+2018-07-12T19:27:29.4040285+07:00 0HLF7U4N19MIO:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/app/shared/structures.js   (ca22a1cb)
+2018-07-12T19:27:29.4045006+07:00 0HLF7U4N19MIS:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/js/bootstrap.js   (ca22a1cb)
+2018-07-12T19:27:29.4045070+07:00 0HLF7U4N19MIQ:00000005 [INF] Sending file. Request path: '"/lib/fastclick/lib/fastclick.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\fastclick\lib\fastclick.js"' (27b0a520)
+2018-07-12T19:27:29.4045998+07:00 0HLF7U4N19MIQ:00000005 [INF] Request finished in 0.8091ms 200 application/javascript (791a596a)
+2018-07-12T19:27:29.4048457+07:00 0HLF7U4N19MIO:00000003 [INF] Sending file. Request path: '"/app/shared/structures.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\app\shared\structures.js"' (27b0a520)
+2018-07-12T19:27:29.4064909+07:00 0HLF7U4N19MIS:00000004 [INF] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap\dist\js\bootstrap.js"' (27b0a520)
+2018-07-12T19:27:29.4066072+07:00 0HLF7U4N19MIS:00000004 [INF] Request finished in 2.1023ms 200 application/javascript (791a596a)
+2018-07-12T19:27:29.4069164+07:00 0HLF7U4N19MIO:00000003 [INF] Request finished in 1.2436ms 200 application/javascript (791a596a)
+2018-07-12T19:27:29.4176621+07:00 0HLF7U4N19MIR:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/nprogress/nprogress.js   (ca22a1cb)
+2018-07-12T19:27:29.4185097+07:00 0HLF7U4N19MIR:00000004 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\nprogress\nprogress.js"' (27b0a520)
+2018-07-12T19:27:29.4185944+07:00 0HLF7U4N19MIR:00000004 [INF] Request finished in 1.108ms 200 application/javascript (791a596a)
+2018-07-12T19:27:29.4453022+07:00 0HLF7U4N19MIO:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/twbs-pagination/jquery.twbsPagination.js   (ca22a1cb)
+2018-07-12T19:27:29.4459180+07:00 0HLF7U4N19MIO:00000004 [INF] Sending file. Request path: '"/lib/twbs-pagination/jquery.twbsPagination.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\twbs-pagination\jquery.twbsPagination.js"' (27b0a520)
+2018-07-12T19:27:29.4459848+07:00 0HLF7U4N19MIO:00000004 [INF] Request finished in 0.7445ms 200 application/javascript (791a596a)
+2018-07-12T19:27:29.4460964+07:00 0HLF7U4N19MIQ:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/Chart.js/dist/Chart.js   (ca22a1cb)
+2018-07-12T19:27:29.4506205+07:00 0HLF7U4N19MIQ:00000006 [INF] Sending file. Request path: '"/lib/Chart.js/dist/Chart.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\Chart.js\dist\Chart.js"' (27b0a520)
+2018-07-12T19:27:29.4507364+07:00 0HLF7U4N19MIQ:00000006 [INF] Request finished in 4.6254ms 200 application/javascript (791a596a)
+2018-07-12T19:27:29.4538266+07:00 0HLF7U4N19MIS:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jquery-sparkline/dist/jquery.sparkline.js   (ca22a1cb)
+2018-07-12T19:27:29.4553444+07:00 0HLF7U4N19MIS:00000005 [INF] Sending file. Request path: '"/lib/jquery-sparkline/dist/jquery.sparkline.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jquery-sparkline\dist\jquery.sparkline.js"' (27b0a520)
+2018-07-12T19:27:29.4554620+07:00 0HLF7U4N19MIS:00000005 [INF] Request finished in 1.8055ms 200 application/javascript (791a596a)
+2018-07-12T19:27:29.5102260+07:00 0HLF7U4N19MIR:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/mustache/mustache.js   (ca22a1cb)
+2018-07-12T19:27:29.5107024+07:00 0HLF7U4N19MIP:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootbox/bootbox.js   (ca22a1cb)
+2018-07-12T19:27:29.5107217+07:00 0HLF7U4N19MIO:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap-daterangepicker/daterangepicker.js   (ca22a1cb)
+2018-07-12T19:27:29.5110591+07:00 0HLF7U4N19MIR:00000005 [INF] Sending file. Request path: '"/lib/mustache/mustache.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\mustache\mustache.js"' (27b0a520)
+2018-07-12T19:27:29.5111254+07:00 0HLF7U4N19MIR:00000005 [INF] Request finished in 3.7158ms 200 application/javascript (791a596a)
+2018-07-12T19:27:29.5112011+07:00 0HLF7U4N19MIP:00000003 [INF] Sending file. Request path: '"/lib/bootbox/bootbox.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootbox\bootbox.js"' (27b0a520)
+2018-07-12T19:27:29.5112707+07:00 0HLF7U4N19MIP:00000003 [INF] Request finished in 0.5965ms 200 application/javascript (791a596a)
+2018-07-12T19:27:29.5115042+07:00 0HLF7U4N19MIO:00000005 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.js"' (27b0a520)
+2018-07-12T19:27:29.5115551+07:00 0HLF7U4N19MIO:00000005 [INF] Request finished in 0.8591ms 200 application/javascript (791a596a)
+2018-07-12T19:27:29.5371767+07:00 0HLF7U4N19MIT:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/moment/min/moment.min.js   (ca22a1cb)
+2018-07-12T19:27:29.5377732+07:00 0HLF7U4N19MIT:00000001 [INF] Sending file. Request path: '"/lib/moment/min/moment.min.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\moment\min\moment.min.js"' (27b0a520)
+2018-07-12T19:27:29.5378404+07:00 0HLF7U4N19MIT:00000001 [INF] Request finished in 0.7654ms 200 application/javascript (791a596a)
+2018-07-12T19:27:29.5535558+07:00 0HLF7U4N19MIS:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-07-12T19:27:29.5541233+07:00 0HLF7U4N19MIR:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-07-12T19:27:29.5547725+07:00 0HLF7U4N19MIS:00000006 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-07-12T19:27:29.5548845+07:00 0HLF7U4N19MIS:00000006 [INF] Request finished in 1.3774ms 200 font/woff2 (791a596a)
+2018-07-12T19:27:29.5581561+07:00 0HLF7U4N19MIR:00000006 [INF] Sending file. Request path: '"/lib/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-07-12T19:27:29.5582476+07:00 0HLF7U4N19MIR:00000006 [INF] Request finished in 4.1499ms 200 font/woff2 (791a596a)
+2018-07-12T19:27:29.5686627+07:00 0HLF7U4N19MIP:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin-side/js/custom.min.js   (ca22a1cb)
+2018-07-12T19:27:29.5698075+07:00 0HLF7U4N19MIP:00000004 [INF] Sending file. Request path: '"/admin-side/js/custom.min.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\admin-side\js\custom.min.js"' (27b0a520)
+2018-07-12T19:27:29.5698879+07:00 0HLF7U4N19MIP:00000004 [INF] Request finished in 1.2692ms 200 application/javascript (791a596a)
+2018-07-12T19:27:29.6126653+07:00 0HLF7U4N19MIT:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jQuery-EasyUI/jquery.easyui.min.js   (ca22a1cb)
+2018-07-12T19:27:29.6360091+07:00 0HLF7U4N19MIS:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:5000/app/Controller/product-category/index.js?v=yDJpLEqxNqzqmwMT7LZo8nuigcyPNy9vrBHsUfqkq_8   (ca22a1cb)
+2018-07-12T19:27:29.6366224+07:00 0HLF7U4N19MIS:00000007 [INF] Sending file. Request path: '"/app/Controller/product-category/index.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\app\Controller\product-category\index.js"' (27b0a520)
+2018-07-12T19:27:29.6367199+07:00 0HLF7U4N19MIS:00000007 [INF] Request finished in 0.7646ms 200 application/javascript (791a596a)
+2018-07-12T19:27:29.6506584+07:00 0HLF7U4N19MIT:00000002 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/jquery.easyui.min.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jQuery-EasyUI\jquery.easyui.min.js"' (27b0a520)
+2018-07-12T19:27:29.6507734+07:00 0HLF7U4N19MIT:00000002 [INF] Request finished in 38.1312ms 200 application/javascript (791a596a)
+2018-07-12T19:27:29.8993393+07:00 0HLF7U4N19MIO:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-12T19:27:29.9006650+07:00 0HLF7U4N19MIO:00000006 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-12T19:27:29.9007809+07:00 0HLF7U4N19MIO:00000006 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:27:29.9008913+07:00 0HLF7U4N19MIO:00000006 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-12T19:27:29.9013976+07:00 0HLF7U4N19MIO:00000006 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:27:29.9042346+07:00 0HLF7U4N19MIO:00000006 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-12T19:27:29.9092741+07:00 0HLF7U4N19MIO:00000006 [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-12T19:27:29.9099464+07:00 0HLF7U4N19MIO:00000006 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 8.9721ms. (50a9e262)
+2018-07-12T19:27:29.9100973+07:00 0HLF7U4N19MIO:00000006 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-12T19:27:29.9106892+07:00 0HLF7U4N19MIO:00000006 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 9.9382ms (afa2e885)
+2018-07-12T19:27:29.9108590+07:00 0HLF7U4N19MIO:00000006 [INF] Request finished in 11.5817ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:27:29.9327164+07:00 0HLF7U4N19MIS:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jQuery-EasyUI/themes/icons/pencil.png   (ca22a1cb)
+2018-07-12T19:27:29.9309583+07:00 0HLF7U4N19MIR:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jQuery-EasyUI/themes/icons/edit_remove.png   (ca22a1cb)
+2018-07-12T19:27:29.9333155+07:00 0HLF7U4N19MIS:00000008 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/icons/pencil.png"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jQuery-EasyUI\themes\icons\pencil.png"' (27b0a520)
+2018-07-12T19:27:29.9333125+07:00 0HLF7U4N19MIR:00000007 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/icons/edit_remove.png"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jQuery-EasyUI\themes\icons\edit_remove.png"' (27b0a520)
+2018-07-12T19:27:29.9333831+07:00 0HLF7U4N19MIR:00000007 [INF] Request finished in 2.5513ms 200 image/png (791a596a)
+2018-07-12T19:27:29.9333826+07:00 0HLF7U4N19MIS:00000008 [INF] Request finished in 2.5312ms 200 image/png (791a596a)
+2018-07-12T19:27:29.9730043+07:00 0HLF7U4N19MIP:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jQuery-EasyUI/themes/bootstrap/images/tree_icons.png   (ca22a1cb)
+2018-07-12T19:27:29.9737355+07:00 0HLF7U4N19MIP:00000005 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/bootstrap/images/tree_icons.png"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jQuery-EasyUI\themes\bootstrap\images\tree_icons.png"' (27b0a520)
+2018-07-12T19:27:29.9740743+07:00 0HLF7U4N19MIP:00000005 [INF] Request finished in 0.8942ms 200 image/png (791a596a)
+2018-07-12T19:27:30.0520591+07:00 0HLF7U4N19MIQ:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico   (ca22a1cb)
+2018-07-12T19:27:30.0616675+07:00 0HLF7U4N19MIQ:00000007 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\favicon.ico"' (27b0a520)
+2018-07-12T19:27:30.0618253+07:00 0HLF7U4N19MIQ:00000007 [INF] Request finished in 9.8578ms 200 image/x-icon (791a596a)
+2018-07-12T19:27:31.3812350+07:00 0HLF7U4N19MIT:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetById?id=1   (ca22a1cb)
+2018-07-12T19:27:31.3824756+07:00 0HLF7U4N19MIT:00000003 [INF] Route matched with "{area = \"Admin\", action = \"GetById\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" (a44c0341)
+2018-07-12T19:27:31.3825902+07:00 0HLF7U4N19MIT:00000003 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:27:31.3834165+07:00 0HLF7U4N19MIT:00000003 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" with arguments (["1"]) - Validation state: Valid (4e3479ed)
+2018-07-12T19:27:31.3842033+07:00 0HLF7U4N19MIT:00000003 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:27:31.3874184+07:00 0HLF7U4N19MIT:00000003 [INF] Executed DbCommand ("2"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2018-07-12T19:27:31.3877867+07:00 0HLF7U4N19MIT:00000003 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 4.2568ms. (50a9e262)
+2018-07-12T19:27:31.3878991+07:00 0HLF7U4N19MIT:00000003 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel"'. (8a1b66c8)
+2018-07-12T19:27:31.3881267+07:00 0HLF7U4N19MIT:00000003 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" in 5.577ms (afa2e885)
+2018-07-12T19:27:31.3882477+07:00 0HLF7U4N19MIT:00000003 [INF] Request finished in 7.0571ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:27:31.3965861+07:00 0HLF7U4N19MIO:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-12T19:27:31.3983429+07:00 0HLF7U4N19MIO:00000007 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-12T19:27:31.3985738+07:00 0HLF7U4N19MIO:00000007 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:27:31.3986837+07:00 0HLF7U4N19MIO:00000007 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-12T19:27:31.3990938+07:00 0HLF7U4N19MIO:00000007 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:27:31.4001553+07:00 0HLF7U4N19MIO:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-12T19:27:31.4008070+07:00 0HLF7U4N19MIO:00000007 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-12T19:27:31.4013958+07:00 0HLF7U4N19MIO:00000007 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 2.636ms. (50a9e262)
+2018-07-12T19:27:31.4015352+07:00 0HLF7U4N19MIO:00000007 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-12T19:27:31.4019881+07:00 0HLF7U4N19MIO:00000007 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 3.4464ms (afa2e885)
+2018-07-12T19:27:31.4021319+07:00 0HLF7U4N19MIO:00000007 [INF] Request finished in 5.5928ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:27:35.6342605+07:00 0HLF7U4N19MIR:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-12T19:27:35.6352787+07:00 0HLF7U4N19MIR:00000008 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-12T19:27:35.6354036+07:00 0HLF7U4N19MIR:00000008 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:27:35.6355135+07:00 0HLF7U4N19MIR:00000008 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-12T19:27:35.6359382+07:00 0HLF7U4N19MIR:00000008 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:27:35.6370423+07:00 0HLF7U4N19MIR:00000008 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-12T19:27:35.6377334+07:00 0HLF7U4N19MIR:00000008 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-12T19:27:35.6382210+07:00 0HLF7U4N19MIR:00000008 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 2.6304ms. (50a9e262)
+2018-07-12T19:27:35.6383360+07:00 0HLF7U4N19MIR:00000008 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-12T19:27:35.6387607+07:00 0HLF7U4N19MIR:00000008 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 3.3895ms (afa2e885)
+2018-07-12T19:27:35.6388795+07:00 0HLF7U4N19MIR:00000008 [INF] Request finished in 4.6708ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:35:33.3885282+07:00 0HLF7U4N19MIU:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetById?id=1   (ca22a1cb)
+2018-07-12T19:35:33.3897556+07:00 0HLF7U4N19MIU:00000001 [INF] Route matched with "{area = \"Admin\", action = \"GetById\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" (a44c0341)
+2018-07-12T19:35:33.3898856+07:00 0HLF7U4N19MIU:00000001 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:35:33.3901816+07:00 0HLF7U4N19MIU:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" with arguments (["1"]) - Validation state: Valid (4e3479ed)
+2018-07-12T19:35:33.3907623+07:00 0HLF7U4N19MIU:00000001 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:35:33.5331256+07:00 0HLF7U4N19MIU:00000001 [INF] Executed DbCommand ("4"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2018-07-12T19:35:33.5335425+07:00 0HLF7U4N19MIU:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 143.2681ms. (50a9e262)
+2018-07-12T19:35:33.5337422+07:00 0HLF7U4N19MIU:00000001 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel"'. (8a1b66c8)
+2018-07-12T19:35:33.5339933+07:00 0HLF7U4N19MIU:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" in 144.1653ms (afa2e885)
+2018-07-12T19:35:33.5341254+07:00 0HLF7U4N19MIU:00000001 [INF] Request finished in 145.7015ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:35:33.5421028+07:00 0HLF7U4N19MIU:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-12T19:35:33.5428906+07:00 0HLF7U4N19MIU:00000002 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-12T19:35:33.5429971+07:00 0HLF7U4N19MIU:00000002 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:35:33.5430912+07:00 0HLF7U4N19MIU:00000002 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-12T19:35:33.5434842+07:00 0HLF7U4N19MIU:00000002 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:35:33.5458559+07:00 0HLF7U4N19MIU:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-12T19:35:33.5601258+07:00 0HLF7U4N19MIU:00000002 [INF] Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-12T19:35:33.5607284+07:00 0HLF7U4N19MIU:00000002 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 17.541ms. (50a9e262)
+2018-07-12T19:35:33.5608585+07:00 0HLF7U4N19MIU:00000002 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-12T19:35:33.5618604+07:00 0HLF7U4N19MIU:00000002 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 18.8552ms (afa2e885)
+2018-07-12T19:35:33.5620096+07:00 0HLF7U4N19MIU:00000002 [INF] Request finished in 19.9547ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:35:36.7163750+07:00 0HLF7U4N19MIU:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetById?id=4   (ca22a1cb)
+2018-07-12T19:35:36.7180852+07:00 0HLF7U4N19MIU:00000003 [INF] Route matched with "{area = \"Admin\", action = \"GetById\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" (a44c0341)
+2018-07-12T19:35:36.7182075+07:00 0HLF7U4N19MIU:00000003 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:35:36.7184415+07:00 0HLF7U4N19MIU:00000003 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" with arguments (["4"]) - Validation state: Valid (4e3479ed)
+2018-07-12T19:35:36.7188747+07:00 0HLF7U4N19MIU:00000003 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:35:36.7197762+07:00 0HLF7U4N19MIU:00000003 [INF] Executed DbCommand ("0"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [x].[Id], [x].[DateCreated], [x].[DateModified], [x].[Description], [x].[HomeFlag], [x].[HomeOrder], [x].[Image], [x].[Name], [x].[ParentId], [x].[SeoAlias], [x].[SeoDescription], [x].[SeoKeywords], [x].[SeoPageTitle], [x].[SortOrder], [x].[Status]
+FROM [ProductCategories] AS [x]
+WHERE [x].[Id] = @__id_0" (0723d8ff)
+2018-07-12T19:35:36.7200460+07:00 0HLF7U4N19MIU:00000003 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 1.5335ms. (50a9e262)
+2018-07-12T19:35:36.7201483+07:00 0HLF7U4N19MIU:00000003 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel"'. (8a1b66c8)
+2018-07-12T19:35:36.7203714+07:00 0HLF7U4N19MIU:00000003 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetById (WebAppCore)" in 2.1994ms (afa2e885)
+2018-07-12T19:35:36.7204959+07:00 0HLF7U4N19MIU:00000003 [INF] Request finished in 4.2465ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:35:36.7317329+07:00 0HLF7U4N19MIU:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-12T19:35:36.7326464+07:00 0HLF7U4N19MIU:00000004 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-12T19:35:36.7327457+07:00 0HLF7U4N19MIU:00000004 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:35:36.7328312+07:00 0HLF7U4N19MIU:00000004 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-12T19:35:36.7332580+07:00 0HLF7U4N19MIU:00000004 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-12T19:35:36.7347072+07:00 0HLF7U4N19MIU:00000004 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-12T19:35:36.7366120+07:00 0HLF7U4N19MIU:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-12T19:35:36.7371620+07:00 0HLF7U4N19MIU:00000004 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 4.2508ms. (50a9e262)
+2018-07-12T19:35:36.7372864+07:00 0HLF7U4N19MIU:00000004 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-12T19:35:36.7378163+07:00 0HLF7U4N19MIU:00000004 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 5.086ms (afa2e885)
+2018-07-12T19:35:36.7379544+07:00 0HLF7U4N19MIU:00000004 [INF] Request finished in 6.2873ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-12T19:35:47.7642727+07:00 0HLF7U4N19MIU:00000005 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Upload/UploadImage multipart/form-data; boundary=----WebKitFormBoundaryG8HbepUqBlEVNzyY 104703 (ca22a1cb)
+2018-07-12T19:35:47.7717823+07:00 0HLF7U4N19MIU:00000005 [INF] Route matched with "{area = \"Admin\", action = \"UploadImage\", controller = \"Upload\"}". Executing action "WebAppCore.Areas.Admin.Controllers.UploadController.UploadImage (WebAppCore)" (a44c0341)
+2018-07-12T19:35:47.7726115+07:00 0HLF7U4N19MIU:00000005 [INF] Authorization was successful. (0d575a54)
+2018-07-12T19:35:47.7737644+07:00 0HLF7U4N19MIU:00000005 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.UploadController.UploadImage (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-12T19:35:48.2922609+07:00 0HLF7U4N19MIU:00000005 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.UploadController.UploadImage (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 518.3399ms. (50a9e262)
+2018-07-12T19:35:48.2927693+07:00 0HLF7U4N19MIU:00000005 [INF] Executing ObjectResult, writing value of type '"System.String"'. (8a1b66c8)
+2018-07-12T19:35:48.2932376+07:00 0HLF7U4N19MIU:00000005 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.UploadController.UploadImage (WebAppCore)" in 520.7138ms (afa2e885)
+2018-07-12T19:35:48.2937961+07:00 0HLF7U4N19MIU:00000005 [INF] Request finished in 530.6187ms 200 text/plain; charset=utf-8 (791a596a)

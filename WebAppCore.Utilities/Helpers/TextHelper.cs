@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text;
 using System.Text.RegularExpressions;
 
 namespace WebAppCore.Utilities.Helpers
 {
-  public static class TextHelper
+    public static class TextHelper
     {
         public static string ToUnsignString(string input)
         {
@@ -33,6 +32,7 @@ namespace WebAppCore.Utilities.Helpers
             }
             return str2;
         }
+
         public static string ToString(decimal number)
         {
             string s = number.ToString("#");
