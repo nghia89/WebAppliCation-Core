@@ -9,21 +9,21 @@ namespace WebAppCore.Data.Entities
     [Table("AppUsers")]
     public class AppUser : IdentityUser<Guid>, IDateTracking, ISwitchable
     {
-        //public AppUser()
-        //{
-        //}
+        public AppUser()
+        {
+        }
 
-        //public AppUser(Guid id, string fullName, string userName,
-        //    string email, string phoneNumber, string avatar, Status status)
-        //{
-        //    Id = id;
-        //    FullName = fullName;
-        //    UserName = userName;
-        //    Email = email;
-        //    PhoneNumber = phoneNumber;
-        //    Avatar = avatar;
-        //    Status = status;
-        //}
+        public AppUser(Guid id, string fullName, string userName,
+            string email, string phoneNumber, string avatar, Status status)
+        {
+            Id = id;
+            FullName = fullName;
+            UserName = userName;
+            Email = email;
+            PhoneNumber = phoneNumber;
+            Avatar = avatar;
+            Status = status;
+        }
 
         public string FullName { get; set; }
 

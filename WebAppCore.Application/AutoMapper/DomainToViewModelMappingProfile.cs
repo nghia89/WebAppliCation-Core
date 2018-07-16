@@ -12,8 +12,8 @@ namespace WebAppCore.Application.AutoMapper
             CreateMap<ProductCategory, ProductCategoryViewModel>();
             CreateMap<Product, ProductViewModel>();
             CreateMap<Function, FunctionViewModel>();
-            //CreateMap<AppUser, AppUserViewModel>();
-            //CreateMap<AppRole, AppRoleViewModel>();
+            CreateMap<AppUser, AppUserViewModel>();
+            CreateMap<AppRole, AppRoleViewModel>();
             //CreateMap<Bill, BillViewModel>();
             //CreateMap<BillDetail, BillDetailViewModel>();
             //CreateMap<Color, ColorViewModel>();
