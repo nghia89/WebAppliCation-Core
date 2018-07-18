@@ -51,6 +51,12 @@ namespace WebAppCore.Application.Implementation
             await _userManager.DeleteAsync(user);
         }
 
+        public async Task<bool> GetAll(string Email)
+        {
+            var CheckUser= await _userManager.Users.CountAsync(x => x.Email == Email)>0;
+            return false;
+        }
+
         public async Task<List<AppUserViewModel>> GetAllAsync()
         {
             return await _userManager.Users.ProjectTo<AppUserViewModel>().ToListAsync();

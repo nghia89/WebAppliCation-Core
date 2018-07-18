@@ -14,7 +14,7 @@ namespace WebAppCore.Application.Interfaces
         Task DeleteAsync(string id);
 
         Task<List<AppUserViewModel>> GetAllAsync();
-
+        Task<bool> GetAll(string Email);
         PagedResult<AppUserViewModel> GetAllPagingAsync(string keyword, int page, int pageSize);
 
         Task<AppUserViewModel> GetById(string id);

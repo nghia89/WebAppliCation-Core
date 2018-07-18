@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using WebAppCore.Application.Interfaces;
 using WebAppCore.Application.ViewModels.System;
+using WebAppCore.Utilities.Dtos;
 
 namespace WebAppCore.Areas.Admin.Controllers
 {
@@ -44,6 +45,11 @@ namespace WebAppCore.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> SaveEntity(AppUserViewModel userVm)
         {
+            //var email = await _userService.GetAll(userVm.Email);
+            //if(email == false)
+            //{
+            //    return new BadRequestObjectResult("Email đã tồn tại");
+            //}
             if (!ModelState.IsValid)
             {
                 IEnumerable<ModelError> allErrors = ModelState.Values.SelectMany(v => v.Errors);
