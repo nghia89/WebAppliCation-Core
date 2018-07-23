@@ -1,0 +1,352 @@
+2018-07-19T16:22:57.3831633+07:00 0HLFDB4RCS4JB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin   (ca22a1cb)
+2018-07-19T16:22:57.3831620+07:00 0HLFDB4RCS4JA:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/   (ca22a1cb)
+2018-07-19T16:22:57.3831616+07:00 0HLFDB4RCS4JC:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin   (ca22a1cb)
+2018-07-19T16:22:58.0407865+07:00 0HLFDB4RCS4JC:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" (a44c0341)
+2018-07-19T16:22:58.0407861+07:00 0HLFDB4RCS4JA:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-19T16:22:58.0408400+07:00 0HLFDB4RCS4JB:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" (a44c0341)
+2018-07-19T16:22:58.0780433+07:00 0HLFDB4RCS4JA:00000001 [INF] Authorization failed. (b15dd539)
+2018-07-19T16:22:58.0853818+07:00 0HLFDB4RCS4JA:00000001 [INF] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'. (8b6446cb)
+2018-07-19T16:22:58.0931202+07:00 0HLFDB4RCS4JC:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-19T16:22:58.0931146+07:00 0HLFDB4RCS4JB:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-19T16:22:58.1007230+07:00 0HLFDB4RCS4JA:00000001 [INF] Executing ChallengeResult with authentication schemes ([]). (f3dca807)
+2018-07-19T16:22:58.1028938+07:00 0HLFDB4RCS4JB:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.9699ms. (50a9e262)
+2018-07-19T16:22:58.1028938+07:00 0HLFDB4RCS4JC:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.9647ms. (50a9e262)
+2018-07-19T16:22:58.1244129+07:00 0HLFDB4RCS4JA:00000001 [INF] AuthenticationScheme: "Identity.Application" was challenged. (d45f1f38)
+2018-07-19T16:22:58.1302807+07:00 0HLFDB4RCS4JA:00000001 [INF] Executed action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" in 83.4544ms (afa2e885)
+2018-07-19T16:22:58.1588150+07:00 0HLFDB4RCS4JB:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-19T16:22:58.1588150+07:00 0HLFDB4RCS4JC:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-19T16:22:58.3590257+07:00 0HLFDB4RCS4JA:00000001 [INF] Request finished in 1005.1104ms 302  (791a596a)
+2018-07-19T16:22:58.5852684+07:00 0HLFDB4RCS4JC:00000001 [INF] Executed ViewResult - view "Index" executed in 445.2488ms. (f66409e9)
+2018-07-19T16:22:58.5852684+07:00 0HLFDB4RCS4JB:00000001 [INF] Executed ViewResult - view "Index" executed in 445.2488ms. (f66409e9)
+2018-07-19T16:22:58.5857277+07:00 0HLFDB4RCS4JC:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" in 544.5148ms (afa2e885)
+2018-07-19T16:22:58.5857277+07:00 0HLFDB4RCS4JB:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" in 544.5148ms (afa2e885)
+2018-07-19T16:22:58.6166065+07:00 0HLFDB4RCS4JB:00000001 [INF] Request finished in 1262.9829ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-19T16:22:58.6265186+07:00 0HLFDB4RCS4JC:00000001 [INF] Request finished in 1272.972ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-19T16:22:58.8782167+07:00 0HLFDB4RCS4JA:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/css/bootstrap.css   (ca22a1cb)
+2018-07-19T16:22:58.9991442+07:00 0HLFDB4RCS4JA:00000002 [INF] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap\dist\css\bootstrap.css"' (27b0a520)
+2018-07-19T16:22:59.0297017+07:00 0HLFDB4RCS4JA:00000002 [INF] Request finished in 151.8965ms 200 text/css (791a596a)
+2018-07-19T16:22:59.1305626+07:00 0HLFDB4RCS4JC:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/font-awesome/css/font-awesome.css   (ca22a1cb)
+2018-07-19T16:22:59.1447961+07:00 0HLFDB4RCS4JD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/notifyjs/dist/styles/metro/notify-metro.css   (ca22a1cb)
+2018-07-19T16:22:59.1577480+07:00 0HLFDB4RCS4JE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/nprogress/nprogress.css   (ca22a1cb)
+2018-07-19T16:22:59.1629423+07:00 0HLFDB4RCS4JC:00000002 [INF] Sending file. Request path: '"/lib/font-awesome/css/font-awesome.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\font-awesome\css\font-awesome.css"' (27b0a520)
+2018-07-19T16:22:59.1630723+07:00 0HLFDB4RCS4JC:00000002 [INF] Request finished in 32.5717ms 200 text/css (791a596a)
+2018-07-19T16:22:59.1655074+07:00 0HLFDB4RCS4JD:00000001 [INF] Sending file. Request path: '"/lib/notifyjs/dist/styles/metro/notify-metro.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\notifyjs\dist\styles\metro\notify-metro.css"' (27b0a520)
+2018-07-19T16:22:59.1659979+07:00 0HLFDB4RCS4JD:00000001 [INF] Request finished in 21.212ms 200 text/css (791a596a)
+2018-07-19T16:22:59.1688692+07:00 0HLFDB4RCS4JE:00000001 [INF] Sending file. Request path: '"/lib/nprogress/nprogress.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\nprogress\nprogress.css"' (27b0a520)
+2018-07-19T16:22:59.1689564+07:00 0HLFDB4RCS4JE:00000001 [INF] Request finished in 11.2502ms 200 text/css (791a596a)
+2018-07-19T16:22:59.7075482+07:00 0HLFDB4RCS4JD:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0   (ca22a1cb)
+2018-07-19T16:22:59.7194396+07:00 0HLFDB4RCS4JD:00000002 [INF] Sending file. Request path: '"/lib/font-awesome/fonts/fontawesome-webfont.woff2"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\font-awesome\fonts\fontawesome-webfont.woff2"' (27b0a520)
+2018-07-19T16:22:59.7197360+07:00 0HLFDB4RCS4JD:00000002 [INF] Request finished in 12.4293ms 200 font/woff2 (791a596a)
+2018-07-19T16:23:20.7816648+07:00 0HLFDB4RCS4JE:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Login/Authen application/x-www-form-urlencoded; charset=UTF-8 33 (ca22a1cb)
+2018-07-19T16:23:21.4682159+07:00 0HLFDB4RCS4JE:00000002 [INF] Route matched with "{area = \"Admin\", action = \"Authen\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" (a44c0341)
+2018-07-19T16:23:21.9266792+07:00 0HLFDB4RCS4JE:00000002 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" with arguments (["WebAppCore.Models.AccountViewModels.LoginViewModel"]) - Validation state: Valid (4e3479ed)
+2018-07-19T16:23:21.9413207+07:00 0HLFDB4RCS4JE:00000002 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-19T16:23:22.7331002+07:00 0HLFDB4RCS4JE:00000002 [INF] Executed DbCommand ("38"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[Avatar], [u].[Balance], [u].[BirthDay], [u].[ConcurrencyStamp], [u].[DateCreated], [u].[DateModified], [u].[Email], [u].[EmailConfirmed], [u].[FullName], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[Status], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AppUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0" (0723d8ff)
+2018-07-19T16:23:23.1557085+07:00 0HLFDB4RCS4JE:00000002 [INF] Executed DbCommand ("22"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-07-19T16:23:23.2684440+07:00 0HLFDB4RCS4JE:00000002 [INF] Executed DbCommand ("70"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-19T16:23:23.2995352+07:00 0HLFDB4RCS4JE:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-07-19T16:23:23.3291096+07:00 0HLFDB4RCS4JE:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-07-19T16:23:23.3366667+07:00 0HLFDB4RCS4JE:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-07-19T16:23:23.3464047+07:00 0HLFDB4RCS4JE:00000002 [INF] AuthenticationScheme: "Identity.Application" signed in. (c66dd7e7)
+2018-07-19T16:23:23.3513604+07:00 0HLFDB4RCS4JE:00000002 [INF] User logged in. (fdce0db4)
+2018-07-19T16:23:23.3550686+07:00 0HLFDB4RCS4JE:00000002 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 1428.2004ms. (50a9e262)
+2018-07-19T16:23:23.3660050+07:00 0HLFDB4RCS4JE:00000002 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Utilities.Dtos.GenericResult"'. (8a1b66c8)
+2018-07-19T16:23:23.5656555+07:00 0HLFDB4RCS4JE:00000002 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Authen (WebAppCore)" in 2097.1431ms (afa2e885)
+2018-07-19T16:23:23.5774783+07:00 0HLFDB4RCS4JE:00000002 [INF] Request finished in 2795.7646ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-19T16:23:23.6533603+07:00 0HLFDB4RCS4JC:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/Home/Index   (ca22a1cb)
+2018-07-19T16:23:23.6672714+07:00 0HLFDB4RCS4JC:00000003 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Home\"}". Executing action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-07-19T16:23:23.6693686+07:00 0HLFDB4RCS4JC:00000003 [INF] Authorization was successful. (0d575a54)
+2018-07-19T16:23:23.6703291+07:00 0HLFDB4RCS4JC:00000003 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-19T16:23:23.6753332+07:00 0HLFDB4RCS4JC:00000003 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 3.9074ms. (50a9e262)
+2018-07-19T16:23:23.6823522+07:00 0HLFDB4RCS4JC:00000003 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-19T16:23:23.8145711+07:00 0HLFDB4RCS4JC:00000003 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-19T16:23:23.9407400+07:00 0HLFDB4RCS4JC:00000003 [INF] Executed DbCommand ("36"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-19T16:23:24.0307345+07:00 0HLFDB4RCS4JC:00000003 [INF] Executed ViewResult - view "Index" executed in 354.8574ms. (f66409e9)
+2018-07-19T16:23:24.0387599+07:00 0HLFDB4RCS4JC:00000003 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.HomeController.Index (WebAppCore)" in 371.1886ms (afa2e885)
+2018-07-19T16:23:24.0409353+07:00 0HLFDB4RCS4JC:00000003 [INF] Request finished in 387.6143ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-19T16:23:24.1066203+07:00 0HLFDB4RCS4JA:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap-daterangepicker/daterangepicker.css   (ca22a1cb)
+2018-07-19T16:23:24.1194525+07:00 0HLFDB4RCS4JA:00000003 [INF] Sending file. Request path: '"/lib/bootstrap-daterangepicker/daterangepicker.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap-daterangepicker\daterangepicker.css"' (27b0a520)
+2018-07-19T16:23:24.1195555+07:00 0HLFDB4RCS4JA:00000003 [INF] Request finished in 13.3397ms 200 text/css (791a596a)
+2018-07-19T16:23:24.1657374+07:00 0HLFDB4RCS4JD:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/ckeditor/skins/moono/editor.css   (ca22a1cb)
+2018-07-19T16:23:24.1695945+07:00 0HLFDB4RCS4JE:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin-side/css/custom.min.css   (ca22a1cb)
+2018-07-19T16:23:24.1850276+07:00 0HLFDB4RCS4JD:00000003 [INF] Sending file. Request path: '"/lib/ckeditor/skins/moono/editor.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\ckeditor\skins\moono\editor.css"' (27b0a520)
+2018-07-19T16:23:24.1851375+07:00 0HLFDB4RCS4JD:00000003 [INF] Request finished in 19.8935ms 200 text/css (791a596a)
+2018-07-19T16:23:24.1935730+07:00 0HLFDB4RCS4JE:00000003 [INF] Sending file. Request path: '"/admin-side/css/custom.min.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\admin-side\css\custom.min.css"' (27b0a520)
+2018-07-19T16:23:24.1936936+07:00 0HLFDB4RCS4JE:00000003 [INF] Request finished in 24.144ms 200 text/css (791a596a)
+2018-07-19T16:23:24.6702175+07:00 0HLFDB4RCS4JC:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2   (ca22a1cb)
+2018-07-19T16:23:24.6797790+07:00 0HLFDB4RCS4JC:00000004 [INF] Sending file. Request path: '"/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2"' (27b0a520)
+2018-07-19T16:23:24.6799342+07:00 0HLFDB4RCS4JC:00000004 [INF] Request finished in 9.7192ms 200 font/woff2 (791a596a)
+2018-07-19T16:23:24.8011638+07:00 0HLFDB4RCS4JA:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin-side/images/img.jpg   (ca22a1cb)
+2018-07-19T16:23:24.9595495+07:00 0HLFDB4RCS4JA:00000004 [INF] Sending file. Request path: '"/admin-side/images/img.jpg"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\admin-side\images\img.jpg"' (27b0a520)
+2018-07-19T16:23:24.9598373+07:00 0HLFDB4RCS4JA:00000004 [INF] Request finished in 158.7804ms 200 image/jpeg (791a596a)
+2018-07-19T16:23:31.4076293+07:00 0HLFDB4RCS4JD:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/product/index   (ca22a1cb)
+2018-07-19T16:23:31.4125401+07:00 0HLFDB4RCS4JD:00000004 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Product\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductController.Index (WebAppCore)" (a44c0341)
+2018-07-19T16:23:31.4127274+07:00 0HLFDB4RCS4JD:00000004 [INF] Authorization was successful. (0d575a54)
+2018-07-19T16:23:31.4169235+07:00 0HLFDB4RCS4JD:00000004 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-19T16:23:31.4174102+07:00 0HLFDB4RCS4JD:00000004 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.3729ms. (50a9e262)
+2018-07-19T16:23:31.4211787+07:00 0HLFDB4RCS4JD:00000004 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-19T16:23:31.4685362+07:00 0HLFDB4RCS4JD:00000004 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-19T16:23:31.6079734+07:00 0HLFDB4RCS4JD:00000004 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [dto].[Id], [dto].[Name], [dto].[URL], [dto].[ParentId], [dto].[IconCss], [dto].[SortOrder], [dto].[Status]
+FROM [Functions] AS [dto]" (0723d8ff)
+2018-07-19T16:23:31.6276549+07:00 0HLFDB4RCS4JD:00000004 [INF] Executed ViewResult - view "Index" executed in 210.0894ms. (f66409e9)
+2018-07-19T16:23:31.6278734+07:00 0HLFDB4RCS4JD:00000004 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductController.Index (WebAppCore)" in 215.2217ms (afa2e885)
+2018-07-19T16:23:31.6302520+07:00 0HLFDB4RCS4JD:00000004 [INF] Request finished in 222.6782ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-19T16:23:31.7597066+07:00 0HLFDB4RCS4JE:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jQuery-EasyUI/themes/icon.css   (ca22a1cb)
+2018-07-19T16:23:31.7662916+07:00 0HLFDB4RCS4JC:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jQuery-EasyUI/themes/bootstrap/easyui.css   (ca22a1cb)
+2018-07-19T16:23:31.7808323+07:00 0HLFDB4RCS4JC:00000005 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/bootstrap/easyui.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jQuery-EasyUI\themes\bootstrap\easyui.css"' (27b0a520)
+2018-07-19T16:23:31.7810311+07:00 0HLFDB4RCS4JC:00000005 [INF] Request finished in 14.7758ms 200 text/css (791a596a)
+2018-07-19T16:23:31.8145873+07:00 0HLFDB4RCS4JA:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/app/Controller/product/Index.js   (ca22a1cb)
+2018-07-19T16:23:31.8158348+07:00 0HLFDB4RCS4JD:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jQuery-EasyUI/jquery.easyui.min.js   (ca22a1cb)
+2018-07-19T16:23:31.8975966+07:00 0HLFDB4RCS4JA:00000005 [INF] Sending file. Request path: '"/app/Controller/product/Index.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\app\Controller\product\Index.js"' (27b0a520)
+2018-07-19T16:23:31.8978660+07:00 0HLFDB4RCS4JA:00000005 [INF] Request finished in 84.2233ms 200 application/javascript (791a596a)
+2018-07-19T16:23:31.9352232+07:00 0HLFDB4RCS4JE:00000004 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/icon.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jQuery-EasyUI\themes\icon.css"' (27b0a520)
+2018-07-19T16:23:31.9354576+07:00 0HLFDB4RCS4JE:00000004 [INF] Request finished in 175.6804ms 200 text/css (791a596a)
+2018-07-19T16:23:32.3297148+07:00 0HLFDB4RCS4JD:00000005 [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/jquery.easyui.min.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jQuery-EasyUI\jquery.easyui.min.js"' (27b0a520)
+2018-07-19T16:23:32.3298974+07:00 0HLFDB4RCS4JD:00000005 [INF] Request finished in 514.0552ms 200 application/javascript (791a596a)
+2018-07-19T16:23:32.4672203+07:00 0HLFDB4RCS4JC:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/Product/GetAllCategory   (ca22a1cb)
+2018-07-19T16:23:32.4728781+07:00 0HLFDB4RCS4JC:00000006 [INF] Route matched with "{area = \"Admin\", action = \"GetAllCategory\", controller = \"Product\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductController.GetAllCategory (WebAppCore)" (a44c0341)
+2018-07-19T16:23:32.4730894+07:00 0HLFDB4RCS4JC:00000006 [INF] Authorization was successful. (0d575a54)
+2018-07-19T16:23:32.4733392+07:00 0HLFDB4RCS4JC:00000006 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductController.GetAllCategory (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-19T16:23:32.4785749+07:00 0HLFDB4RCS4JC:00000006 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-19T16:23:32.4975811+07:00 0HLFDB4RCS4JA:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin/product/GetAllPaging?categoryId=&keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-19T16:23:32.5036919+07:00 0HLFDB4RCS4JA:00000006 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Product\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductController.GetAllPaging (WebAppCore)" (a44c0341)
+2018-07-19T16:23:32.5038677+07:00 0HLFDB4RCS4JA:00000006 [INF] Authorization was successful. (0d575a54)
+2018-07-19T16:23:32.5052827+07:00 0HLFDB4RCS4JA:00000006 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductController.GetAllPaging (WebAppCore)" with arguments (["", "", "1", "10"]) - Validation state: Valid (4e3479ed)
+2018-07-19T16:23:32.5162016+07:00 0HLFDB4RCS4JA:00000006 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-19T16:23:32.6059058+07:00 0HLFDB4RCS4JE:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/ckeditor/config.js?t=H8DC   (ca22a1cb)
+2018-07-19T16:23:32.6309158+07:00 0HLFDB4RCS4JE:00000005 [INF] Sending file. Request path: '"/lib/ckeditor/config.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\ckeditor\config.js"' (27b0a520)
+2018-07-19T16:23:32.6310838+07:00 0HLFDB4RCS4JE:00000005 [INF] Request finished in 25.5291ms 200 application/javascript (791a596a)
+2018-07-19T16:23:32.6970267+07:00 0HLFDB4RCS4JA:00000006 [INF] Executed DbCommand ("168"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [x]
+WHERE [x].[Status] = 1" (0723d8ff)
+2018-07-19T16:23:32.7329419+07:00 0HLFDB4RCS4JD:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/ckeditor/lang/en.js?t=H8DC   (ca22a1cb)
+2018-07-19T16:23:32.7477737+07:00 0HLFDB4RCS4JE:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/ckeditor/skins/moono-lisa/editor.css?t=H8DC   (ca22a1cb)
+2018-07-19T16:23:32.7610763+07:00 0HLFDB4RCS4JE:00000006 [INF] Sending file. Request path: '"/lib/ckeditor/skins/moono-lisa/editor.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\ckeditor\skins\moono-lisa\editor.css"' (27b0a520)
+2018-07-19T16:23:32.7611892+07:00 0HLFDB4RCS4JE:00000006 [INF] Request finished in 13.4522ms 200 text/css (791a596a)
+2018-07-19T16:23:32.7802609+07:00 0HLFDB4RCS4JC:00000006 [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-19T16:23:33.1661463+07:00 0HLFDB4RCS4JC:00000006 [INF] Executed DbCommand ("352"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-19T16:23:33.1939565+07:00 0HLFDB4RCS4JC:00000006 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductController.GetAllCategory (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 720.4946ms. (50a9e262)
+2018-07-19T16:23:33.1944291+07:00 0HLFDB4RCS4JC:00000006 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-19T16:23:33.2430738+07:00 0HLFDB4RCS4JC:00000006 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductController.GetAllCategory (WebAppCore)" in 769.9587ms (afa2e885)
+2018-07-19T16:23:33.2435365+07:00 0HLFDB4RCS4JC:00000006 [INF] Request finished in 776.3727ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-19T16:23:33.2957638+07:00 0HLFDB4RCS4JA:00000006 [INF] Executed DbCommand ("469"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[CategoryId], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0], [x.ProductCategory].[Id]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE [x].[Status] = 1
+ORDER BY [DateCreated0] DESC, [x].[Id], [x.ProductCategory].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-19T16:23:33.3224365+07:00 0HLFDB4RCS4JD:00000006 [INF] Sending file. Request path: '"/lib/ckeditor/lang/en.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\ckeditor\lang\en.js"' (27b0a520)
+2018-07-19T16:23:33.3231010+07:00 0HLFDB4RCS4JD:00000006 [INF] Request finished in 589.7982ms 200 application/javascript (791a596a)
+2018-07-19T16:23:33.3456487+07:00 0HLFDB4RCS4JE:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/ckeditor/styles.js?t=H8DC   (ca22a1cb)
+2018-07-19T16:23:33.3577085+07:00 0HLFDB4RCS4JA:00000006 [INF] Executed DbCommand ("33"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[DateCreated], [t].[Id], [t].[Id0], [x.ProductCategory.Products].[Id] AS [Id1], [x.ProductCategory.Products].[Name], [x.ProductCategory.Products].[CategoryId], [x.ProductCategory.Products].[Image], [x.ProductCategory.Products].[Price], [x.ProductCategory.Products].[PromotionPrice], [x.ProductCategory.Products].[OriginalPrice], [x.ProductCategory.Products].[Description], [x.ProductCategory.Products].[Content], [x.ProductCategory.Products].[HomeFlag], [x.ProductCategory.Products].[HotFlag], [x.ProductCategory.Products].[ViewCount], [x.ProductCategory.Products].[Tags], [x.ProductCategory.Products].[Unit], [x.ProductCategory.Products].[SeoPageTitle], [x.ProductCategory.Products].[SeoAlias], [x.ProductCategory.Products].[SeoKeywords], [x.ProductCategory.Products].[SeoDescription], [x.ProductCategory.Products].[DateCreated] AS [DateCreated0], [x.ProductCategory.Products].[DateModified], [x.ProductCategory.Products].[Status]
+FROM [Products] AS [x.ProductCategory.Products]
+INNER JOIN (
+    SELECT [x0].[DateCreated], [x0].[Id], [x.ProductCategory0].[Id] AS [Id0]
+    FROM [Products] AS [x0]
+    INNER JOIN [ProductCategories] AS [x.ProductCategory0] ON [x0].[CategoryId] = [x.ProductCategory0].[Id]
+    WHERE [x0].[Status] = 1
+    ORDER BY [x0].[DateCreated] DESC, [x0].[Id], [x.ProductCategory0].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t] ON [x.ProductCategory.Products].[CategoryId] = [t].[Id0]
+ORDER BY [t].[DateCreated] DESC, [t].[Id], [t].[Id0]" (0723d8ff)
+2018-07-19T16:23:33.4399890+07:00 0HLFDB4RCS4JE:00000007 [INF] Sending file. Request path: '"/lib/ckeditor/styles.js"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\ckeditor\styles.js"' (27b0a520)
+2018-07-19T16:23:33.4404286+07:00 0HLFDB4RCS4JE:00000007 [INF] Request finished in 94.8783ms 200 application/javascript (791a596a)
+2018-07-19T16:23:33.4463653+07:00 0HLFDB4RCS4JA:00000006 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductController.GetAllPaging (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 940.9564ms. (50a9e262)
+2018-07-19T16:23:33.4465710+07:00 0HLFDB4RCS4JA:00000006 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Utilities.Dtos.PagedResult`1[[WebAppCore.Application.ViewModels.Product.ProductViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-19T16:23:33.4585209+07:00 0HLFDB4RCS4JA:00000006 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductController.GetAllPaging (WebAppCore)" in 954.6704ms (afa2e885)
+2018-07-19T16:23:33.4587027+07:00 0HLFDB4RCS4JA:00000006 [INF] Request finished in 961.2101ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-19T16:23:33.5559887+07:00 0HLFDB4RCS4JC:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/ckeditor/plugins/colorbutton/plugin.js?t=H8DC   (ca22a1cb)
+2018-07-19T16:23:33.5582762+07:00 0HLFDB4RCS4JC:00000007 [INF] The file "/lib/ckeditor/plugins/colorbutton/plugin.js" was not modified (f1f8d725)
+2018-07-19T16:23:33.5598047+07:00 0HLFDB4RCS4JC:00000007 [INF] Request finished in 3.8617ms 304 application/javascript (791a596a)
+2018-07-19T16:23:33.6165829+07:00 0HLFDB4RCS4JD:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin/product/GetAllPaging?categoryId=&keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-19T16:23:33.6197908+07:00 0HLFDB4RCS4JD:00000007 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Product\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductController.GetAllPaging (WebAppCore)" (a44c0341)
+2018-07-19T16:23:33.6199319+07:00 0HLFDB4RCS4JD:00000007 [INF] Authorization was successful. (0d575a54)
+2018-07-19T16:23:33.6202308+07:00 0HLFDB4RCS4JD:00000007 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductController.GetAllPaging (WebAppCore)" with arguments (["", "", "1", "10"]) - Validation state: Valid (4e3479ed)
+2018-07-19T16:23:33.6206978+07:00 0HLFDB4RCS4JD:00000007 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-19T16:23:33.6320734+07:00 0HLFDB4RCS4JD:00000007 [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [Products] AS [x]
+WHERE [x].[Status] = 1" (0723d8ff)
+2018-07-19T16:23:33.6446968+07:00 0HLFDB4RCS4JD:00000007 [INF] Executed DbCommand ("12"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[CategoryId], [x].[Image], [x].[Price], [x].[PromotionPrice], [x].[OriginalPrice], [x].[Description], [x].[Content], [x].[HomeFlag], [x].[HotFlag], [x].[ViewCount], [x].[Tags], [x].[Unit], CASE
+    WHEN [x].[CategoryId] IS NOT NULL
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END, [x.ProductCategory].[Name] AS [Name0], [x.ProductCategory].[Description] AS [Description0], [x.ProductCategory].[ParentId], [x.ProductCategory].[HomeOrder], [x.ProductCategory].[Image] AS [Image0], [x.ProductCategory].[HomeFlag] AS [HomeFlag0], [x.ProductCategory].[DateCreated], [x.ProductCategory].[DateModified], [x.ProductCategory].[SortOrder], [x.ProductCategory].[Status], [x.ProductCategory].[SeoPageTitle], [x.ProductCategory].[SeoAlias], [x.ProductCategory].[SeoKeywords], [x.ProductCategory].[SeoDescription], [x].[SeoPageTitle] AS [SeoPageTitle0], [x].[SeoAlias] AS [SeoAlias0], [x].[SeoKeywords] AS [SeoKeywords0], [x].[SeoDescription] AS [SeoDescription0], [x].[DateCreated] AS [DateCreated0], [x].[DateModified] AS [DateModified0], [x].[Status] AS [Status0], [x.ProductCategory].[Id]
+FROM [Products] AS [x]
+INNER JOIN [ProductCategories] AS [x.ProductCategory] ON [x].[CategoryId] = [x.ProductCategory].[Id]
+WHERE [x].[Status] = 1
+ORDER BY [DateCreated0] DESC, [x].[Id], [x.ProductCategory].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-19T16:23:33.7092555+07:00 0HLFDB4RCS4JD:00000007 [INF] Executed DbCommand ("64"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[DateCreated], [t].[Id], [t].[Id0], [x.ProductCategory.Products].[Id] AS [Id1], [x.ProductCategory.Products].[Name], [x.ProductCategory.Products].[CategoryId], [x.ProductCategory.Products].[Image], [x.ProductCategory.Products].[Price], [x.ProductCategory.Products].[PromotionPrice], [x.ProductCategory.Products].[OriginalPrice], [x.ProductCategory.Products].[Description], [x.ProductCategory.Products].[Content], [x.ProductCategory.Products].[HomeFlag], [x.ProductCategory.Products].[HotFlag], [x.ProductCategory.Products].[ViewCount], [x.ProductCategory.Products].[Tags], [x.ProductCategory.Products].[Unit], [x.ProductCategory.Products].[SeoPageTitle], [x.ProductCategory.Products].[SeoAlias], [x.ProductCategory.Products].[SeoKeywords], [x.ProductCategory.Products].[SeoDescription], [x.ProductCategory.Products].[DateCreated] AS [DateCreated0], [x.ProductCategory.Products].[DateModified], [x.ProductCategory.Products].[Status]
+FROM [Products] AS [x.ProductCategory.Products]
+INNER JOIN (
+    SELECT [x0].[DateCreated], [x0].[Id], [x.ProductCategory0].[Id] AS [Id0]
+    FROM [Products] AS [x0]
+    INNER JOIN [ProductCategories] AS [x.ProductCategory0] ON [x0].[CategoryId] = [x.ProductCategory0].[Id]
+    WHERE [x0].[Status] = 1
+    ORDER BY [x0].[DateCreated] DESC, [x0].[Id], [x.ProductCategory0].[Id]
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [t] ON [x.ProductCategory.Products].[CategoryId] = [t].[Id0]
+ORDER BY [t].[DateCreated] DESC, [t].[Id], [t].[Id0]" (0723d8ff)
+2018-07-19T16:23:33.7292436+07:00 0HLFDB4RCS4JD:00000007 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductController.GetAllPaging (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 108.8963ms. (50a9e262)
+2018-07-19T16:23:33.7294172+07:00 0HLFDB4RCS4JD:00000007 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Utilities.Dtos.PagedResult`1[[WebAppCore.Application.ViewModels.Product.ProductViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-19T16:23:33.7309071+07:00 0HLFDB4RCS4JD:00000007 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductController.GetAllPaging (WebAppCore)" in 110.9568ms (afa2e885)
+2018-07-19T16:23:33.7311885+07:00 0HLFDB4RCS4JD:00000007 [INF] Request finished in 115.8248ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-19T16:23:33.7325762+07:00 0HLFDB4RCS4JE:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:5000/client-side/images/products/product-1.jpg   (ca22a1cb)
+2018-07-19T16:23:33.7379104+07:00 0HLFDB4RCS4JE:00000008 [INF] Request finished in 5.1399ms 404  (791a596a)
+2018-07-19T16:23:33.7482219+07:00 0HLFDB4RCS4JA:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/ckeditor/plugins/panelbutton/plugin.js?t=H8DC   (ca22a1cb)
+2018-07-19T16:23:33.7486025+07:00 0HLFDB4RCS4JA:00000007 [INF] The file "/lib/ckeditor/plugins/panelbutton/plugin.js" was not modified (f1f8d725)
+2018-07-19T16:23:33.7487265+07:00 0HLFDB4RCS4JA:00000007 [INF] Request finished in 0.5431ms 304 application/javascript (791a596a)
+2018-07-19T16:23:33.8421876+07:00 0HLFDB4RCS4JC:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:5000/client-side/images/products/product-1.jpg   (ca22a1cb)
+2018-07-19T16:23:33.8461166+07:00 0HLFDB4RCS4JC:00000008 [INF] Request finished in 4.3389ms 404  (791a596a)
+2018-07-19T16:23:33.8832163+07:00 0HLFDB4RCS4JE:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/ckeditor/plugins/tableselection/styles/tableselection.css   (ca22a1cb)
+2018-07-19T16:23:33.8935343+07:00 0HLFDB4RCS4JE:00000009 [INF] Sending file. Request path: '"/lib/ckeditor/plugins/tableselection/styles/tableselection.css"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\ckeditor\plugins\tableselection\styles\tableselection.css"' (27b0a520)
+2018-07-19T16:23:33.8936767+07:00 0HLFDB4RCS4JE:00000009 [INF] Request finished in 10.4946ms 200 text/css (791a596a)
+2018-07-19T16:23:33.9156709+07:00 0HLFDB4RCS4JA:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/ckeditor/plugins/scayt/dialogs/dialog.css   (ca22a1cb)
+2018-07-19T16:23:33.9161495+07:00 0HLFDB4RCS4JA:00000008 [INF] The file "/lib/ckeditor/plugins/scayt/dialogs/dialog.css" was not modified (f1f8d725)
+2018-07-19T16:23:33.9162590+07:00 0HLFDB4RCS4JA:00000008 [INF] Request finished in 0.7411ms 304 text/css (791a596a)
+2018-07-19T16:23:33.9247796+07:00 0HLFDB4RCS4JD:00000008 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css   (ca22a1cb)
+2018-07-19T16:23:33.9251876+07:00 0HLFDB4RCS4JD:00000008 [INF] The file "/lib/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" was not modified (f1f8d725)
+2018-07-19T16:23:33.9253992+07:00 0HLFDB4RCS4JD:00000008 [INF] Request finished in 0.656ms 304 text/css (791a596a)
+2018-07-19T16:23:33.9256554+07:00 0HLFDB4RCS4JC:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/ckeditor/plugins/colorbutton/lang/en.js?t=H8DC   (ca22a1cb)
+2018-07-19T16:23:33.9262083+07:00 0HLFDB4RCS4JC:00000009 [INF] The file "/lib/ckeditor/plugins/colorbutton/lang/en.js" was not modified (f1f8d725)
+2018-07-19T16:23:33.9263131+07:00 0HLFDB4RCS4JC:00000009 [INF] Request finished in 0.6602ms 304 application/javascript (791a596a)
+2018-07-19T16:23:33.9264435+07:00 0HLFDB4RCS4JE:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css   (ca22a1cb)
+2018-07-19T16:23:33.9267450+07:00 0HLFDB4RCS4JE:0000000A [INF] The file "/lib/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" was not modified (f1f8d725)
+2018-07-19T16:23:33.9268404+07:00 0HLFDB4RCS4JE:0000000A [INF] Request finished in 0.4143ms 304 text/css (791a596a)
+2018-07-19T16:23:34.2493860+07:00 0HLFDB4RCS4JA:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/ckeditor/skins/moono-lisa/icons.png?t=H8DC   (ca22a1cb)
+2018-07-19T16:23:34.2527799+07:00 0HLFDB4RCS4JA:00000009 [INF] Sending file. Request path: '"/lib/ckeditor/skins/moono-lisa/icons.png"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\ckeditor\skins\moono-lisa\icons.png"' (27b0a520)
+2018-07-19T16:23:34.2528907+07:00 0HLFDB4RCS4JA:00000009 [INF] Request finished in 3.5666ms 200 image/png (791a596a)
+2018-07-19T16:23:34.6475908+07:00 0HLFDB4RCS4JD:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/ckeditor/contents.css?t=H8DC   (ca22a1cb)
+2018-07-19T16:23:34.6509898+07:00 0HLFDB4RCS4JD:00000009 [INF] The file "/lib/ckeditor/contents.css" was not modified (f1f8d725)
+2018-07-19T16:23:34.6513443+07:00 0HLFDB4RCS4JD:00000009 [INF] Request finished in 8.1609ms 304 text/css (791a596a)
+2018-07-19T16:23:34.9133607+07:00 0HLFDB4RCS4JC:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-19T16:23:34.9166973+07:00 0HLFDB4RCS4JC:0000000A [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-19T16:23:34.9171690+07:00 0HLFDB4RCS4JC:0000000A [INF] Authorization was successful. (0d575a54)
+2018-07-19T16:23:34.9182920+07:00 0HLFDB4RCS4JC:0000000A [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-19T16:23:34.9192256+07:00 0HLFDB4RCS4JC:0000000A [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-19T16:23:34.9227135+07:00 0HLFDB4RCS4JC:0000000A [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-19T16:23:34.9290214+07:00 0HLFDB4RCS4JC:0000000A [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-19T16:23:34.9296133+07:00 0HLFDB4RCS4JC:0000000A [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 11.2169ms. (50a9e262)
+2018-07-19T16:23:34.9297874+07:00 0HLFDB4RCS4JC:0000000A [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-19T16:23:34.9303061+07:00 0HLFDB4RCS4JC:0000000A [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 13.3859ms (afa2e885)
+2018-07-19T16:23:34.9304536+07:00 0HLFDB4RCS4JC:0000000A [INF] Request finished in 17.201ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-19T16:23:34.9948570+07:00 0HLFDB4RCS4JE:0000000B [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jQuery-EasyUI/themes/bootstrap/images/combo_arrow.png   (ca22a1cb)
+2018-07-19T16:23:34.9960218+07:00 0HLFDB4RCS4JE:0000000B [INF] The file "/lib/jQuery-EasyUI/themes/bootstrap/images/combo_arrow.png" was not modified (f1f8d725)
+2018-07-19T16:23:34.9961454+07:00 0HLFDB4RCS4JE:0000000B [INF] Request finished in 1.3821ms 304 image/png (791a596a)
+2018-07-19T16:23:35.0199239+07:00 0HLFDB4RCS4JA:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-19T16:23:35.0207625+07:00 0HLFDB4RCS4JA:0000000A [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-19T16:23:35.0208797+07:00 0HLFDB4RCS4JA:0000000A [INF] Authorization was successful. (0d575a54)
+2018-07-19T16:23:35.0209905+07:00 0HLFDB4RCS4JA:0000000A [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-19T16:23:35.0213997+07:00 0HLFDB4RCS4JA:0000000A [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-19T16:23:35.0245797+07:00 0HLFDB4RCS4JA:0000000A [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-19T16:23:35.0300118+07:00 0HLFDB4RCS4JA:0000000A [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-19T16:23:35.0306054+07:00 0HLFDB4RCS4JA:0000000A [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 9.5272ms. (50a9e262)
+2018-07-19T16:23:35.0307470+07:00 0HLFDB4RCS4JA:0000000A [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-19T16:23:35.0313410+07:00 0HLFDB4RCS4JA:0000000A [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 10.4672ms (afa2e885)
+2018-07-19T16:23:35.0314795+07:00 0HLFDB4RCS4JA:0000000A [INF] Request finished in 11.618ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-19T16:23:37.0944660+07:00 0HLFDB4RCS4JD:0000000A [INF] Request starting HTTP/1.1 GET http://localhost:5000/lib/jQuery-EasyUI/themes/bootstrap/images/tree_icons.png   (ca22a1cb)
+2018-07-19T16:23:37.0977927+07:00 0HLFDB4RCS4JD:0000000A [INF] Sending file. Request path: '"/lib/jQuery-EasyUI/themes/bootstrap/images/tree_icons.png"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\lib\jQuery-EasyUI\themes\bootstrap\images\tree_icons.png"' (27b0a520)
+2018-07-19T16:23:37.0979043+07:00 0HLFDB4RCS4JD:0000000A [INF] Request finished in 3.5195ms 200 image/png (791a596a)
+2018-07-19T16:24:52.4157197+07:00 0HLFDB4RCS4JF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-19T16:24:52.4167649+07:00 0HLFDB4RCS4JF:00000001 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-19T16:24:52.4168774+07:00 0HLFDB4RCS4JF:00000001 [INF] Authorization was successful. (0d575a54)
+2018-07-19T16:24:52.4169851+07:00 0HLFDB4RCS4JF:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-19T16:24:52.4174974+07:00 0HLFDB4RCS4JF:00000001 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-19T16:24:52.4210992+07:00 0HLFDB4RCS4JF:00000001 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-19T16:24:52.4379966+07:00 0HLFDB4RCS4JF:00000001 [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-19T16:24:52.4387142+07:00 0HLFDB4RCS4JF:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 21.6542ms. (50a9e262)
+2018-07-19T16:24:52.4388651+07:00 0HLFDB4RCS4JF:00000001 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-19T16:24:52.4394437+07:00 0HLFDB4RCS4JF:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 22.601ms (afa2e885)
+2018-07-19T16:24:52.4395896+07:00 0HLFDB4RCS4JF:00000001 [INF] Request finished in 24.8744ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-19T16:24:52.4749446+07:00 0HLFDB4RCS4JF:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/ProductCategory/GetAll   (ca22a1cb)
+2018-07-19T16:24:52.4758691+07:00 0HLFDB4RCS4JF:00000002 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"ProductCategory\"}". Executing action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" (a44c0341)
+2018-07-19T16:24:52.4759910+07:00 0HLFDB4RCS4JF:00000002 [INF] Authorization was successful. (0d575a54)
+2018-07-19T16:24:52.4760958+07:00 0HLFDB4RCS4JF:00000002 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-19T16:24:52.4765341+07:00 0HLFDB4RCS4JF:00000002 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-19T16:24:52.4776764+07:00 0HLFDB4RCS4JF:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[Description], [x].[ParentId], [x].[HomeOrder], [x].[Image], [x].[HomeFlag], [x].[DateCreated], [x].[DateModified], [x].[SortOrder], [x].[Status], [x].[SeoPageTitle], [x].[SeoAlias], [x].[SeoKeywords], [x].[SeoDescription]
+FROM [ProductCategories] AS [x]
+ORDER BY [x].[ParentId], [x].[Id]" (0723d8ff)
+2018-07-19T16:24:52.4784056+07:00 0HLFDB4RCS4JF:00000002 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [t].[ParentId], [t].[Id], [x.Products].[Id] AS [Id0], [x.Products].[Name], [x.Products].[CategoryId], [x.Products].[Image], [x.Products].[Price], [x.Products].[PromotionPrice], [x.Products].[OriginalPrice], [x.Products].[Description], [x.Products].[Content], [x.Products].[HomeFlag], [x.Products].[HotFlag], [x.Products].[ViewCount], [x.Products].[Tags], [x.Products].[Unit], [x.Products].[SeoPageTitle], [x.Products].[SeoAlias], [x.Products].[SeoKeywords], [x.Products].[SeoDescription], [x.Products].[DateCreated], [x.Products].[DateModified], [x.Products].[Status]
+FROM [Products] AS [x.Products]
+INNER JOIN (
+    SELECT [x0].[ParentId], [x0].[Id]
+    FROM [ProductCategories] AS [x0]
+) AS [t] ON [x.Products].[CategoryId] = [t].[Id]
+ORDER BY [t].[ParentId], [t].[Id]" (0723d8ff)
+2018-07-19T16:24:52.4789513+07:00 0HLFDB4RCS4JF:00000002 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 2.7575ms. (50a9e262)
+2018-07-19T16:24:52.4791501+07:00 0HLFDB4RCS4JF:00000002 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.Product.ProductCategoryViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-19T16:24:52.4797095+07:00 0HLFDB4RCS4JF:00000002 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.ProductCategoryController.GetAll (WebAppCore)" in 3.7505ms (afa2e885)
+2018-07-19T16:24:52.4798819+07:00 0HLFDB4RCS4JF:00000002 [INF] Request finished in 5.0232ms 200 application/json; charset=utf-8 (791a596a)

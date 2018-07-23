@@ -24,11 +24,11 @@ namespace WebAppCore.Areas.Admin.Components
             List<FunctionViewModel> functions;
             if (roles.Split(";").Contains(CommonConstants.AdminRole))
             {
-                functions = await _functionService.GetAll();
+                functions = await _functionService.GetAll(string.Empty);
             }
             else
             {
-                functions = new List<FunctionViewModel>();
+                functions = await _functionService.GetAll(string.Empty);
             }
             return View(functions);
         }
