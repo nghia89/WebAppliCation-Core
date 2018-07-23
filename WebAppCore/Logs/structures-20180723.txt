@@ -1545,3 +1545,720 @@ WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
 2018-07-23T21:48:05.1078123+07:00 0HLFGL94OH81G:00000008 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.System.PermissionViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
 2018-07-23T21:48:05.1081287+07:00 0HLFGL94OH81G:00000008 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" in 6.4917ms (afa2e885)
 2018-07-23T21:48:05.1082694+07:00 0HLFGL94OH81G:00000008 [INF] Request finished in 7.6802ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-23T22:03:08.2602684+07:00 0HLFGL94OH81H:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin/Function/GetAll   (ca22a1cb)
+2018-07-23T22:03:08.2616729+07:00 0HLFGL94OH81H:00000001 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"Function\"}". Executing action "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" (a44c0341)
+2018-07-23T22:03:08.2617952+07:00 0HLFGL94OH81H:00000001 [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:08.2619411+07:00 0HLFGL94OH81H:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-23T22:03:08.2624768+07:00 0HLFGL94OH81I:00000001 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2018-07-23T22:03:08.2626248+07:00 0HLFGL94OH81H:00000001 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:08.2632377+07:00 0HLFGL94OH81I:00000001 [INF] Route matched with "{area = \"Admin\", action = \"ListAllFunction\", controller = \"Role\"}". Executing action "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" (a44c0341)
+2018-07-23T22:03:08.2633343+07:00 0HLFGL94OH81I:00000001 [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:08.2637397+07:00 0HLFGL94OH81I:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" with arguments (["14e16274-3978-4c75-cacd-08d5cae525f6"]) - Validation state: Valid (4e3479ed)
+2018-07-23T22:03:08.2641789+07:00 0HLFGL94OH81I:00000001 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:08.5182082+07:00 0HLFGL94OH81H:00000001 [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-23T22:03:08.5238220+07:00 0HLFGL94OH81H:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 261.7715ms. (50a9e262)
+2018-07-23T22:03:08.5239960+07:00 0HLFGL94OH81H:00000001 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.System.FunctionViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-23T22:03:08.5243981+07:00 0HLFGL94OH81H:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" in 262.6366ms (afa2e885)
+2018-07-23T22:03:08.5245948+07:00 0HLFGL94OH81H:00000001 [INF] Request finished in 264.4802ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-23T22:03:08.5312534+07:00 0HLFGL94OH81I:00000001 [INF] Executed DbCommand ("39"ms) [Parameters=["@__roleId_1='?' (DbType = Guid), @__roleId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2018-07-23T22:03:08.5315331+07:00 0HLFGL94OH81I:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 267.7244ms. (50a9e262)
+2018-07-23T22:03:08.5316541+07:00 0HLFGL94OH81I:00000001 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.System.PermissionViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-23T22:03:08.5320471+07:00 0HLFGL94OH81I:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" in 268.7294ms (afa2e885)
+2018-07-23T22:03:08.5321617+07:00 0HLFGL94OH81I:00000001 [INF] Request finished in 269.7378ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-23T22:03:10.9516102+07:00 0HLFGL94OH81I:00000002 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin/Function/GetAll   (ca22a1cb)
+2018-07-23T22:03:10.9545410+07:00 0HLFGL94OH81H:00000002 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2018-07-23T22:03:10.9550011+07:00 0HLFGL94OH81I:00000002 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"Function\"}". Executing action "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" (a44c0341)
+2018-07-23T22:03:10.9589547+07:00 0HLFGL94OH81I:00000002 [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:10.9591540+07:00 0HLFGL94OH81I:00000002 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-23T22:03:10.9597630+07:00 0HLFGL94OH81I:00000002 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:10.9599020+07:00 0HLFGL94OH81H:00000002 [INF] Route matched with "{area = \"Admin\", action = \"ListAllFunction\", controller = \"Role\"}". Executing action "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" (a44c0341)
+2018-07-23T22:03:10.9599969+07:00 0HLFGL94OH81H:00000002 [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:10.9602813+07:00 0HLFGL94OH81H:00000002 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" with arguments (["84d64cc6-efca-4064-cace-08d5cae525f6"]) - Validation state: Valid (4e3479ed)
+2018-07-23T22:03:10.9606726+07:00 0HLFGL94OH81H:00000002 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:10.9628451+07:00 0HLFGL94OH81I:00000002 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-23T22:03:10.9628451+07:00 0HLFGL94OH81H:00000002 [INF] Executed DbCommand ("1"ms) [Parameters=["@__roleId_1='?' (DbType = Guid), @__roleId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2018-07-23T22:03:10.9630898+07:00 0HLFGL94OH81H:00000002 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 2.7284ms. (50a9e262)
+2018-07-23T22:03:10.9632168+07:00 0HLFGL94OH81H:00000002 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.System.PermissionViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-23T22:03:10.9635063+07:00 0HLFGL94OH81H:00000002 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" in 3.5294ms (afa2e885)
+2018-07-23T22:03:10.9635251+07:00 0HLFGL94OH81I:00000002 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 4.2726ms. (50a9e262)
+2018-07-23T22:03:10.9636243+07:00 0HLFGL94OH81H:00000002 [INF] Request finished in 13.043ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-23T22:03:10.9636337+07:00 0HLFGL94OH81I:00000002 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.System.FunctionViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-23T22:03:10.9639908+07:00 0HLFGL94OH81I:00000002 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" in 8.9063ms (afa2e885)
+2018-07-23T22:03:10.9642431+07:00 0HLFGL94OH81I:00000002 [INF] Request finished in 13.4266ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-23T22:03:16.4103465+07:00 0HLFGL94OH81H:00000003 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2018-07-23T22:03:16.4105386+07:00 0HLFGL94OH81I:00000003 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin/Function/GetAll   (ca22a1cb)
+2018-07-23T22:03:16.4111775+07:00 0HLFGL94OH81I:00000003 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"Function\"}". Executing action "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" (a44c0341)
+2018-07-23T22:03:16.4111860+07:00 0HLFGL94OH81H:00000003 [INF] Route matched with "{area = \"Admin\", action = \"ListAllFunction\", controller = \"Role\"}". Executing action "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" (a44c0341)
+2018-07-23T22:03:16.4112698+07:00 0HLFGL94OH81H:00000003 [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:16.4112745+07:00 0HLFGL94OH81I:00000003 [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:16.4114173+07:00 0HLFGL94OH81I:00000003 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-23T22:03:16.4115785+07:00 0HLFGL94OH81H:00000003 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" with arguments (["84d64cc6-efca-4064-cace-08d5cae525f6"]) - Validation state: Valid (4e3479ed)
+2018-07-23T22:03:16.4120241+07:00 0HLFGL94OH81H:00000003 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:16.4120519+07:00 0HLFGL94OH81I:00000003 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:16.4137801+07:00 0HLFGL94OH81H:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=["@__roleId_1='?' (DbType = Guid), @__roleId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2018-07-23T22:03:16.4140392+07:00 0HLFGL94OH81H:00000003 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 2.3905ms. (50a9e262)
+2018-07-23T22:03:16.4141616+07:00 0HLFGL94OH81I:00000003 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-23T22:03:16.4141654+07:00 0HLFGL94OH81H:00000003 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.System.PermissionViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-23T22:03:16.4145473+07:00 0HLFGL94OH81H:00000003 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" in 3.2086ms (afa2e885)
+2018-07-23T22:03:16.4147252+07:00 0HLFGL94OH81H:00000003 [INF] Request finished in 4.4407ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-23T22:03:16.4172130+07:00 0HLFGL94OH81I:00000003 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 5.6386ms. (50a9e262)
+2018-07-23T22:03:16.4173759+07:00 0HLFGL94OH81I:00000003 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.System.FunctionViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-23T22:03:16.4178942+07:00 0HLFGL94OH81I:00000003 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" in 6.594ms (afa2e885)
+2018-07-23T22:03:16.4180798+07:00 0HLFGL94OH81I:00000003 [INF] Request finished in 7.5553ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-23T22:03:19.5772091+07:00 0HLFGL94OH81H:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin/role/index   (ca22a1cb)
+2018-07-23T22:03:19.5781504+07:00 0HLFGL94OH81H:00000004 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Role\"}". Executing action "WebAppCore.Areas.Admin.Controllers.RoleController.Index (WebAppCore)" (a44c0341)
+2018-07-23T22:03:19.5783898+07:00 0HLFGL94OH81H:00000004 [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:19.5785126+07:00 0HLFGL94OH81H:00000004 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.RoleController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-23T22:03:19.5785742+07:00 0HLFGL94OH81H:00000004 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.RoleController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0102ms. (50a9e262)
+2018-07-23T22:03:19.5786901+07:00 0HLFGL94OH81H:00000004 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-07-23T22:03:19.5798772+07:00 0HLFGL94OH81H:00000004 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:19.5839519+07:00 0HLFGL94OH81H:00000004 [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-23T22:03:19.5856895+07:00 0HLFGL94OH81H:00000004 [INF] Executed ViewResult - view "Index" executed in 7.0173ms. (f66409e9)
+2018-07-23T22:03:19.5857908+07:00 0HLFGL94OH81H:00000004 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.RoleController.Index (WebAppCore)" in 7.5455ms (afa2e885)
+2018-07-23T22:03:19.5859854+07:00 0HLFGL94OH81H:00000004 [INF] Request finished in 8.766ms 200 text/html; charset=utf-8 (791a596a)
+2018-07-23T22:03:19.6449046+07:00 0HLFGL94OH81I:00000004 [INF] Request starting HTTP/1.1 GET http://localhost:5000/app/Controller/role/index.js?v=FZooKvGWGoIqtcxN-qk_6tzLr-zsIUJt31g-EjqUL9k   (ca22a1cb)
+2018-07-23T22:03:19.6851448+07:00 0HLFGL94OH81I:00000004 [INF] The file "/app/Controller/role/index.js" was not modified (f1f8d725)
+2018-07-23T22:03:19.6873908+07:00 0HLFGL94OH81I:00000004 [INF] Request finished in 42.4934ms 304 application/javascript (791a596a)
+2018-07-23T22:03:20.1156829+07:00 0HLFGL94OH81H:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-23T22:03:20.1166168+07:00 0HLFGL94OH81H:00000005 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Role\"}". Executing action "WebAppCore.Areas.Admin.Controllers.RoleController.GetAllPaging (WebAppCore)" (a44c0341)
+2018-07-23T22:03:20.1167485+07:00 0HLFGL94OH81H:00000005 [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:20.1170470+07:00 0HLFGL94OH81H:00000005 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.RoleController.GetAllPaging (WebAppCore)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2018-07-23T22:03:20.1175833+07:00 0HLFGL94OH81H:00000005 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:20.2456846+07:00 0HLFGL94OH81H:00000005 [INF] Executed DbCommand ("128"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-07-23T22:03:20.2531147+07:00 0HLFGL94OH81H:00000005 [INF] Executed DbCommand ("7"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-23T22:03:20.2533503+07:00 0HLFGL94OH81H:00000005 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.RoleController.GetAllPaging (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 136.2066ms. (50a9e262)
+2018-07-23T22:03:20.2534906+07:00 0HLFGL94OH81H:00000005 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Utilities.Dtos.PagedResult`1[[WebAppCore.Application.ViewModels.System.AppRoleViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-23T22:03:20.2538969+07:00 0HLFGL94OH81H:00000005 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.RoleController.GetAllPaging (WebAppCore)" in 137.1782ms (afa2e885)
+2018-07-23T22:03:20.2540389+07:00 0HLFGL94OH81H:00000005 [INF] Request finished in 138.5625ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-23T22:03:20.3060703+07:00 0HLFGL94OH81I:00000005 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin/role/GetAllPaging?keyword=&page=1&pageSize=10   (ca22a1cb)
+2018-07-23T22:03:20.3072185+07:00 0HLFGL94OH81I:00000005 [INF] Route matched with "{area = \"Admin\", action = \"GetAllPaging\", controller = \"Role\"}". Executing action "WebAppCore.Areas.Admin.Controllers.RoleController.GetAllPaging (WebAppCore)" (a44c0341)
+2018-07-23T22:03:20.3073421+07:00 0HLFGL94OH81I:00000005 [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:20.3076210+07:00 0HLFGL94OH81I:00000005 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.RoleController.GetAllPaging (WebAppCore)" with arguments (["", "1", "10"]) - Validation state: Valid (4e3479ed)
+2018-07-23T22:03:20.3080790+07:00 0HLFGL94OH81I:00000005 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:20.3088013+07:00 0HLFGL94OH81I:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT COUNT(*)
+FROM [AppRoles] AS [a]" (0723d8ff)
+2018-07-23T22:03:20.3096497+07:00 0HLFGL94OH81I:00000005 [INF] Executed DbCommand ("0"ms) [Parameters=["@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT CONVERT(VARCHAR(36), [dto].[Id]) AS [Id], [dto].[Name], [dto].[Description]
+FROM [AppRoles] AS [dto]
+ORDER BY (SELECT 1)
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY" (0723d8ff)
+2018-07-23T22:03:20.3098109+07:00 0HLFGL94OH81I:00000005 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.RoleController.GetAllPaging (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 2.1087ms. (50a9e262)
+2018-07-23T22:03:20.3099704+07:00 0HLFGL94OH81I:00000005 [INF] Executing ObjectResult, writing value of type '"WebAppCore.Utilities.Dtos.PagedResult`1[[WebAppCore.Application.ViewModels.System.AppRoleViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-23T22:03:20.3101471+07:00 0HLFGL94OH81I:00000005 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.RoleController.GetAllPaging (WebAppCore)" in 2.852ms (afa2e885)
+2018-07-23T22:03:20.3102762+07:00 0HLFGL94OH81I:00000005 [INF] Request finished in 4.2675ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-23T22:03:20.3514880+07:00 0HLFGL94OH81H:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico   (ca22a1cb)
+2018-07-23T22:03:20.3522509+07:00 0HLFGL94OH81H:00000006 [INF] Sending file. Request path: '"/favicon.ico"'. Physical path: '"H:\WebAppCore\WebAppCore\wwwroot\favicon.ico"' (27b0a520)
+2018-07-23T22:03:20.3523429+07:00 0HLFGL94OH81H:00000006 [INF] Request finished in 2.7532ms 200 image/x-icon (791a596a)
+2018-07-23T22:03:21.2000381+07:00 0HLFGL94OH81I:00000006 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin/Function/GetAll   (ca22a1cb)
+2018-07-23T22:03:21.2008951+07:00 0HLFGL94OH81I:00000006 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"Function\"}". Executing action "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" (a44c0341)
+2018-07-23T22:03:21.2010187+07:00 0HLFGL94OH81I:00000006 [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:21.2011410+07:00 0HLFGL94OH81I:00000006 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-23T22:03:21.2017525+07:00 0HLFGL94OH81I:00000006 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:21.2102803+07:00 0HLFGL94OH81I:00000006 [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-23T22:03:21.2111155+07:00 0HLFGL94OH81I:00000006 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 9.7915ms. (50a9e262)
+2018-07-23T22:03:21.2113756+07:00 0HLFGL94OH81I:00000006 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.System.FunctionViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-23T22:03:21.2116613+07:00 0HLFGL94OH81I:00000006 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" in 10.6652ms (afa2e885)
+2018-07-23T22:03:21.2118007+07:00 0HLFGL94OH81I:00000006 [INF] Request finished in 15.4148ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-23T22:03:21.2118546+07:00 0HLFGL94OH81H:00000007 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2018-07-23T22:03:21.2208588+07:00 0HLFGL94OH81H:00000007 [INF] Route matched with "{area = \"Admin\", action = \"ListAllFunction\", controller = \"Role\"}". Executing action "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" (a44c0341)
+2018-07-23T22:03:21.2210769+07:00 0HLFGL94OH81H:00000007 [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:21.2216923+07:00 0HLFGL94OH81H:00000007 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" with arguments (["84d64cc6-efca-4064-cace-08d5cae525f6"]) - Validation state: Valid (4e3479ed)
+2018-07-23T22:03:21.2224612+07:00 0HLFGL94OH81H:00000007 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:21.2386745+07:00 0HLFGL94OH81H:00000007 [INF] Executed DbCommand ("15"ms) [Parameters=["@__roleId_1='?' (DbType = Guid), @__roleId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2018-07-23T22:03:21.2389362+07:00 0HLFGL94OH81H:00000007 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 17.1502ms. (50a9e262)
+2018-07-23T22:03:21.2390667+07:00 0HLFGL94OH81H:00000007 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.System.PermissionViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-23T22:03:21.2393802+07:00 0HLFGL94OH81H:00000007 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" in 18.3831ms (afa2e885)
+2018-07-23T22:03:21.2394973+07:00 0HLFGL94OH81H:00000007 [INF] Request finished in 27.6649ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-23T22:03:24.5958330+07:00 0HLFGL94OH81I:00000007 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin/Function/GetAll   (ca22a1cb)
+2018-07-23T22:03:24.5969838+07:00 0HLFGL94OH81I:00000007 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"Function\"}". Executing action "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" (a44c0341)
+2018-07-23T22:03:24.5971074+07:00 0HLFGL94OH81I:00000007 [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:24.5972113+07:00 0HLFGL94OH81I:00000007 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-23T22:03:24.5977964+07:00 0HLFGL94OH81I:00000007 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:24.5984472+07:00 0HLFGL94OH81H:00000008 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2018-07-23T22:03:24.5994061+07:00 0HLFGL94OH81H:00000008 [INF] Route matched with "{area = \"Admin\", action = \"ListAllFunction\", controller = \"Role\"}". Executing action "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" (a44c0341)
+2018-07-23T22:03:24.5995211+07:00 0HLFGL94OH81H:00000008 [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:24.5998384+07:00 0HLFGL94OH81H:00000008 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" with arguments (["0252f6b4-42a9-484e-cacf-08d5cae525f6"]) - Validation state: Valid (4e3479ed)
+2018-07-23T22:03:24.6002404+07:00 0HLFGL94OH81H:00000008 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:24.6308973+07:00 0HLFGL94OH81H:00000008 [INF] Executed DbCommand ("29"ms) [Parameters=["@__roleId_1='?' (DbType = Guid), @__roleId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2018-07-23T22:03:24.6312317+07:00 0HLFGL94OH81H:00000008 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 31.3025ms. (50a9e262)
+2018-07-23T22:03:24.6313523+07:00 0HLFGL94OH81H:00000008 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.System.PermissionViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-23T22:03:24.6315058+07:00 0HLFGL94OH81H:00000008 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" in 32.0193ms (afa2e885)
+2018-07-23T22:03:24.6316298+07:00 0HLFGL94OH81H:00000008 [INF] Request finished in 33.2142ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-23T22:03:24.6438565+07:00 0HLFGL94OH81I:00000007 [INF] Executed DbCommand ("45"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-23T22:03:24.6444766+07:00 0HLFGL94OH81I:00000007 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 47.1818ms. (50a9e262)
+2018-07-23T22:03:24.6446459+07:00 0HLFGL94OH81I:00000007 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.System.FunctionViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-23T22:03:24.6450265+07:00 0HLFGL94OH81I:00000007 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" in 47.8716ms (afa2e885)
+2018-07-23T22:03:24.6454260+07:00 0HLFGL94OH81I:00000007 [INF] Request finished in 49.8375ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-23T22:03:28.4673660+07:00 0HLFGL94OH81H:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin/Function/GetAll   (ca22a1cb)
+2018-07-23T22:03:28.4681213+07:00 0HLFGL94OH81I:00000008 [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2018-07-23T22:03:28.4687042+07:00 0HLFGL94OH81H:00000009 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"Function\"}". Executing action "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" (a44c0341)
+2018-07-23T22:03:28.4687004+07:00 0HLFGL94OH81I:00000008 [INF] Route matched with "{area = \"Admin\", action = \"ListAllFunction\", controller = \"Role\"}". Executing action "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" (a44c0341)
+2018-07-23T22:03:28.4687923+07:00 0HLFGL94OH81I:00000008 [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:28.4687923+07:00 0HLFGL94OH81H:00000009 [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:28.4688979+07:00 0HLFGL94OH81H:00000009 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-23T22:03:28.4690699+07:00 0HLFGL94OH81I:00000008 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" with arguments (["0252f6b4-42a9-484e-cacf-08d5cae525f6"]) - Validation state: Valid (4e3479ed)
+2018-07-23T22:03:28.4693474+07:00 0HLFGL94OH81H:00000009 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:28.4693923+07:00 0HLFGL94OH81I:00000008 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:28.4873273+07:00 0HLFGL94OH81H:00000009 [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-23T22:03:28.4880736+07:00 0HLFGL94OH81H:00000009 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 19.081ms. (50a9e262)
+2018-07-23T22:03:28.4882014+07:00 0HLFGL94OH81H:00000009 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.System.FunctionViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-23T22:03:28.4885136+07:00 0HLFGL94OH81H:00000009 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" in 19.7443ms (afa2e885)
+2018-07-23T22:03:28.4886381+07:00 0HLFGL94OH81H:00000009 [INF] Request finished in 21.3591ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-23T22:03:28.4899483+07:00 0HLFGL94OH81I:00000008 [INF] Executed DbCommand ("19"ms) [Parameters=["@__roleId_1='?' (DbType = Guid), @__roleId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2018-07-23T22:03:28.4901707+07:00 0HLFGL94OH81I:00000008 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 20.9798ms. (50a9e262)
+2018-07-23T22:03:28.4903050+07:00 0HLFGL94OH81I:00000008 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.System.PermissionViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-23T22:03:28.4905000+07:00 0HLFGL94OH81I:00000008 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" in 21.7167ms (afa2e885)
+2018-07-23T22:03:28.4906458+07:00 0HLFGL94OH81I:00000008 [INF] Request finished in 22.5463ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-23T22:03:34.1722499+07:00 0HLFGL94OH81H:0000000A [INF] Request starting HTTP/1.1 POST http://localhost:5000/admin/role/SavePermission application/x-www-form-urlencoded; charset=UTF-8 7164 (ca22a1cb)
+2018-07-23T22:03:34.1731489+07:00 0HLFGL94OH81H:0000000A [INF] Route matched with "{area = \"Admin\", action = \"SavePermission\", controller = \"Role\"}". Executing action "WebAppCore.Areas.Admin.Controllers.RoleController.SavePermission (WebAppCore)" (a44c0341)
+2018-07-23T22:03:34.1732503+07:00 0HLFGL94OH81H:0000000A [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:34.1780071+07:00 0HLFGL94OH81H:0000000A [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.RoleController.SavePermission (WebAppCore)" with arguments (["System.Collections.Generic.List`1[WebAppCore.Application.ViewModels.System.PermissionViewModel]", "0252f6b4-42a9-484e-cacf-08d5cae525f6"]) - Validation state: Valid (4e3479ed)
+2018-07-23T22:03:34.1799255+07:00 0HLFGL94OH81H:0000000A [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:34.1817721+07:00 0HLFGL94OH81H:0000000A [INF] Executed DbCommand ("1"ms) [Parameters=["@__roleId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CanCreate], [x].[CanDelete], [x].[CanRead], [x].[CanUpdate], [x].[FunctionId], [x].[RoleId]
+FROM [Permissions] AS [x]
+WHERE [x].[RoleId] = @__roleId_0" (0723d8ff)
+2018-07-23T22:03:34.2204709+07:00 0HLFGL94OH81H:0000000A [INF] Executed DbCommand ("34"ms) [Parameters=["@p0='?' (DbType = Boolean), @p1='?' (DbType = Boolean), @p2='?' (DbType = Boolean), @p3='?' (DbType = Boolean), @p4='?' (Size = 128) (DbType = AnsiString), @p5='?' (DbType = Guid), @p6='?' (DbType = Boolean), @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = Boolean), @p10='?' (Size = 128) (DbType = AnsiString), @p11='?' (DbType = Guid), @p12='?' (DbType = Boolean), @p13='?' (DbType = Boolean), @p14='?' (DbType = Boolean), @p15='?' (DbType = Boolean), @p16='?' (Size = 128) (DbType = AnsiString), @p17='?' (DbType = Guid), @p18='?' (DbType = Boolean), @p19='?' (DbType = Boolean), @p20='?' (DbType = Boolean), @p21='?' (DbType = Boolean), @p22='?' (Size = 128) (DbType = AnsiString), @p23='?' (DbType = Guid), @p24='?' (DbType = Boolean), @p25='?' (DbType = Boolean), @p26='?' (DbType = Boolean), @p27='?' (DbType = Boolean), @p28='?' (Size = 128) (DbType = AnsiString), @p29='?' (DbType = Guid), @p30='?' (DbType = Boolean), @p31='?' (DbType = Boolean), @p32='?' (DbType = Boolean), @p33='?' (DbType = Boolean), @p34='?' (Size = 128) (DbType = AnsiString), @p35='?' (DbType = Guid), @p36='?' (DbType = Boolean), @p37='?' (DbType = Boolean), @p38='?' (DbType = Boolean), @p39='?' (DbType = Boolean), @p40='?' (Size = 128) (DbType = AnsiString), @p41='?' (DbType = Guid), @p42='?' (DbType = Boolean), @p43='?' (DbType = Boolean), @p44='?' (DbType = Boolean), @p45='?' (DbType = Boolean), @p46='?' (Size = 128) (DbType = AnsiString), @p47='?' (DbType = Guid), @p48='?' (DbType = Boolean), @p49='?' (DbType = Boolean), @p50='?' (DbType = Boolean), @p51='?' (DbType = Boolean), @p52='?' (Size = 128) (DbType = AnsiString), @p53='?' (DbType = Guid), @p54='?' (DbType = Boolean), @p55='?' (DbType = Boolean), @p56='?' (DbType = Boolean), @p57='?' (DbType = Boolean), @p58='?' (Size = 128) (DbType = AnsiString), @p59='?' (DbType = Guid), @p60='?' (DbType = Boolean), @p61='?' (DbType = Boolean), @p62='?' (DbType = Boolean), @p63='?' (DbType = Boolean), @p64='?' (Size = 128) (DbType = AnsiString), @p65='?' (DbType = Guid), @p66='?' (DbType = Boolean), @p67='?' (DbType = Boolean), @p68='?' (DbType = Boolean), @p69='?' (DbType = Boolean), @p70='?' (Size = 128) (DbType = AnsiString), @p71='?' (DbType = Guid), @p72='?' (DbType = Boolean), @p73='?' (DbType = Boolean), @p74='?' (DbType = Boolean), @p75='?' (DbType = Boolean), @p76='?' (Size = 128) (DbType = AnsiString), @p77='?' (DbType = Guid), @p78='?' (DbType = Boolean), @p79='?' (DbType = Boolean), @p80='?' (DbType = Boolean), @p81='?' (DbType = Boolean), @p82='?' (Size = 128) (DbType = AnsiString), @p83='?' (DbType = Guid), @p84='?' (DbType = Boolean), @p85='?' (DbType = Boolean), @p86='?' (DbType = Boolean), @p87='?' (DbType = Boolean), @p88='?' (Size = 128) (DbType = AnsiString), @p89='?' (DbType = Guid), @p90='?' (DbType = Boolean), @p91='?' (DbType = Boolean), @p92='?' (DbType = Boolean), @p93='?' (DbType = Boolean), @p94='?' (Size = 128) (DbType = AnsiString), @p95='?' (DbType = Guid), @p96='?' (DbType = Boolean), @p97='?' (DbType = Boolean), @p98='?' (DbType = Boolean), @p99='?' (DbType = Boolean), @p100='?' (Size = 128) (DbType = AnsiString), @p101='?' (DbType = Guid), @p102='?' (DbType = Boolean), @p103='?' (DbType = Boolean), @p104='?' (DbType = Boolean), @p105='?' (DbType = Boolean), @p106='?' (Size = 128) (DbType = AnsiString), @p107='?' (DbType = Guid), @p108='?' (DbType = Boolean), @p109='?' (DbType = Boolean), @p110='?' (DbType = Boolean), @p111='?' (DbType = Boolean), @p112='?' (Size = 128) (DbType = AnsiString), @p113='?' (DbType = Guid), @p114='?' (DbType = Boolean), @p115='?' (DbType = Boolean), @p116='?' (DbType = Boolean), @p117='?' (DbType = Boolean), @p118='?' (Size = 128) (DbType = AnsiString), @p119='?' (DbType = Guid), @p120='?' (DbType = Boolean), @p121='?' (DbType = Boolean), @p122='?' (DbType = Boolean), @p123='?' (DbType = Boolean), @p124='?' (Size = 128) (DbType = AnsiString), @p125='?' (DbType = Guid), @p126='?' (DbType = Boolean), @p127='?' (DbType = Boolean), @p128='?' (DbType = Boolean), @p129='?' (DbType = Boolean), @p130='?' (Size = 128) (DbType = AnsiString), @p131='?' (DbType = Guid), @p132='?' (DbType = Boolean), @p133='?' (DbType = Boolean), @p134='?' (DbType = Boolean), @p135='?' (DbType = Boolean), @p136='?' (Size = 128) (DbType = AnsiString), @p137='?' (DbType = Guid), @p138='?' (DbType = Boolean), @p139='?' (DbType = Boolean), @p140='?' (DbType = Boolean), @p141='?' (DbType = Boolean), @p142='?' (Size = 128) (DbType = AnsiString), @p143='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DECLARE @inserted0 TABLE ([Id] int, [_Position] [int]);
+MERGE [Permissions] USING (
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, 0),
+(@p6, @p7, @p8, @p9, @p10, @p11, 1),
+(@p12, @p13, @p14, @p15, @p16, @p17, 2),
+(@p18, @p19, @p20, @p21, @p22, @p23, 3),
+(@p24, @p25, @p26, @p27, @p28, @p29, 4),
+(@p30, @p31, @p32, @p33, @p34, @p35, 5),
+(@p36, @p37, @p38, @p39, @p40, @p41, 6),
+(@p42, @p43, @p44, @p45, @p46, @p47, 7),
+(@p48, @p49, @p50, @p51, @p52, @p53, 8),
+(@p54, @p55, @p56, @p57, @p58, @p59, 9),
+(@p60, @p61, @p62, @p63, @p64, @p65, 10),
+(@p66, @p67, @p68, @p69, @p70, @p71, 11),
+(@p72, @p73, @p74, @p75, @p76, @p77, 12),
+(@p78, @p79, @p80, @p81, @p82, @p83, 13),
+(@p84, @p85, @p86, @p87, @p88, @p89, 14),
+(@p90, @p91, @p92, @p93, @p94, @p95, 15),
+(@p96, @p97, @p98, @p99, @p100, @p101, 16),
+(@p102, @p103, @p104, @p105, @p106, @p107, 17),
+(@p108, @p109, @p110, @p111, @p112, @p113, 18),
+(@p114, @p115, @p116, @p117, @p118, @p119, 19),
+(@p120, @p121, @p122, @p123, @p124, @p125, 20),
+(@p126, @p127, @p128, @p129, @p130, @p131, 21),
+(@p132, @p133, @p134, @p135, @p136, @p137, 22),
+(@p138, @p139, @p140, @p141, @p142, @p143, 23)) AS i ([CanCreate], [CanDelete], [CanRead], [CanUpdate], [FunctionId], [RoleId], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([CanCreate], [CanDelete], [CanRead], [CanUpdate], [FunctionId], [RoleId])
+VALUES (i.[CanCreate], i.[CanDelete], i.[CanRead], i.[CanUpdate], i.[FunctionId], i.[RoleId])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted0;
+
+SELECT [t].[Id] FROM [Permissions] t
+INNER JOIN @inserted0 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];" (0723d8ff)
+2018-07-23T22:03:34.2219609+07:00 0HLFGL94OH81H:0000000A [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.RoleController.SavePermission (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 43.8576ms. (50a9e262)
+2018-07-23T22:03:34.2220635+07:00 0HLFGL94OH81H:0000000A [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2018-07-23T22:03:34.2221247+07:00 0HLFGL94OH81H:0000000A [INF] Executed action "WebAppCore.Areas.Admin.Controllers.RoleController.SavePermission (WebAppCore)" in 48.918ms (afa2e885)
+2018-07-23T22:03:34.2222461+07:00 0HLFGL94OH81H:0000000A [INF] Request finished in 50.0543ms 200  (791a596a)
+2018-07-23T22:03:35.7944297+07:00 0HLFGL94OH81I:00000009 [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin/Function/GetAll   (ca22a1cb)
+2018-07-23T22:03:35.7955352+07:00 0HLFGL94OH81I:00000009 [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"Function\"}". Executing action "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" (a44c0341)
+2018-07-23T22:03:35.7956455+07:00 0HLFGL94OH81I:00000009 [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:35.7957666+07:00 0HLFGL94OH81I:00000009 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-23T22:03:35.7962815+07:00 0HLFGL94OH81I:00000009 [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:35.7970034+07:00 0HLFGL94OH81H:0000000B [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2018-07-23T22:03:35.7978044+07:00 0HLFGL94OH81H:0000000B [INF] Route matched with "{area = \"Admin\", action = \"ListAllFunction\", controller = \"Role\"}". Executing action "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" (a44c0341)
+2018-07-23T22:03:35.7979023+07:00 0HLFGL94OH81H:0000000B [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:35.7982252+07:00 0HLFGL94OH81H:0000000B [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" with arguments (["0252f6b4-42a9-484e-cacf-08d5cae525f6"]) - Validation state: Valid (4e3479ed)
+2018-07-23T22:03:35.7984287+07:00 0HLFGL94OH81I:00000009 [INF] Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-23T22:03:35.7986528+07:00 0HLFGL94OH81H:0000000B [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:35.7991048+07:00 0HLFGL94OH81I:00000009 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 3.26ms. (50a9e262)
+2018-07-23T22:03:35.7992254+07:00 0HLFGL94OH81I:00000009 [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.System.FunctionViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-23T22:03:35.7994816+07:00 0HLFGL94OH81I:00000009 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" in 3.8762ms (afa2e885)
+2018-07-23T22:03:35.7995949+07:00 0HLFGL94OH81I:00000009 [INF] Request finished in 5.2605ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-23T22:03:35.8036491+07:00 0HLFGL94OH81H:0000000B [INF] Executed DbCommand ("3"ms) [Parameters=["@__roleId_1='?' (DbType = Guid), @__roleId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2018-07-23T22:03:35.8040130+07:00 0HLFGL94OH81H:0000000B [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 5.6903ms. (50a9e262)
+2018-07-23T22:03:35.8041413+07:00 0HLFGL94OH81H:0000000B [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.System.PermissionViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-23T22:03:35.8045972+07:00 0HLFGL94OH81H:0000000B [INF] Executed action "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" in 6.7043ms (afa2e885)
+2018-07-23T22:03:35.8047276+07:00 0HLFGL94OH81H:0000000B [INF] Request finished in 7.7508ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-23T22:03:39.0661711+07:00 0HLFGL94OH81I:0000000A [INF] Request starting HTTP/1.1 POST http://localhost:5000/admin/role/SavePermission application/x-www-form-urlencoded; charset=UTF-8 7166 (ca22a1cb)
+2018-07-23T22:03:39.0672920+07:00 0HLFGL94OH81I:0000000A [INF] Route matched with "{area = \"Admin\", action = \"SavePermission\", controller = \"Role\"}". Executing action "WebAppCore.Areas.Admin.Controllers.RoleController.SavePermission (WebAppCore)" (a44c0341)
+2018-07-23T22:03:39.0674408+07:00 0HLFGL94OH81I:0000000A [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:39.0720523+07:00 0HLFGL94OH81I:0000000A [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.RoleController.SavePermission (WebAppCore)" with arguments (["System.Collections.Generic.List`1[WebAppCore.Application.ViewModels.System.PermissionViewModel]", "0252f6b4-42a9-484e-cacf-08d5cae525f6"]) - Validation state: Valid (4e3479ed)
+2018-07-23T22:03:39.0748700+07:00 0HLFGL94OH81I:0000000A [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:39.0758096+07:00 0HLFGL94OH81I:0000000A [INF] Executed DbCommand ("0"ms) [Parameters=["@__roleId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CanCreate], [x].[CanDelete], [x].[CanRead], [x].[CanUpdate], [x].[FunctionId], [x].[RoleId]
+FROM [Permissions] AS [x]
+WHERE [x].[RoleId] = @__roleId_0" (0723d8ff)
+2018-07-23T22:03:39.1385970+07:00 0HLFGL94OH81I:0000000A [INF] Executed DbCommand ("57"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32), @p12='?' (DbType = Int32), @p13='?' (DbType = Int32), @p14='?' (DbType = Int32), @p15='?' (DbType = Int32), @p16='?' (DbType = Int32), @p17='?' (DbType = Int32), @p18='?' (DbType = Int32), @p19='?' (DbType = Int32), @p20='?' (DbType = Int32), @p21='?' (DbType = Int32), @p22='?' (DbType = Int32), @p23='?' (DbType = Int32), @p24='?' (DbType = Boolean), @p25='?' (DbType = Boolean), @p26='?' (DbType = Boolean), @p27='?' (DbType = Boolean), @p28='?' (Size = 128) (DbType = AnsiString), @p29='?' (DbType = Guid), @p30='?' (DbType = Boolean), @p31='?' (DbType = Boolean), @p32='?' (DbType = Boolean), @p33='?' (DbType = Boolean), @p34='?' (Size = 128) (DbType = AnsiString), @p35='?' (DbType = Guid), @p36='?' (DbType = Boolean), @p37='?' (DbType = Boolean), @p38='?' (DbType = Boolean), @p39='?' (DbType = Boolean), @p40='?' (Size = 128) (DbType = AnsiString), @p41='?' (DbType = Guid), @p42='?' (DbType = Boolean), @p43='?' (DbType = Boolean), @p44='?' (DbType = Boolean), @p45='?' (DbType = Boolean), @p46='?' (Size = 128) (DbType = AnsiString), @p47='?' (DbType = Guid), @p48='?' (DbType = Boolean), @p49='?' (DbType = Boolean), @p50='?' (DbType = Boolean), @p51='?' (DbType = Boolean), @p52='?' (Size = 128) (DbType = AnsiString), @p53='?' (DbType = Guid), @p54='?' (DbType = Boolean), @p55='?' (DbType = Boolean), @p56='?' (DbType = Boolean), @p57='?' (DbType = Boolean), @p58='?' (Size = 128) (DbType = AnsiString), @p59='?' (DbType = Guid), @p60='?' (DbType = Boolean), @p61='?' (DbType = Boolean), @p62='?' (DbType = Boolean), @p63='?' (DbType = Boolean), @p64='?' (Size = 128) (DbType = AnsiString), @p65='?' (DbType = Guid), @p66='?' (DbType = Boolean), @p67='?' (DbType = Boolean), @p68='?' (DbType = Boolean), @p69='?' (DbType = Boolean), @p70='?' (Size = 128) (DbType = AnsiString), @p71='?' (DbType = Guid), @p72='?' (DbType = Boolean), @p73='?' (DbType = Boolean), @p74='?' (DbType = Boolean), @p75='?' (DbType = Boolean), @p76='?' (Size = 128) (DbType = AnsiString), @p77='?' (DbType = Guid), @p78='?' (DbType = Boolean), @p79='?' (DbType = Boolean), @p80='?' (DbType = Boolean), @p81='?' (DbType = Boolean), @p82='?' (Size = 128) (DbType = AnsiString), @p83='?' (DbType = Guid), @p84='?' (DbType = Boolean), @p85='?' (DbType = Boolean), @p86='?' (DbType = Boolean), @p87='?' (DbType = Boolean), @p88='?' (Size = 128) (DbType = AnsiString), @p89='?' (DbType = Guid), @p90='?' (DbType = Boolean), @p91='?' (DbType = Boolean), @p92='?' (DbType = Boolean), @p93='?' (DbType = Boolean), @p94='?' (Size = 128) (DbType = AnsiString), @p95='?' (DbType = Guid), @p96='?' (DbType = Boolean), @p97='?' (DbType = Boolean), @p98='?' (DbType = Boolean), @p99='?' (DbType = Boolean), @p100='?' (Size = 128) (DbType = AnsiString), @p101='?' (DbType = Guid), @p102='?' (DbType = Boolean), @p103='?' (DbType = Boolean), @p104='?' (DbType = Boolean), @p105='?' (DbType = Boolean), @p106='?' (Size = 128) (DbType = AnsiString), @p107='?' (DbType = Guid), @p108='?' (DbType = Boolean), @p109='?' (DbType = Boolean), @p110='?' (DbType = Boolean), @p111='?' (DbType = Boolean), @p112='?' (Size = 128) (DbType = AnsiString), @p113='?' (DbType = Guid), @p114='?' (DbType = Boolean), @p115='?' (DbType = Boolean), @p116='?' (DbType = Boolean), @p117='?' (DbType = Boolean), @p118='?' (Size = 128) (DbType = AnsiString), @p119='?' (DbType = Guid), @p120='?' (DbType = Boolean), @p121='?' (DbType = Boolean), @p122='?' (DbType = Boolean), @p123='?' (DbType = Boolean), @p124='?' (Size = 128) (DbType = AnsiString), @p125='?' (DbType = Guid), @p126='?' (DbType = Boolean), @p127='?' (DbType = Boolean), @p128='?' (DbType = Boolean), @p129='?' (DbType = Boolean), @p130='?' (Size = 128) (DbType = AnsiString), @p131='?' (DbType = Guid), @p132='?' (DbType = Boolean), @p133='?' (DbType = Boolean), @p134='?' (DbType = Boolean), @p135='?' (DbType = Boolean), @p136='?' (Size = 128) (DbType = AnsiString), @p137='?' (DbType = Guid), @p138='?' (DbType = Boolean), @p139='?' (DbType = Boolean), @p140='?' (DbType = Boolean), @p141='?' (DbType = Boolean), @p142='?' (Size = 128) (DbType = AnsiString), @p143='?' (DbType = Guid), @p144='?' (DbType = Boolean), @p145='?' (DbType = Boolean), @p146='?' (DbType = Boolean), @p147='?' (DbType = Boolean), @p148='?' (Size = 128) (DbType = AnsiString), @p149='?' (DbType = Guid), @p150='?' (DbType = Boolean), @p151='?' (DbType = Boolean), @p152='?' (DbType = Boolean), @p153='?' (DbType = Boolean), @p154='?' (Size = 128) (DbType = AnsiString), @p155='?' (DbType = Guid), @p156='?' (DbType = Boolean), @p157='?' (DbType = Boolean), @p158='?' (DbType = Boolean), @p159='?' (DbType = Boolean), @p160='?' (Size = 128) (DbType = AnsiString), @p161='?' (DbType = Guid), @p162='?' (DbType = Boolean), @p163='?' (DbType = Boolean), @p164='?' (DbType = Boolean), @p165='?' (DbType = Boolean), @p166='?' (Size = 128) (DbType = AnsiString), @p167='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Permissions]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p6;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p8;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p9;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p10;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p11;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p12;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p13;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p15;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p16;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p17;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p18;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p19;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p20;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p22;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p23;
+SELECT @@ROWCOUNT;
+
+DECLARE @inserted24 TABLE ([Id] int, [_Position] [int]);
+MERGE [Permissions] USING (
+VALUES (@p24, @p25, @p26, @p27, @p28, @p29, 0),
+(@p30, @p31, @p32, @p33, @p34, @p35, 1),
+(@p36, @p37, @p38, @p39, @p40, @p41, 2),
+(@p42, @p43, @p44, @p45, @p46, @p47, 3),
+(@p48, @p49, @p50, @p51, @p52, @p53, 4),
+(@p54, @p55, @p56, @p57, @p58, @p59, 5),
+(@p60, @p61, @p62, @p63, @p64, @p65, 6),
+(@p66, @p67, @p68, @p69, @p70, @p71, 7),
+(@p72, @p73, @p74, @p75, @p76, @p77, 8),
+(@p78, @p79, @p80, @p81, @p82, @p83, 9),
+(@p84, @p85, @p86, @p87, @p88, @p89, 10),
+(@p90, @p91, @p92, @p93, @p94, @p95, 11),
+(@p96, @p97, @p98, @p99, @p100, @p101, 12),
+(@p102, @p103, @p104, @p105, @p106, @p107, 13),
+(@p108, @p109, @p110, @p111, @p112, @p113, 14),
+(@p114, @p115, @p116, @p117, @p118, @p119, 15),
+(@p120, @p121, @p122, @p123, @p124, @p125, 16),
+(@p126, @p127, @p128, @p129, @p130, @p131, 17),
+(@p132, @p133, @p134, @p135, @p136, @p137, 18),
+(@p138, @p139, @p140, @p141, @p142, @p143, 19),
+(@p144, @p145, @p146, @p147, @p148, @p149, 20),
+(@p150, @p151, @p152, @p153, @p154, @p155, 21),
+(@p156, @p157, @p158, @p159, @p160, @p161, 22),
+(@p162, @p163, @p164, @p165, @p166, @p167, 23)) AS i ([CanCreate], [CanDelete], [CanRead], [CanUpdate], [FunctionId], [RoleId], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([CanCreate], [CanDelete], [CanRead], [CanUpdate], [FunctionId], [RoleId])
+VALUES (i.[CanCreate], i.[CanDelete], i.[CanRead], i.[CanUpdate], i.[FunctionId], i.[RoleId])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted24;
+
+SELECT [t].[Id] FROM [Permissions] t
+INNER JOIN @inserted24 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];" (0723d8ff)
+2018-07-23T22:03:39.1406596+07:00 0HLFGL94OH81I:0000000A [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.RoleController.SavePermission (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 68.1569ms. (50a9e262)
+2018-07-23T22:03:39.1407955+07:00 0HLFGL94OH81I:0000000A [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2018-07-23T22:03:39.1408627+07:00 0HLFGL94OH81I:0000000A [INF] Executed action "WebAppCore.Areas.Admin.Controllers.RoleController.SavePermission (WebAppCore)" in 73.468ms (afa2e885)
+2018-07-23T22:03:39.1409892+07:00 0HLFGL94OH81I:0000000A [INF] Request finished in 74.8942ms 200  (791a596a)
+2018-07-23T22:03:40.4577340+07:00 0HLFGL94OH81H:0000000C [INF] Request starting HTTP/1.1 GET http://localhost:5000/admin/Function/GetAll   (ca22a1cb)
+2018-07-23T22:03:40.4587027+07:00 0HLFGL94OH81H:0000000C [INF] Route matched with "{area = \"Admin\", action = \"GetAll\", controller = \"Function\"}". Executing action "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" (a44c0341)
+2018-07-23T22:03:40.4588168+07:00 0HLFGL94OH81H:0000000C [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:40.4589186+07:00 0HLFGL94OH81I:0000000B [INF] Request starting HTTP/1.1 POST http://localhost:5000/Admin/Role/ListAllFunction application/x-www-form-urlencoded; charset=UTF-8 43 (ca22a1cb)
+2018-07-23T22:03:40.4589939+07:00 0HLFGL94OH81H:0000000C [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-07-23T22:03:40.4596353+07:00 0HLFGL94OH81H:0000000C [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:40.4596524+07:00 0HLFGL94OH81I:0000000B [INF] Route matched with "{area = \"Admin\", action = \"ListAllFunction\", controller = \"Role\"}". Executing action "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" (a44c0341)
+2018-07-23T22:03:40.4597658+07:00 0HLFGL94OH81I:0000000B [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:40.4604488+07:00 0HLFGL94OH81I:0000000B [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" with arguments (["0252f6b4-42a9-484e-cacf-08d5cae525f6"]) - Validation state: Valid (4e3479ed)
+2018-07-23T22:03:40.4610381+07:00 0HLFGL94OH81I:0000000B [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:40.4782636+07:00 0HLFGL94OH81I:0000000B [INF] Executed DbCommand ("16"ms) [Parameters=["@__roleId_1='?' (DbType = Guid), @__roleId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT @__roleId_1 AS [RoleId], [f].[Id] AS [FunctionId], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanCreate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanCreate], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanDelete] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanDelete], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanRead] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanRead], CASE
+    WHEN [p].[Id] IS NOT NULL AND ([p].[CanUpdate] = 1)
+    THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT)
+END AS [CanUpdate]
+FROM [Functions] AS [f]
+LEFT JOIN [Permissions] AS [p] ON [f].[Id] = [p].[FunctionId]
+WHERE [p].[Id] IS NOT NULL AND ([p].[RoleId] = @__roleId_0)" (0723d8ff)
+2018-07-23T22:03:40.4785544+07:00 0HLFGL94OH81I:0000000B [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkObjectResult" in 17.9879ms. (50a9e262)
+2018-07-23T22:03:40.4786883+07:00 0HLFGL94OH81I:0000000B [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.System.PermissionViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-23T22:03:40.4790826+07:00 0HLFGL94OH81I:0000000B [INF] Executed action "WebAppCore.Areas.Admin.Controllers.RoleController.ListAllFunction (WebAppCore)" in 19.3658ms (afa2e885)
+2018-07-23T22:03:40.4792189+07:00 0HLFGL94OH81I:0000000B [INF] Request finished in 20.4085ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-23T22:03:40.4793977+07:00 0HLFGL94OH81H:0000000C [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[Name], [x].[URL], [x].[ParentId], [x].[IconCss], [x].[SortOrder], [x].[Status]
+FROM [Functions] AS [x]
+WHERE [x].[Status] = 1
+ORDER BY [x].[ParentId]" (0723d8ff)
+2018-07-23T22:03:40.4799455+07:00 0HLFGL94OH81H:0000000C [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ObjectResult" in 20.7827ms. (50a9e262)
+2018-07-23T22:03:40.4800537+07:00 0HLFGL94OH81H:0000000C [INF] Executing ObjectResult, writing value of type '"System.Collections.Generic.List`1[[WebAppCore.Application.ViewModels.System.FunctionViewModel, WebAppCore.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'. (8a1b66c8)
+2018-07-23T22:03:40.4803287+07:00 0HLFGL94OH81H:0000000C [INF] Executed action "WebAppCore.Areas.Admin.Controllers.FunctionController.GetAll (WebAppCore)" in 21.5456ms (afa2e885)
+2018-07-23T22:03:40.4804544+07:00 0HLFGL94OH81H:0000000C [INF] Request finished in 22.7982ms 200 application/json; charset=utf-8 (791a596a)
+2018-07-23T22:03:42.7061323+07:00 0HLFGL94OH81H:0000000D [INF] Request starting HTTP/1.1 POST http://localhost:5000/admin/role/SavePermission application/x-www-form-urlencoded; charset=UTF-8 7166 (ca22a1cb)
+2018-07-23T22:03:42.7070441+07:00 0HLFGL94OH81H:0000000D [INF] Route matched with "{area = \"Admin\", action = \"SavePermission\", controller = \"Role\"}". Executing action "WebAppCore.Areas.Admin.Controllers.RoleController.SavePermission (WebAppCore)" (a44c0341)
+2018-07-23T22:03:42.7071638+07:00 0HLFGL94OH81H:0000000D [INF] Authorization was successful. (0d575a54)
+2018-07-23T22:03:42.7118095+07:00 0HLFGL94OH81H:0000000D [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.RoleController.SavePermission (WebAppCore)" with arguments (["System.Collections.Generic.List`1[WebAppCore.Application.ViewModels.System.PermissionViewModel]", "0252f6b4-42a9-484e-cacf-08d5cae525f6"]) - Validation state: Valid (4e3479ed)
+2018-07-23T22:03:42.7136821+07:00 0HLFGL94OH81H:0000000D [INF] Entity Framework Core "2.1.0-rc1-32029" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-07-23T22:03:42.7145841+07:00 0HLFGL94OH81H:0000000D [INF] Executed DbCommand ("0"ms) [Parameters=["@__roleId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [x].[Id], [x].[CanCreate], [x].[CanDelete], [x].[CanRead], [x].[CanUpdate], [x].[FunctionId], [x].[RoleId]
+FROM [Permissions] AS [x]
+WHERE [x].[RoleId] = @__roleId_0" (0723d8ff)
+2018-07-23T22:03:42.7238591+07:00 0HLFGL94OH81H:0000000D [INF] Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32), @p12='?' (DbType = Int32), @p13='?' (DbType = Int32), @p14='?' (DbType = Int32), @p15='?' (DbType = Int32), @p16='?' (DbType = Int32), @p17='?' (DbType = Int32), @p18='?' (DbType = Int32), @p19='?' (DbType = Int32), @p20='?' (DbType = Int32), @p21='?' (DbType = Int32), @p22='?' (DbType = Int32), @p23='?' (DbType = Int32), @p24='?' (DbType = Boolean), @p25='?' (DbType = Boolean), @p26='?' (DbType = Boolean), @p27='?' (DbType = Boolean), @p28='?' (Size = 128) (DbType = AnsiString), @p29='?' (DbType = Guid), @p30='?' (DbType = Boolean), @p31='?' (DbType = Boolean), @p32='?' (DbType = Boolean), @p33='?' (DbType = Boolean), @p34='?' (Size = 128) (DbType = AnsiString), @p35='?' (DbType = Guid), @p36='?' (DbType = Boolean), @p37='?' (DbType = Boolean), @p38='?' (DbType = Boolean), @p39='?' (DbType = Boolean), @p40='?' (Size = 128) (DbType = AnsiString), @p41='?' (DbType = Guid), @p42='?' (DbType = Boolean), @p43='?' (DbType = Boolean), @p44='?' (DbType = Boolean), @p45='?' (DbType = Boolean), @p46='?' (Size = 128) (DbType = AnsiString), @p47='?' (DbType = Guid), @p48='?' (DbType = Boolean), @p49='?' (DbType = Boolean), @p50='?' (DbType = Boolean), @p51='?' (DbType = Boolean), @p52='?' (Size = 128) (DbType = AnsiString), @p53='?' (DbType = Guid), @p54='?' (DbType = Boolean), @p55='?' (DbType = Boolean), @p56='?' (DbType = Boolean), @p57='?' (DbType = Boolean), @p58='?' (Size = 128) (DbType = AnsiString), @p59='?' (DbType = Guid), @p60='?' (DbType = Boolean), @p61='?' (DbType = Boolean), @p62='?' (DbType = Boolean), @p63='?' (DbType = Boolean), @p64='?' (Size = 128) (DbType = AnsiString), @p65='?' (DbType = Guid), @p66='?' (DbType = Boolean), @p67='?' (DbType = Boolean), @p68='?' (DbType = Boolean), @p69='?' (DbType = Boolean), @p70='?' (Size = 128) (DbType = AnsiString), @p71='?' (DbType = Guid), @p72='?' (DbType = Boolean), @p73='?' (DbType = Boolean), @p74='?' (DbType = Boolean), @p75='?' (DbType = Boolean), @p76='?' (Size = 128) (DbType = AnsiString), @p77='?' (DbType = Guid), @p78='?' (DbType = Boolean), @p79='?' (DbType = Boolean), @p80='?' (DbType = Boolean), @p81='?' (DbType = Boolean), @p82='?' (Size = 128) (DbType = AnsiString), @p83='?' (DbType = Guid), @p84='?' (DbType = Boolean), @p85='?' (DbType = Boolean), @p86='?' (DbType = Boolean), @p87='?' (DbType = Boolean), @p88='?' (Size = 128) (DbType = AnsiString), @p89='?' (DbType = Guid), @p90='?' (DbType = Boolean), @p91='?' (DbType = Boolean), @p92='?' (DbType = Boolean), @p93='?' (DbType = Boolean), @p94='?' (Size = 128) (DbType = AnsiString), @p95='?' (DbType = Guid), @p96='?' (DbType = Boolean), @p97='?' (DbType = Boolean), @p98='?' (DbType = Boolean), @p99='?' (DbType = Boolean), @p100='?' (Size = 128) (DbType = AnsiString), @p101='?' (DbType = Guid), @p102='?' (DbType = Boolean), @p103='?' (DbType = Boolean), @p104='?' (DbType = Boolean), @p105='?' (DbType = Boolean), @p106='?' (Size = 128) (DbType = AnsiString), @p107='?' (DbType = Guid), @p108='?' (DbType = Boolean), @p109='?' (DbType = Boolean), @p110='?' (DbType = Boolean), @p111='?' (DbType = Boolean), @p112='?' (Size = 128) (DbType = AnsiString), @p113='?' (DbType = Guid), @p114='?' (DbType = Boolean), @p115='?' (DbType = Boolean), @p116='?' (DbType = Boolean), @p117='?' (DbType = Boolean), @p118='?' (Size = 128) (DbType = AnsiString), @p119='?' (DbType = Guid), @p120='?' (DbType = Boolean), @p121='?' (DbType = Boolean), @p122='?' (DbType = Boolean), @p123='?' (DbType = Boolean), @p124='?' (Size = 128) (DbType = AnsiString), @p125='?' (DbType = Guid), @p126='?' (DbType = Boolean), @p127='?' (DbType = Boolean), @p128='?' (DbType = Boolean), @p129='?' (DbType = Boolean), @p130='?' (Size = 128) (DbType = AnsiString), @p131='?' (DbType = Guid), @p132='?' (DbType = Boolean), @p133='?' (DbType = Boolean), @p134='?' (DbType = Boolean), @p135='?' (DbType = Boolean), @p136='?' (Size = 128) (DbType = AnsiString), @p137='?' (DbType = Guid), @p138='?' (DbType = Boolean), @p139='?' (DbType = Boolean), @p140='?' (DbType = Boolean), @p141='?' (DbType = Boolean), @p142='?' (Size = 128) (DbType = AnsiString), @p143='?' (DbType = Guid), @p144='?' (DbType = Boolean), @p145='?' (DbType = Boolean), @p146='?' (DbType = Boolean), @p147='?' (DbType = Boolean), @p148='?' (Size = 128) (DbType = AnsiString), @p149='?' (DbType = Guid), @p150='?' (DbType = Boolean), @p151='?' (DbType = Boolean), @p152='?' (DbType = Boolean), @p153='?' (DbType = Boolean), @p154='?' (Size = 128) (DbType = AnsiString), @p155='?' (DbType = Guid), @p156='?' (DbType = Boolean), @p157='?' (DbType = Boolean), @p158='?' (DbType = Boolean), @p159='?' (DbType = Boolean), @p160='?' (Size = 128) (DbType = AnsiString), @p161='?' (DbType = Guid), @p162='?' (DbType = Boolean), @p163='?' (DbType = Boolean), @p164='?' (DbType = Boolean), @p165='?' (DbType = Boolean), @p166='?' (Size = 128) (DbType = AnsiString), @p167='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Permissions]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p2;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p3;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p5;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p6;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p8;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p9;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p10;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p11;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p12;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p13;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p14;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p15;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p16;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p17;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p18;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p19;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p20;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p21;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p22;
+SELECT @@ROWCOUNT;
+
+DELETE FROM [Permissions]
+WHERE [Id] = @p23;
+SELECT @@ROWCOUNT;
+
+DECLARE @inserted24 TABLE ([Id] int, [_Position] [int]);
+MERGE [Permissions] USING (
+VALUES (@p24, @p25, @p26, @p27, @p28, @p29, 0),
+(@p30, @p31, @p32, @p33, @p34, @p35, 1),
+(@p36, @p37, @p38, @p39, @p40, @p41, 2),
+(@p42, @p43, @p44, @p45, @p46, @p47, 3),
+(@p48, @p49, @p50, @p51, @p52, @p53, 4),
+(@p54, @p55, @p56, @p57, @p58, @p59, 5),
+(@p60, @p61, @p62, @p63, @p64, @p65, 6),
+(@p66, @p67, @p68, @p69, @p70, @p71, 7),
+(@p72, @p73, @p74, @p75, @p76, @p77, 8),
+(@p78, @p79, @p80, @p81, @p82, @p83, 9),
+(@p84, @p85, @p86, @p87, @p88, @p89, 10),
+(@p90, @p91, @p92, @p93, @p94, @p95, 11),
+(@p96, @p97, @p98, @p99, @p100, @p101, 12),
+(@p102, @p103, @p104, @p105, @p106, @p107, 13),
+(@p108, @p109, @p110, @p111, @p112, @p113, 14),
+(@p114, @p115, @p116, @p117, @p118, @p119, 15),
+(@p120, @p121, @p122, @p123, @p124, @p125, 16),
+(@p126, @p127, @p128, @p129, @p130, @p131, 17),
+(@p132, @p133, @p134, @p135, @p136, @p137, 18),
+(@p138, @p139, @p140, @p141, @p142, @p143, 19),
+(@p144, @p145, @p146, @p147, @p148, @p149, 20),
+(@p150, @p151, @p152, @p153, @p154, @p155, 21),
+(@p156, @p157, @p158, @p159, @p160, @p161, 22),
+(@p162, @p163, @p164, @p165, @p166, @p167, 23)) AS i ([CanCreate], [CanDelete], [CanRead], [CanUpdate], [FunctionId], [RoleId], _Position) ON 1=0
+WHEN NOT MATCHED THEN
+INSERT ([CanCreate], [CanDelete], [CanRead], [CanUpdate], [FunctionId], [RoleId])
+VALUES (i.[CanCreate], i.[CanDelete], i.[CanRead], i.[CanUpdate], i.[FunctionId], i.[RoleId])
+OUTPUT INSERTED.[Id], i._Position
+INTO @inserted24;
+
+SELECT [t].[Id] FROM [Permissions] t
+INNER JOIN @inserted24 i ON ([t].[Id] = [i].[Id])
+ORDER BY [i].[_Position];" (0723d8ff)
+2018-07-23T22:03:42.7261988+07:00 0HLFGL94OH81H:0000000D [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.RoleController.SavePermission (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.OkResult" in 14.2849ms. (50a9e262)
+2018-07-23T22:03:42.7263155+07:00 0HLFGL94OH81H:0000000D [INF] Executing HttpStatusCodeResult, setting HTTP status code 200 (e28ccfae)
+2018-07-23T22:03:42.7263925+07:00 0HLFGL94OH81H:0000000D [INF] Executed action "WebAppCore.Areas.Admin.Controllers.RoleController.SavePermission (WebAppCore)" in 19.279ms (afa2e885)
+2018-07-23T22:03:42.7265225+07:00 0HLFGL94OH81H:0000000D [INF] Request finished in 20.4624ms 200  (791a596a)
