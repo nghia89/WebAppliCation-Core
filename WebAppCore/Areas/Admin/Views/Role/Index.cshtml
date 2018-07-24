@@ -1,4 +1,7 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Authorization
+@using WebAppCore.Authorization
+@inject IAuthorizationService AuthorizationService
+@{
     ViewData["Title"] = "Role list";
 }
 @section Style{
@@ -20,8 +23,15 @@
 
         <div class="title_right">
             <div class="col-md-2 col-sm-2 col-xs-12 form-group pull-right top_search">
-                <button class="btn btn-success" id="btn-create" type="button">Create</button>
-            </div>
+                @{
+                    var result = await AuthorizationService.AuthorizeAsync(User, "USER", Operations.Create);
+                }
+                @if (result.Succeeded)
+                {
+                    <button class="btn btn-success" id="btn-create" type="button">Create</button>
+                }
+                
+                </div>
             <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
                 <div class="input-group">
                     <input type="text" id="txt-search-keyword" class="form-control" placeholder="Search...">
@@ -84,8 +94,13 @@
             <td>{{Name}}</td>
             <td>{{Description}}</td>
             <td>
+
                 <a href="#" data-id="{{Id}}" class="btn  btn-xs btn-primary btn-grant"><i class="fa fa-eye-slash"></i></a>
-                <a href="#" data-id="{{Id}}" class="btn  btn-xs btn-info btn-edit"><i class="fa fa-pencil-square-o"></i></a>
+                @if ((await AuthorizationService.AuthorizeAsync(User, "USER", Operations.Update)).Succeeded)
+                {
+                    <a href="#" data-id="{{Id}}" class="btn  btn-xs btn-info btn-edit"><i class="fa fa-pencil-square-o"></i></a>
+
+                }
                 <a href="#" data-id="{{Id}}" class="btn btn-xs  btn-danger btn-delete"><i class="fa fa-trash-o"></i></a>
             </td>
         </tr>

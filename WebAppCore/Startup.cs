@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -10,6 +11,7 @@ using Newtonsoft.Json.Serialization;
 using System;
 using WebAppCore.Application.Implementation;
 using WebAppCore.Application.Interfaces;
+using WebAppCore.Authorization;
 using WebAppCore.Data.EF;
 using WebAppCore.Data.EF.Repositories;
 using WebAppCore.Data.Entities;
@@ -88,6 +90,8 @@ namespace WebAppCore
             services.AddTransient<IProductService, ProductService>();
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IRoleService, RoleService>();
+
+            services.AddTransient<IAuthorizationHandler, BaseResourceAuthorizationHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -44,6 +44,7 @@ namespace WebAppCore.Application.Implementation
 
         public Task<bool> CheckPermission(string functionId, string action, string[] roles)
         {
+            //roles có quền trên functionId này hay không với cái hành động này không
             var functions = _functionRepository.FindAll();
             var permissions = _permissionRepository.FindAll();
             var query = from f in functions

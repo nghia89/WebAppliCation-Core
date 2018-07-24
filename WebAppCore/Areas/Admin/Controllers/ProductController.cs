@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using WebAppCore.Application.Interfaces;
 using WebAppCore.Application.ViewModels.Product;
+using WebAppCore.Authorization;
 using WebAppCore.Utilities.Helpers;
 
 namespace WebAppCore.Areas.Admin.Controllers
@@ -12,15 +15,20 @@ namespace WebAppCore.Areas.Admin.Controllers
     {
         private IProductService _productService;
         private IProductCategoryService _productCategoryService;
+        private readonly IAuthorizationService _authorizationService;
 
-        public ProductController(IProductService productService, IProductCategoryService productCategoryService)
+        public ProductController(IProductService productService, IProductCategoryService productCategoryService, IAuthorizationService authorizationService)
         {
             _productService = productService;
             _productCategoryService = productCategoryService;
+            _authorizationService = authorizationService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult>  Index()
         {
+            var result = await _authorizationService.AuthorizeAsync(User, "USER", Operations.Read);
+            if (result.Succeeded == false)
+                return new RedirectResult("/Admin/Login/Index");
             return View();
         }
 
