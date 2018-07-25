@@ -14,6 +14,7 @@ namespace WebAppCore.Application.Interfaces
         void Update(ProductViewModel product);
         void Delete(int id);
         ProductViewModel GetById(int id);
+        void ImportExcel(string filePath, int categoryId);   
         void Save();
     }
 }

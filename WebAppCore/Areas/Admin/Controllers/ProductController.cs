@@ -1,8 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using WebAppCore.Application.Interfaces;
 using WebAppCore.Application.ViewModels.Product;
@@ -16,12 +20,15 @@ namespace WebAppCore.Areas.Admin.Controllers
         private IProductService _productService;
         private IProductCategoryService _productCategoryService;
         private readonly IAuthorizationService _authorizationService;
+        private readonly IHostingEnvironment _hostingEnvironment;
 
-        public ProductController(IProductService productService, IProductCategoryService productCategoryService, IAuthorizationService authorizationService)
+        public ProductController(IProductService productService, IProductCategoryService productCategoryService, IAuthorizationService authorizationService,
+            IHostingEnvironment hostingEnvironment)
         {
             _productService = productService;
             _productCategoryService = productCategoryService;
             _authorizationService = authorizationService;
+            _hostingEnvironment = hostingEnvironment;
         }
 
         public async Task<IActionResult>  Index()
@@ -98,6 +105,38 @@ namespace WebAppCore.Areas.Admin.Controllers
 
                 return new OkObjectResult(id);
             }
+        }
+
+        [HttpPost]
+        public IActionResult ImportExcel(IList<IFormFile> files, int categoryId)
+        {
+            if (files != null && files.Count > 0)
+            {
+                var file = files[0];
+                var filename = ContentDispositionHeaderValue
+                                   .Parse(file.ContentDisposition)
+                                   .FileName
+                                   .Trim('"');
+
+                string folder = _hostingEnvironment.WebRootPath + $@"\uploaded\excels";
+                //kiễm tra xem có tồn tại hay chưa nếu chưa thì tạo
+                if (!Directory.Exists(folder))
+                {
+                    Directory.CreateDirectory(folder);
+                }
+                //Path.Combine tự động thêm dấu gạch ở giữa
+                string filePath = Path.Combine(folder, filename);
+
+                using (FileStream fs = System.IO.File.Create(filePath))
+                {
+                    file.CopyTo(fs);
+                    fs.Flush();
+                }
+                _productService.ImportExcel(filePath, categoryId);
+                _productService.Save();
+                return new OkObjectResult(filePath);
+            }
+            return new NoContentResult();
         }
     }
 }

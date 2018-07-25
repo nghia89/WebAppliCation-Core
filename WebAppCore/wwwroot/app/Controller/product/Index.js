@@ -12,15 +12,18 @@
             structures.configs.pageIndex = 1;
             loadData(true);
         });
+
         $('#btnSearch').on('click', function () {
             loadData();
         });
+
         $('#txtKeyword').on('keypress', function (e) {
             // 13 là key enter
             if (e.which === 13) {
                 loadData();
             }
         });
+
         $("#btnCreate").on('click', function () {
             resetFormMaintainance();
             initTreeDropDownCategory();
@@ -30,6 +33,7 @@
         $('#btnSelectImg').on('click', function () {
             $('#fileInputImage').click();
         });
+
         $("#fileInputImage").on('change', function () {
             var fileUpload = $(this).get(0);
             var files = fileUpload.files;
@@ -53,31 +57,57 @@
                 }
             });
         });
-    }
 
+        $('body').on('click', '.btn-edit', function (e) {
+            e.preventDefault();
+            var that = $(this).data('id');
+            loadDetails(that);
+        });
 
-    function loadCategory() {
-        $.ajax({
-            type: 'get',
-            url: '/Admin/Product/GetAllCategory',
-            dataType: 'json',
-            success: function (res) {
-                var render = "<option value=''>--Select category--</option>";
-                $.each(res, function (i, item) {
-                    render += "<option value='" + item.Id + "'>" + item.Name + "</option>"
-                });
-                $('#ddlCategorySearch').html(render);
-            }, error: function (status) {
-                console.log(status);
-                structures.notify('Không thể tải dữ liệu', 'error')
+        $('#btnSave').on('click', function (e) {
+            saveProduct(e);
+        });
+
+        $('body').on('click', '.btn-delete', function (e) {
+            e.preventDefault();
+            var that = $(this).data('id');
+            deleteProduct(that);
+        });
+
+        $('#btn-import').on('click', function () {
+            initTreeDropDownCategory();
+            $('#modal-import-excel').modal('show');
+        });
+
+        $('#btnImportExcel').on('click', function () {
+            var fileUpload = $("#fileInputExcel").get(0);
+            var files = fileUpload.files;
+
+            // Create FormData object  
+            var fileData = new FormData();
+            // Looping over all files and add it to FormData object  
+            for (var i = 0; i < files.length; i++) {
+                fileData.append("files", files[i]);
             }
+            // Adding one more key to FormData object  
+            fileData.append('categoryId', $('#ddlCategoryIdImportExcel').combotree('getValue'));
+            $.ajax({
+                url: '/Admin/Product/ImportExcel',
+                type: 'POST',
+                data: fileData,
+                processData: false,  // tell jQuery not to process the data
+                contentType: false,  // tell jQuery not to set contentType
+                success: function (data) {
+                    $('#modal-import-excel').modal('hide');
+                    loadData();
+
+                }
+            });
+            return false;
         });
     }
 
-   
-    $('body').on('click', '.btn-edit', function (e) {
-        e.preventDefault();
-        var that = $(this).data('id');
+    function loadDetails(id) {
         $.ajax({
             type: "GET",
             url: "/Admin/Product/GetById",
@@ -120,8 +150,28 @@
                 structures.stopLoading();
             }
         });
-    });
-    $('#btnSave').on('click', function (e) {
+    }
+
+    function loadCategory() {
+        $.ajax({
+            type: 'get',
+            url: '/Admin/Product/GetAllCategory',
+            dataType: 'json',
+            success: function (res) {
+                var render = "<option value=''>--Select category--</option>";
+                $.each(res, function (i, item) {
+                    render += "<option value='" + item.Id + "'>" + item.Name + "</option>"
+                });
+                $('#ddlCategorySearch').html(render);
+            }, error: function (status) {
+                console.log(status);
+                structures.notify('Không thể tải dữ liệu', 'error')
+            }
+        });
+    }
+
+    function saveProduct(e)
+    {
         if ($('#frmMaintainance').valid()) {
             e.preventDefault();
             var id = $('#hidIdM').val();
@@ -191,11 +241,9 @@
             return false;
         }
 
-    });
+    }
 
-    $('body').on('click', '.btn-delete', function (e) {
-        e.preventDefault();
-        var that = $(this).data('id');
+    function deleteProduct(id) {
         structures.confirm('Are you sure to delete?', function () {
             $.ajax({
                 type: "POST",
@@ -216,7 +264,7 @@
                 }
             });
         });
-    });
+    }
 
     function loadData(isPageChanged) {
         var template = $('#table-template').html();
@@ -299,12 +347,16 @@
                 $('#ddlCategoryIdM').combotree({
                     data: arr
                 });
+                $('#ddlCategoryIdImportExcel').combotree({
+                    data: arr
+                });
                 if (selectedId != undefined) {
                     $('#ddlCategoryIdM').combotree('setValue', selectedId);
                 }
             }
         });
     }
+
     function resetFormMaintainance() {
         $('#hidIdM').val(0);
         $('#txtNameM').val('');
