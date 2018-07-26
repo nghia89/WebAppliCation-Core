@@ -1,27 +1,27 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using WebAppCore.Application.Interfaces;
 using WebAppCore.Application.ViewModels.Product;
 using WebAppCore.Utilities.Helpers;
 
 namespace WebAppCore.Areas.Admin.Controllers
 {
-    public class ProductCategoryController : BaseController 
+    public class ProductCategoryController : BaseController
     {
-        IProductCategoryService _productCategoryService;
-        public ProductCategoryController( IProductCategoryService productCategoryService)
+        private IProductCategoryService _productCategoryService;
+
+        public ProductCategoryController(IProductCategoryService productCategoryService)
         {
-          
             _productCategoryService = productCategoryService;
         }
+
         public IActionResult Index()
         {
             return View();
         }
+
         //Ajax Api
         [HttpGet]
         public IActionResult GetAll()
@@ -29,6 +29,7 @@ namespace WebAppCore.Areas.Admin.Controllers
             var model = _productCategoryService.GetAll();
             return new OkObjectResult(model);
         }
+
         [HttpGet]
         public IActionResult GetById(int id)
         {
@@ -36,6 +37,7 @@ namespace WebAppCore.Areas.Admin.Controllers
 
             return new ObjectResult(model);
         }
+
         [HttpPost]
         public IActionResult UpdateParentId(int sourceId, int targetId, Dictionary<int, int> items)
         {
@@ -101,7 +103,6 @@ namespace WebAppCore.Areas.Admin.Controllers
                 }
                 _productCategoryService.Save();
                 return new OkObjectResult(productVm);
-
             }
         }
 
@@ -119,6 +120,5 @@ namespace WebAppCore.Areas.Admin.Controllers
                 return new OkObjectResult(id);
             }
         }
-
     }
 }

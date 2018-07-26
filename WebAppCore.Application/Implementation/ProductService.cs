@@ -7,10 +7,8 @@ using System.IO;
 using System.Linq;
 using WebAppCore.Application.Interfaces;
 using WebAppCore.Application.ViewModels.Product;
-using WebAppCore.Data.EF.Repositories;
 using WebAppCore.Data.Entities;
 using WebAppCore.Data.Enums;
-using WebAppCore.Data.IRepositories;
 using WebAppCore.Infrastructure.Interfaces;
 using WebAppCore.Utilities.Constants;
 using WebAppCore.Utilities.Dtos;
@@ -20,13 +18,13 @@ namespace WebAppCore.Application.Implementation
 {
     public class ProductService : IProductService
     {
-        private IProductRepository _productRepository;
-        private IProductTagRepository _productTagRepository;
-        private ITagRepository _tagRepository;
+        private IRepository<Product, int> _productRepository;
+        private IRepository<ProductTag, int> _productTagRepository;
+        private IRepository<Tag, string> _tagRepository;
         private IUnitOfWork _unitOfWork;
 
-        public ProductService(IProductRepository productRepository, ITagRepository tagRepository,
-            IUnitOfWork unitOfWork, IProductTagRepository productTagRepository)
+        public ProductService(IRepository<Product, int> productRepository, IRepository<Tag, string> tagRepository,
+            IUnitOfWork unitOfWork, IRepository<ProductTag, int> productTagRepository)
         {
             _productRepository = productRepository;
             _tagRepository = tagRepository;
@@ -127,7 +125,7 @@ namespace WebAppCore.Application.Implementation
 
                     product.Description = workSheet.Cells[i, 2].Value.ToString();
 
-                    //nêu TryParse thành công thì ra giá trị nếu không thành công thi lấy default =0    
+                    //nêu TryParse thành công thì ra giá trị nếu không thành công thi lấy default =0
                     decimal.TryParse(workSheet.Cells[i, 3].Value.ToString(), out var originalPrice);
                     product.OriginalPrice = originalPrice;
 
@@ -185,7 +183,7 @@ namespace WebAppCore.Application.Implementation
                 }
             }
             var product = Mapper.Map<ProductViewModel, Product>(productVm);
-            foreach(var productTag in productTags)
+            foreach (var productTag in productTags)
             {
                 product.ProductTags.Add(productTag);
             }

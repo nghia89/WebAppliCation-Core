@@ -5,32 +5,31 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using WebAppCore.Application.Interfaces;
 using WebAppCore.Application.ViewModels.System;
-using WebAppCore.Data.EF.Repositories;
 using WebAppCore.Data.Entities;
-using WebAppCore.Data.IRepositories;
 using WebAppCore.Infrastructure.Interfaces;
 using WebAppCore.Utilities.Dtos;
 
 namespace WebAppCore.Application.Implementation
 {
-  public  class RoleService:IRoleService
+    public class RoleService : IRoleService
     {
         private RoleManager<AppRole> _roleManager;
-        private IFunctionRepository _functionRepository;
-        private IPermissionRepository _permissionRepository;
+        private IRepository<Function, string> _functionRepository;
+        private IRepository<Permission, int> _permissionRepository;
         private IUnitOfWork _unitOfWork;
+
         public RoleService(RoleManager<AppRole> roleManager, IUnitOfWork unitOfWork,
-         IFunctionRepository functionRepository, IPermissionRepository permissionRepository)
+         IRepository<Function, string> functionRepository, IRepository<Permission, int> permissionRepository)
         {
             _unitOfWork = unitOfWork;
             _roleManager = roleManager;
             _functionRepository = functionRepository;
             _permissionRepository = permissionRepository;
         }
+
         public async Task<bool> AddAsync(AppRoleViewModel roleVm)
         {
             var role = new AppRole()

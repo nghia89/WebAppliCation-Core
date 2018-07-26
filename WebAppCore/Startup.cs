@@ -13,9 +13,7 @@ using WebAppCore.Application.Implementation;
 using WebAppCore.Application.Interfaces;
 using WebAppCore.Authorization;
 using WebAppCore.Data.EF;
-using WebAppCore.Data.EF.Repositories;
 using WebAppCore.Data.Entities;
-using WebAppCore.Data.IRepositories;
 using WebAppCore.Helpers;
 using WebAppCore.Infrastructure.Interfaces;
 using WebAppCore.Services;
@@ -75,14 +73,6 @@ namespace WebAppCore
             services.AddMvc().AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
             services.AddTransient(typeof(IUnitOfWork), typeof(EFUnitOfWork));
             services.AddTransient(typeof(IRepository<,>), typeof(EFRepository<,>));
-
-            //Respository
-            services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
-            services.AddTransient<IFunctionRepository, FunctionRepository>();
-            services.AddTransient<IProductRepository, ProductRepository>();
-            services.AddTransient<IProductTagRepository, ProductTagRepository>();
-            services.AddTransient<ITagRepository, TagRepository>();
-            services.AddTransient<IPermissionRepository, PermissionRepository>();
 
             //Service
             services.AddTransient<IProductCategoryService, ProductCategoryService>();

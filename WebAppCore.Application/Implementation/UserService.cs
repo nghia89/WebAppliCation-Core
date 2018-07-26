@@ -5,7 +5,6 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using WebAppCore.Application.Interfaces;
 using WebAppCore.Application.ViewModels.System;
@@ -17,6 +16,7 @@ namespace WebAppCore.Application.Implementation
     public class UserService : IUserService
     {
         private readonly UserManager<AppUser> _userManager;
+
         public UserService(UserManager<AppUser> userManager)
         {
             _userManager = userManager;
@@ -32,7 +32,7 @@ namespace WebAppCore.Application.Implementation
                 FullName = userVm.FullName,
                 DateCreated = DateTime.Now,
                 PhoneNumber = userVm.PhoneNumber,
-                Status=userVm.Status
+                Status = userVm.Status
             };
             var result = await _userManager.CreateAsync(user, userVm.Password);
             if (result.Succeeded && userVm.Roles.Count > 0)
@@ -40,7 +40,6 @@ namespace WebAppCore.Application.Implementation
                 var appUser = await _userManager.FindByNameAsync(user.UserName);
                 if (appUser != null)
                     await _userManager.AddToRolesAsync(appUser, userVm.Roles);
-
             }
             return true;
         }
@@ -53,7 +52,7 @@ namespace WebAppCore.Application.Implementation
 
         public async Task<bool> GetAll(string Email)
         {
-            var CheckUser= await _userManager.Users.CountAsync(x => x.Email == Email)>0;
+            var CheckUser = await _userManager.Users.CountAsync(x => x.Email == Email) > 0;
             return false;
         }
 
@@ -85,7 +84,6 @@ namespace WebAppCore.Application.Implementation
                 PhoneNumber = x.PhoneNumber,
                 Status = x.Status,
                 DateCreated = x.DateCreated
-
             }).ToList();
             var paginationSet = new PagedResult<AppUserViewModel>()
             {

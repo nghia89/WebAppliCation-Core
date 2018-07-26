@@ -9,7 +9,6 @@ using WebAppCore.Application.Interfaces;
 using WebAppCore.Application.ViewModels.System;
 using WebAppCore.Data.Entities;
 using WebAppCore.Data.Enums;
-using WebAppCore.Data.IRepositories;
 using WebAppCore.Infrastructure.Interfaces;
 
 namespace WebAppCore.Application.Implementation

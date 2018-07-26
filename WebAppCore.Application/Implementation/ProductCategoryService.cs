@@ -1,28 +1,26 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using WebAppCore.Application.Interfaces;
 using WebAppCore.Application.ViewModels.Product;
 using WebAppCore.Data.Entities;
 using WebAppCore.Data.Enums;
-using WebAppCore.Data.IRepositories;
 using WebAppCore.Infrastructure.Interfaces;
 
 namespace WebAppCore.Application.Implementation
 {
     public class ProductCategoryService : IProductCategoryService
     {
-        private IProductCategoryRepository _productCategoryRepository;
+        private IRepository<ProductCategory, int> _productCategoryRepository;
         private IUnitOfWork _unitOfWork;
 
-        public ProductCategoryService(IProductCategoryRepository productCategoryRepository,IUnitOfWork unitOfWork)
+        public ProductCategoryService(IRepository<ProductCategory, int> productCategoryRepository, IUnitOfWork unitOfWork)
         {
             this._productCategoryRepository = productCategoryRepository;
             this._unitOfWork = unitOfWork;
         }
+
         public ProductCategoryViewModel Add(ProductCategoryViewModel productCategoryVm)
         {
             var productCategory = Mapper.Map<ProductCategoryViewModel, ProductCategory>(productCategoryVm);

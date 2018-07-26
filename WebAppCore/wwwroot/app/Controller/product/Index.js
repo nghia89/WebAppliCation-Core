@@ -50,7 +50,6 @@
                 success: function (path) {
                     $('#txtImage').val(path);
                     structures.notify('Upload image succesful!', 'success');
-
                 },
                 error: function () {
                     structures.notify('There was error uploading files!', 'error');
@@ -83,13 +82,13 @@
             var fileUpload = $("#fileInputExcel").get(0);
             var files = fileUpload.files;
 
-            // Create FormData object  
+            // Create FormData object
             var fileData = new FormData();
-            // Looping over all files and add it to FormData object  
+            // Looping over all files and add it to FormData object
             for (var i = 0; i < files.length; i++) {
                 fileData.append("files", files[i]);
             }
-            // Adding one more key to FormData object  
+            // Adding one more key to FormData object
             fileData.append('categoryId', $('#ddlCategoryIdImportExcel').combotree('getValue'));
             $.ajax({
                 url: '/Admin/Product/ImportExcel',
@@ -100,10 +99,27 @@
                 success: function (data) {
                     $('#modal-import-excel').modal('hide');
                     loadData();
-
                 }
             });
             return false;
+        });
+
+        $('#btn-export').on('click', function () {
+            $.ajax({
+                type: "POST",
+                url: "/Admin/Product/ExportExcel",
+                beforeSend: function () {
+                    structures.startLoading();
+                },
+                success: function (response) {
+                    window.location.href = response;
+                    structures.stopLoading();
+                },
+                error: function () {
+                    structures.notify('Has an error in progress', 'error');
+                    structures.stopLoading();
+                }
+            });
         });
     }
 
@@ -111,7 +127,7 @@
         $.ajax({
             type: "GET",
             url: "/Admin/Product/GetById",
-            data: { id: that },
+            data: { id: id },
             dataType: "json",
             beforeSend: function () {
                 structures.startLoading();
@@ -138,7 +154,7 @@
                 $('#txtSeoAliasM').val(data.SeoAlias);
 
                 CKEDITOR.instances.txtContent.setData(data.Content);
-                $('#ckStatusM').prop('checked', data.Status == 1);
+                $('#ckStatusM').prop('checked', data.Status === 1);
                 $('#ckHotM').prop('checked', data.HotFlag);
                 $('#ckShowHomeM').prop('checked', data.HomeFlag);
 
@@ -170,8 +186,7 @@
         });
     }
 
-    function saveProduct(e)
-    {
+    function saveProduct(e) {
         if ($('#frmMaintainance').valid()) {
             e.preventDefault();
             var id = $('#hidIdM').val();
@@ -194,7 +209,7 @@
             var seoAlias = $('#txtSeoAliasM').val();
 
             var content = CKEDITOR.instances.txtContent.getData();
-            var status = $('#ckStatusM').prop('checked') == true ? 1 : 0;
+            var status = $('#ckStatusM').prop('checked') === true ? 1 : 0;
             var hot = $('#ckHotM').prop('checked');
             var showHome = $('#ckShowHomeM').prop('checked');
 
@@ -240,7 +255,6 @@
             });
             return false;
         }
-
     }
 
     function deleteProduct(id) {
@@ -248,7 +262,7 @@
             $.ajax({
                 type: "POST",
                 url: "/Admin/Product/Delete",
-                data: { id: that },
+                data: { id: id },
                 dataType: "json",
                 beforeSend: function () {
                     structures.startLoading();
@@ -284,14 +298,14 @@
                     render += Mustache.render(template, {
                         Id: item.Id,
                         Name: item.Name,
-                        Image: item.Image == null ? '<img src="/admin-side/images/user.png" width=25' : '<img src="' + item.Image + '" width=25 />',
+                        Image: item.Image === null ? '<img src="/admin-side/images/user.png" width=25' : '<img src="' + item.Image + '" width=25 />',
                         CategoryName: item.ProductCategory.Name,
                         Price: structures.formatNumber(item.Price, 0),
                         CreatedDate: structures.dateTimeFormatJson(item.DateCreated),
                         Status: structures.getStatus(item.Status)
                     });
                     $('#lblTotalRecords').text(response.RowCount);
-                    if (render != '') {
+                    if (render !== '') {
                         $('#tbl-content').html(render);
                     }
                     wrapPaging(response.RowCount, function () {
@@ -350,7 +364,7 @@
                 $('#ddlCategoryIdImportExcel').combotree({
                     data: arr
                 });
-                if (selectedId != undefined) {
+                if (selectedId !== undefined) {
                     $('#ddlCategoryIdM').combotree('setValue', selectedId);
                 }
             }
