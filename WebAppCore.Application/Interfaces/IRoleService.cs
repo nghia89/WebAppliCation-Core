@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using WebAppCore.Application.ViewModels.System;
-using WebAppCore.Data.EF.Repositories;
 using WebAppCore.Utilities.Dtos;
 
 namespace WebAppCore.Application.Interfaces
