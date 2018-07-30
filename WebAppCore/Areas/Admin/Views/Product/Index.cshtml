@@ -12,6 +12,7 @@
 @section Scripts{
     <script src="~/lib/jQuery-EasyUI/jquery.easyui.min.js"></script>
     <script src="~/app/Controller/product/quantity-management.js"></script>
+    <script src="~/app/Controller/product/image-management.js"></script>
     <script src="~/app/Controller/product/Index.js"></script>
     <script>
         var product = new productController();
@@ -112,14 +113,15 @@
             <a href="#" data-id="{{Id}}" class="btn btn-xs btn-quantity" title="Quản lý số lượng"><i class="fa fa-hourglass-start"></i></a>
             <a href="#" data-id="{{Id}}" class="btn btn-xs btn-whole-price" title="quản lý giá"><i class="fa fa-money"></i></a>
         </th>
-        <td>{{Name}}</td>
+        <td width="200">{{Name}}</td>
         <td>{{CategoryName}}</td>
         <td>{{Price}}</td>
         <td>{{{Image}}}</td>
-        <td>{{CreatedDate}}</td>
+        <td width="150">{{CreatedDate}}</td>
         <td width="20">{{{Status}}}</td>
     </tr>
 </script>
 @await Html.PartialAsync("_AddEditModal.cshtml")
 @await Html.PartialAsync("_ImportExcelModal.cshtml")
 @await Html.PartialAsync("_QuantityManagement.cshtml")
+@await Html.PartialAsync("_ImageManagement.cshtml")
