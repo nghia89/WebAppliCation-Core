@@ -11,6 +11,7 @@
 
 @section Scripts{
     <script src="~/lib/jQuery-EasyUI/jquery.easyui.min.js"></script>
+    <script src="~/app/Controller/product/quantity-management.js"></script>
     <script src="~/app/Controller/product/Index.js"></script>
     <script>
         var product = new productController();
@@ -105,16 +106,20 @@
 
     <tr>
         <th scope="row">
-            <button class="btn btn-default btn-sm btn-edit" data-id="{{Id}}"><i class="fa fa-pencil"></i></button>
-            <button class="btn btn-danger btn-sm btn-delete" data-id="{{Id}}"><i class="fa fa-trash"></i></button>
+            <a class="btn  btn-sm btn-edit" data-id="{{Id}}" title="Sửa"><i class="fa fa-pencil"></i></a>
+            <a class="btn  btn-sm btn-delete" data-id="{{Id}}" title="Xoá"><i class="fa fa-trash"></i></a>
+            <a href="#" data-id="{{Id}}" class="btn btn-xs btn-images" title="Quản lý ảnh"><i class="fa fa-image"></i></a>
+            <a href="#" data-id="{{Id}}" class="btn btn-xs btn-quantity" title="Quản lý số lượng"><i class="fa fa-hourglass-start"></i></a>
+            <a href="#" data-id="{{Id}}" class="btn btn-xs btn-whole-price" title="quản lý giá"><i class="fa fa-money"></i></a>
         </th>
         <td>{{Name}}</td>
         <td>{{CategoryName}}</td>
         <td>{{Price}}</td>
         <td>{{{Image}}}</td>
         <td>{{CreatedDate}}</td>
-        <td>{{{Status}}}</td>
+        <td width="20">{{{Status}}}</td>
     </tr>
 </script>
 @await Html.PartialAsync("_AddEditModal.cshtml")
 @await Html.PartialAsync("_ImportExcelModal.cshtml")
+@await Html.PartialAsync("_QuantityManagement.cshtml")
