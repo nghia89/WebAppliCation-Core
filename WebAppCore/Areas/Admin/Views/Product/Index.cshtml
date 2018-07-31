@@ -13,6 +13,7 @@
     <script src="~/lib/jQuery-EasyUI/jquery.easyui.min.js"></script>
     <script src="~/app/Controller/product/quantity-management.js"></script>
     <script src="~/app/Controller/product/image-management.js"></script>
+    <script src="~/app/Controller/product/whole-price-management.js"></script>
     <script src="~/app/Controller/product/Index.js"></script>
     <script>
         var product = new productController();
@@ -60,10 +61,10 @@
                         <thead>
                             <tr class="headings">
                                 @*
-                                    <th>
-                                        <input type="checkbox" id="check-all" class="flat">
-                                    </th>*@
-                                <th width="15%" class="column-title">#</th>
+        <th>
+            <input type="checkbox" id="check-all" class="flat">
+        </th>*@
+
                                 <th class="column-title">Name</th>
                                 <th class="column-title">Category </th>
                                 <th class="column-title">Price</th>
@@ -72,6 +73,7 @@
                                 <th class="column-title no-link last">
                                     <span class="nobr">Status</span>
                                 </th>
+                                <th width="15%" class="column-title">#</th>
                             </tr>
                         </thead>
 
@@ -106,6 +108,13 @@
 <script id="table-template" type="x-tmpl-mustache">
 
     <tr>
+
+        <td width="200">{{Name}}</td>
+        <td>{{CategoryName}}</td>
+        <td width="150">{{Price}}</td>
+        <td width="100">{{{Image}}}</td>
+        <td width="150">{{CreatedDate}}</td>
+        <td width="20">{{{Status}}}</td>
         <th scope="row">
             <a class="btn  btn-sm btn-edit" data-id="{{Id}}" title="Sửa"><i class="fa fa-pencil"></i></a>
             <a class="btn  btn-sm btn-delete" data-id="{{Id}}" title="Xoá"><i class="fa fa-trash"></i></a>
@@ -113,15 +122,10 @@
             <a href="#" data-id="{{Id}}" class="btn btn-xs btn-quantity" title="Quản lý số lượng"><i class="fa fa-hourglass-start"></i></a>
             <a href="#" data-id="{{Id}}" class="btn btn-xs btn-whole-price" title="quản lý giá"><i class="fa fa-money"></i></a>
         </th>
-        <td width="200">{{Name}}</td>
-        <td>{{CategoryName}}</td>
-        <td>{{Price}}</td>
-        <td>{{{Image}}}</td>
-        <td width="150">{{CreatedDate}}</td>
-        <td width="20">{{{Status}}}</td>
     </tr>
 </script>
 @await Html.PartialAsync("_AddEditModal.cshtml")
 @await Html.PartialAsync("_ImportExcelModal.cshtml")
 @await Html.PartialAsync("_QuantityManagement.cshtml")
 @await Html.PartialAsync("_ImageManagement.cshtml")
+@await Html.PartialAsync("_WholePriceManagement.cshtml")
