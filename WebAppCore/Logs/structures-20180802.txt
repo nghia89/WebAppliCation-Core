@@ -1540,3 +1540,72 @@ WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
 2018-08-02T21:48:47.0168059+07:00 0HLFOGQAV722F:00000003 [INF] Executed ViewResult - view "Index" executed in 71.8292ms. (f66409e9)
 2018-08-02T21:48:47.0223102+07:00 0HLFOGQAV722F:00000003 [INF] Executed action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" in 289.4134ms (afa2e885)
 2018-08-02T21:48:47.0551810+07:00 0HLFOGQAV722F:00000003 [INF] Request finished in 357.6145ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-02T21:58:58.3653448+07:00 0HLFOH1SAGQLB:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/   (ca22a1cb)
+2018-08-02T21:58:59.5787790+07:00 0HLFOH1SAGQLB:00000001 [INF] Request finished in 1223.4956ms 404  (791a596a)
+2018-08-02T21:59:10.6072724+07:00 0HLFOH1SAGQLE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin   (ca22a1cb)
+2018-08-02T21:59:10.6487480+07:00 0HLFOH1SAGQLE:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" (a44c0341)
+2018-08-02T21:59:10.8377217+07:00 0HLFOH1SAGQLE:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-08-02T21:59:10.8498384+07:00 0HLFOH1SAGQLE:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.8181ms. (50a9e262)
+2018-08-02T21:59:10.9015923+07:00 0HLFOH1SAGQLE:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-08-02T21:59:11.1027982+07:00 0HLFOH1SAGQLE:00000001 [INF] Executed ViewResult - view "Index" executed in 225.7656ms. (f66409e9)
+2018-08-02T21:59:11.1060694+07:00 0HLFOH1SAGQLE:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" in 453.8778ms (afa2e885)
+2018-08-02T21:59:11.1380874+07:00 0HLFOH1SAGQLE:00000001 [INF] Request finished in 527.3874ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-02T23:04:35.1170250+07:00 0HLFOI6DL73GD:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/   (ca22a1cb)
+2018-08-02T23:04:36.6521153+07:00 0HLFOI6DL73GD:00000001 [INF] Entity Framework Core "2.1.1-rtm-30846" initialized '"AppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=WebAppCore.Data.EF " (9958f5bb)
+2018-08-02T23:04:47.8932825+07:00 0HLFOI6DL73GD:00000001 [INF] Executed DbCommand ("9,534"ms) [Parameters=["@__get_Item_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[Avatar], [e].[Balance], [e].[BirthDay], [e].[ConcurrencyStamp], [e].[DateCreated], [e].[DateModified], [e].[Email], [e].[EmailConfirmed], [e].[FullName], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[Status], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AppUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0" (0723d8ff)
+2018-08-02T23:04:55.1258920+07:00 0HLFOI6DL73GD:00000001 [INF] Executed DbCommand ("2,697"ms) [Parameters=["@__user_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AppUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0" (0723d8ff)
+2018-08-02T23:04:55.5543885+07:00 0HLFOI6DL73GD:00000001 [INF] Executed DbCommand ("287"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-02T23:04:55.7064253+07:00 0HLFOI6DL73GD:00000001 [INF] Executed DbCommand ("122"ms) [Parameters=["@__normalizedName_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Description], [r].[Name], [r].[NormalizedName]
+FROM [AppRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2018-08-02T23:04:55.8130802+07:00 0HLFOI6DL73GD:00000001 [INF] Executed DbCommand ("76"ms) [Parameters=["@__role_Id_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [rc].[ClaimType], [rc].[ClaimValue]
+FROM [AppRoleClaims] AS [rc]
+WHERE [rc].[RoleId] = @__role_Id_0" (0723d8ff)
+2018-08-02T23:04:55.9221954+07:00 0HLFOI6DL73GD:00000001 [INF] Executed DbCommand ("96"ms) [Parameters=["@__userId_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AppUserRoles] AS [userRole]
+INNER JOIN [AppRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0" (0723d8ff)
+2018-08-02T23:04:57.8191072+07:00 0HLFOI6DL73GD:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-08-02T23:04:58.1546543+07:00 0HLFOI6DL73GD:00000001 [INF] Executing action method "WebAppCore.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-08-02T23:04:58.1656780+07:00 0HLFOI6DL73GD:00000001 [INF] Executed action method "WebAppCore.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.7958ms. (50a9e262)
+2018-08-02T23:04:58.7437737+07:00 0HLFOI6DL73GD:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-08-02T23:04:59.9206576+07:00 0HLFOI6DL73GD:00000001 [INF] Executed ViewResult - view "Index" executed in 1740.3602ms. (f66409e9)
+2018-08-02T23:04:59.9457190+07:00 0HLFOI6DL73GD:00000001 [INF] Executed action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" in 2116.6688ms (afa2e885)
+2018-08-02T23:04:59.9691865+07:00 0HLFOI6DL73GD:00000001 [INF] Request finished in 24870.9342ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-02T23:05:04.5133551+07:00 0HLFOI6DL73GE:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/   (ca22a1cb)
+2018-08-02T23:05:04.5184480+07:00 0HLFOI6DL73GE:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\", area = \"\"}". Executing action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" (a44c0341)
+2018-08-02T23:05:04.5491050+07:00 0HLFOI6DL73GE:00000001 [INF] Executing action method "WebAppCore.Controllers.HomeController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-08-02T23:05:04.5523795+07:00 0HLFOI6DL73GE:00000001 [INF] Executed action method "WebAppCore.Controllers.HomeController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.3442ms. (50a9e262)
+2018-08-02T23:05:04.5563305+07:00 0HLFOI6DL73GE:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-08-02T23:05:04.5637590+07:00 0HLFOI6DL73GE:00000001 [INF] Executed ViewResult - view "Index" executed in 8.1164ms. (f66409e9)
+2018-08-02T23:05:04.5663334+07:00 0HLFOI6DL73GE:00000001 [INF] Executed action "WebAppCore.Controllers.HomeController.Index (WebAppCore)" in 45.759ms (afa2e885)
+2018-08-02T23:05:04.5696113+07:00 0HLFOI6DL73GE:00000001 [INF] Request finished in 56.3481ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-02T23:05:54.4019173+07:00 0HLFOI6DL73GF:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/Admin   (ca22a1cb)
+2018-08-02T23:05:54.6100243+07:00 0HLFOI6DL73GF:00000001 [INF] Route matched with "{area = \"Admin\", action = \"Index\", controller = \"Login\"}". Executing action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" (a44c0341)
+2018-08-02T23:05:54.6424332+07:00 0HLFOI6DL73GF:00000001 [INF] Executing action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-08-02T23:05:54.6450792+07:00 0HLFOI6DL73GF:00000001 [INF] Executed action method "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.6307ms. (50a9e262)
+2018-08-02T23:05:57.4502128+07:00 0HLFOI6DL73GF:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-08-02T23:05:57.6594757+07:00 0HLFOI6DL73GF:00000001 [INF] Executed ViewResult - view "Index" executed in 3010.7067ms. (f66409e9)
+2018-08-02T23:05:57.6636158+07:00 0HLFOI6DL73GF:00000001 [INF] Executed action "WebAppCore.Areas.Admin.Controllers.LoginController.Index (WebAppCore)" in 3049.7114ms (afa2e885)
+2018-08-02T23:05:57.6667479+07:00 0HLFOI6DL73GF:00000001 [INF] Request finished in 3277.1787ms 200 text/html; charset=utf-8 (791a596a)
+2018-08-02T23:06:09.7752893+07:00 0HLFOI6DL73GK:00000001 [INF] Request starting HTTP/1.1 GET http://localhost:5000/san-pham.html   (ca22a1cb)
+2018-08-02T23:06:09.7865452+07:00 0HLFOI6DL73GK:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Product\", area = \"\"}". Executing action "WebAppCore.Controllers.ProductController.Index (WebAppCore)" (a44c0341)
+2018-08-02T23:06:09.8490259+07:00 0HLFOI6DL73GK:00000001 [INF] Executing action method "WebAppCore.Controllers.ProductController.Index (WebAppCore)" - Validation state: Valid (dad538d7)
+2018-08-02T23:06:09.9118141+07:00 0HLFOI6DL73GK:00000001 [INF] Executed action method "WebAppCore.Controllers.ProductController.Index (WebAppCore)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.375ms. (50a9e262)
+2018-08-02T23:06:09.9181011+07:00 0HLFOI6DL73GK:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2018-08-02T23:06:09.9339419+07:00 0HLFOI6DL73GK:00000001 [INF] Executed ViewResult - view "Index" executed in 19.5215ms. (f66409e9)
+2018-08-02T23:06:09.9737239+07:00 0HLFOI6DL73GK:00000001 [INF] Executed action "WebAppCore.Controllers.ProductController.Index (WebAppCore)" in 148.0557ms (afa2e885)
+2018-08-02T23:06:09.9862461+07:00 0HLFOI6DL73GK:00000001 [INF] Request finished in 202.0398ms 200 text/html; charset=utf-8 (791a596a)
