@@ -309,15 +309,15 @@
                         Price: structures.formatNumber(item.Price, 0),
                         CreatedDate: structures.dateTimeFormatJson(item.DateCreated),
                         Status: structures.getStatus(item.Status)
-                    });
-                    $('#lblTotalRecords').text(response.RowCount);
-                    if (render !== '') {
-                        $('#tbl-content').html(render);
-                    }
-                    wrapPaging(response.RowCount, function () {
-                        loadData();
-                    }, isPageChanged);
+                    });          
                 });
+                $('#lblTotalRecords').text(response.RowCount);
+                if (render !== '') {
+                    $('#tbl-content').html(render);
+                }
+                wrapPaging(response.RowCount, function () {
+                    loadData();
+                }, isPageChanged);
             },
             error: function (status) {
                 console.log(status);
