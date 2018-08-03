@@ -4,10 +4,9 @@ using System.Text;
 
 namespace WebAppCore.Application.ViewModels.Common
 {
-    public class EnumModel
+    public class FooterViewModel
     {
-        public int Value { get; set; }
-
-        public string Name { get; set; }
+        public string Id { set; get; }
+        public string Content { set; get; }
     }
 }
