@@ -301,22 +301,22 @@ namespace WebAppCore.Application.Implementation
                .ProjectTo<ProductViewModel>().ToList();
         }
 
-        //public List<TagViewModel> GetProductTags(int productId)
-        //{
-        //    var tags = _tagRepository.FindAll();
-        //    var productTags = _productTagRepository.FindAll();
+        public List<TagViewModel> GetProductTags(int productId)
+        {
+            var tags = _tagRepository.FindAll();
+            var productTags = _productTagRepository.FindAll();
 
-        //    var query = from t in tags
-        //                join pt in productTags
-        //                on t.Id equals pt.TagId
-        //                where pt.ProductId == productId
-        //                select new TagViewModel()
-        //                {
-        //                    Id = t.Id,
-        //                    Name = t.Name
-        //                };
-        //    return query.ToList();
-        //}
+            var query = from t in tags
+                        join pt in productTags
+                        on t.Id equals pt.TagId
+                        where pt.ProductId == productId
+                        select new TagViewModel()
+                        {
+                            Id = t.Id,
+                            Name = t.Name
+                        };
+            return query.ToList();
+        }
 
         public bool CheckAvailability(int productId, int size, int color)
         {
