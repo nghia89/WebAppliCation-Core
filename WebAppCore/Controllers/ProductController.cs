@@ -41,10 +41,12 @@ namespace WebAppCore.Controllers
 
             catalog.PageSize = pageSize;
             catalog.SortType = sortBy;
-            catalog.Data = _productService.GetAllPaging(id, string.Empty, page, pageSize.Value);
+            catalog.Data = _productService.GetAllPaging(id, string.Empty, page, pageSize.Value, sortBy);
             catalog.Category = _productCategoryService.GetById(id);
             return View(catalog);
         }
+
+
         [Route("{alias}-p.{id}.html", Name = "ProductDetail")]
         public IActionResult Detail(int id)
         {

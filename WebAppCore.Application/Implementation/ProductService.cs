@@ -110,7 +110,7 @@ namespace WebAppCore.Application.Implementation
             return _productRepository.FindAll(x => x.ProductCategory).ProjectTo<ProductViewModel>().ToList();
         }
 
-        public PagedResult<ProductViewModel> GetAllPaging(int? categoryId, string keyword, int page, int pageSize)
+        public PagedResult<ProductViewModel> GetAllPaging(int? categoryId, string keyword, int page, int pageSize, string sortBy)
         {
             var query = _productRepository.FindAll(x => x.Status == Status.Active);
             if (!string.IsNullOrEmpty(keyword))
@@ -119,9 +119,25 @@ namespace WebAppCore.Application.Implementation
                 query = query.Where(x => x.CategoryId == categoryId.Value);
 
             int totalRow = query.Count();
+            switch (sortBy)
+            {
+                case "price":
+                    query = query.OrderByDescending(x => x.Price);
+                    break;
 
-            query = query.OrderByDescending(x => x.DateCreated)
-                .Skip((page - 1) * pageSize).Take(pageSize);
+                case "name":
+                    query = query.OrderBy(x => x.Name);
+                    break;
+
+                case "lastest":
+                    query = query.OrderByDescending(x => x.DateCreated);
+                    break;
+
+                default:
+                    query = query.OrderByDescending(x => x.DateCreated);
+                    break;
+            }
+            query = query.Skip((page - 1) * pageSize).Take(pageSize);
 
             var data = query.ProjectTo<ProductViewModel>().ToList();
 
@@ -324,6 +340,34 @@ namespace WebAppCore.Application.Implementation
             if (quantity == null)
                 return false;
             return quantity.Quantity > 0;
+        }
+
+        public PagedResult<ProductViewModel> GetAllProCatePaging(int? categoryId, string keyword, int page, int pageSize, string sortBy)
+        {
+            var query = _productRepository.FindAll(x => x.Status == Status.Active);
+            if (!string.IsNullOrEmpty(keyword))
+                query = query.Where(x => x.Name.Contains(keyword));
+            if (categoryId.HasValue)
+                query = query.Where(x => x.CategoryId == categoryId.Value);
+            //if(!string.IsNullOrEmpty(sortBy))
+            //{
+            //    query=query.Where(x=>x.)
+            //}
+            int totalRow = query.Count();
+
+            query = query.OrderByDescending(x => x.DateCreated)
+                .Skip((page - 1) * pageSize).Take(pageSize);
+
+            var data = query.ProjectTo<ProductViewModel>().ToList();
+
+            var paginationSet = new PagedResult<ProductViewModel>()
+            {
+                Results = data,
+                CurrentPage = page,
+                RowCount = totalRow,
+                PageSize = pageSize
+            };
+            return paginationSet;
         }
     }
 }
