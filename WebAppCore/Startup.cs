@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Serialization;
+using PaulMiami.AspNetCore.Mvc.Recaptcha;
 using System;
 using WebAppCore.Application.Implementation;
 using WebAppCore.Application.Interfaces;
@@ -55,6 +56,11 @@ namespace WebAppCore
 
                 // User settings
                 options.User.RequireUniqueEmail = true;
+            });
+            services.AddRecaptcha(new RecaptchaOptions
+            {
+                SiteKey = Configuration["Recaptcha:SiteKey"],
+                SecretKey = Configuration["Recaptcha:SecretKey"]
             });
             services.AddAutoMapper();
             // Add application services.
