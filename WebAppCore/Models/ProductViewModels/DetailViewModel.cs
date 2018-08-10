@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -24,8 +25,8 @@ namespace WebAppCore.Models.ProductViewModels
 
         public List<TagViewModel> Tags { set; get; }
 
-        //public List<SelectListItem> Colors { set; get; }
+        public List<SelectListItem> Colors { set; get; }
 
-        //public List<SelectListItem> Sizes { set; get; }
+        public List<SelectListItem> Sizes { set; get; }
     }
 }

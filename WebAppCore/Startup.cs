@@ -62,6 +62,13 @@ namespace WebAppCore
                 SiteKey = Configuration["Recaptcha:SiteKey"],
                 SecretKey = Configuration["Recaptcha:SecretKey"]
             });
+            services.AddSession(options =>
+            {
+                // time out secction
+                options.IdleTimeout = TimeSpan.FromHours(2);
+                //  
+                options.Cookie.HttpOnly = true;
+            });
             services.AddAutoMapper();
             // Add application services.
             services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();
@@ -111,7 +118,7 @@ namespace WebAppCore
             app.UseStaticFiles();
 
             app.UseAuthentication();
-
+            app.UseSession();
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
