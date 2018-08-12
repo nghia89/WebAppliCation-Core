@@ -18,8 +18,8 @@
             // position defines the notification position though uses the defaults below
             position: '...',
             // default positions
-            elementPosition: 'top right',
-            globalPosition: 'top right',
+            elementPosition: 'bottom left',   
+            globalPosition: 'bottom left',
             // default style
             style: 'bootstrap',
             // default class (string or [string])
@@ -97,21 +97,7 @@
             ss = "0" + ss;
         return day + "/" + month + "/" + year + " " + hh + ":" + mm + ":" + ss;
     },
-    startLoading: function () {
-        if ($('.dv-loading').length > 0)
-            $('.dv-loading').removeClass('hide');
-    },
-    stopLoading: function () {
-        if ($('.dv-loading').length > 0)
-            $('.dv-loading')
-                .addClass('hide');
-    },
-    getStatus: function (status) {
-        if (status == 1)
-            return '<span class="badge bg-green">Kích hoạt</span>';
-        else
-            return '<span class="badge bg-red">Khoá</span>';
-    },
+  
     formatNumber: function (number, precision) {
         if (!isFinite(number)) {
             return number.toString();
@@ -138,9 +124,3 @@
     }
 }
 
-$(document).ajaxSend(function (e, xhr, options) {
-    if (options.type.toUpperCase() == "POST" || options.type.toUpperCase() == "PUT") {
-        var token = $('form').find("input[name='__RequestVerificationToken']").val();
-        xhr.setRequestHeader("RequestVerificationToken", token);
-    }
-});

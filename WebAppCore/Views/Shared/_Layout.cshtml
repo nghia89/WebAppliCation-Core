@@ -8,8 +8,8 @@
     <![endif]-->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>@ViewData["Title"] </title>
-    <meta name="description" content="ViewData["MetaDescription"]>
-    <meta name="keywords" content="ViewData["MetaKeyword"] />
+    <meta name="description" content="ViewData[" MetaDescription"]>
+    <meta name="keywords" content="ViewData[" MetaKeyword"] />
 
     <!-- Mobile specific metas  -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,6 +19,7 @@
 
     <!-- CSS Style -->
     <link rel="stylesheet" href="~/client-side/style.css">
+    <link href="~/lib/notifyjs/dist/styles/metro/notify-metro.css" rel="stylesheet" />
 </head>
 
 <body class="@ViewData["BodyClass"]">
@@ -43,7 +44,7 @@
                     </div>
                     <div class="col-md-3 col-sm-3 mega-container hidden-xs">
                         @await Component.InvokeAsync("CategoryMenu")
-                       
+
                     </div>
                     <div class="col-md-9 col-sm-9 jtv-megamenu">
                         @await Component.InvokeAsync("MainMenu")
@@ -53,9 +54,9 @@
         </nav>
 
         @RenderBody()
-        <!-- Footer --> 
+        <!-- Footer -->
         @await Html.PartialAsync("_Footer.cshtml")
-      
+
         <a href="#" id="back-to-top" title="Back to top"><i class="fa fa-angle-up"></i></a>
 
         <!-- End Footer -->
@@ -85,7 +86,15 @@
 
     <!-- Slider Js -->
     <script type="text/javascript" src="~/client-side/js/revolution-slider.js"></script>
-
+    <script src="~/lib/notifyjs/dist/notify.js"></script>
+    <script src="~/lib/notifyjs/dist/styles/metro/notify-metro.js"></script>
+    <script src="~/lib/mustache/mustache.js"></script>
+    <script src="~/client-app/shared/structures-client.js"></script>
+    <script src="~/client-app/base/index.js"></script>
+    <script>
+        var Baseobj = new BaseController()
+        Baseobj.initialize();
+    </script>
     @RenderSection("Scripts", required: false)
 
 </body>
