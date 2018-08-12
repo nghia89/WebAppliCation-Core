@@ -18,8 +18,8 @@
                 },
                 success: function (response) {
                     structures.notify('The product was added to cart', 'success');
-                    //loadHeaderCart();
-                    loadMyCart();
+                    loadHeaderCart();
+                    
                 }
             });
         });
@@ -35,16 +35,16 @@
                 },
                 success: function (response) {
                     structures.notify('The product was removed', 'success');
-                    //loadHeaderCart();
-                    loadMyCart();
+                    loadHeaderCart();
+                    
                 }
             });
         });
     }
 
-    //function loadHeaderCart() {
-    //    $("#headerCart").load("/AjaxContent/HeaderCart");
-    //}
+    function loadHeaderCart() {
+        $("#headerCart").load("/AjaxContent/HeaderCart");
+    }
 
     //function loadMyCart() {
     //    $("#sidebarCart").load("/AjaxContent/MyCart");
