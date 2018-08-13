@@ -26,10 +26,12 @@ namespace WebAppCore.Controllers
             _configuration = configuration;
             _billService = billService;
         }
-        [Route("san-pham.html")]
+
+        [Route("products.html")]
         public IActionResult Index()
         {
-            return View();
+            var categories = _productCategoryService.GetAll();
+            return View(categories);
         }
 
         [Route("{alias}-c.{id}.html")]
