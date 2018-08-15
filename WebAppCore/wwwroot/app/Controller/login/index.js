@@ -45,7 +45,7 @@
         $.ajax({
             type: 'POST',
             data: {
-                UserName: user,
+                Email: user,
                 PassWord: pass
             },
             dataType: 'json',

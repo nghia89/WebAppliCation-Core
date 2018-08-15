@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
+using WebAppCore.Models;
+using WebAppCore.Utilities.Constants;
+using Microsoft.AspNetCore.Http;
+using WebAppCore.Extensions;
 using WebAppCore.Application.Interfaces;
 using WebAppCore.Application.ViewModels.Product;
 using WebAppCore.Data.Enums;
-using WebAppCore.Extensions;
-using WebAppCore.Models;
+using System.Security.Claims;
 using WebAppCore.Services;
-using WebAppCore.Utilities.Constants;
+using Microsoft.Extensions.Configuration;
 
 namespace WebAppCore.Controllers
 {
@@ -18,15 +20,16 @@ namespace WebAppCore.Controllers
     {
         IProductService _productService;
         IBillService _billService;
-//IViewRenderService _viewRenderService;
+        IViewRenderService _viewRenderService;
         IConfiguration _configuration;
         IEmailSender _emailSender;
-        public CartController(IProductService productService, IEmailSender emailSender,
+        public CartController(IProductService productService,
+            IEmailSender emailSender, IViewRenderService viewRenderService,
             IConfiguration configuration, IBillService billService)
         {
             _productService = productService;
             _billService = billService;
-            //_viewRenderService = viewRenderService;
+            _viewRenderService = viewRenderService;
             _configuration = configuration;
             _emailSender = emailSender;
         }
@@ -35,6 +38,7 @@ namespace WebAppCore.Controllers
         {
             return View();
         }
+
         [Route("checkout.html", Name = "Checkout")]
         [HttpGet]
         public IActionResult Checkout()
@@ -80,7 +84,8 @@ namespace WebAppCore.Controllers
                         CustomerAddress = model.CustomerAddress,
                         CustomerName = model.CustomerName,
                         CustomerMessage = model.CustomerMessage,
-                        BillDetails = details
+                        BillDetails = details,
+                        //CustomerId = User.Identity.IsAuthenticated == true? ((ClaimsIdentity)User.Identity).GetSpecificClaim("UserId"):     
                     };
                     if (User.Identity.IsAuthenticated == true)
                     {
@@ -92,9 +97,9 @@ namespace WebAppCore.Controllers
 
                         _billService.Save();
 
-                        //var content = await _viewRenderService.RenderToStringAsync("Cart/_BillMail", billViewModel);
+                        var content = await _viewRenderService.RenderToStringAsync("Cart/_BillMail", billViewModel);
                         //Send mail
-                        //await _emailSender.SendEmailAsync(_configuration["MailSettings:AdminMail"], "New bill from Panda Shop", content);
+                        await _emailSender.SendEmailAsync(_configuration["MailSettings:AdminMail"], "New bill from Panda Shop", content);
                         ViewData["Success"] = true;
                     }
                     catch (Exception ex)

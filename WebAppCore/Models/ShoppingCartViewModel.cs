@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using WebAppCore.Application.ViewModels.Product;
+﻿using WebAppCore.Application.ViewModels.Product;
 
 namespace WebAppCore.Models
 {

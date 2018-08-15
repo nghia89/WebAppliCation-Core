@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Configuration;
+using System.Linq;
 using WebAppCore.Application.Interfaces;
 using WebAppCore.Models.ProductViewModels;
 
@@ -12,11 +9,11 @@ namespace WebAppCore.Controllers
 {
     public class ProductController : Controller
     {
+        private IProductService _productService;
+        private IBillService _billService;
+        private IProductCategoryService _productCategoryService;
+        private IConfiguration _configuration;
 
-        IProductService _productService;
-        IBillService _billService;
-        IProductCategoryService _productCategoryService;
-        IConfiguration _configuration;
         public ProductController(IProductService productService, IConfiguration configuration,
             IBillService billService,
             IProductCategoryService productCategoryService)
@@ -59,7 +56,7 @@ namespace WebAppCore.Controllers
 
             catalog.PageSize = pageSize;
             catalog.SortType = sortBy;
-            catalog.Data = _productService.GetAllPaging(null, keyword, page, pageSize.Value,string.Empty);
+            catalog.Data = _productService.GetAllPaging(null, keyword, page, pageSize.Value, string.Empty);
             catalog.Keyword = keyword;
 
             return View(catalog);
@@ -74,7 +71,7 @@ namespace WebAppCore.Controllers
             model.Category = _productCategoryService.GetById(model.Product.CategoryId);
             model.RelatedProducts = _productService.GetRelatedProducts(id, 9);
             model.UpsellProducts = _productService.GetUpsellProducts(6);
-            model.ProductImages = _productService.GetImages(id);    
+            model.ProductImages = _productService.GetImages(id);
             model.Tags = _productService.GetProductTags(id);
             model.Colors = _billService.GetColors().Select(x => new SelectListItem()
             {
@@ -87,7 +84,6 @@ namespace WebAppCore.Controllers
                 Value = x.Id.ToString()
             }).ToList();
             return View(model);
-
         }
     }
 }
