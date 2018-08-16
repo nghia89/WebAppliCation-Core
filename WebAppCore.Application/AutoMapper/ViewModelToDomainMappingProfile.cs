@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using System;
+using WebAppCore.Application.ViewModels.Common;
 using WebAppCore.Application.ViewModels.Product;
 using WebAppCore.Application.ViewModels.System;
 using WebAppCore.Data.Entities;
@@ -34,6 +35,12 @@ namespace WebAppCore.Application.AutoMapper
             CreateMap<BillDetailViewModel, BillDetail>()
               .ConstructUsing(c => new BillDetail(c.Id, c.BillId, c.ProductId,
               c.Quantity, c.Price, c.ColorId, c.SizeId));
+
+            CreateMap<ContactViewModel, Contact>()
+              .ConstructUsing(c => new Contact(c.Id, c.Name, c.Phone, c.Email, c.Website, c.Address, c.Other, c.Lng, c.Lat, c.Status));
+
+            CreateMap<FeedbackViewModel, Feedback>()
+                .ConstructUsing(c => new Feedback(c.Id, c.Name, c.Email, c.Message, c.Status));
         }
     }
 }

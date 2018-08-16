@@ -60,6 +60,21 @@ namespace WebAppCore.Data.EF
                 var user = await _userManager.FindByNameAsync("admin");
                 await _userManager.AddToRoleAsync(user, "Admin");
             }
+            if (!_context.Contacts.Any())
+            {
+                _context.Contacts.Add(new Contact()
+                {
+                    Id = CommonConstants.DefaultContactId,
+                    Address = "My Address",
+                    Email = "MyShop@gmail.com",
+                    Name = "My Shop",
+                    Phone = "0971669906",
+                    Status = Status.Active,
+                    Website = "http://myshop.com",
+                    Lat = 10.8306206,
+                    Lng = 106.7726841
+                });
+            }
             if (_context.Functions.Count() == 0)
             {
                 _context.Functions.AddRange(new List<Function>()
@@ -157,7 +172,7 @@ namespace WebAppCore.Data.EF
                 _context.Slides.AddRange(slides);
             }
 
-
+         
             if (_context.Sizes.Count() == 0)
             {
                 List<Size> listSize = new List<Size>()
@@ -169,7 +184,7 @@ namespace WebAppCore.Data.EF
                     new Size() { Name="S" },
                     new Size() { Name="XS" }
                 };
-                _context.Sizes.AddRange(listSize);
+                await _context.SaveChangesAsync();
             }
 
             if (_context.ProductCategories.Count() == 0)
