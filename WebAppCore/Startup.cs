@@ -15,6 +15,7 @@ using WebAppCore.Application.Interfaces;
 using WebAppCore.Authorization;
 using WebAppCore.Data.EF;
 using WebAppCore.Data.Entities;
+using WebAppCore.Extensions;
 using WebAppCore.Helpers;
 using WebAppCore.Infrastructure.Interfaces;
 using WebAppCore.Services;
@@ -69,6 +70,7 @@ namespace WebAppCore
                 //  
                 options.Cookie.HttpOnly = true;
             });
+            services.AddImageResizer();
             services.AddAutoMapper();
             // Add application services.
             services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();
@@ -117,7 +119,8 @@ namespace WebAppCore
             {
                 app.UseExceptionHandler("/Home/Error");
             }
-
+            app.UseImageResizer();
+            //hạn chế tất cả các file nằm trong thư mục root đều không chạy qua Middleware tiếp theo
             app.UseStaticFiles();
 
             app.UseAuthentication();
