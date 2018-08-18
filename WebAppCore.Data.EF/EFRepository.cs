@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using WebAppCore.Infrastructure.Interfaces;
 using WebAppCore.Infrastructure.SharedKernel;
 
@@ -17,6 +16,7 @@ namespace WebAppCore.Data.EF
         {
             _context = context;
         }
+
         public void Add(T entity)
         {
             _context.Add(entity);
@@ -24,7 +24,7 @@ namespace WebAppCore.Data.EF
 
         public void Dispose()
         {
-          if(_context != null)
+            if (_context != null)
             {
                 _context.Dispose();
             }

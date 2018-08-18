@@ -44,6 +44,7 @@ namespace WebAppCore
                 .AddDefaultTokenProviders();
 
             services.AddMemoryCache();
+            //services.AddMinResponse();
             // Configure Identity
             services.Configure<IdentityOptions>(options =>
             {
@@ -70,7 +71,7 @@ namespace WebAppCore
             {
                 // time out secction
                 options.IdleTimeout = TimeSpan.FromHours(2);
-                //  
+                //
                 options.Cookie.HttpOnly = true;
             });
             services.AddImageResizer();
@@ -88,7 +89,7 @@ namespace WebAppCore
 
             services.AddScoped<IUserClaimsPrincipalFactory<AppUser>, CustomClaimsPrincipalFactory>();
             //services.AddMvc();
-            
+
             services.AddMvc(options =>
             {
                 options.CacheProfiles.Add("Default",
@@ -139,7 +140,7 @@ namespace WebAppCore
             app.UseImageResizer();
             //hạn chế tất cả các file nằm trong thư mục root đều không chạy qua Middleware tiếp theo
             app.UseStaticFiles();
-
+            //app.UseMinResponse();
             app.UseAuthentication();
             app.UseSession();
             app.UseMvc(routes =>
