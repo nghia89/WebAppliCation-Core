@@ -32,7 +32,7 @@ namespace WebAppCore.Controllers
             _productCategoryService = productCategoryService;
             //_localizer = localizer;
         }
-
+        [ResponseCache(CacheProfileName = "Default")]
         public IActionResult Index()
         {
             //var title = _localizer["Title"];
