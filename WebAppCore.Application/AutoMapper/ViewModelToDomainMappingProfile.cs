@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using System;
+using WebAppCore.Application.ViewModels.Blog;
 using WebAppCore.Application.ViewModels.Common;
 using WebAppCore.Application.ViewModels.Product;
 using WebAppCore.Application.ViewModels.System;
@@ -41,6 +42,9 @@ namespace WebAppCore.Application.AutoMapper
 
             CreateMap<FeedbackViewModel, Feedback>()
                 .ConstructUsing(c => new Feedback(c.Id, c.Name, c.Email, c.Message, c.Status));
+
+            CreateMap<PageViewModel, Page>()
+            .ConstructUsing(c => new Page(c.Id, c.Name, c.Alias, c.Content, c.Status));
         }
     }
 }
