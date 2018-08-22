@@ -25,7 +25,7 @@ namespace WebAppCore.Controllers
             //_localizer = localizer;
         }
 
-        [ResponseCache(CacheProfileName = "Default")]
+        //[ResponseCache(CacheProfileName = "Default")]
         public IActionResult Index()
         {
             //var title = _localizer["Title"];
