@@ -11,15 +11,26 @@
 
 @section Scripts{
     <script src="~/lib/jQuery-EasyUI/jquery.easyui.min.js"></script>
-    <script src="~/app/Controller/product/quantity-management.js"></script>
-    <script src="~/app/Controller/product/image-management.js"></script>
-    <script src="~/app/Controller/product/whole-price-management.js"></script>
-    <script src="~/app/Controller/product/Index.js"></script>
-    <script>
+
+    <environment names="Development">
+        <script src="~/app/Controller/product/image-management.js" asp-append-version="true"></script>
+        <script src="~/app/Controller/product/quantity-management.js" asp-append-version="true"></script>
+        <script src="~/app/Controller/product/whole-price-management.js" asp-append-version="true"></script>
+        <script src="~/app/Controller/product/index.js" asp-append-version="true"></script>
+        <script>
         var product = new productController();
         product.initialize();
-    </script>
+        </script>
+    </environment>
+
+    <environment names="Staging,Production">
+        <script>
+        var product = new productController();
+        product.initialize();
+        </script>
+    </environment>
 }
+
 <div class="clearfix"></div>
 @{
     var result = await AuthorizationService.AuthorizeAsync(User, "USER", Operations.Create);
@@ -61,9 +72,9 @@
                         <thead>
                             <tr class="headings">
                                 @*
-        <th>
-            <input type="checkbox" id="check-all" class="flat">
-        </th>*@
+                                    <th>
+                                        <input type="checkbox" id="check-all" class="flat">
+                                    </th>*@
 
                                 <th class="column-title">Name</th>
                                 <th class="column-title">Category </th>
