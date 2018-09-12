@@ -22,7 +22,8 @@ namespace WebAppCore.Helpers
             var principal = await base.CreateAsync(user);
             var roles = await _userManager.GetRolesAsync(user);
             ((ClaimsIdentity)principal.Identity).AddClaims(new[]
-          {
+            {
+                new Claim(ClaimTypes.NameIdentifier,user.UserName),
                 new Claim("Email",user.Email),
                 new Claim("FullName",user.FullName),
                 new Claim("Avatar",user.Avatar??string.Empty),

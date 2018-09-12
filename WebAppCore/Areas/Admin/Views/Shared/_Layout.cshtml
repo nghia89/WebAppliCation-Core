@@ -23,7 +23,7 @@
     <link href="~/lib/ckeditor/skins/moono/editor.css" rel="stylesheet" />
     @RenderSection("Style", required: false)
     <!-- Custom Theme Style -->
-<link href="~/admin-side/css/custom.min.css" rel="stylesheet" />
+    <link href="~/admin-side/css/custom.min.css" rel="stylesheet" />
 </head>
 
 <body class="nav-md">
@@ -177,7 +177,7 @@
     <!-- jQuery -->
     @*<script src="../vendors/jquery/dist/jquery.min.js"></script>*@
     <script src="~/lib/jquery/dist/jquery.js"></script>
-    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/signalr/dist/browser/signalr.js"></script>
     <script src="~/lib/notifyjs/dist/notify.js"></script>
     <script src="~/lib/notifyjs/dist/styles/metro/notify-metro.js"></script>
     <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
@@ -198,20 +198,17 @@
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
     <script src="~/lib/ckeditor/ckeditor.js"></script>
     <!-- bootstrap-daterangepicker -->
-    
+
     <script src="~/lib/moment/moment.js"></script>
     <script src="~/lib/bootstrap-daterangepicker/daterangepicker.js"></script>
     <script src="~/lib/notifyjs/dist/notify.js"></script>
     <script src="~/lib/notifyjs/dist/styles/metro/notify-metro.js"></script>
     <script src="~/lib/bootbox/bootbox.js"></script>
 
-
     <script src="~/app/shared/structures.js"></script>
     <!-- Custom Theme Scripts -->
     <script src="~/admin-side/js/custom.js"></script>
-
-
+    <script src="~/app/shared/signalR.js"></script>
     @RenderSection("Scripts", required: false)
 </body>
-
 </html>

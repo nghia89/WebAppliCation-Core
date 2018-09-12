@@ -7,9 +7,21 @@
 
   <ItemGroup>
     <Compile Remove="Areas\Admin\View\**" />
+    <Compile Remove="wwwroot\lib\signalr\dist\cjs\**" />
+    <Compile Remove="wwwroot\lib\signalr\dist\esm\**" />
+    <Compile Remove="wwwroot\lib\signalr\src\**" />
     <Content Remove="Areas\Admin\View\**" />
+    <Content Remove="wwwroot\lib\signalr\dist\cjs\**" />
+    <Content Remove="wwwroot\lib\signalr\dist\esm\**" />
+    <Content Remove="wwwroot\lib\signalr\src\**" />
     <EmbeddedResource Remove="Areas\Admin\View\**" />
+    <EmbeddedResource Remove="wwwroot\lib\signalr\dist\cjs\**" />
+    <EmbeddedResource Remove="wwwroot\lib\signalr\dist\esm\**" />
+    <EmbeddedResource Remove="wwwroot\lib\signalr\src\**" />
     <None Remove="Areas\Admin\View\**" />
+    <None Remove="wwwroot\lib\signalr\dist\cjs\**" />
+    <None Remove="wwwroot\lib\signalr\dist\esm\**" />
+    <None Remove="wwwroot\lib\signalr\src\**" />
   </ItemGroup>
 
 
@@ -20,6 +32,7 @@
     <PackageReference Include="Git-Windows-Minimal" Version="2.18.0" />
     <PackageReference Include="Microsoft.AspNetCore.All" />
     <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.1" PrivateAssets="All" />
     <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="2.1.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" PrivateAssets="All" />
@@ -59,6 +72,7 @@
     <None Include="wwwroot\client-side\js\owl.carousel.min.js" />
     <None Include="wwwroot\client-side\js\revolution-extension.js" />
     <None Include="wwwroot\client-side\js\revolution-slider.js" />
+    <None Include="wwwroot\lib\signalr\dist\browser\signalr.js" />
   </ItemGroup>
 
   <ItemGroup>

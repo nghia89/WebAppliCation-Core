@@ -1,12 +1,17 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Microsoft.AspNetCore.SignalR;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebAppCore.Application.Interfaces;
 using WebAppCore.Application.ViewModels.System;
 using WebAppCore.Authorization;
+using WebAppCore.Data.Enums;
+using WebAppCore.Extensions;
+using WebAppCore.SignalR;
 
 namespace WebAppCore.Areas.Admin.Controllers
 {
@@ -14,11 +19,15 @@ namespace WebAppCore.Areas.Admin.Controllers
     {
         private IUserService _userService;
         private readonly IAuthorizationService _authorizationService;
+        private readonly IHubContext<SignalRHub> _hubContext;
 
-        public UserController(IUserService userService, IAuthorizationService authorizationService)
+
+        public UserController(IUserService userService, IAuthorizationService authorizationService,
+            IHubContext<SignalRHub> hubContext)
         {
             _userService = userService;
             _authorizationService = authorizationService;
+            _hubContext = hubContext;
         }
 
         public async Task<IActionResult> Index()
@@ -64,18 +73,26 @@ namespace WebAppCore.Areas.Admin.Controllers
                 IEnumerable<ModelError> allErrors = ModelState.Values.SelectMany(v => v.Errors);
                 return new BadRequestObjectResult(allErrors);
             }
+            if (userVm.Id == null)
+            {
+                var announcement = new AnnouncementViewModel()
+                {
+                    Content = $"User {userVm.UserName} has been created",
+                    DateCreated = DateTime.Now,
+                    Status = Status.Active,
+                    Title = "User created",
+                    UserId = User.GetUserId(),
+                    Id = Guid.NewGuid().ToString(),
+
+                };
+                await _userService.AddAsync(userVm);
+                await _hubContext.Clients.All.SendAsync("ReceiveMessage", announcement);
+            }
             else
             {
-                if (userVm.Id == null)
-                {
-                    await _userService.AddAsync(userVm);
-                }
-                else
-                {
-                    await _userService.UpdateAsync(userVm);
-                }
-                return new OkObjectResult(userVm);
+                await _userService.UpdateAsync(userVm);
             }
+            return new OkObjectResult(userVm);
         }
 
         [HttpPost]

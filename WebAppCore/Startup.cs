@@ -22,6 +22,7 @@ using WebAppCore.Extensions;
 using WebAppCore.Helpers;
 using WebAppCore.Infrastructure.Interfaces;
 using WebAppCore.Services;
+using WebAppCore.SignalR;
 
 namespace WebAppCore
 {
@@ -90,7 +91,6 @@ namespace WebAppCore
                      googleOpts.ClientSecret = Configuration["Authentication:Google:ClientSecret"];
                  });
 
-
             // Add application services.
             services.AddScoped<UserManager<AppUser>, UserManager<AppUser>>();
             services.AddScoped<RoleManager<AppRole>, RoleManager<AppRole>>();
@@ -120,6 +120,17 @@ namespace WebAppCore
                     });
                 //dữ đúng thuộc tính không tự động đổi ký tự đầu dòng từ thường sang hoa
             }).AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+
+            services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
+            //cho phép các domain khác ở ngoài truy cập vào được
+            services.AddCors(options => options.AddPolicy("CorsPolicy",
+                builder =>
+                {
+                    builder.AllowAnyMethod()
+                        .AllowAnyHeader()
+                        .WithOrigins("http://localhost:5000")
+                        .AllowCredentials();
+                }));
             services.AddTransient(typeof(IUnitOfWork), typeof(EFUnitOfWork));
             services.AddTransient(typeof(IRepository<,>), typeof(EFRepository<,>));
 
@@ -138,6 +149,7 @@ namespace WebAppCore
             services.AddTransient<IReportService, ReportService>();
 
             services.AddTransient<IAuthorizationHandler, BaseResourceAuthorizationHandler>();
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -160,6 +172,11 @@ namespace WebAppCore
             //app.UseMinResponse();
             app.UseAuthentication();
             app.UseSession();
+            app.UseCors("CorsPolicy");
+            app.UseSignalR(routes =>
+            {
+                routes.MapHub<SignalRHub>("/signalRHub");
+            });
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
