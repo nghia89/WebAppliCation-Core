@@ -31,6 +31,7 @@ namespace WebAppCore.Application.AutoMapper
             CreateMap<Contact, ContactViewModel>().MaxDepth(2);
             CreateMap<Feedback, FeedbackViewModel>().MaxDepth(2);
             CreateMap<Page, PageViewModel>().MaxDepth(2);
+            CreateMap<Announcement, AnnouncementViewModel>().MaxDepth(2);
 
         }
     }

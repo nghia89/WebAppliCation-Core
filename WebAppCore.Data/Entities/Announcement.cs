@@ -17,6 +17,13 @@ namespace WebAppCore.Data.Entities
         {
             AnnouncementUsers = new List<AnnouncementUser>();
         }
+        public Announcement(string title, string content, Guid userId, Status status)
+        {
+            Title = title;
+            Content = content;
+            UserId = userId;
+            Status = status;
+        }
 
         [Required]
         [StringLength(250)]
