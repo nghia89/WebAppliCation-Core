@@ -1,14 +1,20 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json.Serialization;
 using Swashbuckle.AspNetCore.Swagger;
+using System;
+using System.Text;
 using WebAppCore.Application.Implementation;
 using WebAppCore.Application.Interfaces;
 using WebAppCore.Data.EF;
+using WebAppCore.Data.Entities;
 using WebAppCore.Infrastructure.Interfaces;
 
 namespace WebAppCore.WebApi
@@ -28,6 +34,46 @@ namespace WebAppCore.WebApi
             services.AddDbContext<AppDbContext>(options =>
                    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"),
                        b => b.MigrationsAssembly("WebAppCore.Data.EF")));
+
+            services.AddIdentity<AppUser, AppRole>()
+              .AddEntityFrameworkStores<AppDbContext>()
+              .AddDefaultTokenProviders();
+
+
+            // Configure Identity
+            services.Configure<IdentityOptions>(options =>
+            {
+                // Password settings
+                options.Password.RequireDigit = true;
+                options.Password.RequiredLength = 6;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireLowercase = false;
+
+                // Lockout settings
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30);
+                options.Lockout.MaxFailedAccessAttempts = 10;
+
+                // User settings
+                options.User.RequireUniqueEmail = true;
+            });
+            //Config authen
+            services.AddAuthentication(o =>
+            {
+                o.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                o.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(cfg =>
+            {
+                cfg.RequireHttpsMetadata = false;
+                cfg.SaveToken = true;
+
+                cfg.TokenValidationParameters = new TokenValidationParameters()
+                {
+                    ValidIssuer = Configuration["Tokens:Issuer"],
+                    ValidAudience = Configuration["Tokens:Issuer"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Tokens:Key"]))
+                };
+            });
 
             services.AddCors(o => o.AddPolicy("CorsPolicy", builder =>
             {
@@ -55,7 +101,7 @@ namespace WebAppCore.WebApi
                     Version = "v1",
                     Title = "WebApp Project",
                     Description = "WebApp API Swagger surface",
-                    Contact = new Contact { Name = "nghia", Email = "hangnghia11089@gmail.com", Url = "http://www.tedu.com.vn" },
+                    Contact = new Swashbuckle.AspNetCore.Swagger.Contact { Name = "nghia", Email = "hangnghia11089@gmail.com", Url = "http://www.tedu.com.vn" },
                     License = new License { Name = "MIT", Url = "https://github.com/nghia89/WebAppliCation-Core" }
                 });
             });
@@ -71,7 +117,7 @@ namespace WebAppCore.WebApi
 
             app.UseStaticFiles();
             app.UseCors("CorsPolicy");
-
+            app.UseAuthentication();
             app.UseSwagger();
             app.UseSwaggerUI(s =>
             {
