@@ -333,8 +333,8 @@ namespace WebAppCore.Controllers
 
                 var user = new AppUser
                 {
-                    UserName = email,
-                    Email = email,
+                    UserName = model.Email,
+                    Email = model.Email,
                     FullName = model.FullName,
                     BirthDay = DateTime.Parse(model.DOB),
                     PhoneNumber = model.PhoneNumber,
@@ -472,7 +472,11 @@ namespace WebAppCore.Controllers
         {
             foreach (var error in result.Errors)
             {
-                ModelState.AddModelError(string.Empty, error.Description);
+                if ("DuplicateEmail" == error.Code)
+                {
+                    ModelState.AddModelError("Email","Tài khoản đã tồn tại");
+                }
+               
             }
         }
 
