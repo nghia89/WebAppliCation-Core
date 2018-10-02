@@ -85,7 +85,7 @@ namespace WebAppCore.Utilities.Helpers
                     else
                     {
                         if ((unit == 5) && (dozen > 0))
-                            str = "lăm " + str;
+                            str = "năm " + str;
                         else if (unit > 0)
                             str = numberWords[unit] + " " + str;
                     }

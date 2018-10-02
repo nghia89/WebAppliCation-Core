@@ -307,6 +307,7 @@
                         Image: item.Image === null ? '<img src="/admin-side/images/user.png" width=25' : '<img src="' + item.Image + '" width=25 />',
                         CategoryName: item.ProductCategory.Name,
                         Price: structures.formatNumber(item.Price, 0),
+                        //CreatedDate: structures.dateTimeFormatJson(item.DateCreated),
                         CreatedDate: structures.dateTimeFormatJson(item.DateCreated),
                         Status: structures.getStatus(item.Status)
                     });          

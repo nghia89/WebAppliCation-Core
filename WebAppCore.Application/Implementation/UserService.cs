@@ -41,7 +41,15 @@ namespace WebAppCore.Application.Implementation
                 if (appUser != null)
                     await _userManager.AddToRolesAsync(appUser, userVm.Roles);
             }
-            return true;
+            if(result.Succeeded == false)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+           
         }
 
         public async Task DeleteAsync(string id)

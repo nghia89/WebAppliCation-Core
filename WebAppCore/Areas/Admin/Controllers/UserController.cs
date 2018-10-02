@@ -81,8 +81,13 @@ namespace WebAppCore.Areas.Admin.Controllers
                     Id = Guid.NewGuid().ToString(),
 
                 };
-                await _userService.AddAsync(userVm);
-                await _hubContext.Clients.All.SendAsync("ReceiveMessage", announcement);
+                var result= await _userService.AddAsync(userVm);
+                if(result==true)
+                     await _hubContext.Clients.All.SendAsync("ReceiveMessage", announcement);
+                else
+                {
+                    return new OkObjectResult(result);
+                }
             }
             else
             {

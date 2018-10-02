@@ -1,41 +1,41 @@
 ﻿var structures = {
     configs: {
         pageSize: 10,
-        pageIndex:1
+        pageIndex: 1
     },
     notify: function (message, type) {
-        $.notify(message, 
-         {
-             // whether to hide the notification on click
-             clickToHide: true,
-             // whether to auto-hide the notification
-             autoHide: true,
-             // if autoHide, hide after milliseconds
-             autoHideDelay: 5000,
-             // show the arrow pointing at the element
-             arrowShow: true,
-             // arrow size in pixels
-             arrowSize: 5,
-             // position defines the notification position though uses the defaults below
-             position: '...',
-             // default positions
-             elementPosition: 'top left',
-             globalPosition: 'top right',
-             // default style
-             style: 'bootstrap',
-             // default class (string or [string])
-             className: type,
-             // show animation
-             showAnimation: 'slideDown',
-             // show animation duration
-             showDuration: 400,
-             // hide animation
-             hideAnimation: 'slideUp',
-             // hide animation duration
-             hideDuration: 200,
-             // padding between element and notification
-             gap: 2
-         });
+        $.notify(message,
+            {
+                // whether to hide the notification on click
+                clickToHide: true,
+                // whether to auto-hide the notification
+                autoHide: true,
+                // if autoHide, hide after milliseconds
+                autoHideDelay: 5000,
+                // show the arrow pointing at the element
+                arrowShow: true,
+                // arrow size in pixels
+                arrowSize: 5,
+                // position defines the notification position though uses the defaults below
+                position: '...',
+                // default positions
+                elementPosition: 'top left',
+                globalPosition: 'top right',
+                // default style
+                style: 'bootstrap',
+                // default class (string or [string])
+                className: type,
+                // show animation
+                showAnimation: 'slideDown',
+                // show animation duration
+                showDuration: 400,
+                // hide animation
+                hideAnimation: 'slideUp',
+                // hide animation duration
+                hideDuration: 200,
+                // padding between element and notification
+                gap: 2
+            });
     },
     confirm: function (message, okCallback) {
         bootbox.confirm({
@@ -51,14 +51,13 @@
                 }
             },
             callback: function (result) {
-                if(result==true)
-                {
+                if (result == true) {
                     okCallback();
                 }
             }
         });
     },
-    dateFormatJson:function(datetime){
+    dateFormatJson: function (datetime) {
         if (datetime == null || datetime == '')
             return '';
         var newdate = new Date(parseInt(datetime.substr(6)));
@@ -78,26 +77,48 @@
         return day + "/" + month + "/" + year;
     },
     dateTimeFormatJson: function (datetime) {
-        if (datetime == null || datetime == '')
-            return '';
-        var newdate = new Date(parseInt(datetime.substr(6)));
-        var month = newdate.getMonth() + 1;
-        var day = newdate.getDate();
-        var year = newdate.getFullYear();
-        var hh = newdate.getHours();
-        var mm = newdate.getMinutes();
-        var ss = newdate.getSeconds();
-        if (month < 10)
-            month = "0" + month;
-        if (day < 10)
-            day = "0" + day;
-        if (hh < 10)
-            hh = "0" + hh;
-        if (mm < 10)
-            mm = "0" + mm;
-        if (ss < 10)
-            ss = "0" + ss;
-        return day + "/" + month + "/" + year + " " + hh + ":" + mm + ":" + ss;
+        if (datetime != null || datetime != '') {
+            var newdate = new Date(datetime);
+            var month = newdate.getMonth()+1;
+            var day = newdate.getDate();
+            var year = newdate.getFullYear();
+            var hh = newdate.getHours();
+            var mm = newdate.getMinutes();
+            var ss = newdate.getSeconds();
+            if (month < 10)
+                month = "0" + month;
+            if (day < 10)
+                day = "0" + day;
+            if (hh < 10)
+                hh = "0" + hh;
+            if (mm < 10)
+                mm = "0" + mm;
+            if (ss < 10)
+                ss = "0" + ss;
+            return day + "/" + month + "/" + year + " " + hh + ":" + mm + ":" + ss;
+        }
+
+        else {
+            var newdate = new Date(parseInt(datetime.substr(6)));
+            var month = newdate.getMonth() + 1;
+            var day = newdate.getDate();
+            var year = newdate.getFullYear();
+            var hh = newdate.getHours();
+            var mm = newdate.getMinutes();
+            var ss = newdate.getSeconds();
+            if (month < 10)
+                month = "0" + month;
+            if (day < 10)
+                day = "0" + day;
+            if (hh < 10)
+                hh = "0" + hh;
+            if (mm < 10)
+                mm = "0" + mm;
+            if (ss < 10)
+                ss = "0" + ss;
+            return day + "/" + month + "/" + year + " " + hh + ":" + mm + ":" + ss;
+        }
+
     },
     startLoading: function () {
         if ($('.dv-loading').length > 0)

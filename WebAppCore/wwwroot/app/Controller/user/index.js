@@ -124,18 +124,21 @@
                     beforeSend: function () {
                         structures.startLoading();
                     },
-                    success: function () {
-                        structures.notify('Save user succesful', 'success');
-                        $('#modal-add-edit').modal('hide');
-                        resetFormMaintainance();
+                    success: function (res) {
+                        if (res != false) {
+                            structures.notify('Save user succesful', 'success');
+                            $('#modal-add-edit').modal('hide');
+                            resetFormMaintainance();
 
-                        structures.stopLoading();
-                        loadData(true);
-                    },
-                    error: function () {
-                        structures.notify('Email hoặc tài khoản đã tồn tại', 'error');
-                        structures.stopLoading();
+                            structures.stopLoading();
+                            loadData(true);
+                        }
+                        else {
+                                structures.notify('Email hoặc tài khoản đã tồn tại', 'error');
+                                structures.stopLoading();
+                        }
                     }
+                   
                 });
             }
             return false;
