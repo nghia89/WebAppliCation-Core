@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebAppCore.Application.Interfaces;
 using WebAppCore.Application.ViewModels.System;
+using WebAppCore.Data.EF;
 using WebAppCore.Data.Entities;
 using WebAppCore.Utilities.Dtos;
 
@@ -16,10 +17,14 @@ namespace WebAppCore.Application.Implementation
     public class UserService : IUserService
     {
         private readonly UserManager<AppUser> _userManager;
+        private readonly RoleManager<AppRole> _roleManager;
+        private readonly AppDbContext _context;
 
-        public UserService(UserManager<AppUser> userManager)
+        public UserService(UserManager<AppUser> userManager, RoleManager<AppRole> roleManager, AppDbContext context)
         {
             _userManager = userManager;
+            _roleManager = roleManager;
+            _context = context;
         }
 
         public async Task<bool> AddAsync(AppUserViewModel userVm)
@@ -113,27 +118,59 @@ namespace WebAppCore.Application.Implementation
             return userVm;
         }
 
+        //public async Task UpdateAsync(AppUserViewModel userVm)
+        //{
+        //    var user = await _userManager.FindByIdAsync(userVm.Id.ToString());
+        //    //Remove current roles in db
+        //    var currentRoles = await _userManager.GetRolesAsync(user);
+
+        //    var result = await _userManager.AddToRolesAsync(user,
+        //        userVm.Roles.Except(currentRoles).ToArray());
+
+        //    if (result.Succeeded)
+        //    {
+        //        string[] needRemoveRoles = currentRoles.Except(userVm.Roles).ToArray();
+        //        await _userManager.RemoveFromRolesAsync(user, needRemoveRoles);
+
+        //        //Update user detail
+        //        user.FullName = userVm.FullName;
+        //        user.Status = userVm.Status;
+        //        user.Email = userVm.Email;
+        //        user.PhoneNumber = userVm.PhoneNumber;
+        //        await _userManager.UpdateAsync(user);
+        //    }
+        //}
         public async Task UpdateAsync(AppUserViewModel userVm)
         {
             var user = await _userManager.FindByIdAsync(userVm.Id.ToString());
             //Remove current roles in db
             var currentRoles = await _userManager.GetRolesAsync(user);
 
-            var result = await _userManager.AddToRolesAsync(user,
-                userVm.Roles.Except(currentRoles).ToArray());
+            await RemoveRolesFromUser(userVm.Id.ToString(), currentRoles.ToArray());
 
-            if (result.Succeeded)
+            user.FullName = userVm.FullName;
+            user.Status = userVm.Status;
+            user.Email = userVm.Email;
+            user.PhoneNumber = userVm.PhoneNumber;
+
+            await _userManager.UpdateAsync(user);
+
+            await _userManager.AddToRolesAsync(user, userVm.Roles);
+
+        }
+
+        public async Task RemoveRolesFromUser(string userId, string[] roles)
+        {
+            var user = await _userManager.FindByIdAsync(userId);
+            var roleIds = _roleManager.Roles.Where(x => roles.Contains(x.Name)).Select(x => x.Id).ToList();
+            List<IdentityUserRole<Guid>> userRoles = new List<IdentityUserRole<Guid>>();
+            foreach (var roleId in roleIds)
             {
-                string[] needRemoveRoles = currentRoles.Except(userVm.Roles).ToArray();
-                await _userManager.RemoveFromRolesAsync(user, needRemoveRoles);
-
-                //Update user detail
-                user.FullName = userVm.FullName;
-                user.Status = userVm.Status;
-                user.Email = userVm.Email;
-                user.PhoneNumber = userVm.PhoneNumber;
-                await _userManager.UpdateAsync(user);
+                userRoles.Add(new IdentityUserRole<Guid> { RoleId = roleId, UserId = user.Id });
             }
+            _context.UserRoles.RemoveRange(userRoles);
+            await _context.SaveChangesAsync();
+
         }
     }
 }
