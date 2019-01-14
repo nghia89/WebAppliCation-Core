@@ -101,7 +101,7 @@ namespace WebAppCore.WebApi
                     Version = "v1",
                     Title = "WebApp Project",
                     Description = "WebApp API Swagger surface",
-                    Contact = new Swashbuckle.AspNetCore.Swagger.Contact { Name = "nghia", Email = "hangnghia11089@gmail.com", Url = "http://www.tedu.com.vn" },
+                    Contact = new Swashbuckle.AspNetCore.Swagger.Contact { Name = "nghia", Email = "hangnghia11089@gmail.com", Url = "http://www.Myweb.com.vn" },
                     License = new License { Name = "MIT", Url = "https://github.com/nghia89/WebAppliCation-Core" }
                 });
             });
