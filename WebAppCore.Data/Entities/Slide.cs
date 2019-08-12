@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
+using WebAppCore.Data.Enums;
 using WebAppCore.Infrastructure.SharedKernel;
 
 namespace WebAppCore.Data.Entities
@@ -26,7 +27,7 @@ namespace WebAppCore.Data.Entities
 
         public int? DisplayOrder { set; get; }
 
-        public bool Status { set; get; }
+        public Status Status { set; get; }
 
         public string Content { set; get; }
 

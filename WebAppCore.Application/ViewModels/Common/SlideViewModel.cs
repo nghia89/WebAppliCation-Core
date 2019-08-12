@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
+using WebAppCore.Data.Enums;
 
 namespace WebAppCore.Application.ViewModels.Common
 {
@@ -24,7 +25,7 @@ namespace WebAppCore.Application.ViewModels.Common
 
         public int? DisplayOrder { set; get; }
 
-        public bool Status { set; get; }
+        public Status Status { set; get; }
 
         public string Content { set; get; }
 
